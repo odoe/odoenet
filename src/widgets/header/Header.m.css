@@ -1,0 +1,27 @@
+.root {
+	flex: 1;
+	overflow: hidden;
+	color: #fff;
+	background-color: #333;
+	padding: 1rem;
+}
+
+.title {
+	font-size: 20px;
+	margin: 0;
+	font-weight: 400;
+}
+
+.link:hover {
+	color: #fff;
+	background-color: #333;
+}
+
+.link {
+	min-width: 140px;
+	text-align: center;
+	text-decoration: none;
+	padding: 18px;
+	color: #fff;
+	box-sizing: border-box;
+}

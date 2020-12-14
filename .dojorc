@@ -1,0 +1,31 @@
+{
+  "build-app": {
+    "build-time-render": {
+      "root": "root",
+      "renderer": "jsdom",
+      "static": true
+    },
+    "pwa": {
+      "manifest": {
+        "name": "odoenet",
+        "short_name": "odoenet",
+        "description": "The odoe network",
+        "background_color": "#ffffff",
+        "theme_color": "#009dff",
+        "icons": [
+          {
+            "src": "src/assets/logo.png",
+            "sizes": [
+              128,
+              256,
+              512
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "test-intern": {},
+  "create-app": {},
+  "create-widget": {}
+}

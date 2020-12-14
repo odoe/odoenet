@@ -1,0 +1,35 @@
+.root {
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 120px;
+	grid-column: 1 / 6;
+	padding: 0;
+	overflow: hidden;
+}
+
+.section {
+	grid-column: 2 / auto;
+	padding: 0 9rem;
+}
+
+@media only screen and (max-width: 900px) {
+	.root {
+		grid-column: 1 / 6;
+		padding: 0;
+  }
+
+	.section {
+		grid-column: 1 / 6;
+		padding: 0 2rem;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.root {
+		grid-column: 1 / 6;
+		padding: 0;
+	}
+
+	.section {
+		grid-column: 1 / 6;
+		padding: 0;
+	}
+}

@@ -1,0 +1,42 @@
+{
+  "extends": "./.dojorc",
+  "build-app": {
+    "bundles": {
+      "blog": ["src/pages/Blog"]
+    },
+    "pwa": {
+      "manifest": {
+        "name": "learn-dojo",
+        "short_name": "learn-dojo",
+        "description": "learn dojo",
+        "background_color": "#ffffff",
+        "theme_color": "#009dff",
+        "icons": [
+          {
+            "src": "src/assets/logo.png",
+            "sizes": [
+              128,
+              256,
+              512
+            ]
+          }
+        ]
+      },
+      "serviceWorker": {
+        "clientsClaim": true,
+        "routes": [
+          {
+            "urlPattern": ".*",
+            "strategy": "networkFirst",
+            "expiration": {
+              "maxEntries": 25
+            }
+          }
+        ]
+      }
+    }
+  },
+  "test-intern": {},
+  "create-app": {},
+  "create-widget": {}
+}

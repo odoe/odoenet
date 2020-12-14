@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://odoe.net</id>
+    <title>odoenet</title>
+    <updated>2020-12-14T01:47:28.075Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <author>
+        <name>Rene Rubalcava</name>
+        <email/>
+        <uri/>
+    </author>
+    <link rel="alternate" href="https://odoe.net"/>
+    <link rel="self" href="https://odoe.net/atom"/>
+    <subtitle>odoe network</subtitle>
+    <icon>https://odoe.net/favicon.ico</icon>
+    <rights>All rights reserved 2020, odoenet</rights>
+    <entry>
+        <title type="html"><![CDATA[ArcGIS for Web Developers: Geocoding]]></title>
+        <id>https://odoe.net/blog/arcgis-for-web-developers-geocoding</id>
+        <link href="https://odoe.net/blog/arcgis-for-web-developers-geocoding"/>
+        <updated>2019-07-30T00:00:00.000Z</updated>
+        <author>
+            <name>Rene Rubalcava</name>
+            <email/>
+            <uri/>
+        </author>
+        <published>2019-07-30T00:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ArcGIS for Web Developers: Part 1]]></title>
+        <id>https://odoe.net/blog/arcgis-for-web-developers-part-1</id>
+        <link href="https://odoe.net/blog/arcgis-for-web-developers-part-1"/>
+        <updated>2019-07-08T00:00:00.000Z</updated>
+        <author>
+            <name>Rene Rubalcava</name>
+            <email/>
+            <uri/>
+        </author>
+        <published>2019-07-08T00:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ArcGIS JS API with TypeScript and Babel]]></title>
+        <id>https://odoe.net/blog/arcgis-js-api-with-typescript-and-babel</id>
+        <link href="https://odoe.net/blog/arcgis-js-api-with-typescript-and-babel"/>
+        <updated>2019-08-29T00:00:00.000Z</updated>
+        <author>
+            <name>Rene Rubalcava</name>
+            <email/>
+            <uri/>
+        </author>
+        <published>2019-08-29T00:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Edit GeoJSON with the ArcGIS API for JavaScript]]></title>
+        <id>https://odoe.net/blog/edit-geojson-with-the-arcgis-api-for-javascript</id>
+        <link href="https://odoe.net/blog/edit-geojson-with-the-arcgis-api-for-javascript"/>
+        <updated>2019-11-14T00:00:00.000Z</updated>
+        <author>
+            <name>Rene Rubalcava</name>
+            <email/>
+            <uri/>
+        </author>
+        <published>2019-11-14T00:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[New ArcGIS CLI Template Apps]]></title>
+        <id>https://odoe.net/blog/new-arcgis-cli-template-apps</id>
+        <link href="https://odoe.net/blog/new-arcgis-cli-template-apps"/>
+        <updated>2020-01-10T00:00:00.000Z</updated>
+        <author>
+            <name>Rene Rubalcava</name>
+            <email/>
+            <uri/>
+        </author>
+        <published>2020-01-10T00:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Svelte with the ArcGIS API for JavaScript]]></title>
+        <id>https://odoe.net/blog/svelte-with-the-arcgis-api-for-javascript</id>
+        <link href="https://odoe.net/blog/svelte-with-the-arcgis-api-for-javascript"/>
+        <updated>2019-05-03T00:00:00.000Z</updated>
+        <author>
+            <name>Rene Rubalcava</name>
+            <email/>
+            <uri/>
+        </author>
+        <published>2019-05-03T00:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[When are layers done?]]></title>
+        <id>https://odoe.net/blog/when-are-layers-done</id>
+        <link href="https://odoe.net/blog/when-are-layers-done"/>
+        <updated>2020-02-19T00:00:00.000Z</updated>
+        <author>
+            <name>Rene Rubalcava</name>
+            <email/>
+            <uri/>
+        </author>
+        <published>2020-02-19T00:00:00.000Z</published>
+    </entry>
+</feed>

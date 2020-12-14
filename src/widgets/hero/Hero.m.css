@@ -1,0 +1,27 @@
+@import '../../variables.css';
+.root {
+	width: 100vw;
+	height: 300px;
+	max-height: 300px;
+	display: flex;
+	overflow: hidden;
+	align-items: center;
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin: 0 -50vw 2rem;
+}
+.image {
+	width: 100vw;
+	height: 300px;
+	object-fit: cover;
+}
+
+.description {
+	margin-left: calc(5 * var(--grid-base));
+	margin-top: calc(var(--grid-base));
+	position: absolute;
+	font-size: 0.8rem;
+	top: 0;
+	color: #fff;
+}
