@@ -25,6 +25,7 @@ For every layer in a map, a [LayerView](https://developers.arcgis.com/javascript
 
 There are a couple of ways to get the LayerViews of the MapView or SceneView. You can use the [whenLayerView()](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-FeatureLayerView.html) method, or listen for the [layerview-create event](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#event-layerview-create). I prefer to be specific and use the whenLayerView method, so I know what I'm getting.
 
+```js
 view.whenLayerView(featureLayer)
   .then((layerView) => {
     return watchUtils.whenFalseOnce(layerView, 'updating');
@@ -32,34 +33,38 @@ view.whenLayerView(featureLayer)
   .then((newValue, oldValue, prop, layerView) => {
     console.log('layerView is done loading and drawing', layerView);
   });
+```
 
 The key is to watch for the [layerView.updating](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-FeatureLayerView.html#updating) property to be false. When it's false, that means the LayerView is done fetching data and done drawing that data.
 
 You could also do this using async/await!
 
+```js
 async function whenDone() {
   const layerView = await view.whenLayerView(featureLayer);
   await watchUtils.whenFalseOnce(layerView, 'updating');
   console.log('layerView is done loading and drawing', layerView);
 }
+```
 
 Most of the time, I'm interested in just the first time the layer loads in an application, so I use [whenFalseOnce](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-watchUtils.html#whenFalseOnce) of the watchUtils to check the first time it happens. If you are interested in every time the LayerView is done updating, you could use [whenFalse](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-watchUtils.html#whenFalse) to keep an eye on it.
 
 If I'm interested in checking on a couple of layers, I could use Promise.all to find out when both are done and also watch for any more changes.
 
+```js
   let layerView1
   let layerView2;
-  Promise.all(\[
+  Promise.all([
     view.whenLayerView(fLayer),
     view.whenLayerView(fLayer2)
-  \]).then((\[lyrView1, lyrView2\]) => {
+  ]).then(([lyrView1, lyrView2]) => {
       layerView1 = lyrView1;
       layerView2 = lyrView2;
       return Promise.all(
-        \[
+        [
           whenFalseOnce(layerView1, "updating"),
           whenFalseOnce(layerView2, "updating")
-        \]
+        ]
       );
   }).then(() => {
     console.log("all layerViews done updating");
@@ -70,6 +75,7 @@ If I'm interested in checking on a couple of layers, I could use Promise.all to 
       console.log("layerView2 has updated");
     });
   });
+  ```
 
 You can see what this example looks like here.
 

@@ -52,13 +52,13 @@ Here is the [sample repo for using React with ArcGIS JS API View Models](https:/
 
 In this sample, everything is a React component using View Models, even the Zoom buttons.
 
-\[gist id=f4a866de5bc02680f12f\]
+[gist id=f4a866de5bc02680f12f]
 
 As you can see, the plus/minus buttons for the zoom control will enable/disable based on the max/min zoom level of your View. This is a regular React component that has the ZoomViewModel as it's state and some other state dependencies based on the state of the ZoomViewModel. We just watch for some property changes.
 
 This doesn't look too different from the default widget, so let's try something more interesting, like [BasemapToggle](https://developers.arcgis.com/javascript/beta/api-reference/esri-widgets-BasemapToggle.html) widget.
 
-\[gist id=8f0da49e4a4e83c272dd\]
+[gist id=8f0da49e4a4e83c272dd]
 
 This is a slightly more complicated UI that will display the basemaps as two little picture cards that switch spots as you toggle the map.
 
@@ -78,19 +78,19 @@ Here is the [sample repo for using Ember with ArcGIS JS API View Models](https:/
 
 Ember makes it incredibly easy to use View Models, because it's very easy to pass properties between components.
 
-\[gist id=4d011156cfbaf4ce70f9\]
+[gist id=4d011156cfbaf4ce70f9]
 
 The UI for these is very simple and you can pass the _view_ between them very easily.
 
 Let's look at the Home Button component.
 
-\[gist id=b78a3c43dd133e56c0b3\]
+[gist id=b78a3c43dd133e56c0b3]
 
 Very simple, when the view is added, it creates a new View Model. When it's clicked, it uses a method on the View Model to return to the default extent of the View. _No fuss_.
 
 This sample also demonstrates how the map is treated as a data source for the view and how you might use that in an Ember application.
 
-\[gist id=53c72f33523a3509d96f\]
+[gist id=53c72f33523a3509d96f]
 
 We treat the map as an [Ember service](https://guides.emberjs.com/v1.10.0/understanding-ember/dependency-injection-and-service-lookup/) and this allows us to take advantage of dependency injection to add it to our Map View component.
 
@@ -108,13 +108,13 @@ One of the things I've been ashamed of is that I couldn't figure out how to use 
 
 So after many beers and tears, I came up with [this solution](https://github.com/odoe/esrijs4-vm-angular2/blob/master/app/load.ts).
 
-\[gist id=696a36de99a1c5307552\]
+[gist id=696a36de99a1c5307552]
 
 You basically require your dependencies first, then iterate over them and create a dummy modules in SystemJS and add each dependency to it. This method could probably use some fine-tuning, but it works.
 
 With that done, I could create some components.
 
-\[gist id=911873776f72805d9d27\]
+[gist id=911873776f72805d9d27]
 
 Directives are basically just components now and I guess become directives when part of another component. I kind of wish they would have come up with a different naming convention here. But it works ok. Again, View Models work just fine in this situation. I had issues working the subscribing to [RxJS 5 Subjects](https://github.com/ReactiveX/RxJS) used in Angular 2, so I fell back to [dojo/topic](https://dojotoolkit.org/reference-guide/1.10/dojo/topic.html) to pass service updates around.
 
@@ -130,11 +130,11 @@ Here is the [sample repo for using Elm with ArcGIS JS API View Models](https://g
 
 Elm works with your parent JavaScript application by use of [ports](http://elm-lang.org/guide/interop), so I need a JavaScript layer to work with the View Model that will power the Elm application that builds the UI.
 
-\[gist id=8559664d5ea95a1d0829\]
+[gist id=8559664d5ea95a1d0829]
 
 In this file, I initialize the View Model and pass all updates to the Elm application.
 
-\[gist id=bee95631e7ee79cc4ff1\]
+[gist id=bee95631e7ee79cc4ff1]
 
 The Elm app will take the updates from the View Model and maintain the state of the UI. So for the [SearchViewModel](https://developers.arcgis.com/javascript/beta/api-reference/esri-widgets-Search-SearchViewModel.html) it will take the suggested search results and add them as a list to the UI. This is also an example where the UI component doesn't need _everything_ from the View Model, so you only need to handle what you need and not implement everything in the View Model.
 

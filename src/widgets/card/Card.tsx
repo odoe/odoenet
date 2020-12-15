@@ -18,7 +18,6 @@ const factory = create().properties<CardProperties>();
 
 export default factory(({ properties }) => {
   const { title, date, description, path, coverImage } = properties();
-  console.log(path)
   const key = `post-${title.replace(' ', '-')}`;
   return (
     <section classes={[ css.root ]} key={key}>

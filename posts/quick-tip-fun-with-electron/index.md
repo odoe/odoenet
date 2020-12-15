@@ -13,7 +13,7 @@ I've been playing around with Electron a bit to just get my feet wet. It has som
 
 Yeah, that's right, you can have a web app with built-in node support. This means you have access to all the normal node stuff you'd expect, file system as well as other modules you might add via npm. So if you were to add [Leaflet](http://leafletjs.com/) and [Esri-Leaflet](https://github.com/Esri/esri-leaflet) as npm modules, you could just write some code like this and it would work.
 
-\[gist id=05ad9e876d4942ccbb84\]
+[gist id=05ad9e876d4942ccbb84]
 
 The code to start the app is just taken from [the docs](https://github.com/atom/electron/blob/master/docs/tutorial/quick-start.md).
 

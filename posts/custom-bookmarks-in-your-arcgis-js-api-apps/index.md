@@ -17,7 +17,7 @@ So how would you do this?
 
 You could create a WebMap with an empty bookmarks array.
 
-```
+```js
 const map = new WebMap({
   basemap: "streets",
   bookmarks: []
@@ -28,7 +28,7 @@ You can use `esri/WebMap`, since it has the property for `bookmarks` on it. Ther
 
 Now, what you can do is on a button click or some other event, totally up to you, is add a bookmark to the bookmarks collection.
 
-```
+```js
 const bookmark = {
   extent: view.extent,
   name: `Bookmark: ${bookmarks.bookmarks.length + 1}`
@@ -40,15 +40,14 @@ I just create the name based on the number of bookmarks that already exist. You 
 
 Now I can add that bookmark to local storage.
 
-```
+```js
 const rawBookmarks = bookmarks.bookmarks.map(({ active, extent, name, thumbnail }) => ({ active, extent, name, thumbnail }));
 const localData = localStorage.setItem(BOOKMARK_KEY, JSON.stringify(rawBookmarks));
-});
 ```
 
 To access these stored bookmarks when the app reloads, you can do this.
 
-```
+```js
 let existingData = [];
 const existingBookmarks = localStorage.getItem(BOOKMARK_KEY);
 if (existingBookmarks) {

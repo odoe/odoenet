@@ -1,7 +1,8 @@
 import { tsx, create } from '@dojo/framework/core/vdom';
 import Outlet from '@dojo/framework/routing/Outlet';
 
-import Blog from './pages/Blog';
+import Blog from './pages/blog/Blog';
+import Home from './pages/home/Home';
 import BlogList from './blog-list/BlogList';
 
 import Layout from './layouts/Layout';
@@ -24,6 +25,7 @@ export default factory(({ properties }) => {
 				{{
 					list: <BlogList />,
 					blog: ({ params: { path } }) => <Blog path={path} />,
+					home: <Home />
 				}}
 			</Outlet>
 		</Layout>

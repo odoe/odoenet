@@ -33,9 +33,9 @@ I just did a recent write up on [testing your code](https://geonet.esri.com/peop
 
 For a long time, I found the [Dojo build process](http://dojotoolkit.org/documentation/tutorials/1.10/build/) to be this mysterious, difficult thing to grasp. When you get the basics down, it starts to fall into place and becomes simpler. It has a lot of options though and various settings that could be tweaked depending on what it is you want to do. I wanted to kind of simplify this for developers by setting up all the basics and keep the process as easy as possible.
 
-The generator uses [grunt-dojo](https://github.com/phated/grunt-dojo) to execute the Dojo build. Here is a snippet from the provided Gruntfile. \[gist id=fe04197e6dc33c2403ba\]
+The generator uses [grunt-dojo](https://github.com/phated/grunt-dojo) to execute the Dojo build. Here is a snippet from the provided Gruntfile. [gist id=fe04197e6dc33c2403ba]
 
-And here is [a link to the build profile](https://github.com/odoe/esrijs-generator-demo/blob/master/profiles/build.profile.js). One of the important parts of the [profile](https://dojotoolkit.org/reference-guide/1.9/build/profiles.html) is the layers portion. \[gist id=6f12053b7492d84d500f\]
+And here is [a link to the build profile](https://github.com/odoe/esrijs-generator-demo/blob/master/profiles/build.profile.js). One of the important parts of the [profile](https://dojotoolkit.org/reference-guide/1.9/build/profiles.html) is the layers portion. [gist id=6f12053b7492d84d500f]
 
 This is pretty much taken from [Tom Wayson's sample](https://github.com/tomwayson/esri-slurp-example). If you find that Dojo is still lazy-loading some files after the build process, you can add them the **include** section of the **layers** in the profile to include them in the single-file build. Also, if you really want that mythical single-file build, be sure to include any locales you need to support in the **includeLocales** list.
 

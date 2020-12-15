@@ -13,7 +13,7 @@ You can look over the [documentation](https://developers.arcgis.com/javascript/l
 
 I just wanted to put together a video to show how you might use the workers to offload some processing. In the demo app, I create a series of concentric buffers in the worker and send the geometries back to the client and display them on the map.
 
-\[gist id=d99766ce24cd0487923eb5182e840ee7\]
+[gist id=d99766ce24cd0487923eb5182e840ee7]
 
 It's a fairly simple idea, but I think it demonstrates the basics of using the workers in the API. I'm sure you can find a creative use of the worker framework in your own application development!
 

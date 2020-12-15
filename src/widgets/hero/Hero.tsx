@@ -8,7 +8,7 @@ export default factory(({ properties }) => {
   const { description } = properties();
   return (
     <div classes={[css.root]}>
-    <picture>
+    {/* <picture>
       <source
         type="image/webp"
         srcset="
@@ -32,7 +32,7 @@ export default factory(({ properties }) => {
         /assets/images/learn-dojo-jumbotron-1920.jpg 1920w
       "/>
       <img alt={description} loading="lazy" classes={[ css.image ]} src="/assets/images/learn-dojo-jumbotron-768.jpg" />
-    </picture>
+    </picture> */}
       <h3 classes={[css.description]}>{description}</h3>
     </div>
   );

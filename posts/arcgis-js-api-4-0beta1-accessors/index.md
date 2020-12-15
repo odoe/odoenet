@@ -21,7 +21,7 @@ view.watch('extent', function(newValue) {/**/});
 
 _Is that an event or what?_ No, these are not events these are observable Objects, this is kind of like some syntactical sugar or [Object.observe()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/observe).
 
-```
+```js
 Object.observe(view, function(changes) {
   var newValue = changes.filter(function(x) {
     return x.name === 'extent';
@@ -33,7 +33,7 @@ I don't know about you, but the former method is a lot cleaner to me. Does that 
 
 Let's say you want to run a count on the number of features in your extent as the map is panned around. Normally you may listen for the extent to change and then run a query against a service, which is cool and all, but the extent changes every time you slightly pan the map, so that's an awful lot of queries to try and do. Better yet, you can watch for when [view.stationary](https://developers.arcgis.com/javascript/beta/api-reference/esri-views-View.html#stationary) is updated to either true or false. So you can do something like this:
 
-```
+```js
 query.watch('geometry', function() {
   queryTask.executeForCount(query).then(function(results) {
     // do something with results
@@ -50,7 +50,7 @@ view.watch('stationary', function(val) {
 
 _Woah woah!_ The Query is an Accessor too? That's right, Accessors are all over the place. But wait a second, I don't like having to do that boolean check when the **stationary** property changes. There's a util for that, **[esri/core/watchUtils](https://developers.arcgis.com/javascript/beta/api-reference/esri-core-watchUtils.html)**. This has some nifty little helpers for watching property changes, but the ones I'm interested in are boolean helpers.
 
-```
+```js
 watchUtils.whenTrue(view, 'stationary', function() {
   query.geometry = view.extent;
 });
@@ -66,13 +66,13 @@ Now that is pretty cool. You can see the full sample below. [Accessors on jsbin.
 
 _I know, right?_ At first glance it might look like you are dealing with [dojo/Stateful](http://dojotoolkit.org/reference-guide/1.10/dojo/Stateful.html). But the main differences are in the API. With Stateful when you are watching for changes, the callback signature on a changed property looks like this:
 
-```
+```js
 function(name, oldValue, value){}
 ```
 
 The new value returned is the third argument in. You know how I write this in my apps?
 
-```
+```js
 function(a, b, value){}
 ```
 
@@ -80,13 +80,13 @@ Because the new value is all I care about.
 
 There's also setters. In Stateful you do this:
 
-```
+```js
 myObj.set('prop', newValue);
 ```
 
 With Accessors, you can just do this:
 
-```
+```js
 myObj.prop = newValue;
 ```
 
@@ -94,7 +94,7 @@ _Bam, magic!_
 
 I would actually say that Accessors are closer to [dmodel](https://github.com/SitePen/dmodel) than Stateful. Because you can have computed properties with Accessors. The Accessor module is a mixin that can be used with [dojo/\_base/declare](http://dojotoolkit.org/reference-guide/1.10/dojo/_base/declare.html). So you could do something like this:
 
-```
+```js
 var Model = declare([Accessor], {
   classMetadata: {
     properties: {
@@ -118,7 +118,7 @@ So we've seen how Accessors are pretty useful to monitor the state of your appli
 
 Here is a very simple React component that will display the time of day of the environment in the Scene of your application.
 
-```
+```js
 var TimeClock = React.createClass({
   getInitialState: function() {
     // Define an initial state

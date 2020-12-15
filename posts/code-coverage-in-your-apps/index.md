@@ -23,7 +23,7 @@ The tools I use:
 
 Here are the npm scripts I use to run my code coverage.
 
-```
+```json
 {
     ...
     "coverage:start": "intern run -w --config ./dist/tests/intern-local.js reporters=Pretty reporters=node_modules/remap-istanbul/lib/intern-reporters/JsonCoverage && npm run coverage:after",

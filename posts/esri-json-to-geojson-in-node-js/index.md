@@ -25,7 +25,7 @@ The ESRI-JSON to GeoJSON application is on Heroku for now as an experiment. I do
 
 I would however like to share the code that does the conversion, which is shown below.
 
-\[gist id=1389205\]
+[gist id=1389205]
 
 I'm sure this functionality could be incorporated using Server Object Extensions on ArcGIS Server, but it works so cleanly this way. Maybe some people will find this useful and could incorporate it into their workflows.
 

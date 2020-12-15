@@ -17,7 +17,7 @@ You may be presented with a scenario where you need to get some data out of Cart
 
 To do this, you'll want to essentially have a method that does the query of the CartoDB table, parse the GeoJSON results and add the graphics the GraphicsLayer to be displayed on the map. You can accomplish that with the code below.
 
-\[gist id=9cbb76e1a08ef1a7aa3b\]
+[gist id=9cbb76e1a08ef1a7aa3b]
 
 If you review the code, you can see it dependent on having [Terraformer](http://terraformer.io/) with the [ArcGIS Parser](http://terraformer.io/arcgis-parser/) loaded on your page. Terraformer is unfortunately not AMD compatible at the moment. Once the GeoJSON is parsed, each feature is converted to a [Graphic](https://developers.arcgis.com/javascript/jsapi/graphic-amd.html) and added to the layer.
 

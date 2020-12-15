@@ -27,7 +27,7 @@ I based my project on [pulp](https://www.npmjs.com/package/pulp) which is used i
 
 Here is the code for the working application.
 
-\[gist id=7c95ac549f9cd9e13d3a\]
+[gist id=7c95ac549f9cd9e13d3a]
 
 I am _not going to get into Monads_, just that they are a way to deal with side-effects in functional programming. This is a good read on the [EFF Monad in PureScript](https://leanpub.com/purescript/read#leanpub-auto-the-eff-monad). I am still wrapping my head around it, but using the _EFF Monad_ with _EasyFFI_, it becomes pretty simple to create PureScript functions that can interop with native JavaScript.
 
@@ -35,7 +35,7 @@ Take note the extra empty string argument used in the _easy-ffi_ methods. Accord
 
 This threw me for a loop for a while, but when I rewrote these functions without _easy-ffi_ it kind of makes sense... I think. The above function would probably look like this.
 
-\[gist id=15fa18b5ebc81c7c1e4b\]
+[gist id=15fa18b5ebc81c7c1e4b]
 
 These functions are curried and there is a function wrapped around the _L.map(s)_ method, so I think that's what the empty argument is for, to call that method. At least to my eyes that's what it looks like. I could be totally wrong though. _Please tell me so I can update this post later_.
 

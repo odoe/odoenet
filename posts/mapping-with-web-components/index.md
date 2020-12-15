@@ -25,7 +25,7 @@ import { loadCss, loadModules } from 'esri-loader';
 export interface initializeProperties {
   webmapid: string;
   container: HTMLElement;
-  widgets: string\[\];
+  widgets: string[];
   onChange: (data: any) => void;
 }
 
@@ -34,9 +34,9 @@ I need a webmapid to load my map, a container to display it, a list of possible 
 In this utility, I'll export a function that will initialize loading of the ArcGIS API for JavaScript and kick off the mapping party!
 
 // src/widgets/map-widget/support/arcgis.ts
-export async function initialize({ container, webmapid, onChange, widgets = \[\] }: initializeProperties) {
+export async function initialize({ container, webmapid, onChange, widgets = [] }: initializeProperties) {
   loadCss('https://js.arcgis.com/4.11/esri/css/main.css');
-  const \[MapView, WebMap\] = await loadModules(\['esri/views/MapView', 'esri/WebMap'\]);
+  const [MapView, WebMap] = await loadModules(['esri/views/MapView', 'esri/WebMap']);
   // then we load a web map from an id
   const webmap = new WebMap({
     portalItem: {
@@ -59,10 +59,10 @@ What I'm doing here is creating my webmap and mapview based on the properties I'
 I'll also allow the loading of a handful of widgets.
 
 // src/widgets/map-widget/support/arcgis.ts
-export async function initialize({ container, webmapid, onChange, widgets = \[\] }: initializeProperties) {
+export async function initialize({ container, webmapid, onChange, widgets = [] }: initializeProperties) {
   ...
   if (widgets.length) {
-    const positions: string\[\] = \[\];
+    const positions: string[] = [];
     const requiredWidgets = widgets.map(w => {
       if (w === 'legend') {
         positions.push('bottom-left');
@@ -80,7 +80,7 @@ export async function initialize({ container, webmapid, onChange, widgets = \[\]
     }).filter(x => x.length);
     const modules = await loadModules(requiredWidgets);
     modules.forEach((Widget, idx) => {
-      view.ui.add(new Widget({ view }), positions\[idx\]);
+      view.ui.add(new Widget({ view }), positions[idx]);
     });
   }
 }
@@ -103,7 +103,7 @@ import { initialize } from "./support/arcgis";
 
 export interface MapWidgetProperties {
 	webmapid: string;
-	widgets: string | string\[\];
+	widgets: string | string[];
 	onChange: (data: any) => void;
 }
 
@@ -125,7 +125,7 @@ export class MapWidget extends WidgetBase<MapWidgetProperties> {
     const propWidgets = this.properties.widgets;
     const widgets = Array.isArray(propWidgets)
       ? propWidgets
-      : typeof propWidgets === 'string' ? propWidgets.split(',') : \[\];
+      : typeof propWidgets === 'string' ? propWidgets.split(',') : [];
     initialize({
       container,
       webmapid: this.properties.webmapid,
@@ -134,8 +134,8 @@ export class MapWidget extends WidgetBase<MapWidgetProperties> {
     });
   }
 
-  protected render(): DNode | DNode\[\] {
-    return v('div', { classes: \[ css.root \], key: 'elemRef' });
+  protected render(): DNode | DNode[] {
+    return v('div', { classes: [ css.root ], key: 'elemRef' });
   }
 }
 
@@ -144,8 +144,8 @@ I can use the meta to get a reference to the output DOM node of my widget and pa
 // src/widgets/map-widget/map-widget.ts
 @customElement<MapWidgetProperties>({
   tag: 'arcgis-webmap',
-  attributes: \['webmapid', 'widgets'\],
-  events: \['onChange'\]
+  attributes: ['webmapid', 'widgets'],
+  events: ['onChange']
 })
 
 What I'm doing here is defining the tag name for my component, which will be **<arcgis-webmap />**. I want the user to pass some attributes like a webmap id, and the widgets they want to use. Then I can define events on my component, like my onChange callback, so users of my component can add event listeners.
@@ -157,9 +157,9 @@ The last thing I need to do is tell my **.dojorc** file what widgets I want to c
 // .dojorc
 {
   "build-widget": {
-    "elements": \[
+    "elements": [
       "src/widgets/map-widget/map-widget"
-    \]
+    ]
   }
 }
 

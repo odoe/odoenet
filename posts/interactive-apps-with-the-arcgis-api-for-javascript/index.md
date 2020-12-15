@@ -84,7 +84,7 @@ view.on("pointer-move", event => {
       tooltip.style.display = "block";
       tooltip.style.top = \`${y - 175}px\`;
       tooltip.style.left = \`${x - 310/2}px\`;
-      const g = results\[0\].graphic;
+      const g = results[0].graphic;
       if (g.geometry) {
         const oid = g.attributes.OBJECTID;
         featureWidget.graphic = g;
@@ -112,7 +112,7 @@ view.on("pointer-move", event => {
       tooltip.style.display = "block";
       tooltip.style.top = \`${y - 175}px\`;
       tooltip.style.left = \`${x - 310/2}px\`;
-      const g = results\[0\].graphic;
+      const g = results[0].graphic;
       if (g.geometry) {
         const oid = g.attributes.OBJECTID;
         featureWidget.graphic = g;

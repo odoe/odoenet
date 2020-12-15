@@ -17,17 +17,17 @@ Before we dive in, let's talk a little about how React is typically used in appl
 
 ### Show me the goods
 
-This is the sample I put together. The repo for this sample can be seen [here](https://github.com/odoe/esrijs-react). This sample will simply display the _xy_ coordinates of the mouse as you move it around the map. \[caption id="attachment\_775" align="aligncenter" width="694"\][![esrijs react sample](images/esri_react_sample.jpg)](http://odoe.net/blog/wp-content/uploads/esri_react_sample.jpg) Image of sample application\[/caption\]
+This is the sample I put together. The repo for this sample can be seen [here](https://github.com/odoe/esrijs-react). This sample will simply display the _xy_ coordinates of the mouse as you move it around the map. [caption id="attachment\_775" align="aligncenter" width="694"][![esrijs react sample](images/esri_react_sample.jpg)](http://odoe.net/blog/wp-content/uploads/esri_react_sample.jpg) Image of sample application[/caption]
 
 You may notice some oddness in a couple of the files in the repo where I'm mixing HTML with my JavaScript. That's [**JSX**](http://facebook.github.io/react/docs/jsx-in-depth.html). _JSX is totally optional when working with React_, but it's nice to use so you can easily see the structure of your component.
 
 I'm going to skip over the basics of the app in setting up the EsriJS stuff and go right to the React.
 
-\[gist id=3b852bec36a41537cee7\]
+[gist id=3b852bec36a41537cee7]
 
 This is a simple container I'll use to add DOM element to the page that will hold the widget. This is just a preference of mine, but I find it helps to keep things a little more organized for me.
 
-\[gist id=odoe/82cbf62422def3350cd0\]
+[gist id=odoe/82cbf62422def3350cd0]
 
 You may notice there is no Dojo or EsriJS stuff brought into this widget. The only thing non-React in here is the map that was passed as part of the properties to the widget. You can listen for the [mouse-move](https://developers.arcgis.com/javascript/jsapi/map-amd.html#event-mouse-move) event of the map and update the _xy_ of the state of the widget. _State_ is pretty important in React. Using the [setState](http://facebook.github.io/react/docs/component-api.html) method will update the coordinates and _rerender_ the component with the new state. I won't get into details on the differences between _state_ and _props_ in React, but you can think of props as configuration for the component and state as the data that may change. [Here is a good writeup on the subject](https://github.com/uberVU/react-guide/blob/master/props-vs-state.md).
 

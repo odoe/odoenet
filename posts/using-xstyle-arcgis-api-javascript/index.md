@@ -13,7 +13,7 @@ Recently I have been toying around with a library called [xstyle](http://sitepen
 
 If you've read my blog before, you know I'm a big fan of using Dojo to keep my code [modular](http://odoe.net/blog/embrace-your-modules/), even using [dynamic loading](http://odoe.net/blog/modularized-arcgis-js-overboard/). The first thing I had tried with xstyle was loading my css files dynamically. You can find some details [here](http://www.sitepen.com/blog/2014/07/02/dojo-faq-dynamically-loading-css/). But you can basically load the css only when needed when a module is loaded, like this.
 
-\[gist id=6d3dc6ec5df98f89f7d6\]
+[gist id=6d3dc6ec5df98f89f7d6]
 
 This is great for working with modules that may or may not be used in your application. In my case however, this is a little less important to me because I use less and my build process will typically handle this, but that's not to say it doesn't come in handy. The aspect of xstyle that really got me excited was [building UI components](http://www.sitepen.com/blog/2013/09/17/building-ui-components-with-xstyle/) from css templates. Now that sounded like fun.
 
@@ -27,23 +27,23 @@ I couldn't get that nagging feeling out of the back of my head. I knew it worked
 
 Let's dive right in. I used [bower](http://bower.io/) to load xstyle [into my project](https://github.com/odoe/esri-xstyle/blob/master/bower.json). Here is what my bower.json looks like.
 
-\[gist id=3343c0049ce72b1cf9ca\]
+[gist id=3343c0049ce72b1cf9ca]
 
 The next important step was to override the xstyle that ships with the ArcGIS JavaScript API. This can be done where you define your [dojoConfig](https://github.com/odoe/esri-xstyle/blob/master/app/js/run.js).
 
-\[gist id=816c0d18ca6f3ebbd594\]
+[gist id=816c0d18ca6f3ebbd594]
 
 Next I have a [widget](https://github.com/odoe/esri-xstyle/blob/master/app/js/widgets/mywidget/mywidget.js) that doesn't really do much other than load the css and sets up a module used as the model for the component.
 
-\[gist id=7d33bc9ccda0d389c232\]
+[gist id=7d33bc9ccda0d389c232]
 
 Now, let's look at what the [css](https://github.com/odoe/esri-xstyle/blob/master/app/js/widgets/mywidget/css/mywidget.css) looks like.
 
-\[gist id=e4adb3bdca1b829f0403\]
+[gist id=e4adb3bdca1b829f0403]
 
 Here is a look at the [model](https://github.com/odoe/esri-xstyle/blob/master/app/js/widgets/mywidget/model.js) that does all the work.
 
-\[gist id=8aa12f4e68ca328b549c\]
+[gist id=8aa12f4e68ca328b549c]
 
 By using **model = module('widgets/mywidget/model');** in the css, you now have access to methods on the model. This is just a plain object with methods. You can't really initialize a constructor the way you do with dijit widgets. This is why I used [this widget](https://github.com/odoe/esri-xstyle/blob/master/app/js/widgets/mywidget/mywidget.js) to pass some parameters, including the **map** to the model. If you look at the css, you can see that we can bind a method of the model to the **keyup** event by using **on-keyup: model/updateValue(event)**. Then the **button** can bind the **click** event to another method by using **on-click: model/find()**. This find method fires off a [FindTask](https://developers.arcgis.com/javascript/jsapi/findtask-amd.html) and will zoom to a location. The search is configured for state names, so search for Texas or California.
 

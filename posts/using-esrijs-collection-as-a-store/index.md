@@ -17,17 +17,17 @@ You can find the full source code for this post [on github](https://github.com/o
 
 Now that you have an API key, let's look at what a Collection as a Store might look like.
 
-\[gist id=89c2a483eded3db933f9\]
+[gist id=89c2a483eded3db933f9]
 
 We're going to go ahead and extend Collection and add some properties for the API url and key that should be provided in the constructor. We also add a method called _loadStore_ that will use _esri/request_ to download the data and fill the collection with it. Now we can use this Store in various widgets.
 
-\[gist id=37f60c53e146ce340d9d\]
+[gist id=37f60c53e146ce340d9d]
 
 Here, we make a widget that adds a _GraphicsLayer_ to the map and we are going to display some points or each of the traffic cameras that have been loaded into the store. Now what we can do is listen for _change_ events on the store that will let the widget know when to update itself, in this case, to update the _GraphicsLayer_. We do some _trickery_ in the update of the extent to account for zooming to a single point when dealing with extents.
 
 Ok, so how might we make changes to the Collection that would propagate to this widget and update the layer? Maybe a search widget like this.
 
-\[gist id=fe65f907c6d59b65c418\]
+[gist id=fe65f907c6d59b65c418]
 
 Now we have a search box that will let you find a specific camera by id. We then iterate the _Collection_ and set the visibility of everything to _false_ and then find the specific camera and set it's visibility to _true_. We even have a button to reset everything to being visible again. By removing/adding an item in a _Collection_ will trigger a _change_ event in the Collection, if the position actually changed. That's why in the _onRefresh_ method will remove/add a random feature.
 

@@ -24,18 +24,19 @@ A simple starting point with geocoding using the ArcGIS API for JavaScript is go
 
 This is how you can add the Search widget to your application.
 
-require(\[
+```js
+require([
   "esri/Map",
   "esri/views/MapView",
   "esri/widgets/Search"
-\], function(ArcGISMap, MapView, Search) {
+], function(ArcGISMap, MapView, Search) {
   const map = new ArcGISMap({
     basemap: "streets"
   });
   const view = new MapView({
     container: "viewDiv",
     map: map,
-    center: \[-118, 34\],
+    center: [-118, 34],
     scale: 100000
   });
   // initialize search widget
@@ -43,6 +44,7 @@ require(\[
   // add widget to UI
   view.ui.add(search, "top-right");
 });
+```
 
 You will have an application that looks like this.
 
@@ -84,11 +86,12 @@ Out-of-the-box widgets in the ArcGIS API for JavaScript are all built so that th
 
 Maybe you want to allow the user to click on the map and get back an address for where they click. You could do something like this.
 
-require(\[
+```js
+require([
   "esri/Map",
   "esri/views/MapView",
   "esri/widgets/Search/SearchViewModel"
-\], function(
+], function(
    ArcGISMap,
    MapView,
    SearchViewModel
@@ -100,7 +103,7 @@ require(\[
   const view = new MapView({
     container: "viewDiv",
     map: map,
-    center: \[-118, 34\],
+    center: [-118, 34],
     scale: 100000
   });
   const searchVM = new SearchViewModel({ view });
@@ -114,6 +117,7 @@ require(\[
     });
   });
 });
+```
 
 Because you initialize the SearchViewModel with the map view, it will display a marker and a popup where users click on the map. Go ahead, try it out here!
 

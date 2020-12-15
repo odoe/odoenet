@@ -5,7 +5,7 @@ author: Rene Rubalcava
 date: "2013-09-11"
 ---
 
-\[caption width="150" align="alignleft"\][![arcgis web dev](images/rubalcava_cover150.jpg)](http://www.manning.com/rubalcava/) ArcGIS Web Development\[/caption\]
+[caption width="150" align="alignleft"][![arcgis web dev](images/rubalcava_cover150.jpg)](http://www.manning.com/rubalcava/) ArcGIS Web Development[/caption]
 
 ## I'm writing a book.
 

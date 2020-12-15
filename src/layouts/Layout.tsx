@@ -3,7 +3,6 @@ import { tsx, create } from '@dojo/framework/core/vdom';
 import Footer from '../widgets/footer/Footer';
 import Header from '../widgets/header/Header';
 import Hero from '../widgets/hero/Hero';
-import SignUp from '../widgets/signup/SignUp';
 
 import * as css from './Layout.m.css';
 
@@ -23,11 +22,12 @@ export default factory(({ children, properties }) => {
 				<link rel="icon" href="/assets/favicon.ico" />
 				<link rel="stylesheet" type="text/css" href="./assets/prism.css" />
 				<link rel="preconnect" href="https://www.google-analytics.com" />
+				<link rel="preconnect" href="https://fonts.gstatic.com" />
+				<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet" />
 			</head>
 			<Header title={title} />
 			<Hero description={description} />
 			<main classes={[ css.section ]}>{children()}</main>
-			<SignUp />
 			<Footer {...{ author, footerLinks }} />
 		</div>
 	);

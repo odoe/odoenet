@@ -15,7 +15,7 @@ I've talked before about Promises in the ArcGIS API for JavaScript [here](https:
 
 You may not always need to worry about using the Promise of the Map or View, but you may find certain situations when maybe you are trying to [use Accessors to monitor the state of the Map or View](http://odoe.net/blog/fun-with-accessors-in-arcgis-js-4beta1/) and you find you get errors about undefined variables. This can be alleviated by using Promises to wait for everything to be ready. It can be as simple as this:
 
-```
+```js
 view.then(function() {
   view.watch('center', function(val) {
     console.log('view.center', val);

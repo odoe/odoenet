@@ -19,7 +19,7 @@ It is able to accomplish this by still using [dojo/\_base/declare](https://dojot
 
 From the documentation:
 
-```
+```js
 // create an Interface that extends the classes you want to extend
 interface Base extends Accessor, Evented {}
 // create a constructor interface

@@ -19,7 +19,7 @@ I can inject the ArcGIS API for JavaScript bits into my Dojo project asynchronou
 
   initializeMap = async (container: HTMLElement) => {
     loadCss('https://js.arcgis.com/4.10/esri/css/main.css');
-    const \[MapView, WebMap\] = await loadModules(\['esri/views/MapView', 'esri/WebMap'\]);
+    const [MapView, WebMap] = await loadModules(['esri/views/MapView', 'esri/WebMap']);
     // then we load a web map from an id
     const webmap = new WebMap({
       portalItem: {

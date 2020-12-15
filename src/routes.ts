@@ -1,9 +1,14 @@
 export default [
 	{
-		id: 'list',
+		id: 'home',
 		path: '/',
 		outlet: 'main',
 		defaultRoute: true
+	},
+	{
+		id: 'list',
+		path: 'blog',
+		outlet: 'main'
 	},
 	{
 		id: 'blog',

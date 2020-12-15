@@ -15,6 +15,11 @@ export default factory(({ properties }) => {
           {title}
         </Link>
       </div>
+      <div classes={[css.title]}>
+        <Link to="/blog" isOutlet={false} classes={[css.link]}>
+          blog
+        </Link>
+      </div>
     </header>
   );
 });

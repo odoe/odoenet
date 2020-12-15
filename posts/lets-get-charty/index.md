@@ -21,13 +21,13 @@ Enough fooling around.
 
 Legends can be cool, and they are informative. But what kind of context do they give you at a quick glance.
 
-\[caption id="attachment\_1238" align="aligncenter" width="306"\]![legend](images/legend.png) Simple legend\[/caption\]
+[caption id="attachment\_1238" align="aligncenter" width="306"]![legend](images/legend.png) Simple legend[/caption]
 
 I could read the text of the legend and figure out what it's telling me, but let's imagine I'm lazy (I got stuff to do, I don't have time to _read_).
 
 What if turned this legend into a chart?
 
-\[caption id="attachment\_1239" align="aligncenter" width="203"\]![legend-chart](images/legend-chart.png) Legend in Chart form\[/caption\]
+[caption id="attachment\_1239" align="aligncenter" width="203"]![legend-chart](images/legend-chart.png) Legend in Chart form[/caption]
 
 That's cool! I'm sure I could do some label stuff with Chart.js, but hey, now I can quickly see what values on my map are dominant in my map. It may not be much, but I think that's pretty cool.
 

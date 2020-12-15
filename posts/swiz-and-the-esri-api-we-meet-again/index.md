@@ -37,7 +37,7 @@ Swiz.dispatchEvent( new Event( LayerController.QUERY\_LAYER ) );
 
 In my Controller, I have this.
 
-\[Mediate( event="queryLayer" )\]
+[Mediate( event="queryLayer" )]
 
 public function queryStateLayer() : void {
 
@@ -49,7 +49,7 @@ var query:Query = new Query();
 
 query.returnGeometry = false;
 
-query.outFields = \[ "STATE\_NAME", "AREA" \]
+query.outFields = [ "STATE\_NAME", "AREA" ]
 
 query.where = "STATE\_NAME <> ''";
 

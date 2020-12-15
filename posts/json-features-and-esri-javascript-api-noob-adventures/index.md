@@ -17,7 +17,7 @@ You can see an example of a map loading JSON features of States [here](http://od
 
 Now, I am not [JavaScript ninja](http://jsninja.com/), so please excuse any "bad form" in my code. I'm still learning.
 
-The key was, when you get your JSON results,  you want to iterate through the results\["features"\] to find attributes and geometries. [Here](http://odoe.net/thelab/js/jsonmap/libs/jsonfeatures.js) is the script for loading JSON features. Once you get that far, the rest is easy. Create the graphics, load attributes into an InfoTemplate if you'd like and voila, you have a nice map with features loaded without the need for your own ArcGIS Server to serve the data out.
+The key was, when you get your JSON results,  you want to iterate through the results["features"] to find attributes and geometries. [Here](http://odoe.net/thelab/js/jsonmap/libs/jsonfeatures.js) is the script for loading JSON features. Once you get that far, the rest is easy. Create the graphics, load attributes into an InfoTemplate if you'd like and voila, you have a nice map with features loaded without the need for your own ArcGIS Server to serve the data out.
 
 It may not seem like a big deal, but I didn't find any quick guides on this info, so I just thought I would share what I learned this past week.
 

@@ -9,9 +9,9 @@ I'm going to try to use the next few blog posts to go over how I use the tools I
 
 The first is the [FMap](http://github.com/odoe/FlexMapTools/blob/master/src/net/odoe/FlexMapTools/components/FMap.as) component, which extends the [ESRI Map](http://help.arcgis.com/en/webapi/flex/apiref/com/esri/ags/Map.html) component. This component started as a way to control the position of the ESRI logo in the application. In previous releases the [ESRI Flex API](http://help.arcgis.com/en/webapi/flex/index.html) and even the beta version of 2.0, the logo fit just perfectly in the layout of one of the main projects I am working on, but in the final 2.0 release it was moved slightly to fit in with the [FlexViewer](http://help.arcgis.com/en/webapps/flexviewer/index.html) layout. Now, it's easy enough to set the logo visibility to false, ESRI provides this out of the box, but I kind of like the look of the new logo. Being a little annoyed that this little bit in the API was catered to the FlexViewer rather than the other way around, I decided to just extend the Map component and move it myself.
 
-\[caption id="" align="alignnone" width="266" caption="Default logo position blocked by a toolbar in my application."\]![](images/normal_map.jpg "logodefault")\[/caption\]
+[caption id="" align="alignnone" width="266" caption="Default logo position blocked by a toolbar in my application."]![](images/normal_map.jpg "logodefault")[/caption]
 
-\[caption id="" align="alignnone" width="183" caption="Logo position set to fit application layout."\]![](images/fmap_inaction.jpg "logomoved")\[/caption\]
+[caption id="" align="alignnone" width="183" caption="Logo position set to fit application layout."]![](images/fmap_inaction.jpg "logomoved")[/caption]
 
 ESRI was kind enough to give us access to a staticLayer Group component in the Map that is used to hold the navigation tool, scalebar and the logo. You could pretty much add what you want in here. So all FMap does is add a Number property called logoToBottom that will be used to position the logo. `if (logoToBottom > 0) { var i:uint = 0; var x:uint = this.staticLayer.numChildren; for (i; i < x; i++) { // logo should be only image object in staticlayer // but this could change in future releases if (this.staticLayer.getChildAt(i) is Image) { // set the bottom property of the image (this.staticLayer.getChildAt(i) as Image).bottom = logoToBottom; } } }`
 
@@ -27,7 +27,7 @@ Notice that the group has a styleName defaulted to "latLongText". This allows yo
 
 `.latLongText s|Label { fontSize: 10; fontWeight: bold; paddingBottom: 2; paddingTop: 2; paddingLeft: 2; paddingRight: 2; }`
 
-\[caption id="" align="alignnone" width="226" caption="Coordinates positioned under scalebar."\]![](images/coordinates.jpg "coordinates")\[/caption\]
+[caption id="" align="alignnone" width="226" caption="Coordinates positioned under scalebar."]![](images/coordinates.jpg "coordinates")[/caption]
 
 As you can see, css can be a valuable tool in drilling down into the components inside components to manipulate their styles. Remember all this sits in the actual FMap component and can be used from project to project. And because it extends the default Map component, it can be passed into any component/object/function that asks for the default Map component. This should include any widgets you might use in FlexViewer. I also add an eventListener to listen for the REMOVED\_FROM\_STAGE event, that will handle some cleanup by setting the stuff I added to null. It may be overkill, but I've gotten used to doing this when dealing with custom components.
 

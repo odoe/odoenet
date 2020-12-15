@@ -19,17 +19,17 @@ I'd suggest using [gulp](http://gulpjs.com/) as a build tool for its simplicity 
 
 One of the neat features of ES6 is the support for modular JavaScript files. You can now _import_ files into other files, similar to CommonJS or AMD modules, but built into the browser. Let's start with a simple one.
 
-\[gist id=3285fd37ec5405599cf6\]
+[gist id=3285fd37ec5405599cf6]
 
 You should be able to follow along pretty easily here with what it is happening. Instead of using the _define_ method to bring in external modules, you use the _import_ keyword to designate the modules. When you use babel to transpile to ES5 there will be an option to turn this into an AMD module and it will use the _deifne_ method in its output. That's right, you can transpile your ES6 to commonjs _require_ style or AMD _define_ style. We'll get to that later. Let's look at another one.
 
-\[gist id=df387a13305b01207958\]
+[gist id=df387a13305b01207958]
 
 There's a couple of things happening here. First is that instead of returning the module, we are using the syntax _export default_, which means you are exporting the default method or object from this module. This is how you can make your module available to be _import_ed by other modules. You can read more about this module behavior [here](http://24ways.org/2014/javascript-modules-the-es6-way/). Also notice how for _postCreate()_, we didn't have to use the _function_ keyword. This is a little syntactic sugar in ES6 that works for functions that are part of classes or objects.
 
 Speaking of classes...
 
-\[gist id=df4961f7eed6921369b8\]
+[gist id=df4961f7eed6921369b8]
 
 In this case, we are now using an ES6 _class_. Don't worry, for all intents and purposes, JavaScript is still a [prototype](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype) language, but classes were introduced in ES6 to simplify some behavior... I think. So instead of using _dojo/\_base/declare_ to define our module, we just use a _class_ that extends _Stateful_ and we can use the _constructor_ method to set up our default properties. Notice the use of _super()_ here. Since we are _this_ in the constructor to _set_ the defaults, we need to call the constructor of the class we are extending, you do this via the _super_ method. You can read more about classes [here](http://www.2ality.com/2015/02/es6-classes-final.html).
 
@@ -39,7 +39,7 @@ I won't go over all the module changes here, but you can check out the [full pro
 
 Let's set up a simple _gulpfile_ to handle the transpiling of your JavaScript code for you.
 
-\[gist id=aa9ae872624d49015000\]
+[gist id=aa9ae872624d49015000]
 
 What this gulpfile is doing is using the JavaScript files in the _src_ directory, running them through _babel_ with the parameters designating you want _amd_ output. That's right, you can write your code in ES6/ES2015 and output to either AMD or CommonJS, whichever works for you, but in our case using Dojo, we want AMD. I also added a task to copy widget template files to the _dist_ directory. This is a basic setup, but it's a good start to writing your code in modern ES2015 today. There is even a _watch_ task that will monitor your code and do the transpile as you save changes to your code.
 

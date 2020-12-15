@@ -11,7 +11,7 @@ I recently wrote about [filling some gaps](https://geonet.esri.com/people/odoe/b
 
 What I came up with looks like this. **_Warning - [ES6 incoming](https://hacks.mozilla.org/category/es6-in-depth/)_**
 
-\[gist id=437198dbc5e091918a93\]
+[gist id=437198dbc5e091918a93]
 
 So real quick, let's talk about what is happening here. This an [ES2015 class](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes) called Edit. The constructor parameters require the map and a layer, specifically a FeatureLayer. The API for this class covers your basic editing needs. It has an _add_, _update_ and _del_ method. _del_ is short for delete, but delete is a keyword in JavaScript, so need to shorten it a bit. I could have called it _annihilate_ or maybe _kill_, but _del_ seemed appropriate. **Update - I changed this to remove**
 

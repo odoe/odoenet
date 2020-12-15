@@ -1,12 +1,13 @@
 /* Put your styles and imports here */
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
-@import 'typography.css';
+@import './typography.css';
 
 body {
 	margin: 0;
 	padding: 0;
 	color: hsla(291, 0%, 18%, 0.95);
+	background-color: hsl(0,0%,94.9%);
+
 }
 
 header {

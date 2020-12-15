@@ -15,7 +15,7 @@ Now, this lets you do some pretty cool stuff with CSS and transitions to add a l
 
 Before we look at a demo app, let's look at the chunk of code that does all the work.
 
-\[gist id=436849dfb8765284d3a7\]
+[gist id=436849dfb8765284d3a7]
 
 We are essentially doing the follow:
 

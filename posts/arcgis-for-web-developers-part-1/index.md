@@ -71,6 +71,7 @@ Go to [developers.arcgis.com/javascript](https://developers.arcgis.com/javascrip
 
 Let's dive right into making a map!
 
+```html
 <!DOCTYPE html>
 <html>
   <head>
@@ -95,7 +96,7 @@ Let's dive right into making a map!
     <script src="https://js.arcgis.com/4.12/"></script>
 
     <script>
-      require(\["esri/WebMap", "esri/views/MapView"\], function(WebMap, MapView) {
+      require(["esri/WebMap", "esri/views/MapView"], function(WebMap, MapView) {
         // create a map instance
         const webmap = new WebMap({
           portalItem: {
@@ -117,6 +118,7 @@ Let's dive right into making a map!
     <div id="viewDiv"></div>
   </body>
 </html>
+```
 
 Don't worry too much about the details at this point. In the sample, we are doing a couple of things.
 

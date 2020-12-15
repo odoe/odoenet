@@ -13,12 +13,15 @@ The [latest release](https://github.com/Esri/arcgis-js-cli/releases/tag/4.14.0) 
 
 First off the default app has been completely simplified so there is no reliance on the API widget framework. It just sets up a basic application using webpack to for the builds.
 
+```bash
 arcgis create jsapi-app
+```
 
 ![Default Template App](images/image.png)
 
 In this update, it will also use [Jest](https://jestjs.io/) for testing. They look like tests. Nothing to fear here.
 
+```js
 describe('widgets', () => {
   beforeEach(() => {
     spy = jest.spyOn(document, 'getElementById');
@@ -29,7 +32,7 @@ describe('widgets', () => {
   });
 
   it('initializes widgets in view', () => {
-    const widgets: any\[\] = \[\];
+    const widgets: any[] = [];
     const view: any = {
       ui: {
         add(w: any) {
@@ -41,6 +44,7 @@ describe('widgets', () => {
     expect(widgets).toHaveLength(2);
   });
 });
+```
 
 You can see the default application in action [here](https://jsapi-app-default-414.surge.sh/).
 
@@ -50,19 +54,22 @@ I had received a couple of requests from users to provide a template application
 
 To minimize the complexity and build steps, these applications will use [rollup](https://rollupjs.org/) to compile the TypeScript and output results to a folder. rollup is nice because the configuration is very minimal.
 
+```bash
 arcgis create jsapi-app-cdn --cdn
+```
 
 ![](images/image-2.png)
 
 Here is what the rollup.config.js looks like.
 
+```js
 // rollup.config.js
 ...
 // Builds based on environment
 const OUTPUT = process.env.BUILD === 'development' ? 'output/dev' : 'output/dist';
 const SOURCEMAP = process.env.BUILD === 'development' ? 'inline' : false;
 const MINIFY = process.env.BUILD === 'development' ? null : terser();
-const SERVER = process.env.BUILD === 'development' ? \[serve(OUTPUT), livereload(OUTPUT)\] : \[\];
+const SERVER = process.env.BUILD === 'development' ? [serve(OUTPUT), livereload(OUTPUT)] : [];
 
 export default {
   input: './src/index.ts',
@@ -71,40 +78,43 @@ export default {
     format: 'amd',
     sourcemap: SOURCEMAP
   },
-  plugins: \[
+  plugins: [
     del({ targets: OUTPUT }),
     eslint({
       fix: true,
-      exclude: \['node\_modules/\*\*', 'src/\*\*/\*.css'\]
+      exclude: ['node\_modules/\*\*', 'src/\*\*/\*.css']
     }),
     typescript(),
     MINIFY,
     postcss({
-      extensions: \['.css'\],
+      extensions: ['.css'],
       extract: true
     }),
     copy({
-      targets: \[{ src: 'public/\*\*/\*', dest: OUTPUT }\]
+      targets: [{ src: 'public/\*\*/\*', dest: OUTPUT }]
     }),
     ...SERVER
-  \]
+  ]
 };
+```
 
 The key here is to let rollup bundle your application code in **amd** format. Then you can use the ArcGIS JSAPI amd loader to load your application code.
 
+```html
   <script>
-    var locationPath = location.pathname.replace(/\\/\[^\\/\]+$/, "");
+    var locationPath = location.pathname.replace(/\\/[^\\/]+$/, "");
     window.dojoConfig = {
-      packages: \[
+      packages: [
         {
           name: "app",
           location: locationPath + "."
         }
-      \],
-      deps: \['app/index'\]
+      ],
+      deps: ['app/index']
     };
   </script>
   <script src="https://js.arcgis.com/4.14/"></script>
+```
 
 The benefit here is that you can write your application in TypeScript, without having to worry too much about the build steps or all the different plugins normally associated with webpack builds. This rollup configuration has a handful, but not nearly as much as webpack does.
 
@@ -124,6 +134,7 @@ arcgis create jsapi-app-calcite -t calcite
 
 The application structure will look a lot like the default app, except the **index.html** file will have a lot more stuff in it.
 
+```html
 <calcite-shell>
     <calcite-shell-panel id="widget-panel" slot="primary-panel" layout="leading">
         <calcite-action-bar slot="action-bar">
@@ -141,6 +152,7 @@ The application structure will look a lot like the default app, except the **ind
   <footer slot="shell-footer">
   </footer>
 </calcite-shell>
+```
 
 It will look similar to the above. These are a number of calcite web components to structure the application UI. It's a lot of fun to work with!
 
@@ -152,7 +164,9 @@ You can check out the calcite application [here](https://jsapi-app-calcite-414.s
 
 And of course, you can also scaffold the same application using the CDN!
 
+```bash
 arcgis create jsapi-app-calcite-cdn -t calcite --cdn
+```
 
 The application looks the same as the regular calcite application, but the JSAPI and calcite components are loaded via CDN. The application itself is really no different. Trust me, you can view it [here](https://jsapi-app-calcite-cdn-414.surge.sh/). I wish there was more I could say about it, but it looks the same, your code is the same, it's just built differently.
 

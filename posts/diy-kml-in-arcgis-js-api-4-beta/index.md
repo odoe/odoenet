@@ -23,7 +23,7 @@ If you check out the [3.x sample](http://developers.arcgis.com/javascript/sample
 
 Let's use this to our advantage here. We'll just pass the KML url to the KML parse service and voila, _magic_.
 
-\[gist id=4b88ff6a3b928eb0a51d\]
+[gist id=4b88ff6a3b928eb0a51d]
 
 The response from the KML service is FeatureCollection of layers that make up the KML file. We're going to use the [GroupLayer](https://developers.arcgis.com/javascript/beta/api-reference/esri-layers-GroupLayer.html) in the 4.0beta to load the FeatureCollections into FeatureLayers.
 

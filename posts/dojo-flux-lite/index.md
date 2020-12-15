@@ -27,9 +27,9 @@ If you think about for a second, Dojo already has all these tools. [dojo/topic](
 
 I'm going to work off a previous example I did [using React with Dojo](http://odoe.net/blog/esrijs-reactjs/) that displayed the XY coordinates as you move the mouse over the map. First is the Action.
 
-define(\[
+define([
   'dojo/topic'
-\], function(topic) {
+], function(topic) {
 
   return {
     updateXY: function updateXY(data) {
@@ -43,15 +43,15 @@ You can see this is very simple. It's going to use dojo/topic to pass the data b
 
 Next let's look at the Store.  
 
-define(\[
+define([
   'dojo/\_base/declare',
   'dojo/Stateful',
   'dojo/topic'
-\], function(
+], function(
   declare, Stateful, topic
 ) {
 
-  var Store = declare(\[Stateful\], {
+  var Store = declare([Stateful], {
     x: 0,
     y: 0
   });
@@ -71,7 +71,7 @@ As you can see in the comments, I borrowed a technique [found here](http://www.a
 
 Let's check out the View.
 
-define(\[
+define([
   'dojo/\_base/declare',
   'dijit/\_WidgetBase',
   'dijit/\_TemplatedMixin',
@@ -79,7 +79,7 @@ define(\[
   'stores/LocatorStore',
   'helpers/NumFormatter',
   'dojo/text!./templates/LocatorView.html'
-\], function(
+], function(
   declare,
   \_WidgetBase, \_TemplatedMixin,
   bind, store, format,
@@ -88,7 +88,7 @@ define(\[
 
   var fixed = format(3);
 
-  return declare(\[\_WidgetBase, \_TemplatedMixin\], {
+  return declare([\_WidgetBase, \_TemplatedMixin], {
     templateString: template,
     postCreate: function() {
       var xStore = bind(fixed).to(store, 'x');

@@ -25,7 +25,7 @@ That's pretty basic. But remember, when we talk about DOM events and all the goo
 
 There are a couple of things we need to keep in mind. You can listen for "click" events on the View, but it doesn't have "mousemove" events yet, so we need to get a little creative on this one, but it's no big deal, all the tools we need to mimic it are right there in the API.
 
-\[gist id=cab517b82bcb67366ff6\]
+[gist id=cab517b82bcb67366ff6]
 
 The way we can work around the missing "mousemove" event is to listen for the native "mousemove" of the Views container and convert screen points to map points. There should be little more math here usually to take into consideration padding and margins, but this isn't a math lesson.
 

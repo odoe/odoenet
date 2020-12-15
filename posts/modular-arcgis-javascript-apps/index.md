@@ -17,9 +17,9 @@ Classically Dojo would handle this through via the [Evented](http://dojotoolkit.
 
 dojo/topic allows you to use a [pub/sub](http://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern) pattern in your Dojo applications. This also allows you to easily communicate with other modular pieces of your application without the need for a central controller to do all the listening.
 
-I could have one widget that looks like this. \[gist id=da7a0ba4033a3e711bda\]
+I could have one widget that looks like this. [gist id=da7a0ba4033a3e711bda]
 
-And another widget that looks like this. \[gist id=9ab37ead405f53ec67c7\]
+And another widget that looks like this. [gist id=9ab37ead405f53ec67c7]
 
 Ideally, both of these widgets would extend the same base widget, but I just wanted to demonstrate what this looks like.
 

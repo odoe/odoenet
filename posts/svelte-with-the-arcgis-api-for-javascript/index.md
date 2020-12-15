@@ -33,7 +33,7 @@ Once you do that, you can directly into the App.svelte file and use the AMD load
 <script>
     export let centerText;
 
-    require(\["esri/Map", "esri/views/MapView"\], function(Map, MapView) {
+    require(["esri/Map", "esri/views/MapView"], function(Map, MapView) {
         const map = new Map({
             basemap: "streets"
         });
@@ -42,7 +42,7 @@ Once you do that, you can directly into the App.svelte file and use the AMD load
             container: "viewDiv",
             map: map,
             zoom: 4,
-            center: \[15, 65\] // longitude, latitude
+            center: [15, 65] // longitude, latitude
         });
 
         view.watch('center', center => {
@@ -110,19 +110,19 @@ Now we can update the index.html page to use the AMD loader of the ArcGIS API fo
 <script>
   // define app as a dojo package
   window.dojoConfig = {
-    packages: \[
+    packages: [
       {
         name: 'app',
         location: window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/')) + '/'
       }
-    \]
+    ]
   }
 </script>
 <script src="https://js.arcgis.com/4.11/"></script>
 </head>
 <body>
 <script>
-  require(\['app/bundle'\]);
+  require(['app/bundle']);
 </script>
 </body>
 
@@ -130,10 +130,10 @@ I'll create a file that will handle all my ArcGIS API for JavaScript code separa
 
 // src/initMap.js
 export async function initmap() {
-  const \[Map, MapView\] = await Promise.all(\[
+  const [Map, MapView] = await Promise.all([
     import("esri/Map"),
     import("esri/views/MapView")
-  \]);
+  ]);
 
   const map = new Map({
     basemap: "streets"
@@ -143,7 +143,7 @@ export async function initmap() {
     container: "viewDiv",
     map: map,
     zoom: 4,
-    center: \[15, 65\]
+    center: [15, 65]
   });
 
   return view;

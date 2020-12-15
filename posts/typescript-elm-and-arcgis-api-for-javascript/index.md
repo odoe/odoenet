@@ -25,13 +25,13 @@ This is what I wanted to build... [![elm vector tile browser](images/vt-browser-
 
 I dig TypeScript. I've come to appreciate the type checking of the compiler to keep me honest. But I'm also not a _type nazi_, so I've taken to writing my TypeScript closer to ES2015, with little typings and using the compiler to make sure I don't do something really dumb.
 
-Here is the _main.ts_ for this application. \[gist id=89ca70d4a307eeeb6ea0\]
+Here is the _main.ts_ for this application. [gist id=89ca70d4a307eeeb6ea0]
 
 You'll notice that I'm using the _amd-dependency_ method of adding the AMD bits as [described here](https://www.sitepen.com/blog/2013/12/31/definitive-guide-to-typescript/). This is a pretty simple way of loading AMD dependencies into your TypeScript application if you don't have some tds files available.
 
 I create an [interface](https://github.com/Microsoft/TypeScript-Handbook/blob/master/pages/Interfaces.md) to type the _PortalItem_ I'm using in the bits that I send to the Elm application.
 
-I initialize the Elm app with the embed method. **Elm.embed(Elm.PortalItems, mainNode, { portalItems: { items: \[\] }});**.
+I initialize the Elm app with the embed method. **Elm.embed(Elm.PortalItems, mainNode, { portalItems: { items: [] }});**.
 
 This will embed the Elm app to a DOM element. I also need to initialize the model used in the application.
 
@@ -45,7 +45,7 @@ _Query Portal Items -> Initialize Elm with results -> Listen for Elm updates -> 
 
 I'm still learning Elm. It appeals to me. _It speaks to me_. So I'm not going to pretend this Elm code is awesome and that I'm doing everything right. It's rough, can probably be updated with some sugar, but _it works!_
 
-\[gist id=849a8d8d7b9b9e61715a\]
+[gist id=849a8d8d7b9b9e61715a]
 
 Ok, don't get scared. Let's talk about it a bit.
 
@@ -57,13 +57,13 @@ This pattern is handled via [Signals](http://elm-lang.org/guide/reactivity).
 
 ### Elm Model
 
-\[gist id=f6648e52546535618fc4\] Notice that the PortalItem _type alias_ here is the same as the _interface_ I used in TypeScript. I wanted to make sure I was passing the correct data to the Elm app, that's why I used the interface.
+[gist id=f6648e52546535618fc4] Notice that the PortalItem _type alias_ here is the same as the _interface_ I used in TypeScript. I wanted to make sure I was passing the correct data to the Elm app, that's why I used the interface.
 
 The _initialModel_ is the model for the whole application, which is typed to _Model_, which has a property _items_ which is a list of _PortalItems_. This could probably be tweaked a bit, but again, _it works_.
 
 ### Elm Update
 
-\[gist id=f9ba1e03ef419a9a9d02\] You have a type called _Action_, which has different types of action that can be done in your application. Each action takes some type of argument, except _NoOp_, which will just return the model.
+[gist id=f9ba1e03ef419a9a9d02] You have a type called _Action_, which has different types of action that can be done in your application. Each action takes some type of argument, except _NoOp_, which will just return the model.
 
 We have the _update_ that takes two arguments, _Action_ and _Model_ and it returns a _Model_. Data in Elm is _immutable_, so you can't simply update the _Model_, you create a new _Model_ with the updated values.
 
@@ -75,7 +75,7 @@ What this is saying is create a new _Model_ with a new property of items, **mode
 
 ### Elm View
 
-I won't go into too much detail on the _View_ stuff, but here are the basics. \[gist id=daf45cdbcc43df40c7e0\] Elm uses a [virtual DOM, which makes it fast](http://elm-lang.org/blog/blazing-fast-html) like some other frameworks that also use a virtual DOM. I won't get into if it is actually faster, but you get the same benefits.
+I won't go into too much detail on the _View_ stuff, but here are the basics. [gist id=daf45cdbcc43df40c7e0] Elm uses a [virtual DOM, which makes it fast](http://elm-lang.org/blog/blazing-fast-html) like some other frameworks that also use a virtual DOM. I won't get into if it is actually faster, but you get the same benefits.
 
 A _View_ takes an _Address_ of an _Action_, that basically wires up events ([read more here](https://github.com/evancz/elm-architecture-tutorial/#starting-the-program)) and a _Model_ and it will return _Html_. It will then render the _View_ based on this model.
 
@@ -85,7 +85,7 @@ Honestly, I struggled with conditional portion of the _View_ in this application
 
 ### Elm Signals
 
-Signals in Elm is how you wire things up. \[gist id=6cd5728cc341ed1c9f93\]
+Signals in Elm is how you wire things up. [gist id=6cd5728cc341ed1c9f93]
 
 Elm has this concept of a _Mailbox_, that matches an _address_ to an _action_. So when you provide an _Address_ and _Action_ send, it shows up in the _Mailbox_. You can read more about _Mailbox_ [here](http://elm-lang.org/guide/reactivity#tasks).
 
@@ -101,7 +101,7 @@ This looks cool, but how do I actually use it in my JavaScript (or TypeScript) a
 
 ### Elm Ports
 
-You expose portions of your application via _Ports_. \[gist id=b4867d2c7c3224e19e91\]
+You expose portions of your application via _Ports_. [gist id=b4867d2c7c3224e19e91]
 
 You can expose the _portalItems_ so I can send updates into Elm from my JavaScript app. **elmApp.ports.portalItems.send({ items });**
 

@@ -19,6 +19,7 @@ arcgis create jsapi-ts-babel -t react
 
 Once that was done, I had to start making some modifications. First thing I had to do was install the required babel modules.
 
+```json
 // package.json 
 {
    "name": "jsapi-ts-babel",
@@ -50,22 +51,24 @@ Once that was done, I had to start making some modifications. First thing I had 
 +    "react-dom": "^16.8.1",
 +    "regenerator-runtime": "^0.13.3"
    },
+```
 
 ## webpack config
 
 With the babel dependencies installed, I needed to make some changes to my webpack configuration.
 
+```js
 // webpack.config.js 
 module.exports = function(\_, arg) {
      const config = {
          entry: {
-- index: \['@dojo/framework/shim/Promise', './src/css/main.scss', './src/worker-config.ts', './src/index.tsx'\],
-+            index: \['regenerator-runtime', '@dojo/framework/shim/Promise', './src/css/main.scss', './src/worker-config.ts', './src/index.tsx'\],
+- index: ['@dojo/framework/shim/Promise', './src/css/main.scss', './src/worker-config.ts', './src/index.tsx'],
++            index: ['regenerator-runtime', '@dojo/framework/shim/Promise', './src/css/main.scss', './src/worker-config.ts', './src/index.tsx'],
          },
          output: {
-             filename: '\[name\].\[chunkhash\].js',
+             filename: '[name].[chunkhash].js',
 @@ -44,10 +44,8 @@ module.exports = function(\_, arg) {
-             rules: \[
+             rules: [
                  {
                      test: /\\.tsx?$/,
 - loader: 'ts-loader',
@@ -77,6 +80,7 @@ module.exports = function(\_, arg) {
                  },
                  {
                      test: /\\.html$/,
+```
 
 I need to add the regenerator-runtime as a dependency to the webpack build and also tell webpack to use babel-loader to load the TypeScript files now.
 
@@ -84,10 +88,11 @@ I need to add the regenerator-runtime as a dependency to the webpack build and a
 
 In order for babel to be able to compile the TypeScript files, we need to let TypeScript output esnext JavaScript code. This is going to transpile our TypeScript to modern JavaScript and validate typings.
 
+```json
 // tsconfig.json
  {
    "compilerOptions": {
-     "lib": \["dom", "es2015.promise", "es5", "es6"\],
+     "lib": ["dom", "es2015.promise", "es5", "es6"],
 - "target": "es5",
 - "module": "amd",
 +    "module": "esnext",
@@ -95,6 +100,7 @@ In order for babel to be able to compile the TypeScript files, we need to let Ty
      "noImplicitAny": true,
      "removeComments": true,
      "jsx": "react",
+```
 
 Ok, we are almost there!
 
@@ -102,20 +108,22 @@ Ok, we are almost there!
 
 The last step is to set up babel with the correct presets and plugins. For that we can create a .babelrc file that babel will read when it compiles the TypeScript files.
 
+```json
 // .babelrc
 {
-  "presets": \[
+  "presets": [
     "@babel/preset-env",
     "@babel/typescript"
-  \],
-  "plugins": \[
+  ],
+  "plugins": [
     "@babel/plugin-transform-modules-amd",
     "@babel/proposal-object-rest-spread",
     "@babel/plugin-transform-react-jsx",
-    \["@babel/plugin-proposal-decorators", { "legacy": true }\],
-    \["@babel/proposal-class-properties", { "loose": true }\]
-  \]
+    ["@babel/plugin-proposal-decorators", { "legacy": true }],
+    ["@babel/proposal-class-properties", { "loose": true }]
+  ]
 }
+```
 
 We are going to use the [@babel/preset-env,](https://babeljs.io/docs/en/babel-preset-env) which is smart preset to transform the JavaScript for browser support. You could specify legacy or specific browsers here if you want. The next important one is [@babel/typescript](https://babeljs.io/docs/en/babel-preset-typescript). This will let babel compile your typescript for you!
 

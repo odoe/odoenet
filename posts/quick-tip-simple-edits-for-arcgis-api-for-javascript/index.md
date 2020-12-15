@@ -13,17 +13,17 @@ I was doing this enough that I had decided to just turn basic feature editing fu
 
 Here is what the code looks like.
 
-\[gist id=51ca2718a58f1072a982\]
+[gist id=51ca2718a58f1072a982]
 
 What this widget does is take in some parameters that define what layers you want to edit. Those parameters define the type of editing to do. Most of this will probably look familiar to you if you have worked with the edit tools before. One thing it does that is kind of neat is displays a [dialog](http://dojotoolkit.org/reference-guide/1.10/dijit/Dialog.html) to verify that the user wants to delete an item. The widget also handles some mouse events, which I will admit have been a little hit or miss on mobile devices for me in the past. Seems to work fine on Android, but once in a while I run into issues on iOS. It will _attempt_ to determine if you are on a touch enabled device or not. It uses a \_gestureMixin that is shown below.
 
-\[gist id = 59cde446aaa2b687c664\]
+[gist id = 59cde446aaa2b687c664]
 
 This mixin checks to see if the device is touch enabled and that there are editable layers. It will use the [dojox/gesture](http://dojotoolkit.org/reference-guide/1.10/dojox/gesture.html) modules to help with working with touch gestures on the device. This will enable you to hold your finger on a feature for a second and get a popup asking if you want to delete it or not.
 
 A sample configuration of options would look something like this.
 
-\[gist id=d2f63fbe6a845e8e38a2\]
+[gist id=d2f63fbe6a845e8e38a2]
 
 This assumes you also pass the map as part of the parameters. Unfortunately, due to the nature of editing in the browser, it requires a proxy, so I can't really show a live demo of this tool in action, but feel free to try it out, take it apart, make it your own.
 

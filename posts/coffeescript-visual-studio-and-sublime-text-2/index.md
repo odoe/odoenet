@@ -61,7 +61,7 @@ Get the CoffeeScript bundle [here](https://github.com/jashkenas/coffee-script-tm
 
 Add the ability to build the CoffeeScript files per [this link](http://www.feanorian.net/site/sublime_text_and_coffeescript). Open the CoffeeScript/Commands folder and look for a file named CoffeeScript.sublime-build. Make sure it looks like this. I did not need to have the "path" option for it to work for me.
 
-> { "cmd": \["coffee.cmd","-c","$file"\], "file\_regex": "^(...\*?):(\[0-9\]\*):?(\[0-9\]\*)", "selector": "source.coffee" }
+> { "cmd": ["coffee.cmd","-c","$file"], "file\_regex": "^(...\*?):([0-9]\*):?([0-9]\*)", "selector": "source.coffee" }
 
 Now when you edit a \*.coffee file in Sublime Text 2, you can use ctrl+b to build and save the file at the same time.
 

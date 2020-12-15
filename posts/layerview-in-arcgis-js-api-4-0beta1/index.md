@@ -11,7 +11,7 @@ One of things I've seen people struggle with when using the [ArcGIS API for Java
 
 Getting the graphics from a FeatureLayer is one of those things that we have been doing for ages in the ArcGIS API for JavaScript, but you may have tried that with the 4.0beta1 and found yourself hurling multiple insults at your computer screen. They're just not there.
 
-\[gist id=7ea64986c1a6d07219ca\]
+[gist id=7ea64986c1a6d07219ca]
 
 When you try this, depending on where in the lifecycle of your application you do this, you either get an error about graphics being undefined or that graphics has a length of **0**. **_But what the hell, you can see them on the screen damnit, don't lie to me!_**
 
@@ -21,11 +21,11 @@ There. Feel better? Cool.
 
 So how would you get the graphics displayed in the view? You ask the view. You can use the [LayerView](https://developers.arcgis.com/javascript/beta/api-reference/esri-views-layers-LayerView.html) from a view. You ask the view for the layerView that is the visual representation of the layer in the view. _That's some [Inception](http://www.imdb.com/title/tt1375666/) level shit right there_. But once you have the LayerView, you can access the graphics.
 
-\[gist id=0d1aea794b20d719e31e\]
+[gist id=0d1aea794b20d719e31e]
 
 _There you go_, that's how get the graphics shown in the view. **Almost**. Notice the _surprise!_ comment. Right now, a view loads all the features in the service as graphics. The data is just sitting there ready to go. This might change during the beta, but right now, this doesn't help you if you want to know the count of the all the graphics displayed in the view, because you get stuff currently not displayed. _But_, this isn't too difficult to do on your own.
 
-\[gist id=01e603d5259f3337d847\]
+[gist id=01e603d5259f3337d847]
 
 Aaah, that's much better. You can use the [extent](https://developers.arcgis.com/javascript/beta/api-reference/esri-geometry-Extent.html) of the view to check if it [contains](https://developers.arcgis.com/javascript/beta/api-reference/esri-geometry-Extent.html#contains) the geometry of a graphic in the layer and you can filter your results this way.
 

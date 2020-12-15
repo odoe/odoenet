@@ -21,7 +21,7 @@ One area I'm really interested with Elm is how to scale a larger application, wh
 
 Here is the Elm code for reference.
 
-\[gist id=d5eb36e4924745b03bc11614db70b3f9\]
+[gist id=d5eb36e4924745b03bc11614db70b3f9]
 
 That's a lot, I know. I try to explain most of it in the video.
 

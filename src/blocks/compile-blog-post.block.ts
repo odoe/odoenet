@@ -12,7 +12,7 @@ export default async function({ path }: { path: string }) {
 	// rawContent = rawContent.split('<!-- more -->')[0];
 
 	let file = await getLocalFile(contentPath);
-	file = file.replace('images/', `/assets/blog/${path.replace('index.md', '')}/images/`);
+	file = file.replace(/images\//gi, `/assets/blog/${path.replace('index.md', '')}/images/`);
 	await imagemin([`/assets/blog/${path.replace('index.md', '')}/images/*.{jpg,png}`], {
 		destination: `/assets/blog/${path.replace('index.md', '')}/images/}`,
 		plugins: [

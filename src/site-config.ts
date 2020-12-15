@@ -1,7 +1,7 @@
 import { SiteMeta } from './interfaces';
 
 export const meta: SiteMeta = {
-	title: 'odoe.net',
+	title: 'odoenet',
 	author: 'Rene Rubalcava',
 	description: 'Dev',
 	footerLinks: [

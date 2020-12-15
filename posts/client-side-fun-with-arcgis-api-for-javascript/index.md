@@ -25,7 +25,7 @@ I'm going to use the [FeatureLayerView](https://developers.arcgis.com/javascript
 
 First thing to do is define the query.
 
-```
+```js
 const query = layer.createQuery();
 query.set({
   geometry: view.toMap(event),
@@ -43,7 +43,7 @@ In this snippet, we define a [StatisticDefinition](https://developers.arcgis.com
 
 Once we have our query prepared, we can perform two queries. Once to get the result of our statistics and one to get the ids so that we can highlight those features on the map. This is why you need to tell the FeatureLayer about the ObjectId field, so you can do cool things like highlight those features!  
 
-```
+```js
 layerView.queryFeatures(query).then(({ features }) => {
   const result = features[0];
   if (result) {

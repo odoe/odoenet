@@ -23,9 +23,9 @@ By default, SystemJS doesn't know what to do with this. SystemJS supports [loade
 
 Well, ok. That hurts. This issue with AMD loader plugins [has come up before](https://github.com/systemjs/systemjs/issues/549). So to work around it, I tried using the workaround in that thread.
 
-\[gist id=d64caed1422af94dae93\]
+[gist id=d64caed1422af94dae93]
 
-Ok, that get's you almost there. Except AMD loads modules like **define(\["packages/module"\], function(){})**. When SystemJS tries to load that. it won't add the **.js** at the end of the file. So ok, you can turn that on via **System.config({defaultJSExtensions:true})**. Simple enough. Except now with the AMD plugin loader compatibility in place, when you do **"dojo/text!something.html"** SystemJS will try and load **something.html.js**.
+Ok, that get's you almost there. Except AMD loads modules like **define(["packages/module"], function(){})**. When SystemJS tries to load that. it won't add the **.js** at the end of the file. So ok, you can turn that on via **System.config({defaultJSExtensions:true})**. Simple enough. Except now with the AMD plugin loader compatibility in place, when you do **"dojo/text!something.html"** SystemJS will try and load **something.html.js**.
 
 _This is usually around the point I start drinking too much._
 
@@ -35,21 +35,21 @@ Then, as if a light was shining on my keyboard, I saw someone use [System.regist
 
 Well, ok then. With that bit of knowledge, everything else fell into place.
 
-\[gist id=696a36de99a1c5307552\]
+[gist id=696a36de99a1c5307552]
 
 First task is to create a list of AMD dependencies, load them using the Dojo AMD loader and when they are ready, register them with SystemJS under a dummy module name and then start the application.
 
 Now you can start building an Angular 2 application and being integrating the ArcGIS JS API.
 
-\[gist id=a5764f2e11c061f5d980\]
+[gist id=a5764f2e11c061f5d980]
 
 I still like to treat the Map in the ArcGIS API 4.0beta as a service when I can.
 
-\[gist id=0683005a8df89e28e706\]
+[gist id=0683005a8df89e28e706]
 
 That's all there is to it. I don't know enough to walk you through all the details of building an Angular 2 app. Thanks to [Tom Wayson](https://twitter.com/tomwayson) for showing how you can modularize an Angular 2 component even further by inlining the styles, which is really cool.
 
-\[gist id=d490c1db98f8697dada5\]
+[gist id=d490c1db98f8697dada5]
 
 Although I just started to get my hands dirty with Angular 2, I am liking it quite a bit so far. I love the fact that the bulk of component work is done via [decorators](http://blog.wolksoftware.com/decorators-reflection-javascript-typescript). _Love it_.
 

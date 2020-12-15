@@ -34,7 +34,7 @@ Let's create our GeoJSONLayer.
 const geojsonLayer = new GeoJSONLayer({
   url:
     "https://www.chapelhillopendata.org/api/v2/catalog/datasets/pedestrian-crashes-chapel-hill-region/exports/geojson",
-  templates: \[
+  templates: [
     {
       name: "Crashes",
       description: "Pedestrian crashes in Chapel Hill",
@@ -45,13 +45,13 @@ const geojsonLayer = new GeoJSONLayer({
         }
       }
     }
-  \],
+  ],
   popupTemplate: {
     title: "{crash\_grp}",
-    content: \[
+    content: [
       {
         type: "fields",
-        fieldInfos: \[
+        fieldInfos: [
           {
             fieldName: "ambulancer",
             label: "ambulancer"
@@ -72,9 +72,9 @@ const geojsonLayer = new GeoJSONLayer({
             fieldName: "drvr\_age",
             label: "drvr\_age"
           }
-        \]
+        ]
       }
-    \]
+    ]
   }
 });
 
@@ -82,10 +82,10 @@ I can provide Feature Templates with my GeoJSONLayer that will define some defau
 
 const editor = new Editor({
   view,
-  layerInfos: \[
+  layerInfos: [
     {
       layer: geojsonLayer,
-      fieldConfig: \[
+      fieldConfig: [
         {
           name: "ambulancer",
           label: "ambulancer"
@@ -106,9 +106,9 @@ const editor = new Editor({
           name: "drvr\_age",
           label: "drvr\_age"
         }
-      \]
+      ]
     }
-  \]
+  ]
 });
 
 In this case, I'll only expose a few fields to the Editor and not concern myself with the others.
@@ -122,7 +122,7 @@ geojsonLayer
   .then(({ features }) => {
     const FeatureCollection = {
       type: "FeatureCollection",
-      features: \[\]
+      features: []
     };
     FeatureCollection.features = features.map(
       ({ attributes, geometry }, index) => {
