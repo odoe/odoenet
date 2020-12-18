@@ -33,6 +33,7 @@ export default factory(({ properties }) => {
       "/>
       <img alt={description} loading="lazy" classes={[ css.image ]} src="/assets/images/learn-dojo-jumbotron-768.jpg" />
     </picture> */}
+      <img alt={description} loading="lazy" classes={[ css.image ]} src="./assets/logo.png" />
       <h3 classes={[css.description]}>{description}</h3>
     </div>
   );

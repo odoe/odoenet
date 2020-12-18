@@ -2,7 +2,6 @@ import { tsx, create } from '@dojo/framework/core/vdom';
 
 import Footer from '../widgets/footer/Footer';
 import Header from '../widgets/header/Header';
-import Hero from '../widgets/hero/Hero';
 
 import * as css from './Layout.m.css';
 
@@ -11,7 +10,7 @@ import { SiteMeta } from '../interfaces';
 const factory = create().properties<SiteMeta>();
 
 export default factory(({ children, properties }) => {
-	const { title, description, author, footerLinks } = properties();
+	const { title, author, footerLinks } = properties();
 
 	return (
 		<div classes={[ css.root ]}>
@@ -26,7 +25,6 @@ export default factory(({ children, properties }) => {
 				<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet" />
 			</head>
 			<Header title={title} />
-			<Hero description={description} />
 			<main classes={[ css.section ]}>{children()}</main>
 			<Footer {...{ author, footerLinks }} />
 		</div>

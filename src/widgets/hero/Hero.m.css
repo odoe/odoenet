@@ -1,7 +1,7 @@
 @import '../../variables.css';
 .root {
 	width: 100vw;
-	height: 300px;
+	height: 100px;
 	max-height: 300px;
 	display: flex;
 	overflow: hidden;
@@ -13,8 +13,8 @@
 }
 .image {
 	width: 100vw;
-	height: 300px;
-	object-fit: cover;
+	height: 50px;
+	object-fit: contain;
 }
 
 .description {
