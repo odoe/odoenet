@@ -25,36 +25,29 @@ export default factory(({ properties }) => {
         <Link
           classes={[css.link]}
           to="blog"
-          params={{
-            path: path.replace('posts/', '').replace('index.md', '')
-          }}
-        >
-          {title}
-        </Link>
-        <p>{dateFormatter(new Date(date))}</p>
-        <span>{description}</span>
-      </div>
-      <div classes={[ css.column ]}>
-        <Link
-          classes={[css.link]}
-          to="blog"
           aria-label={description}
           params={{
             path: path.replace('posts/', '').replace('index.md', '')
           }}
         >
-          {
-            coverImage ?
-            (
-              <picture>
-                <source type="image/webp" srcset={coverImage.replace(/\.(jpg|png)/, '.webp')}/>
-                <source type="image/jpeg" srcset={coverImage}/>
-                <img alt={description} loading="lazy" classes={[ css.image ]} src={coverImage} />
-              </picture>
-            )
-            :
-            []
-          }
+          <div classes={[css.content]}>
+            {
+              coverImage ?
+              (
+                <picture>
+                  <source type="image/webp" srcset={coverImage.replace(/\.(jpg|png)/, '.webp')}/>
+                  <source type="image/jpeg" srcset={coverImage}/>
+                  <img alt={description} loading="lazy" classes={[ css.image ]} src={coverImage} />
+                </picture>
+              )
+              :
+              []
+            }
+            <span classes={[css.banner]}>
+              {title}
+            </span>
+            <span classes={[css.date]}><small>{dateFormatter(new Date(date))}</small></span>
+          </div>
         </Link>
       </div>
     </section>

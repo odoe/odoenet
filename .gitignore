@@ -2,5 +2,6 @@ node_modules/
 _build/
 output/dev/
 output/info/
+output/dist/
 .cert/
 .netlify/

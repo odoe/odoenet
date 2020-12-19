@@ -1,4 +1,5 @@
 import { create, tsx } from '@dojo/framework/core/vdom';
+import has from '@dojo/framework/core/has';
 
 import Embed from '../../widgets/embed/Embed';
 
@@ -13,7 +14,7 @@ export default factory(function Home() {
                     url="https://player.twitch.tv"
                     options={{
                         channel: 'odoenet',
-                        parent: 'localhost',
+                        parent: has('production') ? 'odoenet.netlify.app' : 'localhost',
                         muted: 'true'
                     }}
                 />

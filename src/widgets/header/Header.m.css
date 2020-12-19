@@ -1,8 +1,8 @@
 .root {
 	flex: 1;
 	overflow: hidden;
-	color: #fff;
-	background-color: #4660E3;
+	color: #edf5e1;
+	background-color: #05386B;
 	padding: 1rem;
 	display: flex;
 	justify-content: space-between;
@@ -16,7 +16,7 @@
 
 .link:hover {
 	color: #fff;
-	background-color: #4660E3;
+	background-color: #379683;
 }
 
 .link {
@@ -24,6 +24,6 @@
 	text-align: center;
 	text-decoration: none;
 	padding: 18px;
-	color: #fff;
+	color: #edf5e1;
 	box-sizing: border-box;
 }

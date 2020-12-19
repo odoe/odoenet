@@ -6,17 +6,17 @@ export const meta: SiteMeta = {
 	description: 'Dev',
 	footerLinks: [
 		{
-			href: 'https://learn-dojo.com/atom.xml',
+			href: 'https://odoe.net/atom.xml',
 			text: 'rss feed',
 			logo: '/assets/images/logos/rss-logo-32px.png'
 		},
 		{
-			href: 'https://github.com/odoe/learn-dojo',
+			href: 'https://github.com/odoe/odoenet',
 			text: 'github',
 			logo: '/assets/images/logos/GitHub-Mark-32px.png'
 		},
 		{
-			href: 'https://www.youtube.com/channel/UCTMyJW_31j2hyZGKJpddgaQ',
+			href: 'https://www.youtube.com/c/ReneRubalcava',
 			text: 'youtube',
 			logo: '/assets/images/logos/yt_logo_mono_light_32px.png'
 		},

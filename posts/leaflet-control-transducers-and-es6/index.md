@@ -7,7 +7,7 @@ date: "2014-09-29"
 
 # Hacking away
 
-I haven't hacked away at using [Leaflet](http://leafletjs.com/) in a while, but I'm looking at doing some pretty extensive [Leaflet.Control](http://leafletjs.com/reference.html#icontrol) development down the line so I needed some practice. I also wanted to play around with [Transducer.js](https://github.com/jlongster/transducers.js) which is a JavaScript port of Clojure's Transducers. To learn more about Transducers, go watch [this video](www.youtube.com/watch?v=6mTbuzafcII) by Rich Hickey at Strange Loop and swoon. Sample project I built [is here](https://github.com/odoe/leaflet-exp).
+I haven't hacked away at using [Leaflet](http://leafletjs.com/) in a while, but I'm looking at doing some pretty extensive [Leaflet.Control](http://leafletjs.com/reference.html#icontrol) development down the line so I needed some practice. I also wanted to play around with [Transducer.js](https://github.com/jlongster/transducers.js) which is a JavaScript port of Clojure's Transducers. To learn more about Transducers, go watch [this video](https://youtu.be/6mTbuzafcII) by Rich Hickey at Strange Loop and swoon. Sample project I built [is here](https://github.com/odoe/leaflet-exp).
 
 # Not production ready
 
