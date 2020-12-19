@@ -4,7 +4,7 @@
 	"scripts": {
 		"dev": "dojo build",
 		"deploy": "aws s3 rm s3://learn-dojo.com --recursive && aws s3 sync output/dist s3://learn-dojo.com",
-		"build": "dojo build --mode dist --dojorc prod.dojorc --trace-warnings",
+		"build": "dojo build --mode dist --dojorc prod.dojorc",
 		"build:dev": "dojo build -m=dev -s -w",
 		"test": "dojo test",
 		"test:unit": "dojo build --mode unit && dojo test --unit --config local",
