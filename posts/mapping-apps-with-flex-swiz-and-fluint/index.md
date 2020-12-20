@@ -1,5 +1,5 @@
 ---
-title: >Mapping apps with Flex, Swiz and Fluint"
+title: Mapping apps with Flex, Swiz and Fluint"
 published: true
 author: Rene Rubalcava
 date: "2009-10-19"
