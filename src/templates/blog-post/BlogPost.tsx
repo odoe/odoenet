@@ -9,6 +9,8 @@ import Article from '../../widgets/article/Article';
 
 import { dateFormatter } from '../../utils/formatter';
 
+import * as css from './BlogPost.m.css';
+
 export interface PostProperties {
 	path: string;
 }
@@ -27,7 +29,7 @@ export default factory(({ middleware: { block }, properties }) => {
 	if (post) {
 		const date = dateFormatter(new Date(post.meta.date));
 		return (
-			<section>
+			<section classes={[css.root]}>
 				<head>
 					<title>{post.meta.title}</title>
 					<meta name="description" content={post.meta.description} />
