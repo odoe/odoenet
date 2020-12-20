@@ -6,9 +6,9 @@
     },
     "pwa": {
       "manifest": {
-        "name": "learn-dojo",
-        "short_name": "learn-dojo",
-        "description": "learn dojo",
+        "name": "odoenet",
+        "short_name": "odoenet",
+        "description": "the odoe network",
         "background_color": "#ffffff",
         "theme_color": "#009dff",
         "icons": [

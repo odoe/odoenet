@@ -20,7 +20,7 @@
 	},
 	"devDependencies": {
 		"@dojo/cli": "^7.0.0",
-		"@dojo/cli-build-app": "^8.0.0-alpha.3",
+		"@dojo/cli-build-app": "~7.0.0",
 		"@dojo/cli-test-intern": "^7.0.0",
 		"@mapbox/rehype-prism": "^0.5.0",
 		"@types/fs-extra": "^9.0.5",
