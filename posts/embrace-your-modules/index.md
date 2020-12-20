@@ -23,9 +23,9 @@ Smarter people than myself have written about modular JavaScript development. He
 
 Previously, the ArcGIS JavaScript API was built on Dojo 1.6 and I was [advocating the use of Require.js](http://odoe.net/blog/?tag=require-js) to build out your ArcGIS JS apps in a modular fashion. Require.js uses the [AMD style](http://www.sitepen.com/blog/2012/06/25/amd-the-definitive-source/) of modular development. With the upgrade of the ArcGIS JavaScript API to support Dojo 1.7, some big changes came, mostly in the fact that Dojo was now using AMD style modules. I think this has left some ArcGIS JavaScript developers scratching their heads as to how to move forward, especially if the need comes up where you are required to update an older application to the new API.
 
-Here is an example of the core change from API updgrades. [cce lang="javascript"] // Dojo 1.6, ArcGIS API < 2.x dojo.require('esri.tasks.Identify');
+Here is an example of the core change from API updgrades. ` // Dojo 1.6, ArcGIS API < 2.x dojo.require('esri.tasks.Identify');
 
-// Dojo 1.7, ArcGIS API > 3.x define(['esri/tasks/identify'], function() { // ... do some stuff ... // Adds esri.tasks.IdentifyTask() // Notice I don't declare a variable name // for the IdentifyTask. The ArcGIS API actually // appends IdentifyTask to the global esri.tasks // object when you include it in your dependency // list. No need to declare a variable name in your // function. A lot of the API works this way. }); [/cce]
+// Dojo 1.7, ArcGIS API > 3.x define(['esri/tasks/identify'], function() { // ... do some stuff ... // Adds esri.tasks.IdentifyTask() // Notice I don't declare a variable name // for the IdentifyTask. The ArcGIS API actually // appends IdentifyTask to the global esri.tasks // object when you include it in your dependency // list. No need to declare a variable name in your // function. A lot of the API works this way. }); `
 
 Someone new to the AMD style could look at this and wonder, why in the world would I do this? I'll quote what I think are key points from the [Require.js documentation](http://requirejs.org/docs/whyamd.html) on the subject.
 

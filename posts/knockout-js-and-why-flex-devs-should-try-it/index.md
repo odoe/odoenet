@@ -21,7 +21,7 @@ Let's look at some of it.
 
 [gist id=1043313]
 
-Notice the 'data-bind' tag that I use. This would be similar to binding values in MXML via <s:comp text={'bindableModel.value'}/>.
+Notice the 'data-bind' tag that I use. This would be similar to binding values in MXML via `<s:comp text={'bindableModel.value'}/>`.
 
 Then in my JavaScript, I define a viewModel with some attributes and even a method. When I started using stuff like  'data-bind="click: search' which points to a function in my viewModel, that is when it all started to click for me. Now, I have bound my view to a method in the viewModel and that method can access other items in the viewModel to perform it's task. I don't need to find the value of a DOM element that may have been updated earlier or anything like that. This is a really simple example when you look at it, but I think it demonstrates some powerful features of Knockout.js. You can review how to use ko.observable and ko.observableArray in the [Knockout.js documentation](http://knockoutjs.com/documentation/introduction.html).
 

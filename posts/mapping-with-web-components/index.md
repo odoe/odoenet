@@ -148,7 +148,7 @@ I can use the meta to get a reference to the output DOM node of my widget and pa
   events: ['onChange']
 })
 
-What I'm doing here is defining the tag name for my component, which will be **<arcgis-webmap />**. I want the user to pass some attributes like a webmap id, and the widgets they want to use. Then I can define events on my component, like my onChange callback, so users of my component can add event listeners.
+What I'm doing here is defining the tag name for my component, which will be **`<arcgis-webmap />`**. I want the user to pass some attributes like a webmap id, and the widgets they want to use. Then I can define events on my component, like my onChange callback, so users of my component can add event listeners.
 
 ## Build it
 

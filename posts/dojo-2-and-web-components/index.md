@@ -57,7 +57,7 @@ Then in the repo run the command...
 
 _And you can now use this component in your web page like this_.
 
-```
+```html
 <!DOCTYPE html>
 <html>
     <head>

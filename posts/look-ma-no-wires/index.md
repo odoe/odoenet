@@ -9,9 +9,9 @@ Recently, I have been using [Swiz](http://swizframework.org/docs/) on a couple o
 
 So as I was working on some items, I remembered a [20-minute Swiz vide](http://www.firemoss.com/index.cfm/2009/10/21/Swiz-in-20-minutes-video--byebye-boilerplate)o that Joe Rinheart had posted that helped me out when I first started looking at Swiz. In that video, as a shortcut, Joe had simply binded a service to a delegate inside his BeanLoader to eliminate the need to Autowire an object in a Delegate. This got me thinking about the need to use Autowire with the metadata tag in my applications. When you Autowire an object using Swiz, the object has to be public anyway. The BeanLoader is already an [IoC](http://martinfowler.com/bliki/InversionOfControl.html) container. So why use it? After I had read [Clean Code](http://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882), I began to look at keeping my code as minimal as possible to get the job done. Although, an Autowire metadata tag was no big deal, I just felt like it was one more item I could eliminate from my code.
 
-You could accomplish this in your BeanLoader. [cce lang="xml"]<controls:RequestController id="requestController" eventDispatcher="{ this.dispatcher }" service="{ mockDelegate }"/>[/cce]
+You could accomplish this in your BeanLoader. `<controls:RequestController id="requestController" eventDispatcher="{ this.dispatcher }" service="{ mockDelegate }"/>`
 
-[cce lang="xml"]<services:MockMainServiceDelegate id="mockDelegate" eventDispatcher="{ this.dispatcher }" />[/cce]
+`<services:MockMainServiceDelegate id="mockDelegate" eventDispatcher="{ this.dispatcher }" />`
 
 Now I have eliminated the need to Autowire the mockDelegate object in my RequestController.
 

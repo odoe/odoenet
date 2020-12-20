@@ -17,6 +17,7 @@ The esri-loader will essentially sideload the ArcGIS API for JavaScript into you
 
 I can inject the ArcGIS API for JavaScript bits into my Dojo project asynchronously as needed. I create an `initializeMap` method to handle this for me. Local state can be manage in Dojo a few ways, in this case I am using a [local context](https://github.com/odoe/dojo-esri-loader/blob/master/src/contexts/MapContext.ts) to manage it for me.
 
+```ts
   initializeMap = async (container: HTMLElement) => {
     loadCss('https://js.arcgis.com/4.10/esri/css/main.css');
     const [MapView, WebMap] = await loadModules(['esri/views/MapView', 'esri/WebMap']);
@@ -37,9 +38,11 @@ I can inject the ArcGIS API for JavaScript bits into my Dojo project asynchronou
       this.\_invalidator();
     });
   }
+```
 
 Then I have a [widget](https://github.com/odoe/dojo-esri-loader/blob/master/src/widgets/Map.tsx) in my Dojo app that I am going to use to display my map where I can call this method to get the whole map party started.
 
+```tsx
 export default class Map extends WidgetBase<MapProperties> {
   onAttach() {
     const element = this.meta(HtmlMeta).get("elemRef") as HTMLElement;
@@ -49,6 +52,7 @@ export default class Map extends WidgetBase<MapProperties> {
     return <div classes={css.root} key="elemRef" />;
   }
 }
+```
 
 There is some interesting stuff happening here, but the important part is that we wait for the widget to get rendered and initialize the map and things get all mappy! You can see a **_[demo of this application here](https://dojo-esri-loader.surge.sh)_**.
 
