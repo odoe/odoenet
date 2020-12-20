@@ -9,7 +9,7 @@ I see questions pop up once in a while about building a dynamic popup, but exclu
 
 I have a little utility module I wrote a while ago that has gone through numerous iterations, but it still serves its purpose. It's called [templateBuilder](https://gist.github.com/odoe/5800348) and can be used to dynamically generate the content or used to build [InfoTemplate](https://developers.arcgis.com/en/javascript/jsapi/infotemplate-amd.html) content after a click event or something an [IdentifyResult](https://developers.arcgis.com/en/javascript/jsapi/identifyresult-amd.html).
 
-<iframe src="http://jsfiddle.net/odoe/PDr7p/embedded/" height="300" width="100%" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+!(jsfiddle.net/odoe/PDr7p/embedded/)
 
 It will remove some common fields that are typically not viewed in a popup, like _shape_ or _objectid_. It can take options that let you define a URL field and the URL prefix to go along with it. I'm tinkering with adding more advanced options for alias field names and formatting, but I think this is a good base to work from. I currently use this in just about every project that has popups, so I'm hoping someone will find it useful.
 

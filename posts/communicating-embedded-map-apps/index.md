@@ -17,4 +17,4 @@ It really depends on what your particular needs are to be able to communicate wi
 
 So sit back and check out the following video for a demonstration on _Communicating with Embedded Map Apps_.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/oaumE7-w02s" frameborder="0" allowfullscreen></iframe>
+!(https://www.youtube.com/embed/oaumE7-w02s)

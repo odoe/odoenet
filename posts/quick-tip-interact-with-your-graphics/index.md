@@ -32,7 +32,7 @@ You could skip steps 4 and 6 if you want, this just brings the graphics to the f
 
 What you get when you do this is the application below.
 
-<iframe width="100%" height="300" src="//jsfiddle.net/ab3t89y9/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+!(jsfiddle.net/ab3t89y9/embedded/)
 
 Each button above the Map is related to the condition of the trees in the map. You can click on a button for a condition type and you get a nice little transparency to everything except for the features that match that condition.
 

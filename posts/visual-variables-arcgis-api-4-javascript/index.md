@@ -13,4 +13,4 @@ You can read more details about Visualizations and Visual Variables in the [docu
 
 The tooling available to developers in the ArcGIS API for JavaScript to be able to visualize their data is very powerful. Ideally, you may want to [Smart Mapping](http://www.esri.com/software/arcgis/smart-mapping) on the platform, but you're not limited to that. You can customize how you want to visualize your data in a very specific way.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/GaX0j_f-Flc" frameborder="0" allowfullscreen></iframe>
+!(https://www.youtube.com/embed/GaX0j_f-Flc)

@@ -21,7 +21,7 @@ Then for the heck of it, I created a [Vector Tile Package](http://pro.arcgis.com
 
 I show how to upload your Vector Tile package in the following short video.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/X65pDlsSxMY" frameborder="0" allowfullscreen></iframe>
+!(https://www.youtube.com/embed/X65pDlsSxMY)
 
 Be sure to check out my [Introduction to ArcGIS API for JavaScript 4](https://leanpub.com/arcgis-js-api-4) ebook early access on sale now!
 

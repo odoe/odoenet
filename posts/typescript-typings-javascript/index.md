@@ -19,4 +19,4 @@ _Pretty cool right?_
 
 This video just goes over how you can do that and you get to watch me fumble through misspellings and writing some JavaScript just to see the kind of intellisense and code completion you can get from this workflow.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/spi5txUoits" frameborder="0" allowfullscreen></iframe>
+!(https://www.youtube.com/embed/spi5txUoits)

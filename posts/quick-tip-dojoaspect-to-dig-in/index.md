@@ -30,12 +30,12 @@ In this case we are using _aspect.after_ to log the arguments sent to _featureLa
 Here is a demo of this app.
 
 [JS Bin on jsbin.com](http://jsbin.com/jowifa/2/embed?js,console,output)
-<script src="http://static.jsbin.com/js/embed.min.js?3.35.9"></script>
+
 
 You could even stick your nose in where maybe it doesn't belong and listen for when listeners are added to the document. I'll add that to the above sample just for fun.
 
 [JS Bin on jsbin.com](http://jsbin.com/jowifa/3/embed?js,console,output)
-<script src="http://static.jsbin.com/js/embed.min.js?3.35.9"></script>
+
 
 As you can see, the dojo/aspect module could come in handy in plenty of ways.
 

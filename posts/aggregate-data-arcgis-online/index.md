@@ -11,7 +11,7 @@ The ArcGIS Platform isn't just used for serving data and creating webmaps. _It c
 
 In this video, we cover how you can take an existing dataset of points, possibly collected in field data, and do some aggregation on that data. This is a popular way to perform some statistics on your data and is something that is easy to do in ArcGIS Online.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/OLuyC8xQLMM" frameborder="0" allowfullscreen></iframe>
+!(https://www.youtube.com/embed/OLuyC8xQLMM)
 
 You can read more about the analysis tools in the [documentation](https://doc.arcgis.com/en/arcgis-online/use-maps/perform-analysis.htm).
 

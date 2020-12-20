@@ -26,14 +26,7 @@ export const getLocalFile = async (path: string) => {
 export const toVNodes = (content: string) => {
 	let counter = 0;
 	let pipeline = unified()
-		.use(markdown, { commonmark: true })
-		.use(remarkIframes, {
-			'codesandbox.io': {
-				tag: 'iframe',
-				width: '100%',
-				height: 500,
-			},
-		})
+		.use(markdown)
 		.use(remarkIframes, {
 			'www.youtube.com': {
 				tag: 'iframe',
@@ -45,11 +38,33 @@ export const toVNodes = (content: string) => {
 					['http://', 'https://'],
 				],
 				thumbnail: {
-					format: 'http://img.youtube.com/vi/{id}/0.jpg',
+					format: 'https://img.youtube.com/vi/{id}/0.jpg',
 					id: '.+/(.+)$',
 				},
 				removeAfter: '&',
 			},
+			'youtu.be': {
+				tag: 'iframe',
+				width: 560,
+				height: 315,
+				disabled: false,
+				oembed: 'https://www.youtube.com/oembed'
+			},
+			'jsfiddle.net': {
+				tag: 'iframe',
+				width: '100%',
+				height: 500,
+			},
+			'codesandbox.io': {
+				tag: 'iframe',
+				width: '100%',
+				height: 500,
+			},
+			'codepen.io': {
+				tag: 'iframe',
+				width: '100%',
+				height: 500,
+			}
 		})
 		.use(frontmatter, 'yaml');
 

@@ -38,6 +38,6 @@ This is pretty simple to do.
 Voila, you have an awesome cached API store using esri/request that you can use to integrate third-party APIs into your application.
 
 Here is a sample of that in action, you can see results in your browser debug console. [JS Bin on jsbin.com](http://jsbin.com/lozuja/1/embed?js,output)
-<script src="http://static.jsbin.com/js/embed.min.js?3.35.3"></script>
+
 
 So take a crack it and check out how you might be able to use dstore in your own application. It's a pretty powerful library with lots of useful features that I'm still experimenting with.

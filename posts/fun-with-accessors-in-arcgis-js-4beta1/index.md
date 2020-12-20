@@ -30,6 +30,6 @@ Let me point out that I'm using an undocumented helper here, the _esri/core/Sche
 There's a lot going on in this code, but hopefully you can follow along and see that the method **\_cameraWatch** captures state changes in to the camera, _clones it_ and saves that copy to an array. It will then update the slider. We can even use the slider to update the camera view to certain point in time. The **\_play** method is used to simply iterate over the camera array, update the views camera and essentially play back your camera positions. There is even an option to do it in reverse.
 
 Let's take a look at a demo of this in action. [JS Bin on jsbin.com](http://jsbin.com/sodeda/1/embed?output)
-<script src="http://static.jsbin.com/js/embed.min.js?3.34.0"></script>
+
 
 Like I said before, I think Accessors are a really cool, powerful feature in the ArcGIS 4.0beta1. 3D is cool, sure, but the stuff in the API that powers 3D is even cooler.

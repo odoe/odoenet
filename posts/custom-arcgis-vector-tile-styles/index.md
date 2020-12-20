@@ -13,4 +13,4 @@ You can always copy a style file to your ArcGIS account and edit that style to c
 
 Check out the video below for a quick intro on how to use this simple [Vector Tile style editor](https://github.com/Esri/arcgis-vectortile-style-editor/)!
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/hqWYtVJRqZc" frameborder="0" allowfullscreen></iframe>
+!(https://www.youtube.com/embed/hqWYtVJRqZc)

@@ -30,7 +30,7 @@ This makes it much easier for you to work with your data directly in the item de
 
 So take a look at this video for an overview of the Item Details Page!
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Cggbwz2RHf8" frameborder="0" allowfullscreen></iframe>
+!(https://www.youtube.com/embed/Cggbwz2RHf8)
 
 It used to be that in order to update the visualization of a FeatureLayer, you had to add it to a WebMap, update the visualization in the WebMap and then export that item with it's updated visualization as a new item or just use the visualization as part of the WebMap. This process has been greatly simplified, it's so easy, _even I could do it!_
 

@@ -17,6 +17,6 @@ I wanted to see if I could use the latest [ArcGIS API 4 for JavaScript](https://
 
 This actually works out pretty well for building ArcGIS JS apps. This is of course, all experimental, but I think worth doing some more prototypes and testing to really flesh it out.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ptmf_8ej3W4" frameborder="0" allowfullscreen></iframe>
+!(https://www.youtube.com/embed/ptmf_8ej3W4)
 
 Also, if you want to learn more about the ArcGIS API for JavaScript 4, check out my _ebook-in-progress_ [Introduction to ArcGIS API for JavaScript 4](https://leanpub.com/arcgis-js-api-4)!

@@ -28,7 +28,7 @@ This **guarantees** that the center of the View will be ready to be monitored fo
 Perhaps you have a module that handles what happens when the center of the View is changed, and another that handles changes for the extent for the extent of the View. You can chain them like so. `view.then(centerWatch).then(extentWatch);`
 
 That's pretty simple. You can see this demo below. [Search widget - 3D - 4.0 beta 1 on jsbin.com](http://jsbin.com/xigona/embed?js,console,output)
-<script src="http://static.jsbin.com/js/embed.min.js?3.34.1"></script>
+
 
 ## Make your life easier
 

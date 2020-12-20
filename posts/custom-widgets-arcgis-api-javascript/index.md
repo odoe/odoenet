@@ -17,4 +17,4 @@ In this video, I just wanted to walk you through a basic chart widget built with
 
 You can find the sample code used in this videol on [github](https://github.com/odoe/esrijs4-ts-demo). It has a couple of fixes not in the video, like a rendundant use of `renderable()` in the Widget View Model.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/GruNa7cWgKU" frameborder="0" allowfullscreen></iframe>
+!(https://www.youtube.com/embed/GruNa7cWgKU)

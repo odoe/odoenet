@@ -17,4 +17,4 @@ The SceneViewer is specifically for laying out your scenes and slides.
 
 I hope you enjoy this quick intro to the ArcGIS SceneViewer and try on your to create some interesting scenes for your application!
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Xot7NTflw1A" frameborder="0" allowfullscreen></iframe>
+!(https://www.youtube.com/embed/Xot7NTflw1A)

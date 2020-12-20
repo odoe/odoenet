@@ -51,6 +51,6 @@ Graphic.fromJSON({
 Look at that. _Look at it!_ No fuss, GeoJSON in your ArcGIS API apps.
 
 You can see a demo of this application here. [Basic 3D map - 4.0 beta 1 on jsbin.com](http://jsbin.com/ferope/3/embed?js,output)
-<script src="http://static.jsbin.com/js/embed.min.js?3.34.1"></script>
+
 
 The _fromJSON_ method sprinkled throughout the API provide even more flexibility to you as a developer to [simplify](https://developers.arcgis.com/javascript/beta/guide/discover/#simpleAPI) it's use for your everyday work. So _JSON the hell out of your code!_

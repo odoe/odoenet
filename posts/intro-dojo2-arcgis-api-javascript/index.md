@@ -15,6 +15,6 @@ You can find more information about the status of each Dojo 2 package [here](htt
 
 In this video, I attempt to show you how you can use a couple of features from [dojo/core](https://github.com/dojo/core) to assist in your application development with the [ArcGIS API for JavaScript](https://developers.arcgis.com/javascript/) which uses the current stable release of Dojo 1.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gvGpIUI7MMY" frameborder="0" allowfullscreen></iframe>
+!(https://www.youtube.com/embed/gvGpIUI7MMY)
 
 Hit me up with any questions, thanks!

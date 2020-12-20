@@ -16,7 +16,7 @@ Basically you'll want to use [localStorage](https://developer.mozilla.org/en-US/
 ## Sample
 
 I put together a JSBIN example for this. [Simple Map](http://jsbin.com/vexib/2/embed?js,output)
-<script src="http://static.jsbin.com/js/embed.js"></script>
+
 
 Pan around the map and refresh the page. You should be returned to the last known location. This is coming in pretty handy so far. You can modify this to add more options and the ability to disable it, but I'll leave those details up to you.
 

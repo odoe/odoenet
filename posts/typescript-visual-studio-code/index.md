@@ -15,4 +15,4 @@ This video doesn't need to be specific to the ArcGIS API for JavaScript, it can 
 
 You can find the source for the sample application [here](https://github.com/odoe/esrijs-ts-demo).
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/oCgmLaXKSdc" frameborder="0" allowfullscreen></iframe>
+!(https://www.youtube.com/embed/oCgmLaXKSdc)

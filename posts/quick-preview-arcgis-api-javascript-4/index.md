@@ -20,7 +20,7 @@ Some of the cool features covered in this quick demo video include:
 
 This is by no means a complete list of new features in the 4.0 version of the API, nor does it cover changes from the beta releases, but gives a quick look at some cool stuff you'll be able to do.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/YG-v0uXd_yY" frameborder="0" allowfullscreen></iframe>
+!(https://www.youtube.com/embed/YG-v0uXd_yY)
 
 Some upcoming features not discussed here:
 

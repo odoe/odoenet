@@ -13,4 +13,4 @@ Like shapefiles, you can take this simple piece of data and you can upload into 
 
 Check out this video for a quick demo.
 
-<iframe src="https://www.youtube.com/embed/cvKqQ4j5gh4" width="420" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+!(https://www.youtube.com/embed/cvKqQ4j5gh4)

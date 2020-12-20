@@ -67,11 +67,11 @@ This will now keep the `hitTest` synced across two different map views.
 
 You can see this sample in action here.
 
-<iframe height="500" scrolling="no" title="Multi view hitTest" src="//codepen.io/odoe/embed/wEwYgz/?height=500&amp;theme-id=dark&amp;default-tab=js,result&amp;embed-version=2" frameborder="no" allowtransparency="true" allowfullscreen="true" style="width: 100%;">See the Pen <a href='https://codepen.io/odoe/pen/wEwYgz/'>Multi view hitTest</a> by Rene Rubalcava (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>. </iframe>
+!(https://codepen.io/odoe/embed/wEwYgz/?height=500&amp;theme-id=dark&amp;default-tab=js,result&amp;embed-version=2)
 
 You can also watch a video where I cover this code sample step by step.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/uJQAa-1HxPE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+!(https://www.youtube.com/embed/uJQAa-1HxPE)
 
 You'll notice I've refactored the code in the sample above a bit from the video, but I like it much better now!
 

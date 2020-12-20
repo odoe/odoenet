@@ -24,7 +24,7 @@ One frp library I really liked was [Bacon.js](http://baconjs.github.io/), but I 
 With that in hand, I tweaked [this sample](http://developers.arcgis.com/javascript/sandbox/sandbox.html?sample=util_relation) from the Esri JS docs to use RxJS to convert events and promises to streams.
 
 [Geometry Service: Relation](http://jsbin.com/nopulo/1/embed?js,output)
-<script src="http://static.jsbin.com/js/embed.js"></script>
+
 
 The interesting part is probably the Observable of the promises that do the drive time analysis and finds the local pizza places.
 

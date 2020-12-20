@@ -13,7 +13,7 @@ I'm pleased to let you know that when the ArcGIS API 4 was released, the new [Ty
 
 Because of all the interest and questions I've gotten about using the definition files, I thought it would be worth putting together a short video on a sample application using the definition files.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/GcU14ksDWNE" frameborder="0" allowfullscreen></iframe>
+!(https://www.youtube.com/embed/GcU14ksDWNE)
 
 You can find the repo for the sample application [on github](https://github.com/odoe/esrijs4-ts). This repo is using _.tsx_ files, which means that they are TypeScript files with JSX inside them. You can learn more about this [here](https://basarat.gitbooks.io/typescript/content/docs/jsx/tsx.html). TypeScript has it's own compiler to turn TS to ES5, and a really cool feature is being able to compile the JSX to ES5 for React components.
 

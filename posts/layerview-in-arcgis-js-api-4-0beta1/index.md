@@ -32,7 +32,7 @@ Aaah, that's much better. You can use the [extent](https://developers.arcgis.com
 I updated an older sample to use this method you can see below.
 
 [JS Bin on jsbin.com](http://jsbin.com/perovey/8/embed?js,output)
-<script src="http://static.jsbin.com/js/embed.min.js?3.34.2"></script>
+
 
 There is one caveat to this though and that is currently, the graphics of a LayerView are only available in a 2D [MapView](https://developers.arcgis.com/javascript/beta/api-reference/esri-views-MapView.html) and not a [SceneView](https://developers.arcgis.com/javascript/beta/api-reference/esri-views-SceneView.html). I'm guessing because 3D gets complicated and my default answer for these cases... **beta**.
 
