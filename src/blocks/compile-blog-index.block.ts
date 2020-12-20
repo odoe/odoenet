@@ -13,6 +13,7 @@ export default async function (options: any) {
 	}
 	catch(error) {
 		// do nothing
+		console.log('error loading file', error.message);
 		files = [];
 	}
 	const blogs: any[] = [];

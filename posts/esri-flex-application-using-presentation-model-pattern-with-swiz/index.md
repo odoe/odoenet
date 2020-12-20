@@ -1,11 +1,11 @@
 ---
-title: ">ESRI Flex Application using Presentation Model Pattern with Swiz"
+title: "ESRI Flex Application using Presentation Model Pattern with Swiz"
 published: true
 author: Rene Rubalcava
 date: "2009-11-04"
 ---
 
-\>So continuing on my quest to be a better developer, I have really dived in deep to the [Swiz framework](http://swizframework.org/).I have learned quite a bit since my last postings and I think I have gotten a really solid grasp on how to leverage the framework to meet my needs. Inspired by Ben Clinkinbeard's [Presentation Model Pattern using Swiz](http://www.benclinkinbeard.com/2009/05/swiz-example-application-with-presentation-model-pattern/), I set out to try and build an ESRI web mapping sample in the same manner.
+So continuing on my quest to be a better developer, I have really dived in deep to the [Swiz framework](http://swizframework.org/).I have learned quite a bit since my last postings and I think I have gotten a really solid grasp on how to leverage the framework to meet my needs. Inspired by Ben Clinkinbeard's [Presentation Model Pattern using Swiz](http://www.benclinkinbeard.com/2009/05/swiz-example-application-with-presentation-model-pattern/), I set out to try and build an ESRI web mapping sample in the same manner.
 
   
 [This is my result](http://odoe.net/thelab/flex/swizmappresentationmodel/SwizMapPresentationModel.html).

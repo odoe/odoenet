@@ -11,10 +11,13 @@ export default async function({ path }: { path: string }) {
 		file = file.replace(/images\//gi, `/assets/blog/${path.replace('index.md', '')}/images/`);
 		const content = toVNodes(file);
 		const meta = await getMetaData(file);
-		meta.coverImage = `/assets/blog/${path.replace('index.md', '')}/images/${meta.coverImage}`;
+		meta.coverImage = meta.coverImage
+							? `/assets/blog/${path.replace('index.md', '')}images/${meta.coverImage}`
+							: `/assets/logo.png`;
 		return { content, meta };
 	}
 	catch(error) {
+		console.log('error: compile post - ', error.message);
 		return null;
 	}
 }

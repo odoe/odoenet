@@ -1,11 +1,11 @@
 ---
-title: ">ESRI Flex Map with Robotlegs"
+title: "ESRI Flex Map with Robotlegs"
 published: true
 author: Rene Rubalcava
 date: "2009-12-12"
 ---
 
-\>Well, I'm not really one to leave well enough alone and I just had to give another Flex framework a try for my ESRI Flex mapping needs. My latest victim was [Robotlegs](http://www.robotlegs.org/). If you look at my earlier blog postings, you might have seen me mention that my first Flex framework was Cairngorm. I didn't really dislike Cairngorm, but after some conferences and reading around, I felt like I should expand my Framework horizons. Most recently I have been using Swiz with a lot of success. I think I use Swiz in the most minimal way possible, which is actually something for a future blog posting.
+Well, I'm not really one to leave well enough alone and I just had to give another Flex framework a try for my ESRI Flex mapping needs. My latest victim was [Robotlegs](http://www.robotlegs.org/). If you look at my earlier blog postings, you might have seen me mention that my first Flex framework was Cairngorm. I didn't really dislike Cairngorm, but after some conferences and reading around, I felt like I should expand my Framework horizons. Most recently I have been using Swiz with a lot of success. I think I use Swiz in the most minimal way possible, which is actually something for a future blog posting.
 
   
 

@@ -1,11 +1,9 @@
 ---
-title: ">Swiz and the ESRI API, we meet again."
+title: "Swiz and the ESRI API, we meet again."
 published: true
 author: Rene Rubalcava
 date: "2009-10-24"
 ---
-
-\>
 
 So, I spent quite a bit of time this week really trying to wrap my head around using the Swiz framework with the ESRI Flex API. I found the actual [Swiz website](http://swizframework.org/), which somehow never came up in all my earlier research. It gave me some details on things I wasn't clear on before.
 

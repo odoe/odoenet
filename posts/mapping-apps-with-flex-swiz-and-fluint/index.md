@@ -1,11 +1,11 @@
 ---
-title: ">Mapping apps with Flex, Swiz and Fluint"
+title: >Mapping apps with Flex, Swiz and Fluint"
 published: true
 author: Rene Rubalcava
 date: "2009-10-19"
 ---
 
-\>I have been developing with Flex for about a year now and so far it has been a really fun experience. I am by no means a trained developer, I just happened to have taken some some C++ and VB6 courses in school and fell into it.
+I have been developing with Flex for about a year now and so far it has been a really fun experience. I am by no means a trained developer, I just happened to have taken some some C++ and VB6 courses in school and fell into it.
 
   
 
