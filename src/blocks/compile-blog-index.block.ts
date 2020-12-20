@@ -1,7 +1,7 @@
 import { join } from 'canonical-path';
 import { readdir } from 'fs-extra';
 
-import { getLocalFile, getMetaData } from './utils';
+import { getLocalFile, getMetaData, coverImageHelper } from './utils';
 import { createBlogFeed } from './rss';
 
 const CONTENT_PATH = join(__dirname, '../../posts');
@@ -21,8 +21,8 @@ export default async function (options: any) {
 		const filePath = join(CONTENT_PATH, file, 'index.md');
 		try {
 			const content = await getLocalFile(filePath);
-			const meta = getMetaData(content);
-			meta.coverImage = `/assets/blog/${file}/images/${meta.coverImage}`;
+			const meta = coverImageHelper(getMetaData(content), file);
+
 			if (meta.published) {
 				blogs.push({
 					sortDate: new Date(`${meta.date}`),

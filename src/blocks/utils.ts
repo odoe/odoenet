@@ -87,3 +87,18 @@ export const getMetaData = (content: string) => {
 	const node = result.children.find((child: any) => Boolean(child.type === 'yaml'));
 	return node ? node.data.parsedValue : {};
 };
+
+
+// helpers
+export const coverImageHelper = (meta: any, filePath: string) => {
+	if (!meta.coverImage) {
+		meta.coverImage = `/assets/logo.png`
+	}
+	else {
+		if (!filePath.endsWith('/')) {
+			filePath = `${filePath}/`;
+		}
+		meta.coverImage = `/assets/blog/${filePath}images/${meta.coverImage}`;
+	}
+	return meta;
+}
