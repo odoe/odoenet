@@ -3,7 +3,7 @@ import { SiteMeta } from './interfaces';
 export const meta: SiteMeta = {
 	title: 'odoenet',
 	author: 'Rene Rubalcava',
-	description: 'Dev',
+	description: 'The odoe network',
 	footerLinks: [
 		{
 			href: 'https://odoe.net/atom.xml',
@@ -33,6 +33,7 @@ export const meta: SiteMeta = {
 
 // remark plugins with options
 export const remarkPlugins = [
+	'remark-slug',
 	{
 		resolve: 'remark-external-links',
 		options: { target: '_blank', rel: ['nofollow'] }
@@ -52,6 +53,5 @@ export const rehypePlugins = [
 			}
 		},
 	},
-	'@mapbox/rehype-prism',
-	'rehype-slug',
+	'@mapbox/rehype-prism'
 ];

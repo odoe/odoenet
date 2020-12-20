@@ -6,6 +6,8 @@ import * as css from './BlogList.m.css';
 import Card from '../widgets/card/Card';
 import compileBlogIndex from '../blocks/compile-blog-index.block';
 
+import { meta } from '../site-config';
+
 const factory = create({ block });
 
 export default factory(({ middleware: { block } }) => {
@@ -15,8 +17,8 @@ export default factory(({ middleware: { block } }) => {
     return (
 		<virtual>
 			<head>
-				<title>learn dojo</title>
-				<meta name="description" content="learn dojo - byte by byte" />
+                <title>{meta.title}</title>
+				<meta name="description" content={meta.description} />
 			</head>
             <div classes={[css.root]}>
                 {blogs.map((blog) => <Card key={blog.file} path={blog.file} {...blog.meta} />)}

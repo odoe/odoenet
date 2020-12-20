@@ -1,10 +1,11 @@
 {
   "build-app": {
-    "build-time-render": {
-      "root": "root",
-      "renderer": "jsdom",
-      "static": true
-    },
+    "watchExtraFiles": ["posts/**"],
+		"build-time-render": {
+			"root": "root",
+			"static": true,
+			"renderer": "jsdom"
+		},
     "pwa": {
       "manifest": {
         "name": "odoenet",

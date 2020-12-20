@@ -1,6 +1,5 @@
+import 'regenerator-runtime/runtime';
 import { join } from 'canonical-path';
-// import imagemin from 'imagemin';
-// import imageminWebp from 'imagemin-webp';
 import { getLocalFile, getMetaData, toVNodes } from './utils';
 
 const CONTENT_PATH = join(__dirname, '../../posts');
@@ -16,7 +15,6 @@ export default async function({ path }: { path: string }) {
 		return { content, meta };
 	}
 	catch(error) {
-		console.log(error.message);
 		return null;
 	}
 }

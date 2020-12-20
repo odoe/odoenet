@@ -7,10 +7,14 @@ import { createBlogFeed } from './rss';
 const CONTENT_PATH = join(__dirname, '../../posts');
 // https://github.com/dojo/site/blob/master/src/scripts/compile-blog-index.block.ts
 export default async function (options: any) {
-	const files = await readdir(CONTENT_PATH).catch((error) => {
-		console.log(error.message)
-		return [];
-	});
+	let files: string[] = [];
+	try {
+		files = await readdir(CONTENT_PATH);
+	}
+	catch(error) {
+		// do nothing
+		files = [];
+	}
 	const blogs: any[] = [];
 	for (let file of files) {
 		const filePath = join(CONTENT_PATH, file, 'index.md');
@@ -27,7 +31,7 @@ export default async function (options: any) {
 			}
 		}
 		catch (error) {
-			console.log(error.message);
+			console.log('compile-blog-index', error.message);
 		}
 	}
 

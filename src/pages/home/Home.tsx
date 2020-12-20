@@ -14,7 +14,7 @@ export default factory(function Home() {
                     url="https://player.twitch.tv"
                     options={{
                         channel: 'odoenet',
-                        parent: has('production') ? 'odoenet.netlify.app' : 'localhost',
+                        parent: has('production') ? 'odoenet.odoe.vercel.app/' : 'localhost',
                         muted: 'true'
                     }}
                 />

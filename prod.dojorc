@@ -2,7 +2,10 @@
   "extends": "./.dojorc",
   "build-app": {
     "bundles": {
-      "blog": ["src/pages/Blog"]
+      "blog": ["src/pages/blog/Blog"]
+    },
+    "features": {
+      "production": true
     },
     "pwa": {
       "manifest": {
