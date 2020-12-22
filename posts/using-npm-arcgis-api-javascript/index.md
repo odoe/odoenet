@@ -11,4 +11,4 @@ There was a [recent blog post](https://geonet.esri.com/community/developers/web-
 
 In this video, I just walk through the steps to do the install and setup. Even though you can install the API with NPM, it doesn't magically make it easier to use with tools like Webpack or in a node environment, but at least you only have one JavaScript package manager to deal with... _this week_.
 
-!(https://www.youtube.com/embed/i0MOsQ8rAjg)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/i0MOsQ8rAjg" frameborder="0" allowfullscreen></iframe>

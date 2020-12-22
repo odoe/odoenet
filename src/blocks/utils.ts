@@ -4,10 +4,13 @@ const { readFile } = require('fs-extra');
 const unified = require('unified');
 const markdown = require('remark-parse');
 const remark2rehype = require('remark-rehype');
+const raw = require('rehype-raw');
 const toH = require('hast-to-hyperscript');
 const frontmatter = require('remark-frontmatter');
 const parseFrontmatter = require('remark-parse-yaml');
-const remarkIframes = require('remark-iframes');
+// const visit = require('unist-util-visit');
+// const remarkIframes = require('remark-iframes');
+// const vdom = require('remark-vdom');
 
 const { v } = require('@dojo/framework/core/vdom');
 
@@ -24,48 +27,40 @@ export const getLocalFile = async (path: string) => {
 
 // Converts markdown to VNodes in hyperscript
 export const toVNodes = (content: string) => {
+	// console.log(content);
+	if (content.includes('<iframe')) {
+		// console.log(content);
+	}
 	let counter = 0;
 	let pipeline = unified()
-		.use(markdown)
-		.use(remarkIframes, {
-			'www.youtube.com': {
-				tag: 'iframe',
-				width: 560,
-				height: 315,
-				disabled: false,
-				replace: [
-					['watch?v=', 'embed/'],
-					['http://', 'https://'],
-				],
-				thumbnail: {
-					format: 'https://img.youtube.com/vi/{id}/0.jpg',
-					id: '.+/(.+)$',
-				},
-				removeAfter: '&',
-			},
-			'youtu.be': {
-				tag: 'iframe',
-				width: 560,
-				height: 315,
-				disabled: false,
-				oembed: 'https://www.youtube.com/oembed'
-			},
-			'jsfiddle.net': {
-				tag: 'iframe',
-				width: '100%',
-				height: 500,
-			},
-			'codesandbox.io': {
-				tag: 'iframe',
-				width: '100%',
-				height: 500,
-			},
-			'codepen.io': {
-				tag: 'iframe',
-				width: '100%',
-				height: 500,
-			}
-		})
+		.use(markdown, { commonmark: true })
+		// .use(remarkIframes, {
+		// 	'www.youtube.com': {
+		// 		tag: 'iframe',
+		// 		width: 560,
+		// 		height: 315,
+		// 		disabled: false,
+		// 		replace: [
+		// 			['watch?v=', 'embed/'],
+		// 			['http://', 'https://'],
+		// 		],
+		// 		thumbnail: {
+		// 			format: 'https://img.youtube.com/vi/{id}/0.jpg',
+		// 			id: '.+/(.+)$',
+		// 		},
+		// 		removeAfter: '&',
+		// 	},
+		// 	'jsfiddle.net': {
+		// 		tag: 'iframe',
+		// 		width: '100%',
+		// 		height: 500,
+		// 	},
+		// 	'codepen.io': {
+		// 		tag: 'iframe',
+		// 		width: '100%',
+		// 		height: 500,
+		// 	}
+		// })
 		.use(frontmatter, 'yaml');
 
 	// markdown plugins
@@ -77,10 +72,9 @@ export const toVNodes = (content: string) => {
 	});
 
 	// convert rehype
-	pipeline = pipeline.use(remark2rehype);
+	pipeline = pipeline.use(remark2rehype, {allowDangerousHtml: true}).use(raw);
 
 	// rehype plugins
-
 	rehypePlugins.forEach((plugin: any) => {
 		pipeline =
 			typeof plugin === 'string'
@@ -89,13 +83,14 @@ export const toVNodes = (content: string) => {
 	});
 
 	const nodes = pipeline.parse(content);
+	console.log('parsed iframe?', JSON.stringify(nodes).includes('iframe'));
 	const result = pipeline.runSync(nodes);
 	return toH((tag: string, props: any, children: any[]) => v(tag, { ...props, key: counter++ }, children), result);
 };
 
 // Gets yaml metadata from markdown
 export const getMetaData = (content: string) => {
-	const pipeline = unified().use(markdown, { commonmark: true }).use(frontmatter, 'yaml').use(parseFrontmatter);
+	const pipeline = unified().use(markdown).use(frontmatter, 'yaml').use(parseFrontmatter);
 
 	const nodes = pipeline.parse(content);
 	const result = pipeline.runSync(nodes);

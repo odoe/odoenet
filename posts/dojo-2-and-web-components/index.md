@@ -76,4 +76,4 @@ That is pretty amazing! I'm a fan and really love this feature of the dojo-cli t
 
 Check out this video as I ~~stumble through~~ walk you through how I scaffolded the app, built the widget and exported it to a web component!
 
-!(https://www.youtube.com/embed/bXvsGhNkXXU)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bXvsGhNkXXU" frameborder="0" allowfullscreen></iframe>

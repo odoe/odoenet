@@ -13,4 +13,4 @@ In this video, I'll introduce you to how you can use WebMaps in your own applica
 
 WebMaps are vital part of the ArcGIS platform that let you create powerful maps to drive your awesome applications!
 
-!(https://www.youtube.com/embed/ifjlKOqcx50)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ifjlKOqcx50" frameborder="0" allowfullscreen></iframe>

@@ -21,13 +21,13 @@ If I want to cover a topic I think will be a bit more in-depth, I'll break it up
 
 So far this week, I have put up the following videos!
 
-!(https://www.youtube.com/embed/HZMZhBEOH_g)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HZMZhBEOH_g" frameborder="0" allowfullscreen></iframe>
 
-!(https://www.youtube.com/embed/WKlaCLXNOTY)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WKlaCLXNOTY" frameborder="0" allowfullscreen></iframe>
 
-!(https://www.youtube.com/embed/Hf73bELkP4s)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Hf73bELkP4s" frameborder="0" allowfullscreen></iframe>
 
-!(https://www.youtube.com/embed/xJai_5-liBA)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xJai_5-liBA" frameborder="0" allowfullscreen></iframe>
 
 After the month of August is up, I'll probably go back to a weekly update, but I'll try to keep them short still.
 

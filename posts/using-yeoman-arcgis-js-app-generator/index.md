@@ -11,4 +11,4 @@ This video covers how to use the [ArcGIS JS App Generator](https://github.com/od
 
 This way you can quickly get an application up and running without having to worry about basic setup and application structure.
 
-!(https://www.youtube.com/embed/0HSRxDb4cMU)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0HSRxDb4cMU" frameborder="0" allowfullscreen></iframe>

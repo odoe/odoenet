@@ -16,7 +16,7 @@ Maybe you have found yourself using the Renderers in the ArcGIS API for JavaScri
 So what does Smart Mapping actually do for you? Essentially, _it does the math for you_. In it's simplest form, you just tell it [how you want to classify your data](https://developers.arcgis.com/javascript/jssamples/smartmapping_classesbycolor.html) or you actually use to [run the statistics on your data and render for you](https://developers.arcgis.com/javascript/jssamples/smartmapping_bycolor.html). But there's more than that going on. There's a plugin called [FeatureLayerStatistics](https://developers.arcgis.com/javascript/jsapi/featurelayerstatistics-amd.html) that can be used to get the suggested scale range based on your data, create histograms, do statistics on your fields. It's a _statistipalooza_ of functionality. The Smart Mapping renderer can even [use your basemap to determine the color scheme](https://developers.arcgis.com/javascript/jsapi/esri.renderers.smartmapping-amd.html#createcolorrenderer) to display your data for you. That is pretty cool right there.
 
 Here is a sample right from the Esri site, but animated for your viewing pleasure. [US Movie Genres by County](http://jsbin.com/pevaxa/1/embed?output)
-
+<script src="http://static.jsbin.com/js/embed.js"></script>
 
 This sample demonstrates how the render changes with the basemap.
 

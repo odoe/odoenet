@@ -17,4 +17,4 @@ It's useful for custom labels and for providing more flexibility in creating vis
 
 The following video is by no means a tutorial, but a quick intro into what you can do with Arcade in the MapViewer.
 
-!(https://www.youtube.com/embed/pmZmQlrOho8)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pmZmQlrOho8" frameborder="0" allowfullscreen></iframe>

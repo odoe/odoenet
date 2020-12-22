@@ -22,7 +22,7 @@ dbind is kind of neat because it simply binds a DOM element to the values of an 
 Let's say you simply wanted to display the name of a State as you hovered your mouse over it. Sounds simple enough right? Well dbind can make this even simpler.
 
 [JS Bin](http://jsbin.com/cusejogaje/1/embed?js,output)
-
+<script src="http://static.jsbin.com/js/embed.js"></script>
 
 In this sample, you simply bind the DOM element to the _STATE\_NAME_ property and when you _mouse-over_ the _FeatureLayer_ use the _set_ method to set this value. It all comes together in a nice little package.
 

@@ -20,7 +20,7 @@ That method pretty much goes through the map and disables everything on the map.
 You can see a sample of this in action here.
 
 [JS Bin on jsbin.com](http://jsbin.com/luwowu/2/embed?js,output)
-
+<script src="http://static.jsbin.com/js/embed.min.js?3.35.0"></script>
 
 You'll of course need to set up your own CSS stylings for your particular use-case.
 

@@ -11,4 +11,4 @@ This video will quickly walk you through setting up how to use the [ArcGIS API f
 
 Using the [ember-cli-amd](https://github.com/esri/ember-cli-amd) addon is easy to do and quickly integrate the ArcGIS JS API into your Ember applications.
 
-!(https://www.youtube.com/embed/9wbGhr6wdwE)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9wbGhr6wdwE" frameborder="0" allowfullscreen></iframe>

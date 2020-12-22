@@ -16,13 +16,13 @@ The Geometry Engine is analogous to [Turf](http://turfjs.org/). I'm a [big fan o
 ### Dumb stuff to do dumb stuff
 
 So the following examples are in no way intended to be useful whatsoever. They are however examples of what you can do if you just wanted to play with the Geometry Engine. If you look at [the docs](https://developers.arcgis.com/javascript/jsapi/esri.geometry.geometryengine-amd.html), all the basics are there. You can clip, buffer, intersect, union, find nearest points, check if one geometry is another, blah blah blah. You could also say screw that noise and just rotate the shit out of stuff. [Fun with Geometry Engine](http://jsbin.com/ziwegefote/1/embed?output)
-
+<script src="http://static.jsbin.com/js/embed.js"></script>
 
 Or maybe you want to turn California into an island! [Fun with Geometry Engine](http://jsbin.com/ziwegefote/2/embed?output)
-
+<script src="http://static.jsbin.com/js/embed.js"></script>
 
 Or you want to make it dance. [Fun with Geometry Engine](http://jsbin.com/ziwegefote/3/embed?output)
-
+<script src="http://static.jsbin.com/js/embed.js"></script>
 
 Ok, that's just some silly stuff you could do with the Geometry Engine. If you are doing some more complex work, like buffering lots of points, clipping some complez features, or more, you may want to use the [async version of Geometry Engine](https://developers.arcgis.com/javascript/jsapi/esri.geometry.geometryengineasync-amd.html) which will start using [Web Workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers) to handle some of the load.
 

@@ -79,7 +79,7 @@ If I'm interested in checking on a couple of layers, I could use Promise.all to 
 
 You can see what this example looks like here.
 
-!(https://codepen.io/odoe/embed/preview/gOpadzL?height=461&amp;theme-id=light&amp;default-tab=js,result)
+<iframe height="461" style="width: 100%;" scrolling="no" title="LayerView - When Things are Done" src="https://codepen.io/odoe/embed/preview/gOpadzL?height=461&amp;theme-id=light&amp;default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">See the Pen <a href='https://codepen.io/odoe/pen/gOpadzL'>LayerView - When Things are Done</a> by Rene Rubalcava (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>. </iframe>
 
 This example is interesting because if you zoom out so one of the layers is no longer drawn, you can see that the LayerView updating property will not change, because it does not need to fetch or draw anything.
 

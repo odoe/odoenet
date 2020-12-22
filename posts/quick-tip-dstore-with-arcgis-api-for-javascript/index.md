@@ -22,12 +22,12 @@ Say for example, you wanted to filter a list of the states by population. So you
 That's pretty cool. You can wire up the Store to listen for when graphics are added to a FeatureLayer and then pass the attributes to the store. Then you can perform a filter based on the minimum population and update the list. Rather than try and remove only parts of the list that have changed, just destroy it and rebuild it. _No fuss_.
 
 You can see a demo of this application here. [JS Bin on jsbin.com](http://jsbin.com/vukugi/embed?js,output)
-
+<script src="http://static.jsbin.com/js/embed.js"></script>
 
 ## Find the Right State
 
 You can also simply filter by state names. Which is pretty easy. [JS Bin on jsbin.com](http://jsbin.com/vukugi/1/embed?js,output)
-
+<script src="http://static.jsbin.com/js/embed.js"></script>
 
 One thing I haven't quite figured out in this scenario is how to make the filter case _insensitive_, so if someone has some ideas on this, I'd love to hear about it. The **contains** method of a filter is kind of cool, because it will match _Ca_ with _California_ and _Colorado_, since both have _C_ and _a_ in them. Now that I think about it, both of these searches could probably be tweaked with regular expressions using **match** in the filter.
 

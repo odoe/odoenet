@@ -14,7 +14,7 @@ I wanted to play around with using the GeometryEngine to see what other kind of 
 So without too much fussing around, let's dive right in to some code.
 
 [JS Bin on jsbin.com](http://jsbin.com/qudalodegi/1/embed?js,output)
-
+<script src="http://static.jsbin.com/js/embed.min.js?3.35.12"></script>
 
 First off we are going to grab some methods off Ramda and the GeometryEngine that we plan on using.
 

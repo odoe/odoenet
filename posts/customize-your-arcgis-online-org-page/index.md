@@ -23,4 +23,4 @@ It would be a great idea for you to prepare some interesting Web Maps and maybe 
 
 In this video, I just quickly cover some of the options available to you in customizing and administering your ArcGIS Online page.
 
-!(https://www.youtube.com/embed/HLH1LIVaEgQ)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HLH1LIVaEgQ" frameborder="0" allowfullscreen></iframe>

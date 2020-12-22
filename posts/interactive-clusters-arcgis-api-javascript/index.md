@@ -21,7 +21,7 @@ In this video, I discuss some of the methods you can use in your applications to
 
 Enjoy!
 
-!(https://www.youtube.com/embed/zldmdtEn45I)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zldmdtEn45I" frameborder="0" gesture="media" allowfullscreen></iframe>
 
 Here is the code sample used in the video!
 

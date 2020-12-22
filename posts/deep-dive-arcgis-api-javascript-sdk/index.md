@@ -11,7 +11,7 @@ I cover a lot of information geared toward building real-world applications usin
 
 The backbone to all that is in the [documentation](https://developers.arcgis.com/javascript/latest/api-reference/index.html), which you should be familiar with as a reference to quickly find information while you build your applications.
 
-!(https://www.youtube.com/embed/V6k2BNLYqdM)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/V6k2BNLYqdM" frameborder="0" allowfullscreen></iframe>
 
 In this video we dive right into the deep end and cover the new and improved documentation for the ArcGIS API 4 for JavaScript and how to navigate around to make it work for you. There is a lot of information in the SDK, that's because the API has a lot of features and capabilities. The search capabilities of the SDK alone should be a great enhancement for all users of the API.
 

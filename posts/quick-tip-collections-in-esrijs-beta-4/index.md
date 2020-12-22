@@ -20,7 +20,7 @@ For this case, we'll keep a source collection, to use it as a cache of the origi
 [gist id=626178b5a06fa31fb416]
 
 You can see what this looks like in this sample here. [JS Bin on jsbin.com](http://jsbin.com/juzeqe/3/embed?js,output)
-
+<script src="http://static.jsbin.com/js/embed.min.js?3.35.2"></script>
 
 So dig into the beta API a bit and play around in some of the darker corners. You just might find some gems.
 

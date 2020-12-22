@@ -37,4 +37,4 @@ You can see the source code for this search control [here](https://github.com/od
 
 You can also view my video on how to build a Leaflet Control on my [Youtube Channel](https://www.youtube.com/watch?v=kAwrqQDwVq0).
 
-!(https://www.youtube.com/embed/kAwrqQDwVq0)
+<iframe width="420" height="315" src="//www.youtube.com/embed/kAwrqQDwVq0" frameborder="0" allowfullscreen></iframe>

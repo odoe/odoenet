@@ -21,4 +21,4 @@ Basically you only consume credits for analysis involving geocoding and directio
 
 So enjoy this intro video on _Setting up a Free ArcGIS Developer Account!_
 
-!(https://www.youtube.com/embed/3jOG7gwcvd4)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3jOG7gwcvd4" frameborder="0" allowfullscreen></iframe>

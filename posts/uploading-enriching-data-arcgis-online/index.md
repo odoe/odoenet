@@ -15,4 +15,4 @@ We'll cover how to simply upload a zip of a Shapefile, create a hosted FeatureSe
 
 Please enjoy and let me know if you have any questions!
 
-!(https://www.youtube.com/embed/OqvbsN4SKzo)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OqvbsN4SKzo" frameborder="0" allowfullscreen></iframe>

@@ -15,4 +15,4 @@ The esri-loader is cool if you are building apps with other build tools like Web
 
 Enjoy!
 
-!(https://www.youtube.com/embed/VQvawbS0tz0)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VQvawbS0tz0" frameborder="0" allowfullscreen></iframe>

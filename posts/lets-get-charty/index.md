@@ -38,7 +38,7 @@ So what we're doing here is building up the dataset that Chart.js can use. We're
 You can see this in action here.
 
 [JS Bin on jsbin.com](http://jsbin.com/nenoga/3/embed?output)
-
+<script src="http://static.jsbin.com/js/embed.min.js?3.35.12"></script>
 
 Every time you update the data for Smart Mapping, it will update out little legend chart. _Fun stuff right!_
 
@@ -55,7 +55,7 @@ This is pretty simple. You get a handful of field stats back, but I'll just show
 Here is a working sample.
 
 [JS Bin on jsbin.com](http://jsbin.com/xuvajo/2/embed?output)
-
+<script src="http://static.jsbin.com/js/embed.min.js?3.35.12"></script>
 
 I had trouble getting the aspect-ratio and css to play nicely, but you get the idea.
 

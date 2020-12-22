@@ -167,11 +167,11 @@ And now I can run the command **dojo build widget --mode dist** and it will outp
 
 Once I add the required JavaScript and CSS to my page, I can add my component to an application a couple of ways.
 
-!(https://codepen.io/odoe/embed/preview/dLePdQ/?height=500&amp;theme-id=31222&amp;default-tab=html,result)
+<iframe height="500" style="width: 100%;" scrolling="no" title="ArcGIS Web Components" src="//codepen.io/odoe/embed/preview/dLePdQ/?height=500&amp;theme-id=31222&amp;default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true">See the Pen <a href='https://codepen.io/odoe/pen/dLePdQ/'>ArcGIS Web Components</a> by Rene Rubalcava (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>. </iframe>
 
 Or programatically, because maybe I want to parse URL parameters.
 
-!(https://codepen.io/odoe/embed/preview/NmMPer/?height=500&amp;theme-id=31222&amp;default-tab=js,result)
+<iframe height="500" style="width: 100%;" scrolling="no" title="ArcGIS Web Components - JS" src="//codepen.io/odoe/embed/preview/NmMPer/?height=500&amp;theme-id=31222&amp;default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">See the Pen <a href='https://codepen.io/odoe/pen/NmMPer/'>ArcGIS Web Components - JS</a> by Rene Rubalcava (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>. </iframe>
 
 Pretty cool right?
 

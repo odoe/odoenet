@@ -34,6 +34,6 @@ The way we can work around the missing "mousemove" event is to listen for the na
 The logic to draw a line is pretty simple. You can expand this even further to draw a polygon and even use these results to edit your data on the map.
 
 Here is a sample of this in action. [Draw Lines on jsbin.com](http://jsbin.com/museyuc/2/embed?js,output)
-
+<script src="http://static.jsbin.com/js/embed.min.js?3.35.0"></script>
 
 As you can see, beta is beta, but that doesn't mean you can't apply a little elbow grease and get stuff done.

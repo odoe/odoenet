@@ -13,4 +13,4 @@ In this video, I'll just go over one way you can add an action to do some revers
 
 It's not earth shattering, but it is kinda cool. Plus, you can see how you might utilize the ViewModel of an out-of-the-box widget without having to use the widget itself, which is really neat!
 
-!(https://www.youtube.com/embed/Mde23cbviDs)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Mde23cbviDs" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>

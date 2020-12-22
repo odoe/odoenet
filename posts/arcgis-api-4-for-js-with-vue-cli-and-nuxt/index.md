@@ -21,4 +21,4 @@ I hope you enjoy the video!
 
 I'll be talking more about using frameworks with the JavaScript API at the [Esri DevSummit](http://www.esri.com/events/devsummit) in Palm Springs in a couple of weeks, so I highly encourage you to attend. _Not just for one session, there's plenty of good stuff to learn there._
 
-!(https://www.youtube.com/embed/hqJzzgM8seo)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hqJzzgM8seo" frameborder="0" allowfullscreen></iframe>

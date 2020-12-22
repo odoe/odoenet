@@ -3,7 +3,6 @@
     "watchExtraFiles": ["posts/**"],
 		"build-time-render": {
 			"root": "root",
-			"static": true,
 			"renderer": "jsdom"
 		},
     "pwa": {

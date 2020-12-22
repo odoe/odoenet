@@ -42,4 +42,4 @@ Prettier is pretty cool, although I think it formats code with decorators a litt
 
 There you go, enjoy the starter app, give me feedback. If you hate it, that's cool too, please send me hate in bitcoins, thanks!
 
-!(https://www.youtube.com/embed/crfDFM6BswA)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/crfDFM6BswA" frameborder="0" allowfullscreen></iframe>

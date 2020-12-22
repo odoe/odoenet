@@ -18,7 +18,7 @@ Those are all really cool and sexy examples of using Turf to do some neat GIS in
 That functionaly isn't built right into Leaflet, and before Turf I would have had to do all the math myself, _eww_. But Turf made this task much easier to do.
 
 [JS Bin](http://jsbin.com/quqito/2/embed?js,output)
-
+<script src="http://static.jsbin.com/js/embed.js"></script>
 
 In this case I took the parcels of a park and first thing I did was use Turf to simplify the polygon and add it to the map. Remember, I just want _approximate_ lengths, not each edge (oooh [topology](http://www.gisdoctor.com/site/2012/04/10/spatial-topology-basics/)). I define a custom marker that will display the distance as the label. When the map is clicked, send the target layer and the GeoJSON feature to a function that does the real work. This method will calculate the distance for each line segment, find the mid-point and add them as features to the GeoJSON layer that will display them as labels. _BAM!_
 

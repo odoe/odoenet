@@ -28,7 +28,7 @@ So now, let's build a simple widget to use with the [ArcGIS JS API Beta](https:/
 This isn't too complicated. We basically have a button that can hide the result window. When the result window is shown, we activate a handler to listen to the _mousemove_ event of the View container. We convert screen coordinates to latitude and longitude, then make a request to the What3Words API. Those results are placed in the result window. We are debouncing the handler for the _mousemove_ event, so we don't fire a request for every little movement of the mouse or you're results will take way too long to return when they pile up.
 
 You can see a demo of this application here. [JS Bin on jsbin.com](http://jsbin.com/woyure/7/embed?css,js,output)
-
+<script src="http://static.jsbin.com/js/embed.min.js?3.35.3"></script>
 
 If this demo stops working at some point, it's probably because you guys used up my API limit, so if you want to play with this, take this code and use your own API key.
 

@@ -19,4 +19,4 @@ The 3.18 release is starting to [include features](https://developers.arcgis.com
 
 The [Bower versions of the ArcGIS API for JavaScript](https://github.com/Esri/arcgis-js-api/tags) have also been updated for users that want to create custom local builds of their applications.
 
-!(https://www.youtube.com/embed/1RRWWpofrBk)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1RRWWpofrBk" frameborder="0" allowfullscreen></iframe>
