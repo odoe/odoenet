@@ -3,6 +3,7 @@ title: "Swignalz!"
 published: true
 author: Rene Rubalcava
 date: "2010-02-09"
+tags: geodev
 ---
 
 Recently I decided to take a crack at [AS3 Signals](http://github.com/robertpenner/as3-signals). [Robert Penner](http://robertpenner.com/flashblog/) has done some really nice work putting signals together. AS3 Signals is basically meant to replace using custom events to dispatch your payload around. I'm not sure I'm entirely sold on the concept of introducing another API into my apps, but I was intrigued enough to give it a shot.

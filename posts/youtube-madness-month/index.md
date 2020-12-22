@@ -33,6 +33,6 @@ After the month of August is up, I'll probably go back to a weekly update, but I
 
 There will still be regular non-video blog content starting next week, but I'm really enjoying the video format and I get to have some fun with it.
 
-I have a list of topics I want to cover, but if there is anything you want me to talk about, just let me know, feel free to [email me](odoe@odoe.net), contact me via [twitter](https://twitter.com/odoenet) or leave message on this post or a youtube vid!
+I have a list of topics I want to cover, but if there is anything you want me to talk about, just let me know, feel free to contact me via [twitter](https://twitter.com/odoenet) or leave message on this post or a youtube vid!
 
 Thanks!

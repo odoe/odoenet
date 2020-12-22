@@ -126,52 +126,21 @@ First, creating a [WebMap](https://developers.arcgis.com/javascript/latest/api-r
 
 Second, you create a [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) that will draw the data contained in our web map. It is the job of the MapView to read the contents of the map, determine what layers to draw, at what scale they should be drawn and how to center the map.
 
-<div class="codepen" data-height="265" data-theme-id="light" data-default-tab="html,result" data-user="odoe" data-slug-hash="dBQXaq" data-preview="true" data-prefill="{&quot;title&quot;:&quot;My First Map&quot;,&quot;tags&quot;:[],&quot;stylesheets&quot;:[],&quot;scripts&quot;:[]}"><pre data-lang="html">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;meta charset="utf-8" /&gt;
-    &lt;meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" /&gt;
-    &lt;title&gt;My First Map&lt;/title&gt;
-    &lt;style&gt;
-      html,
-      body,
-      #viewDiv {
-        padding: 0;
-        margin: 0;
-        height: 100%;
-        width: 100%;
-      }
-    &lt;/style&gt;
-<div></div>
-    &lt;link
-      rel="stylesheet"
-      href="https://js.arcgis.com/4.12/esri/themes/light/main.css"
-    /&gt;
-    &lt;script src="https://js.arcgis.com/4.12/"&gt;&lt;/script&gt;
-<div></div>
-    &lt;script&gt;
-      require(["esri/WebMap", "esri/views/MapView"], function(WebMap, MapView) {
-        // create a map instance
-        const webmap = new WebMap({
-          portalItem: {
-            id: "be4b2af07b5a4d40a4deeae1b11fe3cc"
-          }
-        });
-<div></div>
-        // create a view to display
-        // our map data
-        const view = new MapView({
-          container: "viewDiv",
-          map: webmap
-        });
-      });
-    &lt;/script&gt;
-  &lt;/head&gt;
-<div></div>
-  &lt;body&gt;
-    &lt;div id="viewDiv"&gt;&lt;/div&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</pre><pre data-lang="css"></pre></div>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+```js
+require(["esri/WebMap", "esri/views/MapView"], function(WebMap, MapView) {
+  // create a map instance
+  const webmap = new WebMap({
+    portalItem: {
+      id: "be4b2af07b5a4d40a4deeae1b11fe3cc"
+    }
+  });
+  // create a view to display
+  // our map data
+  const view = new MapView({
+    container: "viewDiv",
+    map: webmap
+  });
+});
+```
 
 Congratulations! You just authored your fist web map and consumed it in a web app! In this series on ArcGIS for Web Developers, we'll cover some more basics, so stay tuned and _happy geohacking_! In the meantime, you can have fun with the [ArcGIS Developer tutorials](https://developers.arcgis.com/labs) to learn more!

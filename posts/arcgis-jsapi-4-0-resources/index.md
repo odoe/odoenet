@@ -35,9 +35,7 @@ The [jsapi-resources](https://github.com/Esri/jsapi-resources) has been reorgani
 
 One of the other additions people have been asking for with the ArcGIS JS API 4.0 betas has been TypeScript definition files, and that [has landed with the release of 4.0](https://github.com/Esri/jsapi-resources/tree/master/4.x/typescript).
 
-If you are using TypeScript, I'm going to guess that you know how to use these. Here's a simple gist using JSAPI 4.0 in TypeScript with React.
-
-<script src="https://gist.github.com/odoe/de06ae8db349e82216a716bf2b2a5198.js"></script>
+If you are using TypeScript, I'm going to guess that you know how to use these. Here's a simple [gist](https://gist.github.com/odoe/de06ae8db349e82216a716bf2b2a5198) using JSAPI 4.0 in TypeScript with React.
 
 These are just some of the resources you can find for 4.0 documentation and github.
 

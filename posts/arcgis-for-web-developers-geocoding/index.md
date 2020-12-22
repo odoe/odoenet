@@ -48,20 +48,12 @@ require([
 
 You will have an application that looks like this.
 
-<div class="codepen" data-height="439" data-theme-id="light" data-default-tab="js,result" data-user="odoe" data-slug-hash="ymMrZo" data-preview="true" data-prefill="{&quot;title&quot;:&quot;Search Start&quot;,&quot;tags&quot;:[],&quot;head&quot;:&quot;<meta name=\&quot;viewport\&quot; content=\&quot;width=device-width, initial-scale=1\&quot;>\n<script>\n  var dojoConfig = {\n    has: {\n      \&quot;esri-featurelayer-webgl\&quot;: 1\n    }\n  };\n</script>&quot;,&quot;stylesheets&quot;:[&quot;https://js.arcgis.com/4.12/esri/css/main.css&quot;],&quot;scripts&quot;:[&quot;https://js.arcgis.com/4.12&quot;]}"><pre data-lang="html">&lt;div id="viewDiv"&gt;
-&lt;/div&gt;</pre><pre data-lang="css">html,
-body,
-#viewDiv {
-  padding: 0;
-  margin: 0;
-  height: 100%;
-  width: 100%;
-}</pre><pre data-lang="js">require([
+```js
+require([
   "esri/Map",
   "esri/views/MapView",
   "esri/widgets/Search"
 ], function(ArcGISMap, MapView, Search) {
-<div></div>
   const map = new ArcGISMap({
     basemap: "streets"
   });
@@ -73,8 +65,8 @@ body,
   });
   const search = new Search({ view });
   view.ui.add(search, "top-right");
-});</pre></div>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+});
+```
 
 Now you can search for an address, a restaurant, a city, or any other random place. The Search widget will then zoom you to the location of what you searched for and provide a popup with information about the result or other results.
 
@@ -121,15 +113,8 @@ require([
 
 Because you initialize the SearchViewModel with the map view, it will display a marker and a popup where users click on the map. Go ahead, try it out here!
 
-<div class="codepen" data-height="633" data-theme-id="light" data-default-tab="js,result" data-user="odoe" data-slug-hash="JgWqrQ" data-preview="true" data-prefill="{&quot;title&quot;:&quot;SearchViewModel Start&quot;,&quot;tags&quot;:[],&quot;head&quot;:&quot;<meta name=\&quot;viewport\&quot; content=\&quot;width=device-width, initial-scale=1\&quot;>\n<script>\n  var dojoConfig = {\n    has: {\n      \&quot;esri-featurelayer-webgl\&quot;: 1\n    }\n  };\n</script>&quot;,&quot;stylesheets&quot;:[&quot;https://js.arcgis.com/4.12/esri/css/main.css&quot;],&quot;scripts&quot;:[&quot;https://js.arcgis.com/4.12&quot;]}"><pre data-lang="html">&lt;div id="viewDiv"&gt;
-&lt;/div&gt;</pre><pre data-lang="css">html,
-body,
-#viewDiv {
-  padding: 0;
-  margin: 0;
-  height: 100%;
-  width: 100%;
-}</pre><pre data-lang="js">require([
+```js
+require([
   "esri/Map",
   "esri/views/MapView",
   "esri/widgets/Search/SearchViewModel"
@@ -138,7 +123,6 @@ body,
    MapView,
    SearchViewModel
   ) {
-<div></div>
   const map = new ArcGISMap({
     basemap: "streets"
   });
@@ -158,8 +142,8 @@ body,
         console.log(response);
     });
   });
-});</pre></div>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+});
+```
 
 You have to admit, that's pretty cool!
 

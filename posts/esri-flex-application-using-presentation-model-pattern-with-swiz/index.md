@@ -13,7 +13,7 @@ So continuing on my quest to be a better developer, I have really dived in deep 
   
 So, I read through some of [this](http://martinfowler.com/eaaDev/PresentationModel.html) in addition to Ben's example above and this how I interpreted using the Presentation Model Pattern.  
   
-[![](images/presomodel.jpg)](http://odoe.net/thelab/flex/swizmappresentationmodel/presomodel.jpg)
+** image lost **
 
 ( I prefer yellow sticky notes for complex explanations )
 

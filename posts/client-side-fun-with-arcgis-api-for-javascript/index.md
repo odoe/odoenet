@@ -67,7 +67,7 @@ Doing this allows us to hover over the map, highlight the features we run our st
 You can see this demo in action here.
 
 <p data-height="532" data-theme-id="31222" data-slug-hash="LMZvNq" data-default-tab="result" data-user="odoe" data-pen-title="jsapi4 geojson consume" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/odoe/pen/LMZvNq/">jsapi4 geojson consume</a> by Rene Rubalcava (<a href="https://codepen.io/odoe">@odoe</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
 
 This sample barely scratches the surface of what you can do with client side statistics. For a more robust use case, check out [this sample](https://developers.arcgis.com/javascript/latest/sample-code/sandbox/index.html?sample=featurelayerview-query-distance) in the SDK that uses SQL queries in the statistics queries! Not bad for loading some simple GeoJSON into an ArcGIS API for JavaScript app right!
 

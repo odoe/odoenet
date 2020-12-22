@@ -21,6 +21,7 @@ The tricky part is to do the animation smoothly. That's where [easing functions]
 
 You can check it out here.
 
-<p data-height="300" data-theme-id="31222" data-slug-hash="zPJKeE" data-default-tab="js,result" data-user="odoe" data-embed-version="2" data-pen-title="Animate Drawer" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/odoe/pen/zPJKeE/">Animate Drawer</a> by Rene Rubalcava (<a href="https://codepen.io/odoe">@odoe</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-
-<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+<iframe height="300" style="width: 100%;" scrolling="no" title="Animate Drawer" src="https://codepen.io/odoe/embed/zPJKeE?height=300&theme-id=39013&default-tab=js,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/odoe/pen/zPJKeE'>Animate Drawer</a> by Rene Rubalcava
+  (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>

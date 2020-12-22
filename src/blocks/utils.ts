@@ -83,7 +83,6 @@ export const toVNodes = (content: string) => {
 	});
 
 	const nodes = pipeline.parse(content);
-	console.log('parsed iframe?', JSON.stringify(nodes).includes('iframe'));
 	const result = pipeline.runSync(nodes);
 	return toH((tag: string, props: any, children: any[]) => v(tag, { ...props, key: counter++ }, children), result);
 };

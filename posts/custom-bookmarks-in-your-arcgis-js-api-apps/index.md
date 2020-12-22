@@ -67,7 +67,7 @@ Here is a sample app for you play with.
 
 <p data-height="265" data-theme-id="light" data-slug-hash="QxrEVX" data-default-tab="js,result" data-user="odoe" data-pen-title="Local bookmarks" class="codepen">See the Pen <a href="https://codepen.io/odoe/pen/QxrEVX/">Local bookmarks</a> by Rene Rubalcava (<a href="https://codepen.io/odoe">@odoe</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
 
 So have fun with it! Don't forget, the tools are there for you to make some awesome apps, you just got put in a little work.
 

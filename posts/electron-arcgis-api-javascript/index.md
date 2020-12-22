@@ -19,13 +19,13 @@ _That's it_. Just rename the default Node `require` in the Browser app of your E
 
 In my browser app, referred to as the _renderer process_, I can do something like this.
 
-```
+```js
 ipcRenderer.send("upload-shp", filepath);
 ```
 
 Then in the _main process_, I can listen for that message.
 
-```
+```js
 ipcMain.on("upload-shp", (event, arg) => {...})
 ```
 

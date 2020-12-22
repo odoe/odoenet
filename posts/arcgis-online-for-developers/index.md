@@ -31,19 +31,19 @@ This is where you have some options. You can go ahead and use the Feature Servic
 
 Now we are in an environment where you may want to create some data or maybe do something with the data that has already been collected. If you are not familiar with the ArcGIS Online map viewer, this may seem a bit intimidating at first, after all there are a lot of buttons and options as you hover over items. _Don't sweat it_, we're going to cover only what we need to. I have some data that is just a collection of points.
 
-[![sample-data](images/sample-data-296x300.png)](http://odoe.net/blog/wp-content/uploads/sample-data.png)
+![sample-data](images/sample-data-296x300.png)
 
 Go ahead and click on the _Analysis_ button in the toolbar.
 
-[![analysis-btn](images/analysis-btn.png)](http://odoe.net/blog/wp-content/uploads/analysis-btn.png)
+![analysis-btn](images/analysis-btn.png)
 
 You get a new sidebar to _Perform Analysis_. This is where ArcGIS Online gets really interesting for developers. You can now take your data that you might have written an application for that has collected various points of interest. That alone may be sufficient depending on what you want to use it for. But maybe you want to do something a little more impressive with your data. ArcGIS Online provides lots of various analysis tools you can use to make your data more meaningful, but for now let's keep it simple and just look for some patterns. Click on _Analyze Patterns_ and then _Hot Spots_.
 
-[![analyze-patterns](images/analyze-patterns-233x300.png)](http://odoe.net/blog/wp-content/uploads/analyze-patterns.png)
+![analyze-patterns]
 
 Now you are presented with a new sidebar menu as shown below.
 
-[![hot-spots](images/hot-spots-147x300.png)](http://odoe.net/blog/wp-content/uploads/hot-spots.png)
+![hot-spots](images/hot-spots-147x300.png)
 
 We'll keep the defaults to run this analysis. Now, why would I care about this particular analysis. Let's assume my dataset is a collection of requests from the public to fix some problem with streets. This could be a street light is broken, stop sign missing or maybe a sidewalk damage by tree roots. A hot spot analysis can be used as a way to visualize where activity is happening, so in this case maybe where a city is spending money to fix problems that could help someone make decisions such as initiate upgrades in infrastructure. This type of analysis could be a starting point for this process.
 
@@ -51,31 +51,31 @@ I should also point out that just because you can perform this analysis on your 
 
 At this point, you can click on the _Run Analysis_ button at the bottom of the sidebar and wait for the analysis to finish. When done, I get a result that looks like below.
 
-[![hot-spot-result](images/hot-spot-result-300x260.png)](http://odoe.net/blog/wp-content/uploads/hot-spot-result.png)
+![hot-spot-result](images/hot-spot-result-300x260.png)
 
 The analysis run shows a definite red area in the center indicating a high cluster of collected data. This map isn't very good looking yet, so let's make it look good.
 
 Click on the _Basemap_ button and select _Dark Gray Canvas_.
 
-[![basemap](images/basemap-230x300.png)](http://odoe.net/blog/wp-content/uploads/basemap.png)
+![basemap](images/basemap-230x300.png)
 
 Then I'll zoom in a little bit more to the area I'm interested, turn off my points, and get a map like below.
 
-[![hot-spot-map](images/hot-spot-map-1024x632.png)](http://odoe.net/blog/wp-content/uploads/hot-spot-map.png)
+![hot-spot-map](images/hot-spot-map-1024x632.png)
 
 At this point, I'll save my map by clicking the save button, give it a name and provide the required tags.
 
-[![save-map](images/save-map-1024x472.png)](http://odoe.net/blog/wp-content/uploads/save-map.png)
+![save-map](images/save-map-1024x472.png)
 
 # Sharing
 
 Now I'll share my map by clicking the _Share_ button. I'll share to everyone. Now at this point, when you share a map, you also will be sharing all the underlying data that comprises the map. You will be prompted to update the sharing of the dependent services. So keep this in mind when sharing maps that you aren't also sharing data you may not want to.
 
-[![map-share](images/map-share-1024x522.png)](http://odoe.net/blog/wp-content/uploads/map-share.png)
+![map-share](images/map-share-1024x522.png)
 
 Now you can use this link to share with other people or use the webmap id to bring this map into your applications. You can find the webmap id in the URL to your webmap as shown below.
 
-[![webmapid](images/webmapid-1024x57.png)](http://odoe.net/blog/wp-content/uploads/webmapid.png)
+![webmapid](images/webmapid-1024x57.png)
 
 You can use this in the ArcGIS API for JavaScript by using the [esri/arcgis/utils](https://developers.arcgis.com/javascript/jsapi/esri.arcgis.utils-amd.html) module.
 

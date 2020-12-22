@@ -17,6 +17,7 @@ Since its latest release, I have gotten a number of questions on how it can be u
 
 When you first install your Svelte application, it's silly simple to add the ArcGIS API for JavaScript. Go into the public folder and add the script tag to the head of the index.html file.
 
+```html
 <head>
 	<meta charset='utf8'>
 	<meta name='viewport' content='width=device-width'>
@@ -26,9 +27,11 @@ When you first install your Svelte application, it's silly simple to add the Arc
         <link rel="stylesheet" href="https://js.arcgis.com/4.11/esri/themes/light/main.css">
 	<script src="https://js.arcgis.com/4.11/"></script>
 </head>
+```
 
 Once you do that, you can directly into the App.svelte file and use the AMD loader of the API to load your mappy stuff.
 
+```html
 <!-- src/App.svelte -->
 <script>
     export let centerText;
@@ -78,6 +81,7 @@ Once you do that, you can directly into the App.svelte file and use the AMD load
     <h1>{centerText}</h1>
     <div id="viewDiv"></div>
 </div>
+```
 
 So yeah, Svelte has a file extension. If you've used Vue, this probably seems really familiar to you. Your editor may complain about not having the typings for _require_ installed, but that can be ignored.
 
@@ -95,6 +99,7 @@ Svelte doesn't use webpack, it uses [rollup](https://rollupjs.org/guide/en). Thi
 
 In the rollup.config.js, let's change the output to amd.
 
+```js
 // rollup.config.js
 ...
 output: {
@@ -104,9 +109,11 @@ output: {
   file: 'public/bundle.js'
 },
 ...
+```
 
 Now we can update the index.html page to use the AMD loader of the ArcGIS API for JavaScript to load the module that Svelte will create.
 
+```html
 <script>
   // define app as a dojo package
   window.dojoConfig = {
@@ -125,9 +132,11 @@ Now we can update the index.html page to use the AMD loader of the ArcGIS API fo
   require(['app/bundle']);
 </script>
 </body>
+```
 
 I'll create a file that will handle all my ArcGIS API for JavaScript code separate from Svelte.
 
+```js
 // src/initMap.js
 export async function initmap() {
   const [Map, MapView] = await Promise.all([
@@ -148,9 +157,11 @@ export async function initmap() {
 
   return view;
 }
+```
 
 Now I can use it in my Svelte file.
 
+```html
 // App.svelte
 <script>
 	import { initmap } from "./initmap";
@@ -167,6 +178,7 @@ Now I can use it in my Svelte file.
 
 	load();
 </script>
+```
 
 And my application will look the same!
 

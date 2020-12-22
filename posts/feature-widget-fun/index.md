@@ -76,7 +76,7 @@ You can see the full demo in action here.
 
 <p data-height="500" data-theme-id="31222" data-slug-hash="XPgeyg" data-default-tab="js,result" data-user="odoe" data-pen-title="Feature Widget Fun" class="codepen">See the Pen <a href="https://codepen.io/odoe/pen/XPgeyg/">Feature Widget Fun</a> by Rene Rubalcava (<a href="https://codepen.io/odoe">@odoe</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
 
 There you have it, you can take advantage of displaying Popup content however you want in your application without having to rely on the Popup itself!
 

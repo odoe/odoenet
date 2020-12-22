@@ -136,7 +136,7 @@ view.on("pointer-move", event => {
 What you end up with is an application that looks something like this.
 
 <p class="codepen" data-height="480" data-theme-id="31222" data-default-tab="result" data-user="odoe" data-slug-hash="eoOvPj" data-preview="true" style="height: 480px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="FeatureView - Tooltip"><span>See the Pen <a href="https://codepen.io/odoe/pen/eoOvPj/">FeatureView - Tooltip</a> by Rene Rubalcava (<a href="https://codepen.io/odoe">@odoe</a>) on <a href="https://codepen.io">CodePen</a>.</span></p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
 
 As you can see, this is pretty damn nifty! It's fast, it looks cool, if I do say so myself, and best off all, that's really not a lot of extra code to write. Plus, admit it, it's fun just to play with!
 

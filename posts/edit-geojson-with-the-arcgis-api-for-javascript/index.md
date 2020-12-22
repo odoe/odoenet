@@ -378,7 +378,7 @@ date: null,
     });
 });
 </pre></div>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
 
 ## Summary
 

@@ -28,7 +28,7 @@ view.on("pointer-move", function(event) {
 ```
 
 [Get started with graphics - 4.2 on jsbin.com](http://jsbin.com/narasewone/2/embed?html,output)
-<script src="http://static.jsbin.com/js/embed.min.js?3.40.3"></script>
+
 
 Nothing happens. I have a point on the map, but it's not changing. But I updated the geometry? _A current limitation is that the graphic isn't automatically updated in the View. You can get around this by using **graphic.clone()**._
 
@@ -46,7 +46,7 @@ view.on("pointer-move", function(event) {
 ```
 
 [Get started with graphics - 4.2 on jsbin.com](http://jsbin.com/kahasamafe/1/embed?html,output)
-<script src="http://static.jsbin.com/js/embed.min.js?3.40.3"></script>
+
 
 In this case, I clone the Graphic, update the geometry, remove the old graphic and add the cloned one. This way I can maintain the symbology and attributes as I just change the geometry.
 
