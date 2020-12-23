@@ -3,7 +3,7 @@ import block from '@dojo/framework/core/middleware/block';
 
 import Link from '@dojo/framework/routing/Link';
 
-import compileBlogPost from '../../blocks/compile-blog-post.block';
+import compileBlogPost from './blog-post.block';
 
 import Article from '../../widgets/article/Article';
 

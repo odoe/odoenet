@@ -13,7 +13,7 @@ export default factory(({ children, properties }) => {
 	const { title, author, footerLinks } = properties();
 
 	return (
-		<div classes={[ css.root ]}>
+		<div>
 			<head>
 				<meta charset="utf-8" />
 				<meta name="theme-color" content="#009dff" />
@@ -25,7 +25,9 @@ export default factory(({ children, properties }) => {
 				<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet" />
 			</head>
 			<Header title={title} />
-			<main classes={[ css.section ]}>{children()}</main>
+			<div classes={[css.root]}>
+				<main classes={[css.section]}>{children()}</main>
+			</div>
 			<Footer {...{ author, footerLinks }} />
 		</div>
 	);

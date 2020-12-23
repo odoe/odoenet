@@ -41,14 +41,14 @@ export default factory(({ properties }) => {
   const links = createLinks(footerLinks);
   return (
     <footer key="footer" classes={[css.root]}>
-      <span>&copy; {`${d.getFullYear()}, ${name}`}</span>
+      <span>{`© ${d.getFullYear()}, ${name}`}</span>
       <br />
       <div>
       {links}
       </div>
       <br />
       <span classes={[css.details]} key="footer">
-        Last build: {`${buildTime}`}
+        {`Last build: ${buildTime}`}
       </span>
       <br />
     </footer>

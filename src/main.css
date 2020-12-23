@@ -18,8 +18,11 @@ header {
 }
 
 #root {
-	display: grid;
-	grid-template-columns: 1fr minmax(280px, 1000px) 1fr;
+	display: flex;
+	flex-direction: column;
+	/* display: grid;
+	grid-template-columns: minmax(1.2rem, 1fr) minmax(auto, 57ch) minmax(1.2rem, 1fr); */
+	/* grid-template-columns: 1fr minmax(280px, 800px) 1fr; */
 }
 
 article img {

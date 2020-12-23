@@ -9,7 +9,6 @@ export default factory(function Home() {
     return (
         <section>
             <div>
-                This is odoenet
                 <Embed
                     url="https://player.twitch.tv"
                     options={{

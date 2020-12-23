@@ -3,10 +3,10 @@ import block from '@dojo/framework/core/middleware/block';
 
 import * as css from './BlogList.m.css';
 
-import Card from '../widgets/card/Card';
-import compileBlogIndex from '../blocks/compile-blog-index.block';
+import Card from '../../widgets/card/Card';
+import compileBlogIndex from './blog-list.block';
 
-import { meta } from '../site-config';
+import { meta } from '../../site-config';
 
 const factory = create({ block });
 

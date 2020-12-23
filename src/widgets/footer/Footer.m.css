@@ -3,6 +3,9 @@
 	text-align: center;
 	padding: 3rem 1rem;
 	overflow: hidden;
+	grid-column: 1 / 4;
+	width: 100%;
+	justify-self: center;
 }
 
 .details {

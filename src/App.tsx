@@ -3,7 +3,7 @@ import Outlet from '@dojo/framework/routing/Outlet';
 
 import Blog from './pages/blog/Blog';
 import Home from './pages/home/Home';
-import BlogList from './blog-list/BlogList';
+import BlogList from './templates/blog-list/BlogList';
 
 import Layout from './layouts/Layout';
 

@@ -133,10 +133,12 @@ The plugins used are to handle some JavaScript features being used and to compil
 
 At this point, you can now build your application!
 
-\# development
+```bash
+# development
 npm start
 # production
 npm run build
+```
 
 Your application should now build like normal!
 

@@ -1,10 +1,10 @@
 import { join } from 'canonical-path';
 import { readdir } from 'fs-extra';
 
-import { getLocalFile, getMetaData, coverImageHelper } from './utils';
-import { createBlogFeed } from './rss';
+import { getLocalFile, getMetaData, coverImageHelper } from '../../blocks-common/utils';
+import { createBlogFeed } from '../../blocks-common/rss';
 
-const CONTENT_PATH = join(__dirname, '../../posts');
+const CONTENT_PATH = join(__dirname, '../../../markdown-pages/blog');
 // https://github.com/dojo/site/blob/master/src/scripts/compile-blog-index.block.ts
 export default async function (options: any) {
 	let files: string[] = [];
