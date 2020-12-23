@@ -8,9 +8,6 @@ const raw = require('rehype-raw');
 const toH = require('hast-to-hyperscript');
 const frontmatter = require('remark-frontmatter');
 const parseFrontmatter = require('remark-parse-yaml');
-// const visit = require('unist-util-visit');
-// const remarkIframes = require('remark-iframes');
-// const vdom = require('remark-vdom');
 
 const { v } = require('@dojo/framework/core/vdom');
 
@@ -27,40 +24,9 @@ export const getLocalFile = async (path: string) => {
 
 // Converts markdown to VNodes in hyperscript
 export const toVNodes = (content: string) => {
-	// console.log(content);
-	if (content.includes('<iframe')) {
-		// console.log(content);
-	}
 	let counter = 0;
 	let pipeline = unified()
 		.use(markdown, { commonmark: true })
-		// .use(remarkIframes, {
-		// 	'www.youtube.com': {
-		// 		tag: 'iframe',
-		// 		width: 560,
-		// 		height: 315,
-		// 		disabled: false,
-		// 		replace: [
-		// 			['watch?v=', 'embed/'],
-		// 			['http://', 'https://'],
-		// 		],
-		// 		thumbnail: {
-		// 			format: 'https://img.youtube.com/vi/{id}/0.jpg',
-		// 			id: '.+/(.+)$',
-		// 		},
-		// 		removeAfter: '&',
-		// 	},
-		// 	'jsfiddle.net': {
-		// 		tag: 'iframe',
-		// 		width: '100%',
-		// 		height: 500,
-		// 	},
-		// 	'codepen.io': {
-		// 		tag: 'iframe',
-		// 		width: '100%',
-		// 		height: 500,
-		// 	}
-		// })
 		.use(frontmatter, 'yaml');
 
 	// markdown plugins
@@ -72,7 +38,7 @@ export const toVNodes = (content: string) => {
 	});
 
 	// convert rehype
-	pipeline = pipeline.use(remark2rehype, {allowDangerousHtml: true}).use(raw);
+	pipeline = pipeline.use(remark2rehype, { allowDangerousHtml: true }).use(raw);
 
 	// rehype plugins
 	rehypePlugins.forEach((plugin: any) => {
