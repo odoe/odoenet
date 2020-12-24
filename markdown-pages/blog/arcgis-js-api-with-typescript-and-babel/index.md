@@ -59,7 +59,7 @@ With the babel dependencies installed, I needed to make some changes to my webpa
 
 ```js
 // webpack.config.js 
-module.exports = function(\_, arg) {
+module.exports = function(_, arg) {
      const config = {
          entry: {
 - index: ['@dojo/framework/shim/Promise', './src/css/main.scss', './src/worker-config.ts', './src/index.tsx'],
@@ -67,7 +67,7 @@ module.exports = function(\_, arg) {
          },
          output: {
              filename: '[name].[chunkhash].js',
-@@ -44,10 +44,8 @@ module.exports = function(\_, arg) {
+@@ -44,10 +44,8 @@ module.exports = function(_, arg) {
              rules: [
                  {
                      test: /\\.tsx?$/,
@@ -75,7 +75,7 @@ module.exports = function(\_, arg) {
 - options: {
 - transpileOnly: true,
 - },
-+                    exclude: /node\_modules/,
++                    exclude: /node_modules/,
 +                    loader: 'babel-loader'
                  },
                  {

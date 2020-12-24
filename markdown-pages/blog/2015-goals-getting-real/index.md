@@ -7,7 +7,7 @@ tags: geodev
 coverImage: "odoenetgoals.jpg"
 ---
 
-I had a jam-packed 2014. Reviewing my [2014 goals](http://odoe.net/blog/2014-goals-growth-and-challenges/) I met some and not others.
+I had a jam-packed 2014. Reviewing my [2014 goals](https://odoe.net/blog/2014-goals-growth-and-challenges/) I met some and not others.
 
 ### Work
 

@@ -14,9 +14,9 @@ As I see it, you would use Signals in place of creating custom events that would
 
 Joel Hooks already  put together a cool AS3 Signals/Robotlegs [example](http://joelhooks.com/2010/01/16/robotlegs-image-gallery-example-using-as3-signals-and-the-presentation-model/) that showed how you could leverage Signals with Robotlegs. So I figured, hey, I'm going to try Signals with [Swiz](http://swizframework.org/).  I haven't really tackled Swiz in a while as my current project uses [RobotLegs](http://www.robotlegs.org/), but with [Swiz 1.0 Alpha](http://swizframework.org/2009/12/swiz-1-0-0-alpha-released/) out and 1.0 beta coming up, I thought I'd give it a shot as I anticipate using Swiz 1.0 in a couple of upcoming projects. I tried some stuff out in the available examples and then put together a small demo app.
 
-[Application](http://odoe.net/thelab/flex/swignalz/Index.html)
+* [Application](https://odoe.net/thelab/flex/swignalz/Index.html)
 
-[Source](http://odoe.net/thelab/flex/swignalz/srcview/index.html)
+* [Source](https://odoe.net/thelab/flex/swignalz/srcview/index.html)
 
 It's not a pretty example, but it shows a couple of ways that you can treat signals in your application.
 

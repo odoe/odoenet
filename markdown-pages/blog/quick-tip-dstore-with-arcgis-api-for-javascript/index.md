@@ -17,7 +17,7 @@ In dstore, [Stores](https://github.com/SitePen/dstore/blob/master/docs/Store.md)
 
 Say for example, you wanted to filter a list of the states by population. So you need to wire up how to get this list form a service, display it and filter it. That could look something like this.
 
-[gist id=66b5e316736bcaa5f892]
+[gist](https://gist.github.com/odoe/66b5e316736bcaa5f892)
 
 That's pretty cool. You can wire up the Store to listen for when graphics are added to a FeatureLayer and then pass the attributes to the store. Then you can perform a filter based on the minimum population and update the list. Rather than try and remove only parts of the list that have changed, just destroy it and rebuild it. _No fuss_.
 

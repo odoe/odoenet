@@ -15,6 +15,6 @@ View the video below to get a quick rundown of the updated generator and applica
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/6W3ow22pank" frameborder="0" allowfullscreen></iframe>
 
-You can view a demo of output application [here](https://github.com/odoe/gen4) and a live demo of the optimized application [here](http://odoe.net/apps/js4start/).
+You can view a demo of output application [here](https://github.com/odoe/gen4) and a live demo of the optimized application [here](https://odoe.net/apps/js4start/).
 
 Give it a try and see if it helps you get up and running using the ArcGIS API for JavaScript to build your applications!

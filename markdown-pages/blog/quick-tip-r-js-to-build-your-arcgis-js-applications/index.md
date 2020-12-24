@@ -13,7 +13,7 @@ I've seen this question come up a few times and thought I would share my experie
 
 A quick answer to the question above is, I don't think you can, at least not easily. [It would look like](http://forums.arcgis.com/threads/64087-Loading-Local-Esri-Modules-via-AMD) without the un-built version of the ArcGIS API, you can't use the dojo build tools for your application. I tried following [this post](http://geospatialscott.blogspot.ca/2011/06/using-dojo-build-system-to-speed-up.html) about a custom build. I've given it a shot a few times with no success, but of course if someone has and is willing to share I'm all ears. I decided to just go the simple, maybe cowardly route.
 
-Now, before the ArcGIS API went to version 3.0 and started using Dojo 1.7, I was already [using Require.js](http://odoe.net/blog/?p=290) to build be applications, so I was familiar with the [r.js](https://github.com/jrburke/r.js/) optimization tool. After my shameful failure of trying to get the Dojo build tools to work, which by the way seemed overly complicated, but that's just me, I decided to see if r.js would still do the trick. And sure enough, it works just fine.
+Now, before the ArcGIS API went to version 3.0 and started using Dojo 1.7, I was already [using Require.js](https://odoe.net/blog/?p=290) to build be applications, so I was familiar with the [r.js](https://github.com/jrburke/r.js/) optimization tool. After my shameful failure of trying to get the Dojo build tools to work, which by the way seemed overly complicated, but that's just me, I decided to see if r.js would still do the trick. And sure enough, it works just fine.
 
 I'm not going to tell you how to install r[.js](https://github.com/jrburke/r.js/), but I recommend the npm install.
 

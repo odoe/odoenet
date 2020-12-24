@@ -77,4 +77,4 @@ You'll notice I've refactored the code in the sample above a bit from the video,
 
 Go forth and geohack my friends!
 
-If you like this post, don't forget to [subscibe!](http://odoe.net/blog/sign-up/)
+If you like this post, don't forget to [subscibe!](https://odoe.net/blog/sign-up/)

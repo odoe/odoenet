@@ -11,7 +11,7 @@ It's that time of year, it's wet outside (in SoCal anyway), I'm blasting through
 
 I tend to over-commit, and I like to think I over-deliver. I have to admit, I kind of thrive on it. Presenting and sharing material. I think I do a decent job of it. I also think I can party like I'm still 25 though, so what do I know.
 
-I went to the [Esri European DevSummit 2016](http://odoe.net/blog/esri-european-devsummit-2016/) in Berlin just a few months ago, and it was a blast. I think I'm past my flying issues, at least I was cool on my return flight, but I could have just been too tired to care. It was a lot of fun to present with some European brethren and to get to meet all the European developers that may not get to fly over for the Palm Springs DevSummit.
+I went to the [Esri European DevSummit 2016](https://odoe.net/blog/esri-european-devsummit-2016/) in Berlin just a few months ago, and it was a blast. I think I'm past my flying issues, at least I was cool on my return flight, but I could have just been too tired to care. It was a lot of fun to present with some European brethren and to get to meet all the European developers that may not get to fly over for the Palm Springs DevSummit.
 
 While I was there, I was like _hey, can I go to DC too?_
 

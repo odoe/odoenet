@@ -5,7 +5,7 @@ author: Rene Rubalcava
 date: "2012-06-07"
 ---
 
-I had previously written about [simplifying your dev environment](http://odoe.net/blog/?p=200). Most of the day to day work that I do, I can manage with vim just fine. But I also use Visual Studio quite a bit for ASP/MVC3 and (don't laugh) Silverlight. So when I do web dev in Visual Studio, I like to set up my environment in a way that makes me effective and productive. I never really thought about this process until I started doing some pair-programming and had to share this convoluted information with another human being. I'm going to do this step-by-step, so there's no confusion (please don't get confused).
+I had previously written about [simplifying your dev environment](https://odoe.net/blog/?p=200). Most of the day to day work that I do, I can manage with vim just fine. But I also use Visual Studio quite a bit for ASP/MVC3 and (don't laugh) Silverlight. So when I do web dev in Visual Studio, I like to set up my environment in a way that makes me effective and productive. I never really thought about this process until I started doing some pair-programming and had to share this convoluted information with another human being. I'm going to do this step-by-step, so there's no confusion (please don't get confused).
 
 ## 1: MVC 3
 
@@ -23,27 +23,35 @@ This is not a required step, you could just as easily use vim or some other text
 
 Now the fun begins, install Git for Windows from [here](http://git-scm.com/downloads). From here on out, I recommend using the Git Bash shell for simplicity sake. Now the tricky part is working with these command line tools behind a proxy. If you're lucky, you don't work behind a proxy, if you're not, these command line tools will not automatically be aware if your internet settings, so you need to manually set them up. You can use the following command or git as discussed in [this Stackoverflow question](http://stackoverflow.com/questions/128035/how-do-i-pull-from-a-git-repository-through-an-http-proxy).
 
-> git config --global http.proxy http://proxy\_host:port
+```bash
+git config --global http.proxy http://proxy_host:port
+```
 
 ## 5: Ruby
 
 This is a simple one, install Ruby from [here](http://rubyinstaller.org/). The Ruby installer comes with [gem](http://rubygems.org/). Once again, per instructions [here](http://stackoverflow.com/questions/4418/how-do-i-update-ruby-gems-from-behind-a-proxy-isa-ntlm) and [here](http://www.nigelthorne.com/2007/02/how-to-update-gems-from-behind-proxy.html), we may need to set up gem behind a proxy. Run this command before using gem.
 
-> set HTTP\_PROXY=http://proxy\_host:port
+```bash
+set HTTP_PROXY=http://proxy_host:port
+```
 
-This should set HTTP\_PROXY for this current bash session, so you'll do it each time you reopen bash before running gem. I tried setting up a permanent environment variable for this, but it interfered with my internet connection. You may have better luck. I could have sworn there was a config file you could create that gem could read for proxy info, but can't remember it.
+This should set HTTP_PROXY for this current bash session, so you'll do it each time you reopen bash before running gem. I tried setting up a permanent environment variable for this, but it interfered with my internet connection. You may have better luck. I could have sworn there was a config file you could create that gem could read for proxy info, but can't remember it.
 
 ## 6: Node.js
 
 Simple enough these days, use the windows installer for [Node.js](http://nodejs.org/) and you should be all set. Before the windows installer, this process sucked, I would say run Linux in a Virtual Box and spare the stress. Thanks Node devs for making this a clean process for Windows guys. The installer comes with [npm](http://npmjs.org/), so if you need to work behind a proxy, read [this](https://github.com/isaacs/npm/issues/2119) and do the following.
 
-> npm config set proxy http://proxy\_host:port npm config set registry "http://registry.npmjs.org/"
+```bash
+npm config set proxy http://proxy_host:port npm config set registry "http://registry.npmjs.org/"
+```
 
 ## 7: CoffeeScript
 
 Now you can install [CoffeeScript](http://coffeescript.org/), finally!
 
-> npm install -g coffee-script
+```bash
+npm install -g coffee-script
+```
 
 Now you the Mindbench plugin for Visual Studio can compile your Less/Sass files.
 
@@ -51,17 +59,23 @@ Now you the Mindbench plugin for Visual Studio can compile your Less/Sass files.
 
 Install Compass per [these instructions](http://thesassway.com/beginner/getting-started-with-sass-and-compass).
 
-> gem install compass
+```bash
+gem install compass
+```
 
 ## 9: CoffeeScript bundle for Sublime Text 2
 
 Get the CoffeeScript bundle [here](https://github.com/jashkenas/coffee-script-tmbundle). Sublime Text 2 can use Textmate bundles, so this works great. On Windows 7, you are looking for _$HOME/AppData/Roaming/SublimeText 2/packages/_, where $HOME is your user documents and settings folders. [Turn on the ability to show hidden files and folders](http://windows.microsoft.com/en-us/windows-vista/Show-hidden-files) if you don't see the AppData folder. Run the following command.
 
-> git clone git://github.com/jashkenas/coffee-script-tmbundle CoffeeScript
+```bash
+git clone git://github.com/jashkenas/coffee-script-tmbundle CoffeeScript
+```
 
 Add the ability to build the CoffeeScript files per [this link](http://www.feanorian.net/site/sublime_text_and_coffeescript). Open the CoffeeScript/Commands folder and look for a file named CoffeeScript.sublime-build. Make sure it looks like this. I did not need to have the "path" option for it to work for me.
 
-> { "cmd": ["coffee.cmd","-c","$file"], "file\_regex": "^(...\*?):([0-9]\*):?([0-9]\*)", "selector": "source.coffee" }
+```json
+{ "cmd": ["coffee.cmd","-c","$file"], "file_regex": "^(...\*?):([0-9]\*):?([0-9]\*)", "selector": "source.coffee" }
+```
 
 Now when you edit a \*.coffee file in Sublime Text 2, you can use ctrl+b to build and save the file at the same time.
 

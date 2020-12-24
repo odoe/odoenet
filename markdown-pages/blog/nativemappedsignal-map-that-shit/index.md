@@ -13,7 +13,7 @@ To my surprise, my web searching revealed plenty of examples on using Signal, De
 
 First off, let's start with a simple example of how you can use a NativeMappedSignal in a Flex component.
 
-[gist id=799072]
+[gist](https://gist.github.com/odoe/799072)
 
 In this example, I have 2 Buttons and a TextInput. In this SkinnableComponent, where normally I would override the partAdded to add eventListeners, I am binding my NativeMappedSignals to each button and using the signal.mapTo() method to return strings that are unique to each signal. Then the same method is added as a listener to each signal. The method is not aware that an event happened, nor does it care where it came from. There's no need to check the target to determine what text to display. This is a great convenience for me. [Here is a sample](http://www.odoe.net/thelab/flex/nms/simple/index.html) of this little component in action.
 
@@ -21,7 +21,7 @@ You can also see that in the partRemoved() override, I just use the signal.remov
 
 Now, since I am a GIS developer using the [ESRI Flex API](http://help.arcgis.com/en/webapi/flex/index.html), let me show you a simplified version of how I use NativeMappedSignals in my current application development.
 
-[gist id=799135]
+[gist](https://gist.github.com/odoe/799135)
 
 In this sample component, I have a couple of buttons that activate a DrawTool. You can draw a square or line, depending on the button you click. So like the previous example, I bind each button to a NativeMappedSignal that maps to a string that represents the type of drawing action that I'd like to perform. I have a single method to activate my DrawTool. No need to create if/else or switch/case statements to check which button was clicked to determine that action.
 

@@ -13,15 +13,15 @@ If you are a web developer, you've probably been waiting for [Web Components](ht
 
 I've been testing out the [ArcGIS JS 4.0beta](https://developers.arcgis.com/javascript/beta/) with various libraries and I've found that some features of the 4.0beta lend itself very well to Polymer. I am a fan of [Accessors](http://odoe.net/blog/arcgis-js-api-4-0beta1-accessors/) in the beta and it turns out that Accessors work out great as Models for Polymer components.
 
-Let's check out what a simple model to display map extents may look like. [gist id=f01b8567a2e91e8ca110]
+Let's check out what a simple model to display map extents may look like. [gist](https://gist.github.com/odoe/f01b8567a2e91e8ca110)
 
 Here, we're using Accessor to create a model with some metadata. This basically tells the model that the **extent** property is an [Extent](https://developers.arcgis.com/javascript/beta/api-reference/esri-geometry-Extent.html).
 
-This let's us define a simple Controller that will just watch for changes on the model and update a view. [gist id=9bb4c55539f305572b21]
+This let's us define a simple Controller that will just watch for changes on the model and update a view. [gist](https://gist.github.com/odoe/9bb4c55539f305572b21)
 
-That's not too tricky. We have a reference to a Component coming from a ViewProxy (this is just what I called it, maybe it could use a better name). Let's look at the component now. [gist id=c9c946d22653bf3f36bd]
+That's not too tricky. We have a reference to a Component coming from a ViewProxy (this is just what I called it, maybe it could use a better name). Let's look at the component now. [gist](https://gist.github.com/odoe/c9c946d22653bf3f36bd)
 
-This ViewProxy is simply in charge of adding the required **import** statements to the page to use the Polymer component. It has an _update_ method that will update the attributes of the component. Now let's check out out Polymer component. [gist id=3eb0473e7f9582d83a2f]
+This ViewProxy is simply in charge of adding the required **import** statements to the page to use the Polymer component. It has an _update_ method that will update the attributes of the component. Now let's check out out Polymer component. [gist](https://gist.github.com/odoe/3eb0473e7f9582d83a2f)
 
 This is a pretty standard Polymer component. We're even using some [computed properties](https://www.polymer-project.org/1.0/docs/devguide/properties.html) to adjust the precision of the extent values.
 

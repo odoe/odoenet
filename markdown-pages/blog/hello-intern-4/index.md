@@ -7,7 +7,7 @@ tags: geodev
 coverImage: "intern-4.png"
 ---
 
-I've talked about using [Intern before](http://odoe.net/blog/using-intern-arcgis-api-javascript/) for testing your [ArcGIS API for JavaScript](https://developers.arcgis.com/javascript/) applications.
+I've talked about using [Intern before](https://odoe.net/blog/using-intern-arcgis-api-javascript/) for testing your [ArcGIS API for JavaScript](https://developers.arcgis.com/javascript/) applications.
 
 Well, there is a new version of [Intern](https://theintern.io/) out now that I've been integrating into my development lately and it was officially released last week.
 

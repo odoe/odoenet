@@ -19,13 +19,13 @@ So once I felt pretty comfortable with Ember and Ember-cli itself, I was pretty 
 
 Feel free to go through the [source code](https://github.com/esri/ember-cli-amd) for the details of how this works. There are a couple of ways you could use this addon. You could use RequireJS as the loader or you could point to a CDN loader. If you decided to install AMD modules using RequireJS and _bower install_ AMD libraries, the addon will compile your AMD modules using the [RequireJS Optimizer](http://requirejs.org/docs/optimization.html). This actually works out pretty fast as you write your code.
 
-Here is a sample of what your configuration would look like. [gist id=b01d9b4996a415d8a5bb]
+Here is a sample of what your configuration would look like. [gist](https://gist.github.com/odoe/b01d9b4996a415d8a5bb)
 
 In this case, I am providing a _srcTag_ pointing to the ArcGIS JS API CDN. This will use the Dojo AMD loader to start the application. With this option you need to at least provide the _amdPackages_ option, which tells the addon which root modules to look for and load as AMD modules. It will then **inject** these modules into the _loader.js_ used by Ember-cli.
 
 A similar option is to _bower install requirejs_. Set _useRequire_ to _true_, provide the _amdPackages_ and if you want, provide a [RequireJS configuration](http://requirejs.org/docs/optimization.html) for the optimization settings.
 
-Then you need to modify the _index.html_ and _tests/index.html_ files with some _content-for_ blocks. [gist id=58ac8d15f125d3926e37]
+Then you need to modify the _index.html_ and _tests/index.html_ files with some _content-for_ blocks. [gist](https://gist.github.com/odoe/58ac8d15f125d3926e37)
 
 If you happen to _need_ it, you can _bower install dojo_ and set _useDojo_ to _true_ and this will inject the Dojo loader into your application.
 
@@ -39,21 +39,21 @@ Let it do it's thing and navigate into the directory for your project. At this p
 
 **npm install --save ember-cli-amd**
 
-Awesome, you have the addon installed. Update the _index.html_ as we described above. You'll also want to update your **Brocfile.js** as [shown here](https://gist.github.com/odoe/b01d9b4996a415d8a5bb#file-brocfile-js). [gist id=406aa7b5a9d1bf99d95c] In this case, I know I am going to use Dojo via the CDN, so I will set up the [dojoConfig](http://dojotoolkit.org/documentation/tutorials/1.10/dojo_config/).
+Awesome, you have the addon installed. Update the _index.html_ as we described above. You'll also want to update your **Brocfile.js** as [shown here](https://gist.github.com/odoe/b01d9b4996a415d8a5bb#file-brocfile-js). [gist](https://gist.github.com/odoe/406aa7b5a9d1bf99d95c) In this case, I know I am going to use Dojo via the CDN, so I will set up the [dojoConfig](http://dojotoolkit.org/documentation/tutorials/1.10/dojo_config/).
 
 Now let's create some components.
 
 **ember generate component esri-map** **ember generate component esri-search** **ember generate component esri-legend** **ember generate component map-switch**
 
-Ember-cli will scaffold your [components](http://emberjs.com/api/classes/Ember.Component.html) for you. Let's fill out our components now, here's the _esri-map_. [gist id=7ff4169e32ac08443f58] As you can see, Ember-cli uses [es6/es2015](https://github.com/lukehoban/es6features). **Learn it, live it, love it**.
+Ember-cli will scaffold your [components](http://emberjs.com/api/classes/Ember.Component.html) for you. Let's fill out our components now, here's the _esri-map_. [gist](https://gist.github.com/odoe/7ff4169e32ac08443f58) As you can see, Ember-cli uses [es6/es2015](https://github.com/lukehoban/es6features). **Learn it, live it, love it**.
 
-Here's is the search component. [gist id=b6c1843649a564a1e871]
+Here's is the search component. [gist](https://gist.github.com/odoe/b6c1843649a564a1e871)
 
-Here is the legend component. [gist id=fcdc801386eae7f35f77]
+Here is the legend component. [gist](https://gist.github.com/odoe/fcdc801386eae7f35f77)
 
-Then we have a small component that will switch the maps. [gist id=f737d860734303f393b0]
+Then we have a small component that will switch the maps. [gist](https://gist.github.com/odoe/f737d860734303f393b0)
 
-These Ember components are very similar to [WebComponents](http://webcomponents.org/) and it's a good way to think of them like that. In this application, we'll add an _index.hbs_ into _app/templates/index.hbs_. [gist id=012590ce3141b3f51934] Ember uses [Handlebars](http://handlebarsjs.com/) or it's DOM templates, so it's pretty easy to set up the layout of your DOM in here. At this point, you just need to set up the styling for your app and you should be good to go. You can now run your application.
+These Ember components are very similar to [WebComponents](http://webcomponents.org/) and it's a good way to think of them like that. In this application, we'll add an _index.hbs_ into _app/templates/index.hbs_. [gist](https://gist.github.com/odoe/012590ce3141b3f51934) Ember uses [Handlebars](http://handlebarsjs.com/) or it's DOM templates, so it's pretty easy to set up the layout of your DOM in here. At this point, you just need to set up the styling for your app and you should be good to go. You can now run your application.
 
 **ember serve**
 

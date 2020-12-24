@@ -15,7 +15,7 @@ I recently made a comment in jest about how to be a Geospatial Web Developer.
 
 It was inspired by perusing this [reddit thread](https://www.reddit.com/r/gis/comments/68ff95/how_to_become_a_geospatial_web_developer/).
 
-I've talked about [similar topics](http://odoe.net/blog/gis-analyst-gis-developer/) before.
+I've talked about [similar topics](https://odoe.net/blog/gis-analyst-gis-developer/) before.
 
 Although, said in fun, it's not too far from the truth. There's no _set-path_ to becoming a geodev. There are some basics you should learn for web development, but even in geodev there are subsets. Are you focused on visualization, general app dev, algorithms? My point is, you're going to learn a lot as you journey down that path, things change and technology flows, so be adaptive, be flexible, be ready to learn. Those are details, learn the basics first.
 

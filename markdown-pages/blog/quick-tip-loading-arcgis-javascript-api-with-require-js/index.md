@@ -5,7 +5,7 @@ author: Rene Rubalcava
 date: "2012-05-30"
 ---
 
-In my previous post on [Getting Modular with the ArcGIS JavaScript API](http://odoe.net/blog/?p=257), I discussed using a loader.js method to load your JavaScript files with Require.js. Mr. Dave Thomas pointed out in the comments about just wrapping third-party libraries using a tool like [volo](https://github.com/volojs/volo). See his examples at [Backbone Boilerplate](http://backboneboilerplate.com/) for more details.
+In my previous post on [Getting Modular with the ArcGIS JavaScript API](https://odoe.net/blog/?p=257), I discussed using a loader.js method to load your JavaScript files with Require.js. Mr. Dave Thomas pointed out in the comments about just wrapping third-party libraries using a tool like [volo](https://github.com/volojs/volo). See his examples at [Backbone Boilerplate](http://backboneboilerplate.com/) for more details.
 
 If you have to wrap a library, use the [amdify](https://github.com/volojs/volo/blob/master/vololib/amdify/doc.md) tool in volo or do it manually, it's not difficult. I tried wrapping the ArcGIS JavaScript API by using curl to download it, but it didn't work quite as expected, so now what I do is just load it once, and allow it to add its global variables.
 

@@ -13,7 +13,7 @@ I had put this implementation on the back burner when I realized how involved cr
 
 So what I did was incorporate the work done by Mr. Scheitlin into my current Layer Control tool and created a [LegendManager](http://github.com/odoe/FlexMapTools/blob/master/src/net/odoe/FlexMapTools/components/LegendManager.as) component that will display all symbology and allow you to turn layers on and off. I'm pretty happy with it. This component is part of my [FlexMapTools library](http://github.com/odoe/FlexMapTools/tree/master) on github. I've included skins and itemRenderers in FlexMapTools, but feel free to modify these to meet your needs. Skin them up and make them as pretty as you'd like. You'll notice I have not built a skin for the button to expand sub layer details.
 
-An example of the tool in action can be found [here](http://odoe.net/thelab/flex/maplegend/Index.html).
+An example of the tool in action can be found [here](https://odoe.net/thelab/flex/maplegend/Index.html).
 
 If you have some trouble using the component if you set up your visible layers using a config.xml file, please read the notes in [LayerInfoDetails](http://github.com/odoe/FlexMapTools/blob/master/src/net/odoe/FlexMapTools/components/LayerInfoDetails.as). You may need to search your visible layers using a string and not an int. It was an odd issue I ran into porting this tool to FlexMapTools.
 

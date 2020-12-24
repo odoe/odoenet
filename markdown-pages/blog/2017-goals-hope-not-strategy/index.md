@@ -13,7 +13,7 @@ One of my favorite quotes recently comes from Chris Voss, author of [Never Split
 
 2016 was quite the year.
 
-[Here](http://odoe.net/blog/2016-goals-more-cowbell/) are my 2016 goals. I've met quite a few of those.
+[Here](https://odoe.net/blog/2016-goals-more-cowbell/) are my 2016 goals. I've met quite a few of those.
 
 I think I'm cool flying... _maybe_. I've flown a few times this year for work, with my longest trip being to Berlin for the Esri European Developer Summit. That was 12-13 hours each way, so after that, I feel less anxious flying now. Work at Esri has been going great, I have my hands in various projects and I'm loving it. I'm definitely kept busy.
 
@@ -55,4 +55,4 @@ Not much miscellaneous stuff this year. I'm staying pretty focused on the goals 
 
 I'll be doing more conferences in 2017. In addition to Esri UC and Palm Springs DevSummit, it looks like I'll also be at the DC DevSummit and I might even return to Berlin in 2017 for the European DevSummit. I'll be at EmberConf in Portland in March and I'm currenly looking for a solid JavaScript conference to try and attend in 2017. If anyone knows of something good, please let me know.
 
-[Subscribe](http://odoe.net/blog/sign-up/) to my weekly email to keep up to date with the blog and any new announcements on projects I'll be working on.
+[Subscribe](https://odoe.net/blog/sign-up/) to my weekly email to keep up to date with the blog and any new announcements on projects I'll be working on.

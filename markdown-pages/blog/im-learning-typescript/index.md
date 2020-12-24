@@ -11,13 +11,13 @@ A couple of months back, I talked about how I was [trying to learn TypeScript](h
 
 The other really cool part of 1.5 that should be of interest to people using the ArcGIS JS API, is the official support for [AMD dependencies](https://github.com/Microsoft/TypeScript/wiki/What%27s-new-in-TypeScript#amd-dependency-optional-names). You can read more about this in this awesome [Sitepen blog post](https://www.sitepen.com/blog/2013/12/31/definitive-guide-to-typescript/). This allows you to use loader plugins and easily add AMD modules to your app. Something like this:
 
-[gist id=3b4664019d6d757d95e2]
+[gist](https://gist.github.com/odoe/3b4664019d6d757d95e2)
 
 As you can see, I load my AMD modules via the **amd-dependency** tag, then use **declare var module:any** to be able to use it in my code. If you look at this, aside from the dependency tags and typings, this looks just almost identical to ES6. The dojo definition files I'm currently using complain about not naming my **dojoDeclare**, but I think if I switched to a different one, this might go away. That's another one you may notice. **declare** is a keyword in TypeScript, so you'll need to refer to it as **dojoDeclare** or something else in your code. As of right now, you still need \*dojo/\_base/declare\*\* for some bits since TypeScript doesn't support multiple inheritance. I'm sure this will be addressed via some mechanism in the future.
 
 If you are only going to extend a single module, you can use a TypeScript **class**.
 
-[gist id=73d1e9f19cf2a52c9c41]
+[gist](https://gist.github.com/odoe/73d1e9f19cf2a52c9c41)
 
 In this case, I am only extending a single class, which is defined in the dojo TypeScript definition file. This is a lot cleaner to do.
 

@@ -23,7 +23,7 @@ The API couldn't be simpler. Convert 3 words to a location _or_ convert a locati
 
 So now, let's build a simple widget to use with the [ArcGIS JS API Beta](https://developers.arcgis.com/javascript/beta/) because _3.x is so yesterday_.
 
-[gist id=bfb5964f0087a733b704]
+[gist](https://gist.github.com/odoe/bfb5964f0087a733b704)
 
 This isn't too complicated. We basically have a button that can hide the result window. When the result window is shown, we activate a handler to listen to the _mousemove_ event of the View container. We convert screen coordinates to latitude and longitude, then make a request to the What3Words API. Those results are placed in the result window. We are debouncing the handler for the _mousemove_ event, so we don't fire a request for every little movement of the mouse or you're results will take way too long to return when they pile up.
 

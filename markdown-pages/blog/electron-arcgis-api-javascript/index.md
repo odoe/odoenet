@@ -7,7 +7,7 @@ tags: geodev
 coverImage: "esri-electron.png"
 ---
 
-Many moons ago, I tried my hand at some [Electron](https://electron.atom.io/). I even tried it out with [esri-leaflet](http://odoe.net/blog/quick-tip-fun-with-electron/) and it was pretty straightforward.
+Many moons ago, I tried my hand at some [Electron](https://electron.atom.io/). I even tried it out with [esri-leaflet](https://odoe.net/blog/quick-tip-fun-with-electron/) and it was pretty straightforward.
 
 Recently, a couple of [github issues](https://github.com/tomwayson/esri-loader/issues/21) popped up related to this and I realized, I had not talked about how I was using the [ArcGIS API for JavaScript](https://developers.arcgis.com/javascript/) with Electron. There is one small tweak you need to do for the AMD loader to work as expected.
 

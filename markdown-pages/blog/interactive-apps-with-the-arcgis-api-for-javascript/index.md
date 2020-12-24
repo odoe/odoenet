@@ -27,13 +27,16 @@ I'm a big fan of the [Feature Widget](https://odoe.net/blog/feature-widget-fun/)
 
 First we can just add the HTML for our tooltip to the page.
 
+```html
 <div id="tooltip" role="tooltip" style="display:none;"></div>
 <div id="viewDiv"></div>
+` ``
 
 Simple enough of a start. I don't want it visible right away, so I'll inline display as none and update it as needed.
 
 I'm going to style up my tooltip to make it look nice and I'm also going to apply a fixed width and height. This is important because I'll need the width and height to properly place the tooltip on the page and follow my mouse. It makes the interactivity easier to do.
 
+```css
 #tooltip {
   overflow: auto;
   z-index: 99;
@@ -47,21 +50,27 @@ I'm going to style up my tooltip to make it look nice and I'm also going to appl
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
 }
+```
 
 Now I can create my Feature Widget, and just make my code clear as to what I'm doing, I'm going to hold a reference the DOM element.
 
+```js
 const tooltip = document.getElementById("tooltip");
 const featureWidget = new Feature({ view, container: tooltip });
 // I could reference that DOM element later on as
 // featureWidget.container, but so much typing
+```
 
 And just to simplify my code for demo purposes, I'll have a reference my layer view just sitting around ready to go when I need it.
 
+```js
 let layerView;
 view.whenLayerView(layer).then(result => layerView = result);
+```
 
 Now what I want to do is listen for the [pointer-move](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#event:pointer-move) event of the view. When I get the event, I can use it to do a [hitTest](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#hitTest) on the view and find a feature that my mouse pointer is over. Since I don't know if I have a result or not yet, I'll set the layer view effect to null to remove the effect from my app.
 
+```js
 view.on("pointer-move", event => {
   const { x, y } = event;
   view.hitTest(event).then(({ results }) => {
@@ -71,9 +80,11 @@ view.on("pointer-move", event => {
     ...
   });
 });
+```
 
 Now is where the fun starts. If I have results, I'll want to show my tooltip that is now holding my feature widget content. It's simple to get content in there by just passing the feature to the widget and it displays what you would normally see in your popup content. I'll also update the tooltip DOM element so it's visible and the key is to calculate the top and left positions of the tooltip on the page based on the height and width of the tooltip. This is why they are defined in my CSS.
 
+```js
 view.on("pointer-move", event => {
   const { x, y } = event;
   view.hitTest(event).then(({ results }) => {
@@ -97,11 +108,13 @@ view.on("pointer-move", event => {
     }
   });
 });
+```
 
 ## Apply Filter and Effect
 
 Finally, what I can do is define the FeatureEffect for the layer view based on the feature my mouse is currently over. You will most likely use opacity and grayscale a lot, those two just fit very well for deemphasizing other features, but I'm sure you can get creative with other filters like invert, hue-rotate and more. I'll use opacity and saturate to deemphasize the excluded results of my filter.
 
+```js
 view.on("pointer-move", event => {
   const { x, y } = event;
   view.hitTest(event).then(({ results }) => {
@@ -132,10 +145,14 @@ view.on("pointer-move", event => {
     }
   });
 });
+```
 
 What you end up with is an application that looks something like this.
 
-<p class="codepen" data-height="480" data-theme-id="31222" data-default-tab="result" data-user="odoe" data-slug-hash="eoOvPj" data-preview="true" style="height: 480px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="FeatureView - Tooltip"><span>See the Pen <a href="https://codepen.io/odoe/pen/eoOvPj/">FeatureView - Tooltip</a> by Rene Rubalcava (<a href="https://codepen.io/odoe">@odoe</a>) on <a href="https://codepen.io">CodePen</a>.</span></p>
+<iframe height="500" style="width: 100%;" scrolling="no" title="Tooltip, Filter, and Effect" src="https://codepen.io/odoe/embed/eoOvPj?height=500&theme-id=39013&default-tab=js,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/odoe/pen/eoOvPj'>Tooltip, Filter, and Effect</a> by Rene Rubalcava
+  (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 
 As you can see, this is pretty damn nifty! It's fast, it looks cool, if I do say so myself, and best off all, that's really not a lot of extra code to write. Plus, admit it, it's fun just to play with!

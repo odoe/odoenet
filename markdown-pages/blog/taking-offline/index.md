@@ -34,7 +34,7 @@ In [ArcGIS Web Development](http://www.manning.com/rubalcava/?a_aid=rrubalcava) 
 
 In order to use PouchDB with an ArcGIS Web app, I would suggest wrapping it in a [store](http://dojotoolkit.org/reference-guide/1.10/dojo/store.html)\-light kind of API. I wrote a PouchDBStore you can see below.
 
-[gist id=be5fc67872c7e0ec2afd]
+[gist](https://gist.github.com/odoe/be5fc67872c7e0ec2afd)
 
 In this example, I provide three public methods, [add](https://gist.github.com/odoe/be5fc67872c7e0ec2afd#file-pouchdbstore-js-L50), [delete](https://gist.github.com/odoe/be5fc67872c7e0ec2afd#file-pouchdbstore-js-L66) and [getAll](https://gist.github.com/odoe/be5fc67872c7e0ec2afd#file-pouchdbstore-js-L77). These are pretty straightforward. It uses Dojo's [deffered](http://dojotoolkit.org/reference-guide/1.10/dojo/Deferred.html) module to return results using promises. Just to make sure the results from the **getAll** method work as expected with older browsers (ugh) I wrap the results with the [QueryResults](http://dojotoolkit.org/reference-guide/1.10/dojo/store/util/QueryResults.html) utility that just adds **forEach**, **filter**, and **map** methods to the result array.
 
@@ -44,7 +44,7 @@ _update_ - It was pointed out to me that [PouchDB already has a promise API](htt
 
 For this example, I took [this ArcGIS API for JavaScript sample](https://developers.arcgis.com/javascript/jssamples/ed_feature_creation.html) and added the PouchDBStore to it [in this demo](https://github.com/odoe/esri-pouchdb). The way I handle it here is I use it in the error callback when the edits are applied to the FeatureLayer.
 
-[gist id=65b6f063123c1397f8e5]
+[gist](https://gist.github.com/odoe/65b6f063123c1397f8e5)
 
 In this example, if they FeatureLayer throws an error, it will add the features that were trying to be added to the layer to the PouchDBStore. When the FeatureLayer successfully performs an edit, it will check the PouchDBStore to see if there are any pending features and then add them as well. When those adds are done, it will then delete the pending edits from the PouchDBStore.
 

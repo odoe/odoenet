@@ -82,7 +82,7 @@ export default {
     del({ targets: OUTPUT }),
     eslint({
       fix: true,
-      exclude: ['node\_modules/\*\*', 'src/\*\*/\*.css']
+      exclude: ['node_modules/\*\*', 'src/\*\*/\*.css']
     }),
     typescript(),
     MINIFY,

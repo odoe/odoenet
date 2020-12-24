@@ -15,7 +15,7 @@ So I turned to [Node](http://nodejs.org/).
 
 ## The Node less traveled
 
-I have [dabbled](http://odoe.net/blog/?p=187) in [some](http://odoe.net/blog/?p=168) node in the past, but it has been a while as I have had other projects to work on. So I was sitting there drifting off to sleep in my vanpool (eco-friendly, of course) on the way home from work when it hit me. Why can't I just build a template app that I could run in node to serve my app to test and debug? It's just another web page after all. One of the reasons I like to use MVC to build my apps is it's easy to write an underlying REST API side by side with my web app. Node devs do this kind of thing with their eyes closed while sipping lattes from a Tardis mug (adding to wishlist) all the time.
+I have [dabbled](https://odoe.net/blog/?p=187) in [some](https://odoe.net/blog/?p=168) node in the past, but it has been a while as I have had other projects to work on. So I was sitting there drifting off to sleep in my vanpool (eco-friendly, of course) on the way home from work when it hit me. Why can't I just build a template app that I could run in node to serve my app to test and debug? It's just another web page after all. One of the reasons I like to use MVC to build my apps is it's easy to write an underlying REST API side by side with my web app. Node devs do this kind of thing with their eyes closed while sipping lattes from a Tardis mug (adding to wishlist) all the time.
 
 So I put a [template project together on github](https://github.com/odoe/agsnode-dev).
 

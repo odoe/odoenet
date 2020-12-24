@@ -23,7 +23,7 @@ Now remember, just about everything in the 4.0beta1 is an Accessor, which means 
 
 Now let's assume I want to record and playback my camera movements. _Why?_ **Why not!** This means I'd want to watch for when the state of the camera has changed, save that state and then be able to reapply that state at a later time in the order it was saved. If I can do that, I can easily reverse the order and replay my camera movements backwards. Let's look at what a widget like that looks like.
 
-[gist id=06a60445cc090908935c]
+[gist](https://gist.github.com/odoe/06a60445cc090908935c)
 
 Let me point out that I'm using an undocumented helper here, the _esri/core/Scheduler_. This is used to help with animation stuff in the API, and it's undocumented, because being beta, it could totally change, so this sample may break at some point. _The fun of beta!_
 

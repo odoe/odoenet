@@ -11,7 +11,7 @@ Dojo has a lot of strength in it's [Dijit](http://dojotoolkit.org/reference-guid
 
 ### I hear you like widgets
 
-When you build a widget, you would at minimum extend [\_WidgetBase](http://dojotoolkit.org/reference-guide/1.10/dijit/_WidgetBase.html). **\_WidgetBase** also extends [Stateful](http://dojotoolkit.org/reference-guide/1.10/dojo/Stateful.html) which allows you to use **get/set** methods in your widget. This also includes using a [watch](http://dojotoolkit.org/reference-guide/1.10/dojo/Stateful.html#watch) method that allows you to do something when a value is changed via the \*set\* method.
+When you build a widget, you would at minimum extend [_WidgetBase](http://dojotoolkit.org/reference-guide/1.10/dijit/_WidgetBase.html). **_WidgetBase** also extends [Stateful](http://dojotoolkit.org/reference-guide/1.10/dojo/Stateful.html) which allows you to use **get/set** methods in your widget. This also includes using a [watch](http://dojotoolkit.org/reference-guide/1.10/dojo/Stateful.html#watch) method that allows you to do something when a value is changed via the \*set\* method.
 
 Traditionally this is where you may update DOM elements to match newly updated properties. There are plenty of things you may want to do in a _watch_ method, but if you've written enough simple widgets that simply update some text or other DOM element that doesn't need to much, it can get a little tedious typing up all these watch methods. Luckily, there's a handy module you can add to your app called [dbind](https://github.com/kriszyp/dbind).
 
@@ -24,7 +24,7 @@ Let's say you simply wanted to display the name of a State as you hovered your m
 [JS Bin](http://jsbin.com/cusejogaje/1/embed?js,output)
 
 
-In this sample, you simply bind the DOM element to the _STATE\_NAME_ property and when you _mouse-over_ the _FeatureLayer_ use the _set_ method to set this value. It all comes together in a nice little package.
+In this sample, you simply bind the DOM element to the _STATE_NAME_ property and when you _mouse-over_ the _FeatureLayer_ use the _set_ method to set this value. It all comes together in a nice little package.
 
 ### Piece it all together
 

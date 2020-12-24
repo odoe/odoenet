@@ -26,7 +26,7 @@ view3d = new SceneView({
 });
 ```
 
-Although, [ViewPoint is a module](https://developers.arcgis.com/javascript/beta/api-reference/esri-Viewpoint.html). In this particular case it is taking advantage [Accessors](http://odoe.net/blog/arcgis-js-api-4-0beta1-accessors/), where the viewpoint behavior is defined via the Accessor. But this is part of a larger effort to simplify the API for developers.
+Although, [ViewPoint is a module](https://developers.arcgis.com/javascript/beta/api-reference/esri-Viewpoint.html). In this particular case it is taking advantage [Accessors](https://odoe.net/blog/arcgis-js-api-4-0beta1-accessors/), where the viewpoint behavior is defined via the Accessor. But this is part of a larger effort to simplify the API for developers.
 
 The examples also show how a [Camera](https://developers.arcgis.com/javascript/beta/api-reference/esri-Camera.html) uses a [fromJSON](https://developers.arcgis.com/javascript/beta/api-reference/esri-Camera.html#fromJSON) method to create the Camera. This even works on symbols.
 

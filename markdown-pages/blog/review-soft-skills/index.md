@@ -1,17 +1,17 @@
 ---
 title: "Review: Soft Skills"
-published: true
+published: false
 author: Rene Rubalcava
 date: "2014-12-31"
 tags: geodev
 coverImage: "soft-skills-cover.jpg"
 ---
 
-I haven't done a review in a while, last time it was on a series of [TDD screencasts](http://odoe.net/blog/review-tdd-screencasts/). But every now and then, I come across a book or training course that I think, _damn, that was awesome_. I read and listen to a ton of books on varying subjects, mainly on development, productivity and business stuff and one of the best ones I read this year and had a big impact on me was [Soft Skills](http://manning.com/sonmez/?a_aid=rrubalcava), by fellow Manning author [John Sonmez](http://simpleprogrammer.com/about-me/).
+I haven't done a review in a while, last time it was on a series of [TDD screencasts](https://odoe.net/blog/review-tdd-screencasts/). But every now and then, I come across a book or training course that I think, _damn, that was awesome_. I read and listen to a ton of books on varying subjects, mainly on development, productivity and business stuff and one of the best ones I read this year and had a big impact on me was [Soft Skills](http://manning.com/sonmez/?a_aid=rrubalcava), by fellow Manning author [John Sonmez](http://simpleprogrammer.com/about-me/).
 
 John not only wrote a great resource for developers, he wrote a [500+ page](http://manning.com/sonmez/excerpt_contents.html) _tome_ of developer advice. Having written a book with Manning on [ArcGIS Web Development](http://manning.com/rubalcava/?a_aid=rrubalcava) and knowing the task and trials of writing a published book, I know writing 500+ pages is no small feat.
 
-On a personal note, many of [my goals and ambitions](http://odoe.net/blog/2015-goals-getting-real/) for my career and business are heavily influenced by this book. I picked it up early on while it was still in MEAP, which is basically as it's written, and was reaping the benefits of it long before it was complete. I would highly recommend this book to other geo pros, as much of the material in here doesn't strictly apply to code junkies.
+On a personal note, many of [my goals and ambitions](https://odoe.net/blog/2015-goals-getting-real/) for my career and business are heavily influenced by this book. I picked it up early on while it was still in MEAP, which is basically as it's written, and was reaping the benefits of it long before it was complete. I would highly recommend this book to other geo pros, as much of the material in here doesn't strictly apply to code junkies.
 
 ### What's in the book
 

@@ -11,7 +11,7 @@ I recently had a need in an [ArcGIS JS](https://developers.arcgis.com/javascript
 
 ## Quick rundown
 
-Basically you'll want to use [localStorage](https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Storage) to store the map center and zoom level. Then when the map reloads, read from localStorage and use the maps [centerAndZoom](https://developers.arcgis.com/javascript/jsapi/map-amd.html#centerandzoom) method to return to that location. You can capture the page close and refresh using [window.onbeforeunload](https://developer.mozilla.org/en-US/docs/Web/API/Window.onbeforeunload) or since you're already using Dojo, use [dojo/\_base/unload](http://dojotoolkit.org/reference-guide/1.9/dojo/_base/unload.html).
+Basically you'll want to use [localStorage](https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Storage) to store the map center and zoom level. Then when the map reloads, read from localStorage and use the maps [centerAndZoom](https://developers.arcgis.com/javascript/jsapi/map-amd.html#centerandzoom) method to return to that location. You can capture the page close and refresh using [window.onbeforeunload](https://developer.mozilla.org/en-US/docs/Web/API/Window.onbeforeunload) or since you're already using Dojo, use [dojo/_base/unload](http://dojotoolkit.org/reference-guide/1.9/dojo/_base/unload.html).
 
 ## Sample
 

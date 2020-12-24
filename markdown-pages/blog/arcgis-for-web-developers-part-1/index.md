@@ -63,7 +63,7 @@ With the map saved, click on the _Share_ button and check on the _Everyone (publ
 
 _Awesome!_ You just made your first Web Map with ArcGIS! You can now copy the URL and share it with others. But let's make things a little more interesting. Let's consume this webmap in your own application.
 
-Copy the URL and save the webmap id, which will be in this format of the URL. _?webmap=WEBMAP\_ID_.
+Copy the URL and save the webmap id, which will be in this format of the URL. _?webmap=WEBMAP_ID_.
 
 Go to [developers.arcgis.com/javascript](https://developers.arcgis.com/javascript/) and take a look around before we dive into using your own Web Map with JavaScript.
 

@@ -13,11 +13,11 @@ Now, I knew that I could build a Flex application that could load a shapefile an
 
 So I did some research and there was so far no way to load a shapefile into JavaScript and display it on the map. But, after reading through the [API docs](http://help.arcgis.com/EN/webapi/javascript/arcgis/help/jsapi_start.htm), I found that I could load JSON features into the map. I was a little concerned because when I have attempted to load complex polygons as JSON into Flex, performance wasn't very good. So imagine my surprise when performance was spot on in JavaScript. This practice may be old hat, as a lot of JSON is used in the ESRI JavaScript API, but I had not seen an example to explicitly load features in this manner.
 
-You can see an example of a map loading JSON features of States [here](http://odoe.net/thelab/js/jsonmap/Index.php).
+You can see an example of a map loading JSON features of States [here](https://odoe.net/thelab/js/jsonmap/Index.php).
 
 Now, I am not [JavaScript ninja](http://jsninja.com/), so please excuse any "bad form" in my code. I'm still learning.
 
-The key was, when you get your JSON results,  you want to iterate through the results["features"] to find attributes and geometries. [Here](http://odoe.net/thelab/js/jsonmap/libs/jsonfeatures.js) is the script for loading JSON features. Once you get that far, the rest is easy. Create the graphics, load attributes into an InfoTemplate if you'd like and voila, you have a nice map with features loaded without the need for your own ArcGIS Server to serve the data out.
+The key was, when you get your JSON results,  you want to iterate through the results["features"] to find attributes and geometries. [Here](https://odoe.net/thelab/js/jsonmap/libs/jsonfeatures.js) is the script for loading JSON features. Once you get that far, the rest is easy. Create the graphics, load attributes into an InfoTemplate if you'd like and voila, you have a nice map with features loaded without the need for your own ArcGIS Server to serve the data out.
 
 It may not seem like a big deal, but I didn't find any quick guides on this info, so I just thought I would share what I learned this past week.
 

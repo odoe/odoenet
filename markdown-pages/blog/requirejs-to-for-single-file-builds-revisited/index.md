@@ -5,7 +5,7 @@ author: Rene Rubalcava
 date: "2013-12-16"
 ---
 
-Someone recently started a [github repo](https://github.com/robertd/esri-jsapi-rjs-example) using RequireJS to build their [ArcGIS JavaScript](https://developers.arcgis.com/en/javascript/) applications. This piqued my interest as it's something I had [done in the past](http://odoe.net/blog/?p=345), but at some point r.js or node didn't work properly together anymore with my build file. Rather than fuss with it, I moved on to using [Grunt](http://gruntjs.com/) to do my compile/minify/copy of files for production and testing.
+Someone recently started a [github repo](https://github.com/robertd/esri-jsapi-rjs-example) using RequireJS to build their [ArcGIS JavaScript](https://developers.arcgis.com/en/javascript/) applications. This piqued my interest as it's something I had [done in the past](https://odoe.net/blog/?p=345), but at some point r.js or node didn't work properly together anymore with my build file. Rather than fuss with it, I moved on to using [Grunt](http://gruntjs.com/) to do my compile/minify/copy of files for production and testing.
 
 So when I saw someone got r.js working with the ArcGIS JS API, I was drawn to it like a kid to an ice cream truck. The Dojo build tools have something against me, as every time I have tackled them, they just kick me in the nads and steal my lunch money. I really admire the [AGRC guys](https://github.com/agrc/AGRCJavaScriptProjectBoilerPlate) for tackling Dojo build tools for the ArcGIS JS API, but it was just not my thing.
 

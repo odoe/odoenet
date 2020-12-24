@@ -15,11 +15,13 @@ That's where the ViewModels in the API can help. A ViewModel in the API is just 
 
 Let's take a look at the [Search View Model](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html). Assume I have a requirement in my application that when I click on the map, I want to reverse geocode where I clicked. I could instantiate a SearchViewModel and use it's built in [search](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#search) function to do exactly this.
 
+```js
 const searchVM = new SearchViewModel({ view });
 
 view.on("click", (event) => {
   searchVM.search(event.mapPoint);
 });
+```
 
 Using the ViewModel like this, I can now simply click on the map and I'll automatically get a popup with geocoded information. Here is a sample of this application in action.
 
@@ -29,6 +31,7 @@ Now that's pretty cool right? I didn't have to configure a Locator, create any p
 
 Let's think of another one. Maybe I don't need a full-blow [Print widget](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print.html). My boss just wants a print button, nothing fancy, no fooling around. I can use the [Print View Model](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-PrintViewModel.html) to do this with minimal work. It has one function, [print](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-PrintViewModel.html#print). _Can't go wrong with that_. I can add a button to my application and when that button is clicked, just print my map.
 
+```js
 const printVM = new PrintViewModel({
   view,
   printServiceUrl: "https://utility.arcgisonline.com/arcgis/rest/services/Utilities/PrintingTools/GPServer/Export%20Web%20Map%20Task"
@@ -37,10 +40,11 @@ const printVM = new PrintViewModel({
 printBtn.addEventListener("click", () => {
   printVM.print()
     .then(response => {
-      window.open(response.url, "\_blank");
+      window.open(response.url, "_blank");
     })
     .catch(error => console.warn(error));
 });
+```
 
 Now a user can save this image to their local machine and embed it in a report, pretty much do whatever they want. You can see it in action below.
 

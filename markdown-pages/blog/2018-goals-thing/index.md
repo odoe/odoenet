@@ -11,7 +11,7 @@ I like to think I approach everything I do with a passion. Whether it be my goal
 
 ## This past year
 
-These were my goals for [2017](http://odoe.net/blog/2017-goals-hope-not-strategy/). Notice, I'm not worried about resolutuions. I'm not going to wait for some arbitrary date to roll around to change something I'm doing or start doing something new. If I'm going to do it, I'll just do it.
+These were my goals for [2017](https://odoe.net/blog/2017-goals-hope-not-strategy/). Notice, I'm not worried about resolutuions. I'm not going to wait for some arbitrary date to roll around to change something I'm doing or start doing something new. If I'm going to do it, I'll just do it.
 
 Flying - I did lots more traveling, which means more flying. I'm finding that the actually flying I'm ok with, but I still have anxiety ahead of time, I don't know what that's all about, but maybe I'll fix that this year too. I traveled a lot for work, but also had a great time traveling for fun, like a wedding in Paris, France which was totally awesome!
 
@@ -49,6 +49,6 @@ All in all, I'm going to keep working at getting better in everything I do. I ha
 
 I've got some other ideas for projects to work on in 2018, but I need to finish up some _prequisites_ first. I've also been dabbling in my some non-geo projects to see how useful they are, but that might be a post for another day or another blog.
 
-As usual, you can [sign up for my newsletter](http://odoe.net/blog/sign-up/) to keep up to date with my latest projects and posts!
+As usual, you can [sign up for my newsletter](https://odoe.net/blog/sign-up/) to keep up to date with my latest projects and posts!
 
 Thanks and keep kicking ass!

@@ -13,7 +13,7 @@ _I'm not going to blow smoke in your tailpipe_, this isn't a perfect solution, b
 
 The key factor is basically freezing the map state and removing the zoom tools and such. This can be accomplished pretty simply.
 
-[gist id=9b7bdf3e510e72541893]
+[gist](https://gist.github.com/odoe/9b7bdf3e510e72541893)
 
 That method pretty much goes through the map and disables everything on the map. It also allows re-enabling all the same features.
 

@@ -14,12 +14,12 @@ The classic table join slowed the service to a crawl. Even after applying tablur
 Up until now I had been using [IQueryFilter](http://help.arcgis.com/en/sdk/10.0/arcobjects_net/componenthelp/index.html#//0025000006mr000000) to query features in my functions. This won't let me do table joins though. Then I discovered the [IQueryDef interface which will let you do table joins](http://help.arcgis.com/en/sdk/10.0/arcobjects_net/conceptualhelp/index.html#//0001000002zw000000), and you use the where clause to define that join.
 
 IQueryDef queryDef = workSpace.CreateQueryDef();
-queryDef.Tables = "sde.Parcels, sde.Parcels\_Details";
-queryDef.WhereClause = "sde.Parcels.AIN = sde.Parcels\_Details.AIN";
+queryDef.Tables = "sde.Parcels, sde.Parcels_Details";
+queryDef.WhereClause = "sde.Parcels.AIN = sde.Parcels_Details.AIN";
 
 This looked just like what I needed. It worked ok, but it was still joining some 2 million records. At first I was defining my parcel query with a second IQueryFilter. Then it occurred to me that I could just find my feature with all the joined data by looking for it with IQueryDef.
 
-queryDef.WhereClause = "sde.Parcels.AIN = sde.Parcels\_Details.AIN AND sde.Parcels.AIN = '" + ainString + "'";
+queryDef.WhereClause = "sde.Parcels.AIN = sde.Parcels_Details.AIN AND sde.Parcels.AIN = '" + ainString + "'";
 
 This way the join only occurs on that single feature instead of 2 million features. This method is really quick now. For the record, we use [WebOrb](http://www.themidnightcoders.com/products/weborb-for-net/overview.html) in-house for our server functions, and this allows me to use Remote Objects with the [ESRI Flex API](http://help.arcgis.com/en/webapi/flex/index.html). This little function is proving to be a valuable resource in our current day-to-day use.
 
@@ -27,7 +27,7 @@ One other item that took me a while to figure out was how to get an IFeatureCur
 
 IFeatureDataset fd = workSpace.OpenFeatureQuery("sde.Parcels", queryDef); // use the IQueryDef to get an IFeatureDataset
 IFeatureClassContainer fcc = fd as IFeatureClassContainer; // cast it as am IFeatureClassContainer
-IFeatureClass featureClass = fcc.get\_ClassByName("sde.Parcels"); // pull the IFeatureClass out of the container
+IFeatureClass featureClass = fcc.get_ClassByName("sde.Parcels"); // pull the IFeatureClass out of the container
 IQueryFilter qf = new QueryFilterClass(); // just need an empty QueryFilter
 IFeatureCursor fc = featureClass.Search(qf, false); // now I have an IFeatureCursor that I can use to access the Feature attributes and geometries
 

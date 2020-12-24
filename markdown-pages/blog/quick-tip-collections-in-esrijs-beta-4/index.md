@@ -17,7 +17,7 @@ Let's say you have a list of items you want to filter with an input. I've done [
 
 For this case, we'll keep a source collection, to use it as a cache of the original data. Then we'll create another collection that is in charge of drawing the elements on the page. When the user types something in the input, we can filter the cache and update the collection. The collection will listen for changes and simply redraw the whole list.
 
-[gist id=626178b5a06fa31fb416]
+[gist](https://gist.github.com/odoe/626178b5a06fa31fb416)
 
 You can see what this looks like in this sample here. [JS Bin on jsbin.com](http://jsbin.com/juzeqe/3/embed?js,output)
 

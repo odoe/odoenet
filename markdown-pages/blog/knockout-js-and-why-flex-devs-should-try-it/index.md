@@ -19,7 +19,7 @@ I put a sample page up [here](http://www.odoe.net/thelab/js/koforflex/).
 
 Let's look at some of it.
 
-[gist id=1043313]
+[gist](https://gist.github.com/odoe/1043313)
 
 Notice the 'data-bind' tag that I use. This would be similar to binding values in MXML via `<s:comp text={'bindableModel.value'}/>`.
 

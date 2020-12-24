@@ -17,7 +17,7 @@ There are some [differences between Clojure and ClojureScript](https://github.co
 
 Although not a requirement, I like to use Clojure to run my local development server. I use [Ring-Server](https://github.com/weavejester/ring-server) with [Compojure](https://github.com/weavejester/compojure) for routing. I won't go into detail on these, but I also use [hiccup](https://github.com/weavejester/hiccup) as my server-side HTML renderer. If you're familiar with other templating languages, it works pretty much the same way.
 
-[gist id=1b0f0cef590ba96c5845]
+[gist](https://gist.github.com/odoe/1b0f0cef590ba96c5845)
 
 Even if you don't know Clojure, you can probably make out the DOM structure fairly easily just by looking at the code above.
 
@@ -25,13 +25,13 @@ Even if you don't know Clojure, you can probably make out the DOM structure fair
 
 ClojureScript provides methods to interact with native JavaScript that may take a little getting used to. There is the _aget_ method that can return the property from something and the _this-as_ macro which allows you to assign the _this_ value to something. [Macros](https://www.safaribooksonline.com/library/view/clojurescript-up-and/9781449327422/ch08.html) are a way to really power-up Clojure/ClojureScript and do neat things like [DSLs](https://pragprog.com/magazines/2011-07/growing-a-dsl-with-clojure). Accessing the properties of a JavaScript object may look odd as well. Say you wanted to access the esri extension of Leaflet. You would normally just do _L.esri_. In ClojureScript this looks like _(.-esri L)_. If there were no dash in there, ClojureScript would treat _esri_ as a method instead of a property. I like to set up a module in ClojureScript with some of these properties already defined, just to make it easier to put an app together. This is what the sample looks like.
 
-[gist id=d2c4b0e6a0a35303f7ef]
+[gist](https://gist.github.com/odoe/d2c4b0e6a0a35303f7ef)
 
 You can think of _def_ as defining a variable, whereas _defn_ defines a function. Every Clojure/ClojureScript module gets a namesapce, hence the _ns_ in the above code. In ClojureScript this translates to a module that can be used by the [Google Closure](https://developers.google.com/closure/) compiler, which is what ClojureScript uses when it compiles to JavaScript. There are a lot of benefits to this that don't become readily apparent until you use some of the advanced optimization features. There are some other really neat optimizations ClojureScript does with JavaScript. I found this [JavaScript Jabber podcast](http://devchat.tv/js-jabber/107-jsj-clojurescript-om-with-david-nolen) to have insights into some of these optimizations.
 
 So with that little helper module built, I can move on to putting things together.
 
-[gist id=a299d07646ba97f13760]
+[gist](https://gist.github.com/odoe/a299d07646ba97f13760)
 
 I create a helper function to load the style for the features loaded to the map. The _clj->js_ macro translates a Clojure data structure to a JavaScript one. So _(clj->js { :name "Chuck" }_ translates this to a JavaScript object of _{ name: "Chuck" }_.
 

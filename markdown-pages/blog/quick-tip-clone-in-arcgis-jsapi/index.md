@@ -52,7 +52,7 @@ In this case, I clone the Graphic, update the geometry, remove the old graphic a
 
 This method can come in real handy if you want to display some GPS data on the map or maybe work with a real-time API that also provide coordinates at varying intervals.
 
-The **clone()** method isn't exactly new in the API. We talked about this way back on [4.0beta1](http://odoe.net/blog/fun-with-accessors-in-arcgis-js-4beta1/) using **camera.clone()** so we could store the state of the Views camera and replay it almost like an animation.
+The **clone()** method isn't exactly new in the API. We talked about this way back on [4.0beta1](https://odoe.net/blog/fun-with-accessors-in-arcgis-js-4beta1/) using **camera.clone()** so we could store the state of the Views camera and replay it almost like an animation.
 
 So if during your development, you are trying to modify properties of an object, in particular Graphics, Camera, ViewPoint, or Symbols, try using the **clone()** method to see if that helps you out.
 

@@ -9,7 +9,7 @@ Short post this week, I'm out of town.
 
 I'm joining Esri.
 
-This is what I imagine my first day will be like. [![giphy](images/giphy.gif)](http://odoe.net/blog/wp-content/uploads/giphy.gif)
+This is what I imagine my first day will be like. [![giphy](images/giphy.gif)](https://odoe.net/blog/wp-content/uploads/giphy.gif)
 
 More to come.
 

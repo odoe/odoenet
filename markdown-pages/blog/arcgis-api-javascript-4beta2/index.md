@@ -9,7 +9,7 @@ coverImage: "esrijs-beta2-release.png"
 
 Last week, Esri announced the release of the [ArcGIS JS API 4.0 Beta 2](http://blogs.esri.com/esri/arcgis/2015/11/19/arcgis-api-for-javascript-4-0-beta-2-released/).
 
-I've talked a lot [about the 4.0 beta](http://odoe.net/blog/tag/esrijs4beta/) and a lot of the new features available with it. It's not just the 3D functionality, which is cool, but also much of the core of the API such as [Accessor](http://odoe.net/blog/?s=accessor), [Collections](http://odoe.net/blog/quick-tip-collections-in-esrijs-beta-4/), [Promises](http://odoe.net/blog/arcgis-javascript-promises/), and how [Maps and Views work](http://odoe.net/blog/maps-and-views-in-arcgis-js-api/).
+I've talked a lot [about the 4.0 beta](https://odoe.net/blog/tag/esrijs4beta/) and a lot of the new features available with it. It's not just the 3D functionality, which is cool, but also much of the core of the API such as [Accessor](https://odoe.net/blog/?s=accessor), [Collections](https://odoe.net/blog/quick-tip-collections-in-esrijs-beta-4/), [Promises](https://odoe.net/blog/arcgis-javascript-promises/), and how [Maps and Views work](https://odoe.net/blog/maps-and-views-in-arcgis-js-api/).
 
 So what do we get with the Beta 2 release?
 

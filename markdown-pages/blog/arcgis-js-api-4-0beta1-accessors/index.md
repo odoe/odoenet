@@ -92,7 +92,7 @@ myObj.prop = newValue;
 
 _Bam, magic!_
 
-I would actually say that Accessors are closer to [dmodel](https://github.com/SitePen/dmodel) than Stateful. Because you can have computed properties with Accessors. The Accessor module is a mixin that can be used with [dojo/\_base/declare](http://dojotoolkit.org/reference-guide/1.10/dojo/_base/declare.html). So you could do something like this:
+I would actually say that Accessors are closer to [dmodel](https://github.com/SitePen/dmodel) than Stateful. Because you can have computed properties with Accessors. The Accessor module is a mixin that can be used with [dojo/_base/declare](http://dojotoolkit.org/reference-guide/1.10/dojo/_base/declare.html). So you could do something like this:
 
 ```js
 var Model = declare([Accessor], {

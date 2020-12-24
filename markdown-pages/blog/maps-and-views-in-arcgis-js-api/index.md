@@ -19,14 +19,14 @@ If you look at the [events of a Map](https://developers.arcgis.com/javascript/be
 
 So let's say you had a single map and you wanted to display that map in both 2D and 3D... well it's very simple.
 
-[gist id=abafbc77f32ecae939eb]
+[gist](https://gist.github.com/odoe/abafbc77f32ecae939eb)
 
 You can see a demo this here. [3D/2D map - 4.0 beta 1 on jsbin.com](http://jsbin.com/hiyanurolo/1/embed?output)
 
 
 See, _one map, multiple views_. You could even take advantage of the [Accessors](http://odoe.net/blog/arcgis-js-api-4-0beta1-accessors/) in the API to do some other cool stuff, like a _ghetto overview map_.
 
-[gist id=ddea10aac0ba4184f687]
+[gist](https://gist.github.com/odoe/ddea10aac0ba4184f687)
 
 In this case, you are watching for the center to change in one view and sync it to another. You can see a demo of this here. [3D/2D map - 4.0 beta 1 on jsbin.com](http://jsbin.com/yenanidobi/1/embed?output)
 

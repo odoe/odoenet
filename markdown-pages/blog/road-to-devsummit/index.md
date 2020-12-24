@@ -15,7 +15,7 @@ There's a packed [agenda](http://www.esri.com/events/devsummit/agenda/detailed-a
 
 Normally, I'd go over all the awesome user sessions I want to check out. The user sessions are always interesting, because these our the people that have been in the trenches, using and hacking the software, bending it to their will to meet the sometimes implausible if not dreamy needs of their users (_or even managers_) and you get to learn from their pain. There's lots of great user sessions this year, so definitely be sure to check those out.
 
-However this year, I don't know if I'll have time to attend many user sessions. This year, I'm going to DevSummit [as staff](http://odoe.net/blog/im-going-to-esri/). I'm involved in [six sessions](https://devsummit.schedule.esri.com/#presenters/56b287254be5dd46a300005d) this year, nine with repeats. Plus working the showcase area throughout the week.
+However this year, I don't know if I'll have time to attend many user sessions. This year, I'm going to DevSummit [as staff](https://odoe.net/blog/im-going-to-esri/). I'm involved in [six sessions](https://devsummit.schedule.esri.com/#presenters/56b287254be5dd46a300005d) this year, nine with repeats. Plus working the showcase area throughout the week.
 
 It's interesting to be presenting at DevSummit as an Esri employee. I think I've only missed three DevSummits since they started. I know I missed year one because they gave out some cool messenger bags that my co-workers had and I never did manage to get my hands on one. I've done a handful of user presentations and lightning talks at DevSummit throughout the years and _I've been giving all of you free content and training materials for years_.
 

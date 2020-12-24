@@ -8,7 +8,7 @@ tags: geodev
 
 ### 2012 not as planned
 
-2012 is wrapping up, so I thought I would gather my 2013 resolutions a little early in case the world doesn't end this week (12-21-2012 oh no). As usual, I look back on what I had [set out for myself last year](http://odoe.net/blog/?p=196) and as usual not much went as planned. I don't really discuss my personal life here, but it was a rough year for my family in 2012, so when the year started I didn't think I would really get much done professionally. I was wrong.
+2012 is wrapping up, so I thought I would gather my 2013 resolutions a little early in case the world doesn't end this week (12-21-2012 oh no). As usual, I look back on what I had [set out for myself last year](https://odoe.net/blog/?p=196) and as usual not much went as planned. I don't really discuss my personal life here, but it was a rough year for my family in 2012, so when the year started I didn't think I would really get much done professionally. I was wrong.
 
 As far as languages to learn/improve that I outlined for last year, not much node or Ruby, and I'll get to why in a minute. Silverlight, sort of, but did work on a WPF project, so got more familiar with XAML. For keeping my skills well-rounded, I have gone over quite a bit of algorithms material. I did not get in to Lisp, but I did start down the path of [Erlang](http://shop.oreilly.com/product/0636920025818.do) and [Erlang web apps](http://shop.oreilly.com/product/0636920021452.do) for some reason and I am fascinated by it.
 

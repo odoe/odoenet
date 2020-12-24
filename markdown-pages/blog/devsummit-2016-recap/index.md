@@ -7,7 +7,7 @@ date: "2016-03-14"
 
 Ok, so I know I said I would do daily recaps of DevSummit last week, but my days ran longer than expected and I had less time for recaps than I thought.
 
-I already talked about [plenary and the vector tiles sessions I did](http://odoe.net/blog/devsummit-2016-day-1/). So I'll talk a little about my other sessions.
+I already talked about [plenary and the vector tiles sessions I did](https://odoe.net/blog/devsummit-2016-day-1/). So I'll talk a little about my other sessions.
 
 Yann and I did a Discover 4.0 session a couple of times. I think this went over really well. There is a lot of material to cover for what is new to developers in the 4.0 version of the ArcGIS JS API and Yann had even more material to show you. The big takeaways here, **Accessors**, **Collections**, **Maps and Views**, **ViewModels** and **Portal API**. Learn those, get intimate with them and you'll be golden for 4.0.
 

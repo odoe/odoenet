@@ -6,7 +6,7 @@ date: "2013-12-31"
 tags: geodev
 ---
 
-2013 turned out to be a pretty interesting year. Looking back at my [goals](http://odoe.net/blog/?p=397) for the year, I think I've done a pretty good job. I've had some new challenges, took on some new work and sharpened my current skills.
+2013 turned out to be a pretty interesting year. Looking back at my [goals](https://odoe.net/blog/?p=397) for the year, I think I've done a pretty good job. I've had some new challenges, took on some new work and sharpened my current skills.
 
 ## What I got done
 

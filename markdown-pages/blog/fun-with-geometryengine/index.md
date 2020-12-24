@@ -9,7 +9,7 @@ coverImage: "geomengine.jpg"
 
 The [GeometryEngine](https://developers.arcgis.com/javascript/beta/api-reference/esri-geometry-geometryEngine.html) in the ArcGIS API for JavaScript is a very cool and powerful feature inside the API. I highly recommend you check out these [series of blog posts](https://blogs.esri.com/esri/arcgis/2015/09/09/geometryengine-part-1-testing-spatial-relationships-and-editing/) on the Esri blogs to check out some of it's uses in an application setting.
 
-I wanted to play around with using the GeometryEngine to see what other kind of interactive stuff I could do with it. I also really like [Ramda](http://ramdajs.com/0.21.0/index.html), so I wanted to play around with that too. If you are not familiar with Ramda, I talked about it [here](http://odoe.net/blog/esrijs-with-ramda/), but it's basically like underscore, but _better_.
+I wanted to play around with using the GeometryEngine to see what other kind of interactive stuff I could do with it. I also really like [Ramda](http://ramdajs.com/0.21.0/index.html), so I wanted to play around with that too. If you are not familiar with Ramda, I talked about it [here](https://odoe.net/blog/esrijs-with-ramda/), but it's basically like underscore, but _better_.
 
 So without too much fussing around, let's dive right in to some code.
 

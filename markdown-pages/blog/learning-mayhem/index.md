@@ -23,9 +23,9 @@ Then I had to install various grunt modules which you can see [here](https://git
 
 ### Call me Mayhem!
 
-I had to set up a dojoConfig to point to the _bower\_components_ folder for all the dojo and mayhem bits along with a couple of other libraries. I found it curious that Mayhem is using [esprima](http://esprima.org/) somewhere. I thought that would be more for tooling, but I haven't dug in too heavily in the source for Mayhem yet. [gist id=a4c2c8569e9b330c6d55]
+I had to set up a dojoConfig to point to the _bower\_components_ folder for all the dojo and mayhem bits along with a couple of other libraries. I found it curious that Mayhem is using [esprima](http://esprima.org/) somewhere. I thought that would be more for tooling, but I haven't dug in too heavily in the source for Mayhem yet. [gist](https://gist.github.com/odoe/a4c2c8569e9b330c6d55)
 
-With that all set, I needed a _main_ file. [gist id=62e5b2bb19008284e0d6]
+With that all set, I needed a _main_ file. [gist](https://gist.github.com/odoe/62e5b2bb19008284e0d6)
 
 So what we're doing here is setting up the [WebApplication](https://sitepen.github.io/mayhem/guide/#application-class) with a route called _index_. My assumption was that when I went that route (look like http://localhost//src/#index), it would show the appropriate HTML file, but this is where I am running into issues at the moment. I'm still working on it, but as of right now, it's only bringing in the default _Application.html_. Again, I think this is just that Mayhem is still in the process of changing and there is [a note](https://sitepen.github.io/mayhem/guide/#first-app) that the generator branch doesn't work with the master branch, so if I figure this out, I'll send a pull-request. But, this is the farthest I have been able to get with Mayhem, so I was pretty jazzed about that.
 

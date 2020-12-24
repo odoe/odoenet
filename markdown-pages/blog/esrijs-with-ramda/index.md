@@ -15,7 +15,7 @@ I've found while working with different frameworks or utility libraries that usi
 
 One library I've become a big fan of this past few months has been [Ramda](http://ramdajs.com/). You could think of Ramda like [underscore](http://underscorejs.org/) or [lodash](https://lodash.com/). Ramda however focuses on the ease of composing methods in a functional manner. This means the parameters are in the correct order to do currying. If I had one wish about Ramda it would be that partial builds were published via bower or npm. You can still do these partial builds on your own, but I'm just thinking in terms of selfish laziness.
 
-So let's dive right into some ES6 code for the actual widget. [gist id=6e5a33645282ade9dd93]
+So let's dive right into some ES6 code for the actual widget. [gist](https://gist.github.com/odoe/6e5a33645282ade9dd93)
 
 So there is a lot going on here, but I was pretty much able to take the [Leaflet-Ramda](https://github.com/odoe/leaflet-ramda) sample I had done a while ago and tweak it for the ArcGIS API for JavaScript.
 

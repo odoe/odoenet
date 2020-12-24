@@ -15,7 +15,7 @@ You can even add custom controls to the map via the [Leaflet.Control](http://lea
 
 Here is what a sample control may look like.
 
-[gist id=569382c48d200920873c]
+[gist](https://gist.github.com/odoe/569382c48d200920873c)
 
 You can define some default options for the control, such as the position. Leaflet controls can reside in one of four areas of the map, the **topright**, **topleft**, **bottomleft** or **bottomright**. For example, the zoom controls reside in the **topleft** corner by default. This makes it pretty easy for you to organize where you may want to place you custom control. The **initialize** method is called when you'd expect, when the control is created. The **onAdd** method is called the control is added to the map. You could add the UI to your control in this method and similar for the **onRemove** method, when it is removed from the map. You could do some clean up in this method, such remove event listeners to make sure you don't have any memory leaks.
 
@@ -23,7 +23,7 @@ You can define some default options for the control, such as the position. Leafl
 
 Let's say for example you wanted to build a search tool for your application to search some GeoJSON in your map. You could build a control that would add an input box and search the GeoJSON as you type. You could even get fancy and have it perform some simple autocomplete functionality.
 
-[gist id=8b6467e93d5707e055ec]
+[gist](https://gist.github.com/odoe/8b6467e93d5707e055ec)
 
 As you can see, in the **onAdd** method is where all the DOM creation is done. In the **onAdd** method, return the container element that will be used for the control. You can see how this is done in other controls like the [Leaflet.Control.Scale](https://github.com/Leaflet/Leaflet/blob/8a33e94c0e56634a749f378256905e9e23243483/src/control/Control.Scale.js) to get an idea of how to do this.
 

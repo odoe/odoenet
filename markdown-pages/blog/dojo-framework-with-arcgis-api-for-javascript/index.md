@@ -35,7 +35,7 @@ I can inject the ArcGIS API for JavaScript bits into my Dojo project asynchronou
 
     view.when().then(() => {
       console.log('map is ready');
-      this.\_invalidator();
+      this._invalidator();
     });
   }
 ```

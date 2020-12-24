@@ -6,7 +6,7 @@ date: "2011-12-29"
 tags: geodev
 ---
 
-It's that time of year again, 2011 is coming to an end and I start wondering where the hell the time went. Looking back at my [2011 resolutions](http://odoe.net/blog/?p=124), I didn't get as much done as I would like, but I like to think I accomplished quite a bit. I've been doing a lot of Node.js experimenting and I've gotten pretty good at CoffeeScript. I'm a better Ruby dev today than I was a year ago. My Python skills are about the same, but I've gotten more familiar with Django. I've learned some more native mobile, but have not had a chance to use it in production yet. My design skills could still use some help.
+It's that time of year again, 2011 is coming to an end and I start wondering where the hell the time went. Looking back at my [2011 resolutions](https://odoe.net/blog/?p=124), I didn't get as much done as I would like, but I like to think I accomplished quite a bit. I've been doing a lot of Node.js experimenting and I've gotten pretty good at CoffeeScript. I'm a better Ruby dev today than I was a year ago. My Python skills are about the same, but I've gotten more familiar with Django. I've learned some more native mobile, but have not had a chance to use it in production yet. My design skills could still use some help.
 
 I plan on forming my goals as this [post](http://net.tutsplus.com/articles/general/ten-new-years-resolutions-every-web-developer-should-make/) at tutsplus suggest. So, for 2012, I'm trying to focus my goals a bit more.
 

@@ -9,7 +9,7 @@ coverImage: "globey-emberconf.png"
 
 Last week I had the opportunity to attend [EmberConf 2016](http://emberconf.com/) in Portland, Oregon from Esri. Ember is one of the frameworks used for application development here, so it was really good to catch up on current development in the community. First off, I had to fly, which I'm not a fan of, but I'm getting better. I didn't freak, so let's call it a win.
 
-So for the past year or so, I've done a lot of Ember development. I even wrote a [post about writing an ember-cli addon](http://odoe.net/blog/five-things-i-learned-writing-an-ember-cli-addon/). I've dug in deep into the Ember guts, and let me tell you, it's pretty gutsy in there.
+So for the past year or so, I've done a lot of Ember development. I even wrote a [post about writing an ember-cli addon](https://odoe.net/blog/five-things-i-learned-writing-an-ember-cli-addon/). I've dug in deep into the Ember guts, and let me tell you, it's pretty gutsy in there.
 
 Ember is an interesting framework. I would say that maybe two to three years ago, it had an odd learning curve. It follows the [convention over configuration](http://johnotander.com/ember/2015/02/03/convention-over-configuration/) aspect of it. There are parts of your application that will be created for you if you decide not to override their behavior and this could be a _WTF_ moment if you aren't used to it. I think [ember-cli](http://ember-cli.com/) has helped to simplify much of the learning curve issues with Ember. And it really is using best practices for Ember development.
 

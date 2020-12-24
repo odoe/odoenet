@@ -7,7 +7,7 @@ date: "2010-09-14"
 
 Recently a conversation came up at work about making a tool that would allow us to drag and drop any of our existing Map Services on our [ArcGIS Server](http://www.esri.com/software/arcgis/arcgisserver/index.html) to a Map using the [ESRI Flex API 2.0](http://help.arcgis.com/en/webapi/flex/index.html). It wasn't critical, but I had a bit of downtime today and after some tooling around I managed to put together a component that I have added to the [Flex](http://github.com/odoe/FlexMapTools)[MapTools](http://github.com/odoe/FlexMapTools) library.
 
-An example can be seen [here](http://odoe.net/thelab/flex/serviceslist/Index.html).
+An example can be seen [here](https://odoe.net/thelab/flex/serviceslist/Index.html).
 
 The source code for the component is [here](http://github.com/odoe/FlexMapTools/blob/master/src/net/odoe/FlexMapTools/components/ServiceList.as).
 

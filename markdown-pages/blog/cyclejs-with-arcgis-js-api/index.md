@@ -30,17 +30,17 @@ I'm still wrapping my head around some of the concepts in Cycle.js. The DOM stuf
 
 Let's look at a sample where we create a zoom slider to adjust the zoom of a View in the [ArcGIS JS API](https://developers.arcgis.com/javascript/beta/index.html).
 
-[gist id=75319deae0b51a364fc6]
+[gist](https://gist.github.com/odoe/75319deae0b51a364fc6)
 
 So there is quite a bit happening here. We can break to talk about it.
 
 All of this happens inside a _main_ function.
 
-[gist id=354595261fb1ef8c8a44]
+[gist](https://gist.github.com/odoe/354595261fb1ef8c8a44)
 
 This is pretty basic, we create the map with a VectorTileLayer and create a View. _Awesome, nothing new here to most_.
 
-[gist id=7ab9a1da47167cb13bf7]
+[gist](https://gist.github.com/odoe/7ab9a1da47167cb13bf7)
 
 What we've done here is create an _Rx Observable_ that selects a DOM element and watches for events. This let's map the events as a stream of values. You can get more familiar with this using [rxmarbles](http://rxmarbles.com/).
 
@@ -48,13 +48,13 @@ We watch for _input_ events, return the value, change the view zoom based on the
 
 The next step is really cool. We map the _changeZoom$_ observable and update the DOM when the values change.
 
-[gist id=3d72af37c9f530724a6d]
+[gist](https://gist.github.com/odoe/3d72af37c9f530724a6d)
 
 Now we're returning an object with a _DOM_ property that is the observable that will update the DOM when changes occur.
 
 The last step is to actually start the Cycle app.
 
-[gist id=a3b6302fa5d675cbe111]
+[gist](https://gist.github.com/odoe/a3b6302fa5d675cbe111)
 
 This seems to be pretty standard in all Cycle.js apps I've looked at so far. There are a couple of other options that can be used, but this is the minimum to run it right here.
 

@@ -19,11 +19,11 @@ Well, if you combine it with say [dojo/has](https://dojotoolkit.org/reference-gu
 
 Let's assume you have an application that selects features from a FeatureLayer. You could do your debugging right in your application code or you can provide a runtime flag that will do it for you.
 
-[gist id=7134943d3916dbeca89f]
+[gist](https://gist.github.com/odoe/7134943d3916dbeca89f)
 
 Now you can set up some logic in your application to use dojo/aspect to monitor when that method is called and use it to provide logging in your application.
 
-[gist id=fb483f2c32a7a09ac2e5]
+[gist](https://gist.github.com/odoe/fb483f2c32a7a09ac2e5)
 
 In this case we are using _aspect.after_ to log the arguments sent to _featureLayer.selectFeatures_ after it has been called. You could do it before as well, if you wanted to manipulate the arguments sent to the method. Maybe you want to limit the number of ObjectIds requested. _This could make a good April Fools joke on someone_.
 

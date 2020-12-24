@@ -7,7 +7,7 @@ tags: geodev
 coverImage: "emberconf2017.jpg"
 ---
 
-I'm in Portland, OR again! This is my [second EmberConf](http://odoe.net/blog/reflecting-ember-conf-2016/) and I'm looking forward to some cool stuff this year.
+I'm in Portland, OR again! This is my [second EmberConf](https://odoe.net/blog/reflecting-ember-conf-2016/) and I'm looking forward to some cool stuff this year.
 
 There's a few Ember projects at Esri right now,
 
@@ -17,9 +17,9 @@ There's a few Ember projects at Esri right now,
 
 I'm sure there's some other stuff going on too.
 
-I've talked a bit about using [Ember with the ArcGIS API for JavaScript before](http://odoe.net/blog/update-on-ember-with-arcgis-js-api/). I've talked about it in [presentations](http://odoe.github.io/presentations/2017-devsummit-ps-using-frameworks/#/).
+I've talked a bit about using [Ember with the ArcGIS API for JavaScript before](https://odoe.net/blog/update-on-ember-with-arcgis-js-api/). I've talked about it in [presentations](http://odoe.github.io/presentations/2017-devsummit-ps-using-frameworks/#/).
 
-I've even talked about my adventures in writing an [addon](http://odoe.net/blog/five-things-i-learned-writing-an-ember-cli-addon/), oh and _what adventures they were!_
+I've even talked about my adventures in writing an [addon](https://odoe.net/blog/five-things-i-learned-writing-an-ember-cli-addon/), oh and _what adventures they were!_
 
 We currently have the [ember-cli-amd](https://github.com/Esri/ember-cli-amd) addon that will let you use the [ArcGIS API for JavaScript](https://developers.arcgis.com/javascript/) with the [ember-cli](https://ember-cli.com/). The addon works pretty solid, but is not an ideal solution, because we have to do load the JSAPI first and then the Ember bits.
 

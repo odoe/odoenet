@@ -26,7 +26,7 @@ I personally find myself a little frustrated at times when I want to modify some
 So what exactly do you get out of the box? You get a ready to use and scalable application!
 
 - Built with [TypeScript](http://www.typescriptlang.org/)
-- Preconfigured with webpack and the [@arcgis/webpack-plugin](https://github.com/esri/arcgis-webpack-plugin), check out my [previous post](http://odoe.net/blog/put-arcgis-js-api-into-your-webpack/) for more info
+- Preconfigured with webpack and the [@arcgis/webpack-plugin](https://github.com/esri/arcgis-webpack-plugin), check out my [previous post](https://odoe.net/blog/put-arcgis-js-api-into-your-webpack/) for more info
 - Develop with hot-module-reloading
 - Deploy production builds with optimizations, Service Workers and other [PWA](https://developers.google.com/web/progressive-web-apps/) configuration
 - Unit testing with [Intern](https://theintern.io/)

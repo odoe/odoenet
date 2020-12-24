@@ -11,7 +11,7 @@ The release of version 3.13 of the [ArcGIS API for JavaScript](https://developer
 
 ### What the hell is it?
 
-The Geometry Engine is analogous to [Turf](http://turfjs.org/). I'm a [big fan of Turf](http://odoe.net/blog/exploring-new-turf/) even converting my ArcGIS Features to GeoJSON to use it when needed, so I was pretty excited to see this additional functionality. There's a sample up on how to [buffer](https://developers.arcgis.com/javascript/jssamples/ge_geodesic_buffers.html), which is classic. We always want to buffer. I showed how it can be used to measure distances pretty easily in [this blog post on GeoNet](https://geonet.esri.com/people/odoe/blog/2015/04/01/esrijs-with-reactjs-updated) and there's tons of other really cool stuff you can do with it.
+The Geometry Engine is analogous to [Turf](http://turfjs.org/). I'm a [big fan of Turf](https://odoe.net/blog/exploring-new-turf/) even converting my ArcGIS Features to GeoJSON to use it when needed, so I was pretty excited to see this additional functionality. There's a sample up on how to [buffer](https://developers.arcgis.com/javascript/jssamples/ge_geodesic_buffers.html), which is classic. We always want to buffer. I showed how it can be used to measure distances pretty easily in [this blog post on GeoNet](https://geonet.esri.com/people/odoe/blog/2015/04/01/esrijs-with-reactjs-updated) and there's tons of other really cool stuff you can do with it.
 
 ### Dumb stuff to do dumb stuff
 

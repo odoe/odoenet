@@ -23,7 +23,7 @@ This is going to be my third [TechCrunch Disrupt Hackathon](https://techcrunch.c
 
 ## Esri DevSummit Europe
 
-I had a great time in Berlin last year at the [Esri European DevSummit](http://www.esri.com/events/devsummit-europe) and I must have done something right, because _they're sending me back again this year_. It was my first time out of the country other than Mexico, and [I cut it really close with passport](http://odoe.net/blog/esri-european-devsummit-2016/). I'm working on some workshop stuff for this one and some presentations as well. I'm really looking forward to this one, it's a little bit of a different vibe, _awesome food_, and a great mix of people.
+I had a great time in Berlin last year at the [Esri European DevSummit](http://www.esri.com/events/devsummit-europe) and I must have done something right, because _they're sending me back again this year_. It was my first time out of the country other than Mexico, and [I cut it really close with passport](https://odoe.net/blog/esri-european-devsummit-2016/). I'm working on some workshop stuff for this one and some presentations as well. I'm really looking forward to this one, it's a little bit of a different vibe, _awesome food_, and a great mix of people.
 
 As far as I know, these are the big tasks I have over the next couple of months (_that I can talk about_). I'm sure there's more coming up. I'm excited about meeting other developers, answering questions, helping others learn, and overall helping others build awesome shit for their users.
 

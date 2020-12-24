@@ -11,19 +11,19 @@ I was playing around with some css properties recently while working on a projec
 
 The way I did it was to give my osm layer an id. `osm = new esri.layers.OpenStreetMapLayer({ id: 'osmLayer' });`
 
-The HTML element that gets created for the layer will be map\_LAYER\_ID, so map\_osmLayer in this case. Then I just apply the css to all img tags in this div.
+The HTML element that gets created for the layer will be map_LAYER_ID, so map_osmLayer in this case. Then I just apply the css to all img tags in this div.
 
 ```css
-#map\_osmLayer img { filter: url(filters.svg#grayscale) !important; /\* Firefox 3.5+ \*/ filter: gray !important; /\* IE5+ \*/ -webkit-filter: grayscale(1) !important; /\* Webkit Nightlies & Chrome Canary \*/ }`
+#map_osmLayer img { filter: url(filters.svg#grayscale) !important; /\* Firefox 3.5+ \*/ filter: gray !important; /\* IE5+ \*/ -webkit-filter: grayscale(1) !important; /\* Webkit Nightlies & Chrome Canary \*/ }`
 ```
 
 And voila!
 
-![](images/osm_color.jpg "osm_color")](http://odoe.net/blog/wp-content/uploads/osm_color.jpg)
+![](images/osm_color.jpg "osm_color")](https://odoe.net/blog/wp-content/uploads/osm_color.jpg)
 
  
 
-![](images/osm_bw.jpg "osm_bw")](http://odoe.net/blog/wp-content/uploads/osm_bw.jpg)
+![](images/osm_bw.jpg "osm_bw")](https://odoe.net/blog/wp-content/uploads/osm_bw.jpg)
 
  
 
@@ -31,15 +31,15 @@ _FYI: I know grayscale as used in the CSS I posted works in all browsers (even I
 
  
 
-![](images/osm_hue_50.jpg "osm_hue_50")](http://odoe.net/blog/wp-content/uploads/osm_hue_50.jpg) OSM Layer: hue-rotate(50deg)
+![](images/osm_hue_50.jpg "osm_hue_50")](https://odoe.net/blog/wp-content/uploads/osm_hue_50.jpg) OSM Layer: hue-rotate(50deg)
 
  
 
-[![](images/osm_bright_sepia.jpg "osm_bright_sepia")](http://odoe.net/blog/wp-content/uploads/osm_bright_sepia.jpg) OSM Layer: brightness(-10%) sepia(100%);
+[![](images/osm_bright_sepia.jpg "osm_bright_sepia")](https://odoe.net/blog/wp-content/uploads/osm_bright_sepia.jpg) OSM Layer: brightness(-10%) sepia(100%);
 
  
 
-![](images/osm_invert.jpg "osm_invert")](http://odoe.net/blog/wp-content/uploads/osm_invert.jpg) OSM Layer: invert(100%);
+![](images/osm_invert.jpg "osm_invert")](https://odoe.net/blog/wp-content/uploads/osm_invert.jpg) OSM Layer: invert(100%);
 
  
 

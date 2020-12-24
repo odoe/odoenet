@@ -48,7 +48,7 @@ const geojsonLayer = new GeoJSONLayer({
     }
   ],
   popupTemplate: {
-    title: "{crash\_grp}",
+    title: "{crash_grp}",
     content: [
       {
         type: "fields",
@@ -62,16 +62,16 @@ const geojsonLayer = new GeoJSONLayer({
             label: "county"
           },
           {
-            fieldName: "crash\_type",
-            label: "crash\_type"
+            fieldName: "crash_type",
+            label: "crash_type"
           },
           {
             fieldName: "locality",
             label: "locality"
           },
           {
-            fieldName: "drvr\_age",
-            label: "drvr\_age"
+            fieldName: "drvr_age",
+            label: "drvr_age"
           }
         ]
       }
@@ -98,16 +98,16 @@ const editor = new Editor({
           label: "county"
         },
         {
-          name: "crash\_type",
-          label: "crash\_type"
+          name: "crash_type",
+          label: "crash_type"
         },
         {
           name: "locality",
           label: "locality"
         },
         {
-          name: "drvr\_age",
-          label: "drvr\_age"
+          name: "drvr_age",
+          label: "drvr_age"
         }
       ]
     }
