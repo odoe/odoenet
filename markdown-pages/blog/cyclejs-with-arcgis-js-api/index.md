@@ -17,7 +17,7 @@ My first look at it and it relies heavily on [RxJS Observables](https://github.c
 
 Here is how the DOM creation happens.
 
-```
+```js
 div([
   input({type: 'checkbox'}), 'Toggle me',
   p(toggled ? 'ON' : 'off')

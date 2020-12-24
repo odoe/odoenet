@@ -25,7 +25,7 @@ We currently have the [ember-cli-amd](https://github.com/Esri/ember-cli-amd) add
 
 Using the ArcGIS API 4 for JavaScript, you can do some cool stuff by treating the Map as a Service in an Ember app.
 
-```
+```js
 import Ember from 'ember';
 import EsriMap from 'esri/Map';
 
@@ -49,9 +49,7 @@ export default Ember.Service.extend({
 
 So just in time for EmberConf, my bud, Tom Wayson has put together a new addon that is written specifically to lazy-load the ArcGIS API for JavaScript in an Ember app.
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Just in time for <a href="https://twitter.com/EmberConf">@EmberConf</a> we've released <a href="https://t.co/uHPYCe3H9T">https://t.co/uHPYCe3H9T</a> an addon that allows you to lazy load the <a href="https://twitter.com/ArcGISJSAPI">@ArcGISJSAPI</a> in <a href="https://twitter.com/emberjs">@emberjs</a> apps</p>— Tom Wayson (@tomwayson) <a href="https://twitter.com/tomwayson/status/846504829593665536">March 27, 2017</a></blockquote>
-
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+[twitter link](https://t.co/uHPYCe3H9T);
 
 I tested this out when he started working on it and it works pretty nicely with minimal inconvenience. I'll be doing some more testing once EmberConf is done.
 

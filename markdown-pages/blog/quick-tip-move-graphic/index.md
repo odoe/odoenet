@@ -35,8 +35,9 @@ This is assuming you are just using points. If you are working with lines or pol
 
 Here's a quick sample showing how you might do this with the steps above and a little _flare_ thrown in!
 
-<p data-height="434" data-theme-id="31222" data-slug-hash="bLEroK" data-default-tab="js,result" data-user="odoe" data-embed-version="2" data-pen-title="Move Graphics" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/odoe/pen/bLEroK/">Move Graphics</a> by Rene Rubalcava (<a href="https://codepen.io/odoe">@odoe</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-
-<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+<iframe height="500" style="width: 100%;" scrolling="no" title="Move Graphics" src="https://codepen.io/odoe/embed/bLEroK?height=500&theme-id=39013&default-tab=js,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/odoe/pen/bLEroK'>Move Graphics</a> by Rene Rubalcava
+  (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 Hope you enjoy the quick tip! Hack away!

@@ -83,7 +83,7 @@ Now when you edit a \*.coffee file in Sublime Text 2, you can use ctrl+b to buil
 
 At this point, start up Visual Studio, start a new MVC 3 Web project. Add a new item, and you should have the option to add CoffeeScript files. Right click the CoffeeScript file -> Open With, choose "Sublime Text 2", if not an option, browse to the sublime.exe in _Program Files\\Sublime Text 2_. Set it as the default and now all \*.coffee files will open in Sublime Text 2 when double-clicked in Visual Studio. Again, press ctrl+b in Sublime Text 2 to build and save the \*.coffee files and you should be good to go.
 
-## Whew...
+## Whew
 
 Ok, I know this whole process seemed a little long, but I find it to be worthwhile in my dev workflow. The trickiest part for me was getting everything working behind a proxy. After I had to do this on a couple of machines and asked to explain it, I thought I should document this somehow. Many of the search results out there are also written specific to OS X and Linux users, so there are little bits here and there that took some translating to Windows, not much, but slight nuances like installing the CoffeeScript bundle. I hope everything works for you. If you run into to trouble, I'll see if I can help, but some Google-fu worked when I got stuck.
 

@@ -8,7 +8,6 @@ tags: geodev
 
 So, I spent quite a bit of time this week really trying to wrap my head around using the Swiz framework with the ESRI Flex API. I found the actual [Swiz website](http://swizframework.org/), which somehow never came up in all my earlier research. It gave me some details on things I wasn't clear on before.
 
-
 I also found this video by Joe Rinehart, [Swiz in 20 minutes](http://www.firemoss.com/index.cfm/2009/10/21/Swiz-in-20-minutes-video--byebye-boilerplate).
 
 Videos like this are great, because it just helps to hear and see someone go through it from start to finish. With my new found information, I was ready to tackle a new version of the application I posted earlier. What I have found, is the Swiz framework really gives you a lot of freedom in how you actually want to write your code. How I use it in my style, may not work for someone else's style. I really like that. You can also get a good explanation of the framework and metadata [here](http://swizframework.org/docs/getting-started/).
@@ -25,13 +24,13 @@ public static const QUERY_LAYER : String = "queryLayer";
 
 Then, from any other view or controller, I can use this.
 
-```js
+```java
 Swiz.dispatchEvent( new Event( LayerController.QUERY_LAYER ) );
 ```
 
 In my Controller, I have this.
 
-```js
+```java
 [Mediate(event = "queryLayer")]
 public function queryStateLayer(): void {
     trace("begin queryStateLayer");

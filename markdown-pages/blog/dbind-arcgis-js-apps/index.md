@@ -23,8 +23,7 @@ Let's say you simply wanted to display the name of a State as you hovered your m
 
 [JS Bin](http://jsbin.com/cusejogaje/1/embed?js,output)
 
-
-In this sample, you simply bind the DOM element to the _STATE_NAME_ property and when you _mouse-over_ the _FeatureLayer_ use the _set_ method to set this value. It all comes together in a nice little package.
+In this sample, you simply bind the DOM element to the `STATE_NAME` property and when you _mouse-over_ the _FeatureLayer_ use the _set_ method to set this value. It all comes together in a nice little package.
 
 ### Piece it all together
 

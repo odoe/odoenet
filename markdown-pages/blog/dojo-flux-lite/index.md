@@ -27,22 +27,23 @@ If you think about for a second, Dojo already has all these tools. [dojo/topic](
 
 I'm going to work off a previous example I did [using React with Dojo](https://odoe.net/blog/esrijs-reactjs/) that displayed the XY coordinates as you move the mouse over the map. First is the Action.
 
+```js
 define([
   'dojo/topic'
 ], function(topic) {
-
   return {
     updateXY: function updateXY(data) {
       topic.publish('UPDATE-XY', data);
     }
   };
-
 });
+```
 
 You can see this is very simple. It's going to use dojo/topic to pass the data by an _UPDATE-XY_ topic. In this case I'm not using a stand-alone dispatcher, nor am I concerning myself with details about the [Action Type](https://facebook.github.io/flux/docs/dispatcher.html). That may change with a larger application, but I just wanted to show how it might work in a simple sample.
 
 Next let's look at the Store.  
 
+```js
 define([
   'dojo/_base/declare',
   'dojo/Stateful',
@@ -66,11 +67,13 @@ define([
   }
   return _instance;
 });
+```
 
 As you can see in the comments, I borrowed a technique [found here](http://www.anujgakhar.com/2013/08/29/singletons-in-dojo/) to make the Store a [Singleton](http://en.wikipedia.org/wiki/Singleton_pattern). This isn't a robust implementation, but it works, as far as I can tell. This just uses dojo/Stateful to create an object that has an **x** and a **y** property. It also uses dojo/topic to listen for the _UPDATE-XY_ topic and update the Store accordingly.
 
 Let's check out the View.
 
+```js
 define([
   'dojo/_base/declare',
   'dijit/_WidgetBase',
@@ -100,6 +103,7 @@ define([
   });
 
 });
+```
 
 This view as simple as it is, does quite a bit. This is a basic widget with a template. It uses a helper module that will format the coordinates to three decimal places. The LocatorStore is passed in to the module and using the **dbind** library, you can bind any updates to the store to DOM elements. You can use some of **dbinds** syntactical sugar to first bind the updates to the format function. Then you can bind the DOM elements to the formatted results. That's really all there is to it. As a side note, the more I use dbind, _the more I like dbind_.
 

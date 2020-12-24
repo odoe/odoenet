@@ -52,14 +52,11 @@ Open-source won't save the world, but if you are typically an Esri dev, branch o
 
 Oh yeah, I said it. This may be optional until it's not. If you in anyway shape or form ever want to get any sort of meaningful information out of a database, for the love of all that is sacred, learn to write some SQL. [Learn the Hard Way](http://sql.learncodethehardway.org/book/) even. I'm sure there are some great resources out there, but I pretty much learned by trial and error, lots of error.
 
- 
-
 **_More resources_**
 
 - [GIS Stack Exchange](http://gis.stackexchange.com/)
-    
+
 - [StackOverflow](http://stackoverflow.com/)
-    
 
 #### Summarize
 

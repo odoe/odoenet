@@ -27,18 +27,15 @@ I could read the text of the legend and figure out what it's telling me, but let
 
 What if turned this legend into a chart?
 
-[caption id="attachment_1239" align="aligncenter" width="203"]![legend-chart](images/legend-chart.png) Legend in Chart form[/caption]
+![legend-chart](images/legend-chart.png)
 
 That's cool! I'm sure I could do some label stuff with Chart.js, but hey, now I can quickly see what values on my map are dominant in my map. It may not be much, but I think that's pretty cool.
-
-<script src="https://gist.github.com/odoe/e22c407573b27bbac9070cc24f0b2a7b.js"></script>
 
 So what we're doing here is building up the dataset that Chart.js can use. We're going to use the renderer colors to color the chart, so it's a little hacking to parse that data into a string per data object. Then to size the dataset, we'll divide the _maxValue_ by the _minValue_, this will give us a decent proportional size. I tried subtracting the min from max, but it lead to some pretty weak looking charts.
 
 You can see this in action here.
 
 [JS Bin on jsbin.com](http://jsbin.com/nenoga/3/embed?output)
-
 
 Every time you update the data for Smart Mapping, it will update out little legend chart. _Fun stuff right!_
 
@@ -48,14 +45,13 @@ Did you know the JSAPI comes with a little stats plugin or FeatureLayers? Yup, i
 
 We'll go ahead and play around with the _[getFieldStatistics](https://developers.arcgis.com/javascript/jsapi/featurelayerstatistics-amd.html#getfieldstatistics)_ method.
 
-<script src="https://gist.github.com/odoe/95908b248a87a009e82f2a70d6388b1d.js"></script>
+[gist](https://gist.github.com/odoe/95908b248a87a009e82f2a70d6388b1d.js)
 
 This is pretty simple. You get a handful of field stats back, but I'll just show the average and sum on this chart. Note that including the white population in this chart kind of skews the scaling of the chart and as far as I can tell Chart.js doesn't have a zoom method like [Plot.ly](https://plot.ly/) does. If you take the White population out, the data makes for more readable charts. I'm sure you could run some normalization on this, but for demo, it's cool.
 
 Here is a working sample.
 
 [JS Bin on jsbin.com](http://jsbin.com/xuvajo/2/embed?output)
-
 
 I had trouble getting the aspect-ratio and css to play nicely, but you get the idea.
 

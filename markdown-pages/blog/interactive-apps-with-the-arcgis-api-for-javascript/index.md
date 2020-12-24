@@ -93,8 +93,8 @@ view.on("pointer-move", event => {
     }
     if (results.length) {
       tooltip.style.display = "block";
-      tooltip.style.top = \`${y - 175}px\`;
-      tooltip.style.left = \`${x - 310/2}px\`;
+      tooltip.style.top = `${y - 175}px`;
+      tooltip.style.left = `${x - 310/2}px`;
       const g = results[0].graphic;
       if (g.geometry) {
         const oid = g.attributes.OBJECTID;
@@ -123,8 +123,8 @@ view.on("pointer-move", event => {
     }
     if (results.length) {
       tooltip.style.display = "block";
-      tooltip.style.top = \`${y - 175}px\`;
-      tooltip.style.left = \`${x - 310/2}px\`;
+      tooltip.style.top = `${y - 175}px`;
+      tooltip.style.left = `${x - 310/2}px`;
       const g = results[0].graphic;
       if (g.geometry) {
         const oid = g.attributes.OBJECTID;
@@ -132,7 +132,7 @@ view.on("pointer-move", event => {
         if (layerView) {
           layerView.effect = {
             filter: {
-              where: \`OBJECTID = ${oid}\`
+              where: `OBJECTID = ${oid}`
             },
             excludedEffect: "opacity(20%) saturate(30%)"
           };
@@ -153,7 +153,6 @@ What you end up with is an application that looks something like this.
   See the Pen <a href='https://codepen.io/odoe/pen/eoOvPj'>Tooltip, Filter, and Effect</a> by Rene Rubalcava
   (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
-
 
 As you can see, this is pretty damn nifty! It's fast, it looks cool, if I do say so myself, and best off all, that's really not a lot of extra code to write. Plus, admit it, it's fun just to play with!
 

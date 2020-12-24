@@ -31,5 +31,4 @@ There's a lot going on in this code, but hopefully you can follow along and see 
 
 Let's take a look at a demo of this in action. [JS Bin on jsbin.com](http://jsbin.com/sodeda/1/embed?output)
 
-
 Like I said before, I think Accessors are a really cool, powerful feature in the ArcGIS 4.0beta1. 3D is cool, sure, but the stuff in the API that powers 3D is even cooler.

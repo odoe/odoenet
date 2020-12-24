@@ -33,6 +33,6 @@ If you are used to using the [text plugin](http://requirejs.org/docs/download.ht
 
 I tried creating an alias for this in my dojo config, but couldn't get it to work. If someone does, I'd love to hear about it. I was able to fix this by forming my alias as a proper array or arrays in my [config](https://github.com/odoe/ags30sample/blob/master/src/config.coffee). In the config, especially if you are using jQuery, async: true is an important parameter. jQuery won't work without it. This specifies that Dojo should be loaded asynchronously. You can also use it in your require/define methods similar to the order! plugin for Require.js. ` // 1 means true, 0 means false require({async:1},['modules/myModule'], function(myModule){ ... }); ` I have not tried this method yet, but if I have a need, now I know.
 
-## Go forth and update...
+## Go forth and update
 
 The biggest hurdle for me was getting the config to work as I needed it to work. Now that I have a better understanding of how Dojo defines packages and loads them, I'll be moving forward with the ArcGIS JavaScript API 3.x updates. Future updates when the ESRI modules become AMD compliant should be less painful. My old Require.js modules will load just fine now. Most people may not need to move on from Require.js, so you should have a clean slate to work from. Hopefully some of these tips help get you on the track to creating modular apps with the new API.

@@ -109,9 +109,9 @@ import * as css from './styles/map-widget.m.css';
 import { initialize } from "./support/arcgis";
 
 export interface MapWidgetProperties {
-	webmapid: string;
-	widgets: string | string[];
-	onChange: (data: any) => void;
+  webmapid: string;
+  widgets: string | string[];
+  onChange: (data: any) => void;
 }
 
 class HtmlMeta extends MetaBase {

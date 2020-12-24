@@ -21,7 +21,7 @@ This is something you could handle using the [dojo/router](http://dojotoolkit.or
 
 Let's take a look at what this might look like. Below is an example that can be used to pass the name of a US state in the URL and perform a search based on that name.
 
-```
+```js
 require([
   'esri/map',
   'esri/tasks/query',
@@ -73,7 +73,7 @@ require([
 
 Another example would be to have the app function differently based on the route, so you could say, load the [HomeButton](https://developers.arcgis.com/javascript/jsapi/homebutton-amd.html) or [LocateButton](https://developers.arcgis.com/javascript/jsapi/locatebutton-amd.html) based on which route was loaded. That may look something like this.
 
-```
+```js
 require([
   'esri/map',
   'dojo/on',

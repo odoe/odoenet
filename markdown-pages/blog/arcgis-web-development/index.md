@@ -7,7 +7,7 @@ date: "2013-09-11"
 
 [caption width="150" align="alignleft"][![arcgis web dev](images/rubalcava_cover150.jpg)](http://www.manning.com/rubalcava/) ArcGIS Web Development[/caption]
 
-## I'm writing a book.
+## I'm writing a book
 
 I've been somewhat quiet on this project for the past few months aside from some folks who have been gracious enough to review some of my content and make sure I wasn't completely off the rails on certain items, but earlier this year I began the task of writing a book on [ArcGIS Web Development](http://www.manning.com/rubalcava/). It is currently available as a MEAP, from [Manning Publications](http://www.manning.com/). If you are unfamiliar with [MEAP](http://www.manning.com/about/meap.html#meapfaq), it is basically an early access program for books in digital form as they are written. The first three chapters are available as well as chapter 1 for free. If you purchase the book and have some feedback, suggestions or have questions for me, you can post them on the [Author Online forum](http://www.manning-sandbox.com/forum.jspa?forumID=876) for the book when it is up and running.
 

@@ -19,28 +19,16 @@ The HTML element that gets created for the layer will be map_LAYER_ID, so map_os
 
 And voila!
 
-![](images/osm_color.jpg "osm_color")](https://odoe.net/blog/wp-content/uploads/osm_color.jpg)
+![](images/osm_color.jpg)
 
- 
-
-![](images/osm_bw.jpg "osm_bw")](https://odoe.net/blog/wp-content/uploads/osm_bw.jpg)
-
- 
+![](images/osm_bw.jpg)
 
 _FYI: I know grayscale as used in the CSS I posted works in all browsers (even IE8), but I can't guarantee other filters will work in IE._ This comes in really handy, so as only this layer is impacted by the css, my own data can "pop" a bit more. There's more you can do with these fun filters!
 
- 
+![](images/osm_hue_50.jpg) OSM Layer: hue-rotate(50deg)
 
-![](images/osm_hue_50.jpg "osm_hue_50")](https://odoe.net/blog/wp-content/uploads/osm_hue_50.jpg) OSM Layer: hue-rotate(50deg)
+![](images/osm_bright_sepia.jpg) OSM Layer: brightness(-10%) sepia(100%);
 
- 
-
-[![](images/osm_bright_sepia.jpg "osm_bright_sepia")](https://odoe.net/blog/wp-content/uploads/osm_bright_sepia.jpg) OSM Layer: brightness(-10%) sepia(100%);
-
- 
-
-![](images/osm_invert.jpg "osm_invert")](https://odoe.net/blog/wp-content/uploads/osm_invert.jpg) OSM Layer: invert(100%);
-
- 
+![](images/osm_invert.jpg) OSM Layer: invert(100%);
 
 Of course you can mix and match these css styles, so experiment with them to see what kind of interesting effects you can plug into your maps.

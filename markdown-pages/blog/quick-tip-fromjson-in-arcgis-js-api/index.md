@@ -13,7 +13,7 @@ That would be the [fromJSON](https://developers.arcgis.com/javascript/beta/api-r
 
 Let's look over the samples real quick. If you look at the [2D Overview sample](http://developers.arcgis.com/javascript/beta/sample-code/sandbox/sandbox.html?sample=sample-code/source-code/3d/2d-overview-map/index.html), you may notice in that viewPoint is simply passed as an object to the SceneView.
 
-```
+```js
 view3d = new SceneView({
   container: "view3dDiv",
   map: map3d,
@@ -36,7 +36,7 @@ So maybe you've used something like [Terraformer](http://terraformer.io/) to par
 
 That would look something like this.
 
-```
+```js
 Graphic.fromJSON({
   geometry: {
     x: coordinates[0],
@@ -51,6 +51,5 @@ Graphic.fromJSON({
 Look at that. _Look at it!_ No fuss, GeoJSON in your ArcGIS API apps.
 
 You can see a demo of this application here. [Basic 3D map - 4.0 beta 1 on jsbin.com](http://jsbin.com/ferope/3/embed?js,output)
-
 
 The _fromJSON_ method sprinkled throughout the API provide even more flexibility to you as a developer to [simplify](https://developers.arcgis.com/javascript/beta/guide/discover/#simpleAPI) it's use for your everyday work. So _JSON the hell out of your code!_

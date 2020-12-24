@@ -21,7 +21,6 @@ You can see a sample of this in action here.
 
 [JS Bin on jsbin.com](http://jsbin.com/luwowu/2/embed?js,output)
 
-
 You'll of course need to set up your own CSS stylings for your particular use-case.
 
 The key here is you can set up your map in a simple frozen state and just print from the browser.

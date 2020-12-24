@@ -5,7 +5,7 @@ author: Rene Rubalcava
 date: "2014-08-13"
 ---
 
-## What the...
+## What the
 
 So I get pretty bored. For the past year or so I've been learning some functional programming stuff, and like most things it has snowballed into tons of little side projects and experiments. A few months ago I attended this online workshop from [FrontendMasters](http://frontendmasters.com/workshops/functional-programming-javascript/) and it totally melted my brain. I highly recommend it when the course becomes available.
 
@@ -25,10 +25,9 @@ With that in hand, I tweaked [this sample](http://developers.arcgis.com/javascri
 
 [Geometry Service: Relation](http://jsbin.com/nopulo/1/embed?js,output)
 
-
 The interesting part is probably the Observable of the promises that do the drive time analysis and finds the local pizza places.
 
-```
+```js
 Rx.Observable.fromPromise(new all({
   poiSearch: executeLocalSearch(clickPointGraphic),
   driveTimes: getDriveTimePolygon(clickPointGraphic)

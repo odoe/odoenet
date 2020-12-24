@@ -15,20 +15,19 @@ So without too much fussing around, let's dive right in to some code.
 
 [JS Bin on jsbin.com](http://jsbin.com/qudalodegi/1/embed?js,output)
 
-
 First off we are going to grab some methods off Ramda and the GeometryEngine that we plan on using.
 
-<script src="https://gist.github.com/odoe/e3d8671899262cabae8dcd3d24756a63.js"></script>
+[gist](https://gist.github.com/odoe/e3d8671899262cabae8dcd3d24756a63.js)
 
 Next we do some basic stuff like set up a _QueryTask_, _Map_ and _MapView_, along with some symbols and graphics layer.
 
 Now we can do some cool stuff and set up some functions we can use to do the heavy lifting for us.
 
-<script src="https://gist.github.com/odoe/44f7bf743a21cd0f074322b0d0daf532.js"></script>
+[gist](https://gist.github.com/odoe/44f7bf743a21cd0f074322b0d0daf532.js)
 
 So, we've basically used methods like **compose** and **map** to create a series of helper methods that can be easily stitched together to build our app.
 
-<script src="https://gist.github.com/odoe/832f463828bb5aa561542ed4b16f9011.js"></script>
+[gist](https://gist.github.com/odoe/832f463828bb5aa561542ed4b16f9011.js)
 
 Now we put everything to work, we first get all the points in the extent of the view. We can then listen for the **mousemove** event of the view and every time we move the mouse create a buffer of that location and display any points that fall within that buffer on the map.
 

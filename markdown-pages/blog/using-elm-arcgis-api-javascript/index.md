@@ -25,13 +25,13 @@ Here is the Elm code for reference.
 
 That's a lot, I know. I try to explain most of it in the video.
 
-## Resources from the video:
+## Resources from the video
 
 - [Demo repo](https://github.com/odoe/elm-jsapi4)
 - [Live demo](https://odoe.github.io/elm-jsapi4)
-    
+
 - [Pragmatic Studios - Elm: Th Pragmatic Way](https://pragmaticstudio.com/elm)
-    
+
 - [Pragmatic Studios - Elm: Integrating Elm](https://pragmaticstudio.com/courses/integrating-elm)
 - [FrontEnd Masters - The Elm Language](https://frontendmasters.com/courses/elm/)
 - [Pluralsight - Elm: Getting Started](https://app.pluralsight.com/library/courses/elm-getting-started/table-of-contents)

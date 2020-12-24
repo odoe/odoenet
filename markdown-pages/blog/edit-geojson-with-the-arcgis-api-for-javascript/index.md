@@ -157,7 +157,6 @@ Here is a demo of this application in action.
   (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
-
 ## Summary
 
 As you can see, the ArcGIS API for JavaScript can even take basic GeoJSON, make it editable with rendering and let you download that new edited data. That's awesome! I'm sure you can take full advantage of this yourself in your applications! Happy geohacking!

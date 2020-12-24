@@ -21,10 +21,13 @@ For this example, we're going to stay basic and use a sample from the ArcGIS Jav
 
 Now, I'm going to show you the first step to making your application simpler and easier to maintain. Separate your JavaScript from your HTML. To quote Tony Stark, "_That's how Dad did it, that's how America does it, and it's worked out pretty well so far_." This follows a basic philosophy I picked up when first treading into web development waters. _HTML is markup, CSS is style, and JavaScript is function, never shall the three ever meet_. That's not really strict, as your code will mingle and fiddle with your DOM and styles all the time, but when you are starting your application, this is a pretty good starting point. So first off, take the JavaScript out of the HTML, save it in a file called main.js or app.js, there is no strict rules here. Refer to it like any other file.
 
-`<script type="text/javascript" src="javascripts/main.js"></script>`
+```html
+<script type="text/javascript" src="javascripts/main.js"></script>
+```
 
 That's step one. In a later posting, I'll discuss on further simplifying the separation of your markup from your style and code. Now, I'm just going to throw this out there to get things going. Here is the CoffeeScript version of the JavaScript code in the sample we are working with. `dojo.require "dijit.layout.BorderContainer" dojo.require "dijit.layout.ContentPane" dojo.require "esri.map" dojo.require "esri.dijit.Popup"
 
+```js
 dojo.addOnLoad -> initExtent = new esri.geometry.Extent xmin: -9270392 ymin: 5247043 xmax: -9269914 ymax: 5247401 spatialReference: wkid: 102100 lineColor = new dojo.Color [255,0,0] fillColor = new dojo.Color [255,255,0,0.25] lineSymbol = new esri.symbol.SimpleLineSymbol esri.symbol.SimpleLineSymbol.STYLE_SOLID, lineColor, 2 fill = new esri.symbol.SimpleFillSymbol esri.symbol.SimpleFillSymbol.STYLE_SOLID, lineSymbol, fillColor popup = new esri.dijit.Popup { fillSymbol: fill }, dojo.create "div"
 
 map = new esri.Map "map", infoWindow: popup extent: initExtent
@@ -40,7 +43,8 @@ dojo.connect _map_, "onClick", (evt) -> identifyParams.geometry = evt.mapPoint i
 deferred = identifyTask.execute identifyParams deferred.addCallback (response) -> dojo.map response, (result) -> feature = result.feature feature.attributes.layerName = result.layerName if result.layerName is "Tax Parcels" then feature.setInfoTemplate new esri.InfoTemplate "","${Postal Address}  
 Owner of record: ${First Owner Name}" else if result.layerName is "Building Footprints" then feature.setInfoTemplate new esri.InfoTemplate "", "Parcel ID: ${PARCELID}" feature _map_.infoWindow.setFeatures [ deferred ] _map_.infoWindow.show evt.mapPoint
 
-dojo.connect dijit.byId("map"), "resize", _map_, _map_.resize `
+dojo.connect dijit.byId("map"), "resize", _map_, _map_.resize 
+```
 
 Now take a second to review that and see if you can follow it. First thing you may notice is the lack of parentheses or brackets. it might seem a little off at first, but the readability is greatly increased. Whitespace is king.
 
@@ -62,6 +66,7 @@ There is much more syntactic sugar and CoffeeScript goodness that I won't go ove
 
 You might be asking yourself what to do with this awesome CoffeeScript file. After all, you can't very well just use that in your application. If you installed Node.js and CoffeeScript properly, you should be able to use this command `]coffee --compile main.coffee` This will produce a main.js file. You can review the output below. `
 
+```js
 dojo.require("dijit.layout.BorderContainer");
 
 dojo.require("dijit.layout.ContentPane");
@@ -71,7 +76,8 @@ dojo.require("esri.map");
 dojo.require("esri.dijit.Popup");
 
 dojo.addOnLoad(function() { var basemap, fill, fillColor, initExtent, landBaseLayer, lineColor, lineSymbol, map, popup; initExtent = new esri.geometry.Extent({ xmin: -9270392, ymin: 5247043, xmax: -9269914, ymax: 5247401, spatialReference: { wkid: 102100 } }); lineColor = new dojo.Color([255, 0, 0]); fillColor = new dojo.Color([255, 255, 0, 0.25]); lineSymbol = new esri.symbol.SimpleLineSymbol(esri.symbol.SimpleLineSymbol.STYLE_SOLID, lineColor, 2); fill = new esri.symbol.SimpleFillSymbol(esri.symbol.SimpleFillSymbol.STYLE_SOLID, lineSymbol, fillColor); popup = new esri.dijit.Popup({ fillSymbol: fill }, dojo.create("div")); map = new esri.Map("map", { infoWindow: popup, extent: initExtent }); basemap = new esri.layers.ArcGISDynamicMapServiceLayer("http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer"); map.addLayer(basemap); landBaseLayer = new esri.layers.ArcGISDynamicMapServiceLayer("http://sampleserver3.arcgisonline.com/ArcGIS/rest/services/BloomfieldHillsMichigan/Parcels/MapServer", { opacity: 0.55 }); map.addLayer(landBaseLayer); return dojo.connect(map, "onLoad", function(_map_) { var identifyParams, identifyTask; identifyTask = new esri.tasks.IdentifyTask("http://sampleserver3.arcgisonline.com/ArcGIS/rest/services/BloomfieldHillsMichigan/Parcels/MapServer"); identifyParams = new esri.tasks.IdentifyParameters(); identifyParams.tolerance = 3; identifyParams.returnGeometry = true; identifyParams.layerIds = [0, 2]; identifyParams.layerOption = esri.tasks.IdentifyParameters.LAYER_OPTION_ALL; identifyParams.width = _map_.width; identifyParams.height = _map_.height; dojo.connect(_map_, "onClick", function(evt) { var deferred; identifyParams.geometry = evt.mapPoint; identifyParams.mapExtent = _map_.extent; deferred = identifyTask.execute(identifyParams); deferred.addCallback(function(response) { return dojo.map(response, function(result) { var feature; feature = result.feature; feature.attributes.layerName = result.layerName; if (result.layerName === "Tax Parcels") { feature.setInfoTemplate(new esri.InfoTemplate("", "${Postal Address}  
-Owner of record: ${First Owner Name}")); } else if (result.layerName === "Building Footprints") { feature.setInfoTemplate(new esri.InfoTemplate("", "Parcel ID: ${PARCELID}")); } return feature; }); }); _map_.infoWindow.setFeatures([deferred]); return _map_.infoWindow.show(evt.mapPoint); }); return dojo.connect(dijit.byId("map"), "resize", _map_, _map_.resize); }); }); `
+Owner of record: ${First Owner Name}")); } else if (result.layerName === "Building Footprints") { feature.setInfoTemplate(new esri.InfoTemplate("", "Parcel ID: ${PARCELID}")); } return feature; }); }); _map_.infoWindow.setFeatures([deferred]); return _map_.infoWindow.show(evt.mapPoint); }); return dojo.connect(dijit.byId("map"), "resize", _map_, _map_.resize); }); });
+```
 
 Also, the source code for this sample can be found [here](https://github.com/odoe/SimplifyDev-part2-sample).
 

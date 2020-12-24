@@ -9,9 +9,7 @@ coverImage: "geodevpost-1.png"
 
 I recently made a comment in jest about how to be a Geospatial Web Developer.
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">How to be a Geospatial Web Developer? Put it on a business card and figure out the details later.</p>— Rene Rubalcava (@odoenet) <a href="https://twitter.com/odoenet/status/858773180655190016">April 30, 2017</a></blockquote>
-
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+[twitter](https://twitter.com/odoenet/status/858773180655190016)
 
 It was inspired by perusing this [reddit thread](https://www.reddit.com/r/gis/comments/68ff95/how_to_become_a_geospatial_web_developer/).
 

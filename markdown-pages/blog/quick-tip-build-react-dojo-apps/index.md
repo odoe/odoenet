@@ -17,7 +17,7 @@ That was the light bulb moment I needed.
 
 So I updated my Dojo build profile packages like this.
 
-<script src="https://gist.github.com/odoe/0aea204315c2f568e693.js"></script>
+[gist](https://gist.github.com/odoe/0aea204315c2f568e693.js)
 
 And voila!
 

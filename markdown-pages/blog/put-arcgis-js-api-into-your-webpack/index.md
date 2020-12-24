@@ -19,13 +19,13 @@ This means you can more easily use third-party libraries like [ramda](https://ra
 
 You can install it into your project like this:
 
-```
+```bash
 npm install -save-dev @arcgis/webpack-plugin
 ```
 
 Now you can add it to your webpack configuration.
 
-```
+```js
 // webpack.config.js
 
 plugins: [
@@ -38,7 +38,7 @@ The plugin will manage the bulk of the heavy lifting for you.
 
 Now you can just work with the JSAPI in your application without any further configuration.
 
-```
+```js
 import FeatureLayer from "esri/layers/FeatureLayer";
 import WebMap from "esri/WebMap";
 

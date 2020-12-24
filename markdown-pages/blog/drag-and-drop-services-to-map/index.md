@@ -13,6 +13,6 @@ The source code for the component is [here](http://github.com/odoe/FlexMapTools/
 
 It has a required [Skin](http://github.com/odoe/FlexMapTools/blob/master/src/net/odoe/FlexMapTools/components/skins/ServiceListSkin.mxml) and [ItemRenderer](http://github.com/odoe/FlexMapTools/blob/master/src/net/odoe/FlexMapTools/components/itemRenderers/ServiceListItemRenderer.mxml) as well.
 
-It works by passing it the target Map and calling a loadServices() function passing the URL of your ArcGIS Server, as in http://sampleserver1.arcgisonline.com/ArcGIS/rest/services
+It works by passing it the target Map and calling a loadServices() function passing the URL of your ArcGIS Server, as in `http://sampleserver1.arcgisonline.com/ArcGIS/rest/services`
 
 Enjoy, and as usual any feedback and critique is welcome.

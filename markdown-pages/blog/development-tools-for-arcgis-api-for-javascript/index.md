@@ -21,15 +21,15 @@ I had some basic goals for this generator.
 - Simple component structure
 - Easy development workflow
 
-# ES6/ES2015
+## ES6/ES2015
 
 There's hardly any reason you shouldn't be writing your code in ES6. Tools like [Babel](https://babeljs.io/) and [Traceur](https://github.com/google/traceur-compiler) make this an easy decision. It will compile down to whatever level of JavaScript you need for your browser support and you can even shim some more advanced features if you need them. Since this generator is using ES6/ES2015, it also includes [ESLint](http://eslint.org/) to help you write cleaner code. You're welcome.
 
-# Testing
+## Testing
 
 I just did a recent write up on [testing your code](https://geonet.esri.com/people/odoe/blog/2015/09/02/testing-your-code). So to help you a bit with that, [intern3](https://theintern.github.io/) is included as the default testing library. For every component you generate, you'll also get an accompanying unit test. I'd recommend reading over the [Sitepen blog](https://www.sitepen.com/blog/?s=intern) for more detailed intern info. By default, tests are written in [chai bdd style](http://chaijs.com/api/bdd/) with [sinon-chai](https://github.com/domenic/sinon-chai) for spies and mocks as needed. The generated app also includes a local [selenium](http://docs.seleniumhq.org/) driver so you can run functional tests locally without a [SauceLabs](http://saucelabs.com/) account if you want. For more info on functional tests, check out [intern recorder](https://www.sitepen.com/blog/2015/08/07/working-with-intern-recorder/). Functional tests can be run using **grunt e2e** in the command line.
 
-# Dojo build process
+## Dojo build process
 
 For a long time, I found the [Dojo build process](http://dojotoolkit.org/documentation/tutorials/1.10/build/) to be this mysterious, difficult thing to grasp. When you get the basics down, it starts to fall into place and becomes simpler. It has a lot of options though and various settings that could be tweaked depending on what it is you want to do. I wanted to kind of simplify this for developers by setting up all the basics and keep the process as easy as possible.
 
@@ -41,9 +41,25 @@ This is pretty much taken from [Tom Wayson's sample](https://github.com/tomwayso
 
 One more note on the Dojo build bits. When running the Dojo build via grunt use **grunt release --force**. There is something up with some files in the ArcGIS API not being recognized as AMD when using [grunt-esri-slurp](https://github.com/steveoh/grunt-esri-slurp) to add them to the project. I'm hoping to alleviate this issue _in the near future_. I'm working on it, I swear, sorry for the delays.
 
-# Simple component structure
+## Simple component structure
 
-The output structure of the generated app is as follows. app/ ...components/ ...helpers/ ...models/ ...styles/ ...templates/ ......Application.html ......Application.js ...app.profile.js ...config.js ...main.js ...package.json ...router.js
+The output structure of the generated app is as follows.
+
+```js
+app/
+...components/
+...helpers/
+...models/
+...styles/
+...templates/
+......Application.html
+......Application.js
+...app.profile.js
+...config.js
+...main.js
+...package.json
+...router.js
+```
 
 So this structure is again very Ember-inspired. The _components_ folder is essentially where widgets would go. Each component has it's own _templates_ and _css_ folder and is defined by a _View.js_ file. Very standard structure. Except for the _Map_ component. This has a _MapView_ and _WebMap_ view you can use depending on whether or not you are creating a map from scratch or using a WebMap itemid to generate a map. This might change in the future.
 
@@ -55,13 +71,13 @@ The templates folder would contain global areas of your application. There is an
 
 The _main.js_ just wires the whole application together. The _config.js_ has various configuration bits of the application. I'm kind of moving away from the whole [configuration-based widget generation](https://github.com/odoe/esri-js-starterkit) that I have done in the past. Mainly due to every application needing slight tweaks to individual modules that requires forking a module and that this configuration based workflow requires more work in the build process. I'm a bit on the fence on this one, but for now I think the generator is best without it. The _app.profile.js_ and _package.json_ are used for the Dojo build process to define the _app_ folder as a package.
 
-# Easy development workflow
+## Easy development workflow
 
 Once you've installed Yeoman and other dependencies as needed you can use the generator to create your application.
 
 **yo arcgis-js-app**
 
-You'll be prompted for some basic info, such as what version of the ArcGIS JS API esri-slurp should download, name of project and your email address. It will then start the process of downloading all npm and bower dependencies and when done do an initial compile of your ES6 to a _dist_ folder. At this point you can run _grunt dev_ and it will start a local server where you can view your application at **http://localhost:8282/dist/**. It will automatically inject a [livereload](http://livereload.com/) script into your page so if you have it installed in your browser it will turn on without you needing to activate it. It's also set up so that as you make changes to your code, it will recompile your ES6 code to ES5 and livereload will reload your page. You can also view your tests at **http://localhost:8282/node\_modules/intern/client.html?config=tests/intern**. I like to keep two browser windows open, one for my app, the other for my tests.
+You'll be prompted for some basic info, such as what version of the ArcGIS JS API esri-slurp should download, name of project and your email address. It will then start the process of downloading all npm and bower dependencies and when done do an initial compile of your ES6 to a _dist_ folder. At this point you can run _grunt dev_ and it will start a local server where you can view your application at `http://localhost:8282/dist/`. It will automatically inject a [livereload](http://livereload.com/) script into your page so if you have it installed in your browser it will turn on without you needing to activate it. It's also set up so that as you make changes to your code, it will recompile your ES6 code to ES5 and livereload will reload your page. You can also view your tests at `http://localhost:8282/node_modules/intern/client.html?config=tests/intern`. I like to keep two browser windows open, one for my app, the other for my tests.
 
 You can generate additional components by using **yo arcgis-js-app:components ComponentName**. As I said, it will add the component to your app and also add the tests to intern for the component.
 
@@ -69,13 +85,19 @@ Check out a demo application built using the generator [here on github](https://
 
 When you are ready to release, you can run **grunt release --force** and it will take a few minutes or so run the Dojo build process on your application. The build output will be a _release_ folder. The intermediate build is located in a _built_ folder. When the build is done it will automatically copy the _dojo/dojo.js_ file into the release folder as _app.js_. It will also use a new grunt plugin I wrote called [grunt-css-url-copy](https://github.com/odoe/grunt-css-url-copy) to scan the _app/styles/main.css_ file for all url references and copy them into a _release/resources_ folder. It will then create a _release/app.css_ with modified url references to point to the new _resources_ folder. The _index.html_ file copied into the release folder is modified to point to these new files and stripped of the _livereload_ script and _dojoConfig_, since the _dojoConfig_ is baked into the _app.js_ file during the build. This gives you the following folder structure for release.
 
-release/ ...index.html ...app.css ...app.js ...resources/
+```js
+release/
+...index.html
+...app.css
+...app.js
+...resources/
+```
 
 This is all you need to deploy for your application. Rather than all the built files the Dojo build will generate. Remember, you need to include all locales you want to support into the build or it will try to lazy-load them as needed. If any other files are trying to be lazy-loaded, you can read back on the build section of this post to see how to add them to your build.
 
 I'm thinking this is a good starting point for most people. I might try to offer some options during the generator portion on whether you want this single-file build or maybe a build where all the EsriJS/Dojo stuff is a _vendor.js_, your code is _app.js_. Or that could be left up to the user to decide after the fact.
 
-# Conclusion
+## Conclusion
 
 As you can see, you get a lot of simple to use tooling from this generator. I looked at other generators like the [generator-dojo-class](https://github.com/stdavis/generator-dojo-class) and [generator-dojo-widget](https://github.com/steveoh/generator-dojo-widget) as samples. I should point out, I had issues with the Dojo build process using empty nls files, so I removed them from the generator. These should probably be created by the developer anyway if they need them or I can include them with some dummy strings that I think will fix the build.
 

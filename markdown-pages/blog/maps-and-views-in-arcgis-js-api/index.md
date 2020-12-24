@@ -23,13 +23,11 @@ So let's say you had a single map and you wanted to display that map in both 2D 
 
 You can see a demo this here. [3D/2D map - 4.0 beta 1 on jsbin.com](http://jsbin.com/hiyanurolo/1/embed?output)
 
-
 See, _one map, multiple views_. You could even take advantage of the [Accessors](http://odoe.net/blog/arcgis-js-api-4-0beta1-accessors/) in the API to do some other cool stuff, like a _ghetto overview map_.
 
 [gist](https://gist.github.com/odoe/ddea10aac0ba4184f687)
 
 In this case, you are watching for the center to change in one view and sync it to another. You can see a demo of this here. [3D/2D map - 4.0 beta 1 on jsbin.com](http://jsbin.com/yenanidobi/1/embed?output)
-
 
 ## Maps and Views and Lions, Oh My
 

@@ -33,7 +33,7 @@ Dojo has always had some great utilities for event listening. The old way of lis
 
 Dojo even has an entire area dedicated to experimental features called [DojoX](http://dojotoolkit.org/reference-guide/1.10/dojox/). This area is admittedly a crap shoot at times, but much of these modules have been thoroughly tested such the [Graphics and Effects](http://dojotoolkit.org/reference-guide/1.10/dojox/#id6) section that has proven useful to me in the past.
 
-### If you build it...
+### If you build it
 
 A complaint about Dojo is that it's _too big_. A complaint about AMD is that too many file downloads is a hindrance to browser performance. AMD modules are meant to be built in some fashion to minimize these issues. You could use the [Dojo build tools](http://dojotoolkit.org/documentation/tutorials/1.9/build/) to optimize your applications and only load what you need in the most efficient way possible. Granted, I don't have a happy history with Dojo builds, thanks to the good folks at [Utah AGRC](http://gis.utah.gov/the-esri-api-for-javascriptdojo-build-system-saga-continues/), I can get something going now.
 

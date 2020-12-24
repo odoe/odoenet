@@ -17,7 +17,7 @@ You can find the repo for the demo app [here](https://github.com/odoe/dojo2-web-
 
 Here is what my widget source code looks like.
 
-```
+```js
 import { v } from '@dojo/widget-core/d';
 import { ThemeableMixin, theme } from '@dojo/widget-core/mixins/Themeable';
 import { WidgetBase } from '@dojo/widget-core/WidgetBase';
@@ -53,7 +53,9 @@ export default TwitterShare;
 
 Then in the repo run the command...
 
-`dojo build --element=src/createTwitterShareElement.ts`
+```bash
+dojo build --element=src/createTwitterShareElement.ts
+```
 
 _And you can now use this component in your web page like this_.
 

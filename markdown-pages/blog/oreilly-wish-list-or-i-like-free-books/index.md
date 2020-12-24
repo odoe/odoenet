@@ -13,7 +13,7 @@ date: "2011-01-27"
 
 [Hadoop: The Definitive Guide](http://oreilly.com/catalog/9781449389734/) [Cassandra: The Definitive Guide](http://oreilly.com/catalog/9781449390419/) The above two titles I chose because I am fascinated by the idea of working with large amounts of data and being able to mine that data. I don't know if I'll ever have the opportunity to use something Hadoop or Cassandra in my work environment, but I would be more than happy to see if I could use these tools for GIS somehow.
 
-[CouchDB: The Definitive Guide](http://oreilly.com/catalog/9780596155902) [MongoDB: The Definitive Guide](http://oreilly.com/catalog/0636920001096/) [](http://oreilly.com/catalog/0636920001096/)These two titles are something I'm currently excited about, as I know MongoDB has spatial query capabilities, and I already have some ideas about how I might be able to use it with Python in caching Geoprocessing results.
+[CouchDB: The Definitive Guide](http://oreilly.com/catalog/9780596155902) [MongoDB: The Definitive Guide](http://oreilly.com/catalog/0636920001096/). These two titles are something I'm currently excited about, as I know MongoDB has spatial query capabilities, and I already have some ideas about how I might be able to use it with Python in caching Geoprocessing results.
 
 [HTML5: Up and Running](http://oreilly.com/catalog/9780596806026/) I'm no HTML/CSS guru, but I'm about tools and if I can learn to use Canvas or other HTML5 tools to do some cool stuff, I'm all over it.
 

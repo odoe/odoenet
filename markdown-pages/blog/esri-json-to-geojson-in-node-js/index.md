@@ -17,7 +17,7 @@ It took me a couple of days and lots of debugging and running various ESRI-JSON 
 
 [ESRI-JSON to GeoJSON Converter](http://esritogeo.herokuapp.com/)
 
-You can also send your ESRI-JSON as a parameter to http://esritogeo.herokuapp.com/parse/esrijosngoeshere and get a JSON response. I should point out a caveat is that you need to make sure you are sending the correct projected data. GeoJSON uses standard Lat/Long, so your ESRI-JSON should be in Spatial Reference 4326.
+You can also send your ESRI-JSON as a parameter to `http://esritogeo.herokuapp.com/parse/esrijosngoeshere` and get a JSON response. I should point out a caveat is that you need to make sure you are sending the correct projected data. GeoJSON uses standard Lat/Long, so your ESRI-JSON should be in Spatial Reference 4326.
 
 I put a couple of demo pages up. This [sample](http://odoe.net/thelab/js/geojson/esri.php) uses the ESRI JavaScript API to load a FeatureLayer of points. This [sample](http://odoe.net/thelab/js/geojson/geojson.php) uses [Leaflet](http://leaflet.cloudmade.com/) to load the GeoJSON that was converted. The GeoJSON sample takes a few seconds to load and would not load in IE8 for me, but worked in Chrome. I don't know if this is an issue with Leaflet or not, sorry.
 

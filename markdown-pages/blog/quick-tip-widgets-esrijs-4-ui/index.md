@@ -23,7 +23,7 @@ So I'm thinking, maybe have a button displayed in my UI that when clicked will d
 
 _Simple_
 
-<script src="https://gist.github.com/odoe/80b544257ac13a184ad71e742e8bae8f.js"></script>
+[gist](https://gist.github.com/odoe/80b544257ac13a184ad71e742e8bae8f.js)
 
 Ok, so all we're doing here is creating a simple container for our widget with a button. I'm even borrowing some of the default API class names for my button so it looks like other buttons and widgets in the API. I just apply a couple of custom styles to adjust the width of the button to match the Legend widget size.
 
@@ -32,7 +32,6 @@ Ok, so all we're doing here is creating a simple container for our widget with a
 You can see this widget in action below.
 
 [Custom Widget on jsbin.com](http://jsbin.com/fekara/3/embed?output)
-
 
 As you can see, it's pretty easy to create not only custom widgets, but pretty simple widget containers. You can even reuse existing class names in the API so that your widgets look similar to the built-in widgets.
 

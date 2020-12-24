@@ -13,7 +13,7 @@ It's fairly easy to set up: `npm install -g @arcgis/cli`
 
 Now you can start using it to quickly scaffold new applications using the ArcGIS API for JavaScript.
 
-```
+```bash
 arcgis create awesome-app
 ```
 

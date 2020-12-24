@@ -33,7 +33,7 @@ Let's abuse it to save the view state when we reload our application.
 
 The core of it is this simple few lines of code.
 
-```
+```js
   whenFalse(view, "updating", () => {
     const currPoint = view.viewpoint.toJSON();
     localStorage.setItem(KEY, JSON.stringify(currPoint));
@@ -46,9 +46,10 @@ Then when the app starts, just check to see if there is a Viewpoint in local sto
 
 You can see this in action in the demo below.
 
-<p data-height="300" data-theme-id="31222" data-slug-hash="opaROx" data-default-tab="js,result" data-user="odoe" data-embed-version="2" data-pen-title="Save my ViewPoint 4.6" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/odoe/pen/opaROx/">Save my ViewPoint 4.6</a> by Rene Rubalcava (<a href="https://codepen.io/odoe">@odoe</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-
-<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+<iframe height="500" style="width: 100%;" scrolling="no" title="Save my ViewPoint 4.8" src="https://codepen.io/odoe/embed/opaROx?height=500&theme-id=39013&default-tab=js,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/odoe/pen/opaROx'>Save my ViewPoint 4.8</a> by Rene Rubalcava
+  (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 Like I said, this simplifies maintaing the View state of the MapView or SceneView as your application is reloaded. I'll let you creative if you want to save the state of visible layers and maybe open widgets as well :)
 

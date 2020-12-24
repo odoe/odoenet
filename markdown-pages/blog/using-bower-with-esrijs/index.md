@@ -13,7 +13,7 @@ The repo for the Bower package can be found [here](https://github.com/Esri/arcgi
 
 ## Easy Bower Install
 
-```
+```bash
 bower install --save arcgis-jsp-api
 ```
 

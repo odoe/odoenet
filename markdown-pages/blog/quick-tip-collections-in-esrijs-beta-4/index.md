@@ -21,7 +21,6 @@ For this case, we'll keep a source collection, to use it as a cache of the origi
 
 You can see what this looks like in this sample here. [JS Bin on jsbin.com](http://jsbin.com/juzeqe/3/embed?js,output)
 
-
 So dig into the beta API a bit and play around in some of the darker corners. You just might find some gems.
 
 By the way, I'm gathering interest for an [Intro to ArcGIS JS API 4 book](https://leanpub.com/arcgis-js-api-4), please take a look and sign up if interested.

@@ -14,10 +14,8 @@ UC is interesting, it's a mix of users, managers, analysts, techs, devs, people 
 If you swung by the JavaScript island at the UC, you probably had the pleasure of talking to the folks that work directly on the [JSAPI](https://developers.arcgis.com/javascript/), and hopefully got some great insight into and awesome answers.
 
 > [There is some #esrijs knowledge transfer happening here at #esriuc, you got questions, we have possible answers! #geodev](https://www.instagram.com/p/BlGoOKlAWmu/)
-> 
+>
 > A post shared by [Rene Rubalcava](https://www.instagram.com/odoenet/) (@odoenet) on Jul 11, 2018 at 12:44pm PDT
-
-<script async defer="" src="//www.instagram.com/embed.js"></script>
 
 I was only there a couple of days this year, but I had some people share some really cool stuff they were working on and _I think_ was able to answer some very specific questions. The team got some great feedback on the ArcGIS API for JavaScript, some interesting use cases that we've taken to heart and are looking at what we can do to improve the API even further, which is fantastic for everyone. Like I say, _it's our goal to make you a badass at what you do_.
 

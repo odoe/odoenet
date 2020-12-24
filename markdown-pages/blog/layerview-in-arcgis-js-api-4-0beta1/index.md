@@ -33,7 +33,6 @@ I updated an older sample to use this method you can see below.
 
 [JS Bin on jsbin.com](http://jsbin.com/perovey/8/embed?js,output)
 
-
 There is one caveat to this though and that is currently, the graphics of a LayerView are only available in a 2D [MapView](https://developers.arcgis.com/javascript/beta/api-reference/esri-views-MapView.html) and not a [SceneView](https://developers.arcgis.com/javascript/beta/api-reference/esri-views-SceneView.html). I'm guessing because 3D gets complicated and my default answer for these cases... **beta**.
 
 But you get the idea. Maps are data, Views are the visual representation of that data. If you want info on what is visually available, look to the View. There are lots of places this comes in really handy that I'll talk about in an upcoming post. For now, go forth and have fun with the [ArcGIS API for JavaScript 4.0beta1](https://developers.arcgis.com/javascript/beta/guide/)!

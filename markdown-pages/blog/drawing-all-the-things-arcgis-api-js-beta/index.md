@@ -7,7 +7,7 @@ tags: geodev
 coverImage: "esri-draw.jpg"
 ---
 
-# DIY Drawing in the ArcGIS API for JavaScript 4.0 Beta
+## DIY Drawing in the ArcGIS API for JavaScript 4.0 Beta
 
 I've talked [a lot](http://odoe.net/blog/tag/esrijs4beta/) about the [ArcGIS API for JavaScript 4.0beta](https://developers.arcgis.com/javascript/beta/). It has some really cool features and lots of neat stuff still to come.
 
@@ -34,6 +34,5 @@ The way we can work around the missing "mousemove" event is to listen for the na
 The logic to draw a line is pretty simple. You can expand this even further to draw a polygon and even use these results to edit your data on the map.
 
 Here is a sample of this in action. [Draw Lines on jsbin.com](http://jsbin.com/museyuc/2/embed?js,output)
-
 
 As you can see, beta is beta, but that doesn't mean you can't apply a little elbow grease and get stuff done.

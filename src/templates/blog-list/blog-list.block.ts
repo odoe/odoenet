@@ -37,5 +37,6 @@ export default async function (options: any) {
 	}
 
 	createBlogFeed(blogs);
-	return blogs.sort((a, b) => b.sortDate.getTime() - a.sortDate.getTime());
+	return blogs;
+	// return blogs.sort((a, b) => b.sortDate.getTime() - a.sortDate.getTime());
 }

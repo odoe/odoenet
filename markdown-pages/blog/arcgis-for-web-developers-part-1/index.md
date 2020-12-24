@@ -143,5 +143,4 @@ require(["esri/WebMap", "esri/views/MapView"], function(WebMap, MapView) {
 });
 ```
 
-
 Congratulations! You just authored your fist web map and consumed it in a web app! In this series on ArcGIS for Web Developers, we'll cover some more basics, so stay tuned and _happy geohacking_! In the meantime, you can have fun with the [ArcGIS Developer tutorials](https://developers.arcgis.com/labs) to learn more!

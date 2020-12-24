@@ -49,7 +49,7 @@ By using **model = module('widgets/mywidget/model');** in the css, you now have 
 
 This is just a quick rundown, you can find the whole [project on github](https://github.com/odoe/esri-xstyle).
 
-#### Components rule, Dijits drool!
+#### Components rule, Dijits drool
 
 Ok, slow down. xstyle is still fairly new and it's [not going to replace Dijits in Dojo 2.0](http://www.sitepen.com/blog/2013/08/29/goals-and-philosophy-of-xstyle/#comment-1027171401), but is a very interesting way of building components. I'm thinking this might be a great way to build _tiny_ widgets, something similar to the [LocateButton](https://developers.arcgis.com/javascript/jsapi/locatebutton-amd.html) or [HomeButton](https://developers.arcgis.com/javascript/jsapi/homebutton-amd.html). I'm still experimenting with it myself. I for one use simple buttons to activate more complex widgets all the time, so this could be a great way to build small reusable components in my applications.
 

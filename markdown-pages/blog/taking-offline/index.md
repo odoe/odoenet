@@ -20,11 +20,10 @@ The first place I would point you to is the [Esri offline-editor](https://github
 Let's first look at what your offline storage options are when making a web application. Let's ignore cookies, as I think they have their place and can be used for some things, but I wouldn't use them for offline use.
 
 - [LocalStorage](https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Storage#localStorage). - This is a simple key/value storage system. This is probably the most common web storage system you might end up using. It's part of what is referred to as [DOM Storage](https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Storage) which also includes [sessionStorage](https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Storage#sessionStorage). The API is pretty simple and it meets most users needs. You are however limited to approximately 5MB per host, which could be a limiting factor.
-    
+
 - [IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API) - This is a more robust SQL-like storage system. IndexedDB is probably the storage system you want to target for offline editing capabilities. The API isn't very difficult, but it is not as simple as simple get/set type API with LocaStorage.
-    
+
 - [WebSQL](http://html5doctor.com/introducing-web-sql-databases/) - This is another SQL-like database system in the browser, however it was deprecated around 2010 in favor of IndexedDB. You can read more about this [here](https://hacks.mozilla.org/2010/06/beyond-html5-database-apis-and-the-road-to-indexeddb/).
-    
 
 **Well hey, that looks great, I'll just use IndexedDB for everything.** You'd think so right. IndexedDB will work great on modern desktop browsers, even [Internet Explorer](http://msdn.microsoft.com/en-us/library/ie/hh673548%28v=vs.85%29.aspx). However, [not all mobile browsers fully support IndexedDB](http://caniuse.com/#search=indexeddb) or have buggy support. If they don't, they still use WebSQL. So what are you to do?
 

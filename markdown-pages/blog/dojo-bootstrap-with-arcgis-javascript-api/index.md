@@ -19,7 +19,6 @@ If you use the ArcGIS JavaScript API, have you tried [Bootstrap](http://getboots
 
 [JS Bin](http://jsbin.com/sesacitafa/1/embed?js,output)
 
-
 I use this same implementation in a variety of applications and I've had really good feedback with it. Feel free to experiment with it to do autocomplete of various services and even address searching. Combine this with a dedicated indexing service like [Lucene/Solr](http://lucene.apache.org/) or [ElasticSearch](http://www.elasticsearch.org/) and you are looking at some nice Google-like search capabilities in your application.
 
 So if you've been looking to Bootstrap to get some nice looking UI components into your ArcGIS JavaScript API aps, but you didn't want to mix in jQuery, give Dojo Bootstrap a try. The github repo has had a decent stream of activity and tests rewritten. I use it in almost all my ArcGIS JavaScript API applications in one form or another these days.

@@ -31,7 +31,6 @@ Let's take a look at the sample from the documentation for 4.0 beta 2.
 
 [Vector tiles - 4.0beta2 on jsbin.com](http://jsbin.com/jolume/1/embed?output)
 
-
 You can rotate the map by holding down the right mouse button and panning the map. Notice as you rotate that the labels for location stay horizontal and street labels will adjust so they are never totally upside down. Crisp and clear label placement alone is a huge benefit of using vector basemaps in your application. _You can't do that with normal image tiles_.
 
 The vector basemaps are still in beta, but they provide a very rich user experience for your maps that you can start using today.

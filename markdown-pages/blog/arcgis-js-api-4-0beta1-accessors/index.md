@@ -15,7 +15,7 @@ You can go ahead and read some details about [Accessors](http://javascriptplaygr
 
 But let's show what you can basically do!
 
-```
+```js
 view.watch('extent', function(newValue) {/**/});
 ```
 
@@ -60,7 +60,6 @@ watchUtils.whenFalse(view, 'stationary', function() {
 ```
 
 Now that is pretty cool. You can see the full sample below. [Accessors on jsbin.com](http://jsbin.com/perovey/2/embed?html,js,output)
-
 
 ## That looks like Stateful
 
@@ -148,7 +147,6 @@ date: val });
 ```
 
 Let's look at this in action! [Using React - 4.0 beta 1 on jsbin.com](http://jsbin.com/xubedu/1/embed?js,output)
-
 
 Look at that! A simple React component working flawlessly with Accessors! You have to admit, that is pretty cool.
 

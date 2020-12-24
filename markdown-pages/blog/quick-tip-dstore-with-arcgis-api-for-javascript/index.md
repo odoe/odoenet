@@ -23,11 +23,9 @@ That's pretty cool. You can wire up the Store to listen for when graphics are ad
 
 You can see a demo of this application here. [JS Bin on jsbin.com](http://jsbin.com/vukugi/embed?js,output)
 
-
 ## Find the Right State
 
 You can also simply filter by state names. Which is pretty easy. [JS Bin on jsbin.com](http://jsbin.com/vukugi/1/embed?js,output)
-
 
 One thing I haven't quite figured out in this scenario is how to make the filter case _insensitive_, so if someone has some ideas on this, I'd love to hear about it. The **contains** method of a filter is kind of cool, because it will match _Ca_ with _California_ and _Colorado_, since both have _C_ and _a_ in them. Now that I think about it, both of these searches could probably be tweaked with regular expressions using **match** in the filter.
 

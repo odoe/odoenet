@@ -17,17 +17,17 @@ Let's cover some main points:
 2. Creating data.
 3. Sharing.
 
-# Developer Account
+## Developer Account
 
 I covered how to set up an [ArcGIS Developer account](https://developers.arcgis.com) in detail in [my book](https://www.manning.com/books/arcgis-web-development?a_aid=rrubalcava), _shameless plug_. But basically, you are able to create an account that gives you access to premium content and services with 50 credits a month. _How much does 50 credits give you?_ It can vary based on the premium services you use from the [Location Services](https://developers.arcgis.com/en/features/), which is stuff like Geocoding, Routing and GeoTriggers. I can tell you this much, when I was using my developer account to prototype applications for users, I never ran into a credit limit issue, so 50 credits can go a long way for development purposes. I wouldn't try generating tiles using ArcGIS Online, that's silly, regardless of what online service you use for tiles. Generate your tiles locally in ArcGIS desktop and then publish to ArcGIS Online and voila, you have tiles. Editing data in ArcGIS Online doesn't use credits, so add data until your fingers bleed.
 
 You will want to use the developer site to add a new Feature Service, which I won't walk you through as that portion is not too difficult and _I do walk you through step by step in my book_. But once you have a Feature Service created, **what do you do next?**
 
-This is where you have some options. You can go ahead and use the Feature Service as shown in the [ArcGIS API for JavaScript samples](https://developers.arcgis.com/javascript/jssamples/#editing) or really any other API, SDK or application builder as shown on the [developers site](https://developers.arcgis.com/en/). You can also simply edit the data in ArcGIS Online or _do something with your collected data_. Go to you developer account, click on _Hosted Data_ and then click on your Feature Service. You should see an _Edit in ArcGIS Online_ button in the upper right as shown below.
+This is where you have some options. You can go ahead and use the Feature Service as shown in the [ArcGIS API for JavaScript samples](https://developers.arcgis.com/javascript/jssamples/##editing) or really any other API, SDK or application builder as shown on the [developers site](https://developers.arcgis.com/en/). You can also simply edit the data in ArcGIS Online or _do something with your collected data_. Go to you developer account, click on _Hosted Data_ and then click on your Feature Service. You should see an _Edit in ArcGIS Online_ button in the upper right as shown below.
 
 ![ago-edit](images/ago-edit.png)
 
-# Creating Data
+## Creating Data
 
 Now we are in an environment where you may want to create some data or maybe do something with the data that has already been collected. If you are not familiar with the ArcGIS Online map viewer, this may seem a bit intimidating at first, after all there are a lot of buttons and options as you hover over items. _Don't sweat it_, we're going to cover only what we need to. I have some data that is just a collection of points.
 
@@ -67,7 +67,7 @@ At this point, I'll save my map by clicking the save button, give it a name and 
 
 ![save-map](images/save-map-1024x472.png)
 
-# Sharing
+## Sharing
 
 Now I'll share my map by clicking the _Share_ button. I'll share to everyone. Now at this point, when you share a map, you also will be sharing all the underlying data that comprises the map. You will be prompted to update the sharing of the dependent services. So keep this in mind when sharing maps that you aren't also sharing data you may not want to.
 
@@ -79,7 +79,7 @@ Now you can use this link to share with other people or use the webmap id to bri
 
 You can use this in the ArcGIS API for JavaScript by using the [esri/arcgis/utils](https://developers.arcgis.com/javascript/jsapi/esri.arcgis.utils-amd.html) module.
 
-# Conclusion
+## Conclusion
 
 This was just a quick introduction on how you as a developer can incorporate ArcGIS Online with your free ArcGIS developer account to create more interesting maps with your data. We barely skimmed the surface of ArcGIS Online capabilities, but _fear not_, I have a special project underway for those interested in getting more familiar with how they can incorporate ArcGIS Online and their Developer account to help them build applications and provide more value to their users. Stay tuned in the coming weeks for more information.
 

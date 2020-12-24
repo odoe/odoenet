@@ -57,7 +57,7 @@ These Ember components are very similar to [WebComponents](http://webcomponents.
 
 **ember serve**
 
-Go to http://localhost:4200 and you're good to go!
+Go to `http://localhost:4200` and you're good to go!
 
 You can find a [sample of this application on github](https://github.com/odoe/ember-esrijs).
 

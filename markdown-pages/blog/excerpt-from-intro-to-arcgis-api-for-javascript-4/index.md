@@ -11,8 +11,6 @@ I've actually come down with a cold this week, and wasn't up for doing a video, 
 
 The following is an excerpt from Chapter 3 that covers Views and Layers available in the API. I had some issues with the markdown conversion for this blog, but the PDF version looks pretty good.
 
-* * *
-
 ## Layers
 
 As mentioned earlier, not all layers are supported in the initial release of the 4 API. But retrieving those layers is very easy to do. To access the layers on the map, you can simply retrieve them from the `map.layers` property. This property will provide you with the operational layers of the map, which means no basemaps. If you want all the layers, including the basemap, you can use the `map.allLayers` property. _This is a much simpler API than in 3.x._
@@ -37,7 +35,7 @@ The GraphicsLayer is probably the simplest layer you can work with. As the name 
 
 Initializing a GraphicsLayer is fairly simple.
 
-```
+```js
 const graphicsLayer = new GraphicsLayer({
   graphics: [graphic1, graphic2, graphic3]
 });
@@ -45,7 +43,7 @@ const graphicsLayer = new GraphicsLayer({
 
 You can add graphics to the GraphicsLayer via a couple of methods.
 
-```
+```js
 // add a single graphic
 graphicsLayer.add(graphic);
 // add an array of graphics
@@ -54,7 +52,7 @@ graphicsLayer.addMany([graphic1, graphic2, graphic3]);
 
 Since you can't set up a renderer or popup template for a GraphicsLayer, you'll need to define the symbology and Popups on a per graphic basis.
 
-```
+```js
 // create a graphic
 const graphic = Graphic({
   attributes: {
@@ -89,7 +87,7 @@ If you need more robust support for your graphics, in particular using a rendere
 
 FeatureLayers are probably the most versatile and widely used layer type in the ArcGIS platform. There are a few different ways you can initialize a FeatureLayer.
 
-```
+```js
 // Create via URL
 const featureLayer = new FeatureLayer({
   url: "http://services6.arcgis.com/m3L8QUZ93HeaQzKv/arcgis/rest/services/BeerAndBurgerJoints/FeatureServer/0"
@@ -107,7 +105,7 @@ By initializing a FeatureLayer via one of these two methods, the layer is now bo
 
 You can also create a FeatureLayer via a FeatureCollection, although it has been simplified since the 3x version of the API.
 
-```
+```js
 const featureLayer = new FeatureLayer({
   objectIdField: "item_id",
   geometryType: "point",
@@ -151,7 +149,7 @@ What we are doing here is defining the source for a FeatureLayer manually. This 
 
 Now, maybe you want to update the source features in a FeatureLayer. You can do this in the following manner.
 
-```
+```js
 const graphicOfInterest = featureLayer.source.find(x => x.attributes.OBJECTID === oid);
 const target = graphicOfInterest.clone();
 const target.geometry = updatedGeometry;
@@ -167,7 +165,7 @@ The MapImageLayer was previously known as the ArcGISDynamicMapServiceLayer. It l
 
 It's a fairly simple layer to work with. You can even define what sublayers are visible in the MapImageLayer, which used to be a cumbersome task. Working with sublayers is now much easier.
 
-```
+```js
 const layer = new MapImageLayer({
   url: "https://sampleserver6.arcgisonline.com/arcgis/rest/services/USA/MapServer",
   sublayers: [{
@@ -188,7 +186,7 @@ const layer = new MapImageLayer({
 
 You can simply define the visibility of each sublayer in the `sublayers` property of the MapImageLayer. You could even take it a step further and provide a `definitionExpression` for individual subalyers.
 
-```
+```js
 const layer = new MapImageLayer({
   url: "https://sampleserver6.arcgisonline.com/arcgis/rest/services/USA/MapServer",
   sublayers: [{
@@ -215,7 +213,7 @@ Starting at version 4.1 of the ArcGIS API 4 for JavaScript, the sublayers you de
 
 You can also define a [`popupTemplate`](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html) and even a [renderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-Renderer.html) per sublayer.
 
-```
+```js
 const layer = new MapImageLayer({
   url: "https://sampleserver6.arcgisonline.com/arcgis/rest/services/Census/MapServer",
   sublayers: [
@@ -293,7 +291,5 @@ const layer = new MapImageLayer({
 This is incredibly powerful as you can now work with Map Services _almost_ as easily as a FeatureService. The ability to define a custom renderer for Dynamic Map Services has been available for quite some time in the 3.x version of the API and it's been available as part of the ArcGIS Server Map Service for some time as well. What is new, starting with the 4.1 version of the ArcGIS API for JavaScript is that it has simplified the API for developers to more easily take advantage of this feature. The addition of being able to define popups per sublayer just adds to the utility of the MapImageLayer and I'm not afraid to say that I think this is now _my personal favorite layer to work with as part of the API_.
 
 There is, even more, you can do with the MapImageLayer via query tables and table joins if you have that data available via your services. Check out the [documentation](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html) for those details and bask in the glory of the MapImageLayer.
-
-* * *
 
 As of right now, the book is approaching 100 pages once I finish the new Popup section. Go [check it out](https://leanpub.com/arcgis-js-api-4/overview) and as usual keep an eye on this blog for more content!

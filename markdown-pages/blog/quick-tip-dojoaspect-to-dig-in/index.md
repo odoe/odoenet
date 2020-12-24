@@ -31,11 +31,9 @@ Here is a demo of this app.
 
 [JS Bin on jsbin.com](http://jsbin.com/jowifa/2/embed?js,console,output)
 
-
 You could even stick your nose in where maybe it doesn't belong and listen for when listeners are added to the document. I'll add that to the above sample just for fun.
 
 [JS Bin on jsbin.com](http://jsbin.com/jowifa/3/embed?js,console,output)
-
 
 As you can see, the dojo/aspect module could come in handy in plenty of ways.
 

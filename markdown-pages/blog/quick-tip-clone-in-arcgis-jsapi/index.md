@@ -17,7 +17,7 @@ Search for _clone_ in the [documentation](https://developers.arcgis.com/javascri
 
 A good rule of thumb, is to use **clone()** when you want to modify an object in some way. For example, let's look at updating the geometry of a Graphic in the MapView.
 
-```
+```js
 view.on("pointer-move", function(event) {
     var mapPoint = view.toMap({
         x: event.x,
@@ -29,10 +29,9 @@ view.on("pointer-move", function(event) {
 
 [Get started with graphics - 4.2 on jsbin.com](http://jsbin.com/narasewone/2/embed?html,output)
 
-
 Nothing happens. I have a point on the map, but it's not changing. But I updated the geometry? _A current limitation is that the graphic isn't automatically updated in the View. You can get around this by using **graphic.clone()**._
 
-```
+```js
 view.on("pointer-move", function(event) {
     var mapPoint = view.toMap({
         x: event.x,
@@ -46,7 +45,6 @@ view.on("pointer-move", function(event) {
 ```
 
 [Get started with graphics - 4.2 on jsbin.com](http://jsbin.com/kahasamafe/1/embed?html,output)
-
 
 In this case, I clone the Graphic, update the geometry, remove the old graphic and add the cloned one. This way I can maintain the symbology and attributes as I just change the geometry.
 

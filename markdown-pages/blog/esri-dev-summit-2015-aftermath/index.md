@@ -29,6 +29,6 @@ I don't have to do much native dev, but even I can appreciate the support for [X
 
 So those are the main things I took away from the Developer Summit this year. As has been the case for many years, the scripted demos always look great, so it's up to the developers and users to put all this stuff through the ringer and see how things pan out.
 
-### P.S.
+### P S
 
 I had asked about running ArcGIS Server in Docker and apparently I wasn't the only one. It doesn't seem to work..._yet_. If anyone out there makes any progress on this, I'd love to hear about it. It could make for some fun dev playground antics.

@@ -25,6 +25,7 @@ Enjoy!
 
 Here is the code sample used in the video!
 
-<p data-height="300" data-theme-id="31222" data-slug-hash="pWqMZw" data-default-tab="result" data-user="odoe" data-embed-version="2" data-pen-title="FeatureLayer clustering" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/odoe/pen/pWqMZw/">FeatureLayer clustering</a> by Rene Rubalcava (<a href="https://codepen.io/odoe">@odoe</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-
-<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+<iframe height="500" style="width: 100%;" scrolling="no" title="FeatureLayer clustering" src="https://codepen.io/odoe/embed/pWqMZw?height=500&theme-id=39013&default-tab=js,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/odoe/pen/pWqMZw'>FeatureLayer clustering</a> by Rene Rubalcava
+  (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>

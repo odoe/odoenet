@@ -15,7 +15,7 @@ For my use case, maybe I want to display some information about a graphic as I h
 
 First off, let me create a dummy graphic for the Feature widget, I'm not even going to display it on the map.
 
-```
+```js
 const graphic = {
   geometry: view.center,
   popupTemplate: {
@@ -33,7 +33,7 @@ This dummy graphic will contain instructions for my users on how to use my simpl
 
 The next step is going to be to listen for the `pointer-move` event of my view, and the perform a `hitTest` on the view to find my graphic. Once I have my graphic, I can update the Feature widget with it.
 
-```
+```js
 view.on("pointer-move", event => {
   view.hitTest(event).then(({ results }) => {
     const result = results[0];
@@ -51,7 +51,7 @@ Awesome!
 
 At this point, I can move my mouse around my map and the Feature widget will update with the contents of the [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html) that is defined for that graphic. But let me take this one step further, and use the LayerViews [highlight](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-FeatureLayerView.html#highlight) method to highlight the graphic on the map.
 
-```
+```js
 view.whenLayerView(fLayer).then(layerView => {
   let highlight;
   view.on("pointer-move", event => {
@@ -74,9 +74,10 @@ Now that is an _application_.
 
 You can see the full demo in action here.
 
-<p data-height="500" data-theme-id="31222" data-slug-hash="XPgeyg" data-default-tab="js,result" data-user="odoe" data-pen-title="Feature Widget Fun" class="codepen">See the Pen <a href="https://codepen.io/odoe/pen/XPgeyg/">Feature Widget Fun</a> by Rene Rubalcava (<a href="https://codepen.io/odoe">@odoe</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-
-
+<iframe height="500" style="width: 100%;" scrolling="no" title="Feature Widget Fun" src="https://codepen.io/odoe/embed/XPgeyg?height=500&theme-id=39013&default-tab=js,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/odoe/pen/XPgeyg'>Feature Widget Fun</a> by Rene Rubalcava
+  (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 There you have it, you can take advantage of displaying Popup content however you want in your application without having to rely on the Popup itself!
 

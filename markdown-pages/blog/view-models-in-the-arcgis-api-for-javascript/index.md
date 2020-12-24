@@ -25,7 +25,7 @@ view.on("click", (event) => {
 
 Using the ViewModel like this, I can now simply click on the map and I'll automatically get a popup with geocoded information. Here is a sample of this application in action.
 
-https://codepen.io/odoe/pen/omqGMe?editors=0010
+[demo](https://codepen.io/odoe/pen/omqGMe?editors=0010)
 
 Now that's pretty cool right? I didn't have to configure a Locator, create any parameters or get any more detailed than I needed for this simple task.
 
@@ -48,7 +48,7 @@ printBtn.addEventListener("click", () => {
 
 Now a user can save this image to their local machine and embed it in a report, pretty much do whatever they want. You can see it in action below.
 
-https://codepen.io/odoe/pen/OdvxjE?editors=0010
+[demo](https://codepen.io/odoe/pen/OdvxjE?editors=0010)
 
 It's pretty straightforward, and if you need to adjust the size of the print or anything else, you can pass a [PrintTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-PrintTemplate.html) to the print function.
 

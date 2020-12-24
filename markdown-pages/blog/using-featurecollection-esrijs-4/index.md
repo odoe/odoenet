@@ -13,4 +13,4 @@ This is simple enough to do using the [source](https://developers.arcgis.com/jav
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/HnBrAvsUUww" frameborder="0" allowfullscreen></iframe>
 
-<script src="https://gist.github.com/odoe/a07b766354bf786f7ec17bc28f5860a3.js"></script>
+[gist](https://gist.github.com/odoe/a07b766354bf786f7ec17bc28f5860a3.js)

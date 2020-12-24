@@ -13,7 +13,7 @@ I've talked a lot [about the 4.0 beta](https://odoe.net/blog/tag/esrijs4beta/) a
 
 So what do we get with the Beta 2 release?
 
-## Popup!
+## Popup
 
 To start with, there is a [new Popup](https://developers.arcgis.com/javascript/beta/api-reference/esri-PopupTemplate.html), not just that, it's a [_dockable Popup_](https://developers.arcgis.com/javascript/beta/sample-code/popup-docking/index.html). That's a sweet new feature of the Popup.
 

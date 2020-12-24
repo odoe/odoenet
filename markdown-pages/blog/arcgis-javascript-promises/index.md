@@ -29,7 +29,6 @@ Perhaps you have a module that handles what happens when the center of the View 
 
 That's pretty simple. You can see this demo below. [Search widget - 3D - 4.0 beta 1 on jsbin.com](http://jsbin.com/xigona/embed?js,console,output)
 
-
 ## Make your life easier
 
 There's a lot of info already out there about how to use Promises, but I just wanted to stress how they are used in the ArcGIS API for JavaScript 4.0beta1. There are still Promises used throughout the API for asynchronous operations, but they are also used a lot for constructors, so you know when something is completely done being loaded. Take advantage of it and you may find you can further modularize certain aspects of your application. I _promise_, you'll find it very useful.

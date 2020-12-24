@@ -65,9 +65,10 @@ You can of course add a way to delete a bookmark, or clear all bookmarks, but I'
 
 Here is a sample app for you play with.
 
-<p data-height="265" data-theme-id="light" data-slug-hash="QxrEVX" data-default-tab="js,result" data-user="odoe" data-pen-title="Local bookmarks" class="codepen">See the Pen <a href="https://codepen.io/odoe/pen/QxrEVX/">Local bookmarks</a> by Rene Rubalcava (<a href="https://codepen.io/odoe">@odoe</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-
-
+<iframe height="500" style="width: 100%;" scrolling="no" title="Local bookmarks" src="https://codepen.io/odoe/embed/QxrEVX?height=500&theme-id=39013&default-tab=js,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/odoe/pen/QxrEVX'>Local bookmarks</a> by Rene Rubalcava
+  (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 So have fun with it! Don't forget, the tools are there for you to make some awesome apps, you just got put in a little work.
 

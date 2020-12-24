@@ -27,7 +27,7 @@ Here are the steps.
 
 You can do this by making a couple of generic functions.
 
-```
+```js
   function hitView(mapPoint, view, layer) {
     const sp = view.toScreen(mapPoint);
     view.hitTest(sp)
@@ -44,7 +44,7 @@ This first function performs a `hiTest` on a given view and layer by converting 
 
 Now you need to add some click events to your views, so let me write a generic function for that.
 
-```
+```js
 function onClick(v1, v2, lyr1, lyr2) {
   v1.on("click", event => {
     event.stopPropagation();
@@ -58,7 +58,7 @@ This second method takes two sets of views and layers. It then calls `event.stop
 
 Now we just needd to apply this method to our current views and layers.
 
-```
+```js
 onClick(view1, view2, flayer1, flayer2);
 onClick(view2, view1, flayer2, flayer1);
 ```

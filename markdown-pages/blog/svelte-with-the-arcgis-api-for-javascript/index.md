@@ -19,13 +19,13 @@ When you first install your Svelte application, it's silly simple to add the Arc
 
 ```html
 <head>
-	<meta charset='utf8'>
-	<meta name='viewport' content='width=device-width'>
-	<title>Svelte app</title>
-	<link rel='stylesheet' href='global.css'>
-	<link rel='stylesheet' href='bundle.css'>
+  <meta charset='utf8'>
+  <meta name='viewport' content='width=device-width'>
+  <title>Svelte app</title>
+  <link rel='stylesheet' href='global.css'>
+  <link rel='stylesheet' href='bundle.css'>
         <link rel="stylesheet" href="https://js.arcgis.com/4.11/esri/themes/light/main.css">
-	<script src="https://js.arcgis.com/4.11/"></script>
+  <script src="https://js.arcgis.com/4.11/"></script>
 </head>
 ```
 
@@ -50,7 +50,7 @@ Once you do that, you can directly into the App.svelte file and use the AMD load
 
         view.watch('center', center => {
             const { latitude, longitude } = center;
-            centerText = \`Lat: ${ latitude.toFixed(2)} | Lon: ${ longitude.toFixed(2) }\`;
+            centerText = `Lat: ${ latitude.toFixed(2)} | Lon: ${ longitude.toFixed(2) }`;
         });
     });
 </script>
@@ -164,19 +164,19 @@ Now I can use it in my Svelte file.
 ```html
 // App.svelte
 <script>
-	import { initmap } from "./initmap";
+  import { initmap } from "./initmap";
 
-	export let centerText = "Loading...";
+  export let centerText = "Loading...";
 
-	const load = async () => {
-	  const view = await initmap();
-	  view.watch("center", center => {
-	    const { latitude, longitude } = center;
-	    centerText = \`Lat: ${latitude.toFixed(2)} | Lon: ${longitude.toFixed(2)}\`;
-	  });
-	};
+  const load = async () => {
+    const view = await initmap();
+    view.watch("center", center => {
+      const { latitude, longitude } = center;
+      centerText = `Lat: ${latitude.toFixed(2)} | Lon: ${longitude.toFixed(2)}`;
+    });
+  };
 
-	load();
+  load();
 </script>
 ```
 
