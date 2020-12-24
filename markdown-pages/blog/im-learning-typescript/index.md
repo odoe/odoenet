@@ -13,7 +13,7 @@ The other really cool part of 1.5 that should be of interest to people using the
 
 [gist](https://gist.github.com/odoe/3b4664019d6d757d95e2)
 
-As you can see, I load my AMD modules via the **amd-dependency** tag, then use **declare var module:any** to be able to use it in my code. If you look at this, aside from the dependency tags and typings, this looks just almost identical to ES6. The dojo definition files I'm currently using complain about not naming my **dojoDeclare**, but I think if I switched to a different one, this might go away. That's another one you may notice. **declare** is a keyword in TypeScript, so you'll need to refer to it as **dojoDeclare** or something else in your code. As of right now, you still need \*dojo/\_base/declare\*\* for some bits since TypeScript doesn't support multiple inheritance. I'm sure this will be addressed via some mechanism in the future.
+As you can see, I load my AMD modules via the **amd-dependency** tag, then use **declare var module:any** to be able to use it in my code. If you look at this, aside from the dependency tags and typings, this looks just almost identical to ES6. The dojo definition files I'm currently using complain about not naming my **dojoDeclare**, but I think if I switched to a different one, this might go away. That's another one you may notice. **declare** is a keyword in TypeScript, so you'll need to refer to it as **dojoDeclare** or something else in your code. As of right now, you still need *dojo/\_base/declare** for some bits since TypeScript doesn't support multiple inheritance. I'm sure this will be addressed via some mechanism in the future.
 
 If you are only going to extend a single module, you can use a TypeScript **class**.
 

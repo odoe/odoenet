@@ -23,7 +23,7 @@ I realize this is a workflow problem, that I should be better organized or maybe
 
 ## Breaking up the band
 
-So I began the process of moving all my common widgets to github. I still maintain private repos for the client stuff, in case any are reading (or my partners), so don't worry. I moved all css/less files related to each widget into the folder as well, following a similar pattern as some of the [Esri widgets](https://github.com/driskull/arcgis-dijit-locate-button-js) on github at the moment. The compiled css for all these widgets gets placed into a single main.css my application uses. I'll even place my test \*Spec.js files in these folders and exclude them from the build process.
+So I began the process of moving all my common widgets to github. I still maintain private repos for the client stuff, in case any are reading (or my partners), so don't worry. I moved all css/less files related to each widget into the folder as well, following a similar pattern as some of the [Esri widgets](https://github.com/driskull/arcgis-dijit-locate-button-js) on github at the moment. The compiled css for all these widgets gets placed into a single main.css my application uses. I'll even place my test *Spec.js files in these folders and exclude them from the build process.
 
 ## The starter kit
 

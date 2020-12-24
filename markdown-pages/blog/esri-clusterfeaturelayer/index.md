@@ -24,9 +24,7 @@ There are a couple of things lacking in this ClusterFeatureLayer.
 - [_No Vector Tiling_](https://developers.arcgis.com/javascript/jshelp/best_practices_feature_layers.html), although with points, I don't think it matters. A better route is probably to send the requests for objectIds in chunks and when all requests done, display clusters.
 - _No manual cache_. I was thinking maybe performance could be improved with a local cache, but lookup might negate that benefit. Could warrant some testing. I have added a cache for clustered features.
 
-_\*Uppublished: true
-author: Rene Rubalcava
-date:_ I recently updated this ClusterFeatureLayer to use [dojo/promise/all](http://dojotoolkit.org/reference-guide/1.9/dojo/promise/all.html) to send multiple requests if more than 1000 objectIds are in view. I also added an optional where clause to refine the queries. I've also added a cache to limit the number of requests and included a clearCache() method.
+I recently updated this ClusterFeatureLayer to use [dojo/promise/all](http://dojotoolkit.org/reference-guide/1.9/dojo/promise/all.html) to send multiple requests if more than 1000 objectIds are in view. I also added an optional where clause to refine the queries. I've also added a cache to limit the number of requests and included a clearCache() method.
 
 But it works and that's what counts.
 

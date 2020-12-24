@@ -14,7 +14,7 @@ The way I did it was to give my osm layer an id. `osm = new esri.layers.OpenStre
 The HTML element that gets created for the layer will be map_LAYER_ID, so map_osmLayer in this case. Then I just apply the css to all img tags in this div.
 
 ```css
-#map_osmLayer img { filter: url(filters.svg#grayscale) !important; /\* Firefox 3.5+ \*/ filter: gray !important; /\* IE5+ \*/ -webkit-filter: grayscale(1) !important; /\* Webkit Nightlies & Chrome Canary \*/ }`
+#map_osmLayer img { filter: url(filters.svg#grayscale) !important; /* Firefox 3.5+ */ filter: gray !important; /* IE5+ */ -webkit-filter: grayscale(1) !important; /* Webkit Nightlies & Chrome Canary */ }`
 ```
 
 And voila!

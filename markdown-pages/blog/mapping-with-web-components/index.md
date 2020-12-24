@@ -104,7 +104,7 @@ import MetaBase from '@dojo/framework/widget-core/meta/Base';
 import { v } from '@dojo/framework/widget-core/d';
 
 import { customElement } from '@dojo/framework/widget-core/decorators/customElement';
-import \* as css from './styles/map-widget.m.css';
+import * as css from './styles/map-widget.m.css';
 
 import { initialize } from "./support/arcgis";
 

@@ -63,7 +63,7 @@ var url = 'http://sampleserver1.arcgisonline.com/ArcGIS/rest/services/Demographi
 
 function queryGen(params) { return lang.mixin(new Query(), params); }
 
-function stateQuery(name, sr) { return queryGen({ where: ["STATE_NAME LIKE '%", name, "%'"].join(''), outFields: ['\*'], returnGeometry: true, outSpatialReference: sr }); }
+function stateQuery(name, sr) { return queryGen({ where: ["STATE_NAME LIKE '%", name, "%'"].join(''), outFields: ['*'], returnGeometry: true, outSpatialReference: sr }); }
 
 function SearchService($q) {
 
