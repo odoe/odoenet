@@ -13,7 +13,7 @@ Well, 2015 was interesting for sure. Some pretty major changes, all for the bett
 
 ## Things that happened
 
-I left my cushy local government job of 13 years with the Los Angeles County Sanitation Districts to _join the mothership_. Yup, I'm working at [Esri](http://www.esri.com/) now. I'll get to that in a second.
+I left my cushy local government job of 13 years with the Los Angeles County Sanitation Districts to _join the mothership_. Yup, I'm working at [Esri](https://www.esri.com/) now. I'll get to that in a second.
 
 Being anywhere for 13 years is a long time and leaving anywhere you've been working for 13 years is a big deal. I'm incredibly grateful for my time at LA County Sanitation and working with a very tight-knit, small group of GIS staff, _all five of us_. It was also a great experience getting work with lots of the Los Angeles County GIS people, especially the folks out of Regional Planning and the Assessors office. I kind of worked on skunkworks projects at the agency, lots of prototyping and maintaining a large GIS app for sewer maintenance. When I left, I had just sold them on a simple to use mobile app I had started. I was just a kid when I started, I learned GIS there. I didn't even have a degree when I started, I was a drafting technician that was roped into learning GIS. I was finishing up a BA in IT so I could work in the IT group, but decided to follow the GIS path and got my MA in Geography, go [Fullerton!](http://www.fullerton.edu/).
 

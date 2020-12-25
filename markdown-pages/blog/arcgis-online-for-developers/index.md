@@ -7,7 +7,7 @@ tags: geodev
 coverImage: "ago.jpg"
 ---
 
-There was a time where I was confused about [ArcGIS Online](www.arcgisonline.com). I was primarily a desktop user, an _ArcMap warrior_. I think I was still honing my Flex chops when ArcGIS Online was introduced. It started as an interesting concept, being able to share data online, having some basic map making features, but I didn't really think much of it at the time. As time went on, I begin to look at ArcGIS online and all the services it provided. As a developer, _I was intrigued_.
+There was a time where I was confused about [ArcGIS Online](https://www.arcgisonline.com). I was primarily a desktop user, an _ArcMap warrior_. I think I was still honing my Flex chops when ArcGIS Online was introduced. It started as an interesting concept, being able to share data online, having some basic map making features, but I didn't really think much of it at the time. As time went on, I begin to look at ArcGIS online and all the services it provided. As a developer, _I was intrigued_.
 
 However, I still see some developers struggle with ArcGIS Online and how to get started, so I thought I would give you a quick intro on how you might be able to take advantage of ArcGIS Online for your applications and more importantly, for your users.
 

@@ -23,6 +23,6 @@ You can check out [my products page](https://odoe.net/blog/products/) to see my 
 
 I have some ideas of projects I want to work on next, one of which I hope to finish up by the beginning of the year and that one will be _free!_
 
-Some other projects I'm looking to plan out might be a little different. Did you know that [geodev.io](geodev.io) redirects to my homepage? _hmmmm_
+Some other projects I'm looking to plan out might be a little different. Did you know that [geodev.io](https://geodev.io) redirects to my homepage? _hmmmm_
 
 Thanks again everyone!

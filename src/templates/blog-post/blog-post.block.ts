@@ -18,6 +18,6 @@ export default async function({ path }: { path: string }) {
 	file = file.replace(/images\//gi, `/assets/blog/${path.replace('index.md', '')}/images/`);
 	const content = toVNodes(file);
 	// console.log('vnode iframe?', JSON.stringify(content).includes('iframe'));
-	console.log(meta.title);
+	// console.log(meta.title);
 	return { content, meta };
 }
