@@ -3,7 +3,7 @@ import block from '@dojo/framework/core/middleware/block';
 
 import Link from '@dojo/framework/routing/Link';
 
-import compileBlogPost from './blog-post.block';
+import compile from './blog-post.block';
 
 import Article from '../../widgets/article/Article';
 
@@ -22,7 +22,7 @@ export default factory(({ middleware: { block }, properties }) => {
 	if (!path.includes('.md')) {
 		path = `${path}/index.md`;
 	}
-	const post: any = block(compileBlogPost)({
+	const post: any = block(compile)({
 		path
 	});
 

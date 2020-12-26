@@ -1,6 +1,6 @@
 import 'regenerator-runtime/runtime';
 import { join } from 'canonical-path';
-import { getLocalFile, getMetaData, toVNodes, coverImageHelper } from '../../blocks-common/utils';
+import { getLocalFile, getMetaData, toVNodes, coverImageHelper } from '../../blocks/utils';
 
 const CONTENT_PATH = join(__dirname, '../../../markdown-pages/blog');
 
@@ -17,7 +17,5 @@ export default async function({ path }: { path: string }) {
 	const meta = coverImageHelper(getMetaData(file), path.replace('index.md', ''));
 	file = file.replace(/images\//gi, `/assets/blog/${path.replace('index.md', '')}/images/`);
 	const content = toVNodes(file);
-	// console.log('vnode iframe?', JSON.stringify(content).includes('iframe'));
-	// console.log(meta.title);
 	return { content, meta };
 }

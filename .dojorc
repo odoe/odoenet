@@ -1,6 +1,6 @@
 {
   "build-app": {
-    "watchExtraFiles": ["posts/**"],
+    "watchExtraFiles": ["markdown-pages/**/*"],
 		"build-time-render": {
 			"root": "root",
 			"renderer": "jsdom"
