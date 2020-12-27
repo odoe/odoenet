@@ -26,7 +26,7 @@ export const getLocalFile = async (path: string) => {
 export const toVNodes = (content: string) => {
 	let counter = 0;
 	let pipeline = unified()
-		.use(markdown, { commonmark: true })
+		.use(markdown)
 		.use(frontmatter, 'yaml');
 
 	// markdown plugins

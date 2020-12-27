@@ -3,8 +3,7 @@
     "watchExtraFiles": ["markdown-pages/**/*"],
 		"build-time-render": {
 			"root": "root",
-			"renderer": "jsdom",
-      "static": true
+			"renderer": "jsdom"
 		},
     "pwa": {
       "manifest": {
