@@ -3,26 +3,26 @@ export default [
 		id: 'home',
 		path: '/',
 		outlet: 'main',
-		defaultRoute: true
+		defaultRoute: true,
 	},
 	{
 		id: 'list',
 		path: 'blog',
-		outlet: 'main'
+		outlet: 'main',
 	},
 	{
 		id: 'blog',
 		path: 'blog/{path}',
-		outlet: 'main'
+		outlet: 'main',
 	},
 	{
 		id: 'made',
 		path: 'made',
-		outlet: 'main'
+		outlet: 'main',
 	},
 	{
 		id: 'uses',
 		path: 'uses',
-		outlet: 'main'
+		outlet: 'main',
 	},
 ];

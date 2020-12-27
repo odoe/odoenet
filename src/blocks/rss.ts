@@ -29,17 +29,17 @@ export function createBlogFeed(files: any[]) {
 		favicon: 'https://odoe.net/favicon.ico',
 		copyright: 'All rights reserved 2020, odoenet',
 		feedLinks: {
-			atom: 'https://odoe.net/atom'
+			atom: 'https://odoe.net/atom',
 		},
 		author: {
-			name: 'Rene Rubalcava'
+			name: 'Rene Rubalcava',
 		},
-		feed: ''
+		feed: '',
 	});
 
-	for (let file of files) {
-    	const { content, description, title, author } = file.meta;
-    	const { sortDate } = file;
+	for (const file of files) {
+		const { content, description, title, author } = file.meta;
+		const { sortDate } = file;
 		const publishedDate = sortDate instanceof Date ? sortDate : new Date();
 
 		if (publishedDate.getTime() < skipItemsBefore) {
@@ -55,7 +55,7 @@ export function createBlogFeed(files: any[]) {
 			description: description,
 			content: content,
 			date: publishedDate,
-			published: publishedDate
+			published: publishedDate,
 		};
 
 		// feed
@@ -63,5 +63,5 @@ export function createBlogFeed(files: any[]) {
 	}
 
 	const feedOutputPath = join(outputDirectory, 'atom.xml');
-  outputFileSync(feedOutputPath, feed.atom1())
-};
+	outputFileSync(feedOutputPath, feed.atom1());
+}

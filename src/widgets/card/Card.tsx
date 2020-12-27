@@ -17,39 +17,36 @@ interface CardProperties {
 const factory = create().properties<CardProperties>();
 
 export default factory(({ properties }) => {
-  const { title, date, description, path, coverImage } = properties();
-  const key = `post-${title.replace(' ', '-')}`;
-  return (
-    <section classes={[ css.root ]} key={key}>
-      <div classes={[ css.column ]}>
-        <Link
-          classes={[css.link]}
-          to="blog"
-          aria-label={description}
-          params={{
-            path: path.replace('posts/', '').replace('index.md', '')
-          }}
-        >
-          <div classes={[css.content]}>
-            {
-              coverImage ?
-              (
-                <picture>
-                  <source type="image/webp" srcset={coverImage.replace(/\.(jpg|png)/, '.webp')}/>
-                  <source type="image/jpeg" srcset={coverImage}/>
-                  <img alt={description} loading="lazy" classes={[ css.image ]} src={coverImage} />
-                </picture>
-              )
-              :
-              []
-            }
-            <span classes={[css.banner]}>
-              {title}
-            </span>
-            <span classes={[css.date]}><small>{dateFormatter(new Date(date))}</small></span>
-          </div>
-        </Link>
-      </div>
-    </section>
-  );
+	const { title, date, description, path, coverImage } = properties();
+	const key = `post-${title.replace(' ', '-')}`;
+	return (
+		<section classes={[css.root]} key={key}>
+			<div classes={[css.column]}>
+				<Link
+					classes={[css.link]}
+					to="blog"
+					aria-label={description}
+					params={{
+						path: path.replace('posts/', '').replace('index.md', ''),
+					}}
+				>
+					<div classes={[css.content]}>
+						{coverImage ? (
+							<picture>
+								<source type="image/webp" srcset={coverImage.replace(/\.(jpg|png)/, '.webp')} />
+								<source type="image/jpeg" srcset={coverImage} />
+								<img alt={description} loading="lazy" classes={[css.image]} src={coverImage} />
+							</picture>
+						) : (
+							[]
+						)}
+						<span classes={[css.banner]}>{title}</span>
+						<span classes={[css.date]}>
+							<small>{dateFormatter(new Date(date))}</small>
+						</span>
+					</div>
+				</Link>
+			</div>
+		</section>
+	);
 });

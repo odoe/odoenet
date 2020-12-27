@@ -18,12 +18,12 @@ export interface PostProperties {
 const factory = create({ block }).properties<PostProperties>();
 
 export default factory(({ middleware: { block }, properties }) => {
-	let { path }  = properties();
+	let { path } = properties();
 	if (!path.includes('.md')) {
 		path = `${path}/index.md`;
 	}
 	const post: any = block(compile)({
-		path
+		path,
 	});
 
 	if (post) {
@@ -34,34 +34,34 @@ export default factory(({ middleware: { block }, properties }) => {
 					<title>{post.meta.title}</title>
 					<meta name="description" content={post.meta.description} />
 				</head>
-				{
-					post.meta.coverImage ?
-					(
-						<picture>
-							<source type="image/webp" srcset={post.meta.coverImage.replace(/\.(jpg|png)/, '.webp')}/>
-							<source type="image/jpeg" srcset={post.meta.coverImage}/>
-							<img src={post.meta.coverImage} key={`cover-image-${post.meta.title}`} alt={post.meta.title} loading="lazy" />
-						</picture>
-					)
-					:
+				{post.meta.coverImage ? (
+					<picture>
+						<source type="image/webp" srcset={post.meta.coverImage.replace(/\.(jpg|png)/, '.webp')} />
+						<source type="image/jpeg" srcset={post.meta.coverImage} />
+						<img
+							src={post.meta.coverImage}
+							key={`cover-image-${post.meta.title}`}
+							alt={post.meta.title}
+							loading="lazy"
+						/>
+					</picture>
+				) : (
 					[]
-				}
+				)}
 				<Article key={post.meta.title}>
 					<Link
 						to="blog"
 						aria-label={post.meta.title}
 						params={{
-							path: path.replace('posts/', '').replace('index.md', '')
+							path: path.replace('posts/', '').replace('index.md', ''),
 						}}
 					>
 						<h2>{post.meta.title}</h2>
 					</Link>
-					<p>
-						{`${post.meta.author} | ${date}`}
-					</p>
+					<p>{`${post.meta.author} | ${date}`}</p>
 					{post.content}
 				</Article>
 			</section>
 		);
-  }
+	}
 });

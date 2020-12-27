@@ -6,9 +6,9 @@ import * as css from './Uses.m.css';
 const factory = create();
 
 export default factory(function Home() {
-    return (
-        <div classes={[ css.root ]}>
-            <UsesTemplate />
-        </div>
-    )
+	return (
+		<div classes={[css.root]}>
+			<UsesTemplate />
+		</div>
+	);
 });

@@ -10,14 +10,13 @@ export default async function (options: any) {
 	let files: string[] = [];
 	try {
 		files = await readdir(CONTENT_PATH);
-	}
-	catch(error) {
+	} catch (error) {
 		// do nothing
 		console.log('error loading file', error.message);
 		files = [];
 	}
 	const blogs: any[] = [];
-	for (let file of files) {
+	for (const file of files) {
 		const filePath = join(CONTENT_PATH, file, 'index.md');
 		try {
 			const content = await getLocalFile(filePath);
@@ -27,11 +26,10 @@ export default async function (options: any) {
 				blogs.push({
 					sortDate: new Date(`${meta.date}`),
 					file,
-					meta
+					meta,
 				});
 			}
-		}
-		catch (error) {
+		} catch (error) {
 			console.log('compile-blog-index', error.message);
 		}
 	}

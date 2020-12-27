@@ -4,13 +4,12 @@ import { getLocalFile, getMetaData, toVNodes, coverImageHelper } from '../../blo
 
 const CONTENT_PATH = join(__dirname, '../../../markdown-pages/blog');
 
-export default async function({ path }: { path: string }) {
+export default async function ({ path }: { path: string }) {
 	const contentPath = join(CONTENT_PATH, path);
 	let file: any;
 	try {
 		file = await getLocalFile(contentPath);
-	}
-	catch(error) {
+	} catch (error) {
 		console.log('error: compile post - ', error.message);
 		return null;
 	}

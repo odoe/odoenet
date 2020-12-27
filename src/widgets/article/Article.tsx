@@ -5,5 +5,5 @@ import * as css from './Article.m.css';
 const factory = create();
 
 export default factory(({ children }) => {
-  return <article classes={[ css.root ]}>{children()}</article>
+	return <article classes={[css.root]}>{children()}</article>;
 });

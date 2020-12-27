@@ -7,13 +7,12 @@ import * as css from './Blog.m.css';
 const factory = create().properties<{ path: string }>();
 
 export default factory(({ properties }) => {
-  const { path } = properties();
+	const { path } = properties();
 
-  return (
-    <div classes={[ css.root ]}>
-      <Post key={path} path={path} />
-      <SignUp />
-    </div>
-  );
+	return (
+		<div classes={[css.root]}>
+			<Post key={path} path={path} />
+			<SignUp />
+		</div>
+	);
 });
-

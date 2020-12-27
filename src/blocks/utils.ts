@@ -1,17 +1,16 @@
-const { resolve } = require('path');
-const { readFile } = require('fs-extra');
+/* eslint @typescript-eslint/no-var-requires: "off" */
 
-const unified = require('unified');
-const markdown = require('remark-parse');
-const remark2rehype = require('remark-rehype');
-const raw = require('rehype-raw');
-const toH = require('hast-to-hyperscript');
-const frontmatter = require('remark-frontmatter');
-const parseFrontmatter = require('remark-parse-yaml');
-
-const { v } = require('@dojo/framework/core/vdom');
-
-const { remarkPlugins, rehypePlugins } = require('../site-config');
+import { resolve } from 'path';
+import { readFile } from 'fs-extra';
+import unified from 'unified';
+import markdown from 'remark-parse';
+import remark2rehype from 'remark-rehype';
+import raw from 'rehype-raw';
+import toH from 'hast-to-hyperscript';
+import frontmatter from 'remark-frontmatter';
+import parseFrontmatter from 'remark-parse-yaml';
+import { v } from '@dojo/framework/core/vdom';
+import { remarkPlugins, rehypePlugins } from '../site-config';
 
 // ---------------------------------------------------------------------------------------
 // Based on https://github.com/dojo/site/blob/master/src/scripts/compile.ts
@@ -25,12 +24,19 @@ export const getLocalFile = async (path: string) => {
 // Converts markdown to VNodes in hyperscript
 export const toVNodes = (content: string) => {
 	let counter = 0;
-	let pipeline = unified()
-		.use(markdown)
-		.use(frontmatter, 'yaml');
+	let pipeline = unified().use(markdown).use(frontmatter, ['yaml']);
 
 	// markdown plugins
-	remarkPlugins.forEach((plugin: any) => {
+	remarkPlugins.forEach(async (plugin: any) => {
+		// let result: any;
+		// if (typeof plugin === 'string') {
+		// 	result = await import(plugin);
+		// 	pipeline = pipeline.use(result);
+		// }
+		// else {
+		// 	result = await import(plugin.resolve);
+		// 	pipeline = pipeline.use(result, plugin.options)
+		// }
 		pipeline =
 			typeof plugin === 'string'
 				? pipeline.use(require(plugin))
@@ -55,25 +61,23 @@ export const toVNodes = (content: string) => {
 
 // Gets yaml metadata from markdown
 export const getMetaData = (content: string) => {
-	const pipeline = unified().use(markdown).use(frontmatter, 'yaml').use(parseFrontmatter);
+	const pipeline = unified().use(markdown).use(frontmatter, ['yaml']).use(parseFrontmatter);
 
 	const nodes = pipeline.parse(content);
-	const result = pipeline.runSync(nodes);
+	const result: any = pipeline.runSync(nodes);
 	const node = result.children.find((child: any) => Boolean(child.type === 'yaml'));
 	return node ? node.data.parsedValue : {};
 };
 
-
 // helpers
 export const coverImageHelper = (meta: any, filePath: string) => {
 	if (!meta.coverImage) {
-		meta.coverImage = `/assets/logo.png`
-	}
-	else {
+		meta.coverImage = `/assets/logo.png`;
+	} else {
 		if (!filePath.endsWith('/')) {
 			filePath = `${filePath}/`;
 		}
 		meta.coverImage = `/assets/blog/${filePath}images/${meta.coverImage}`;
 	}
 	return meta;
-}
+};

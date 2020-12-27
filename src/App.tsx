@@ -29,7 +29,7 @@ export default factory(({ properties }) => {
 					blog: ({ params: { path } }) => <Blog path={path} />,
 					home: <Home />,
 					made: <Made />,
-					uses: <Uses />
+					uses: <Uses />,
 				}}
 			</Outlet>
 		</Layout>

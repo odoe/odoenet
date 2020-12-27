@@ -8,23 +8,23 @@ export const meta: SiteMeta = {
 		{
 			href: 'https://odoe.net/atom.xml',
 			text: 'rss feed',
-			logo: '/assets/images/logos/rss-logo-32px.png'
+			logo: '/assets/images/logos/rss-logo-32px.png',
 		},
 		{
 			href: 'https://github.com/odoe/odoenet',
 			text: 'github',
-			logo: '/assets/images/logos/GitHub-Mark-32px.png'
+			logo: '/assets/images/logos/GitHub-Mark-32px.png',
 		},
 		{
 			href: 'https://www.youtube.com/c/ReneRubalcava',
 			text: 'youtube',
-			logo: '/assets/images/logos/yt_logo_mono_light_32px.png'
+			logo: '/assets/images/logos/yt_logo_mono_light_32px.png',
 		},
 		{
 			href: 'https://dojo.io/',
-			text: 'powered by @dojo'
-		}
-	]
+			text: 'powered by @dojo',
+		},
+	],
 };
 
 // -------------------------------------
@@ -36,8 +36,8 @@ export const remarkPlugins = [
 	'remark-slug',
 	{
 		resolve: 'remark-external-links',
-		options: { target: '_blank', rel: ['nofollow'] }
-	}
+		options: { target: '_blank', rel: ['nofollow'] },
+	},
 ];
 
 // rehype plugins with options
@@ -46,12 +46,12 @@ export const rehypePlugins = [
 		resolve: 'rehype-picture',
 		options: {
 			jpg: {
-				webp: 'image/webp'
+				webp: 'image/webp',
 			},
 			png: {
-				webp: 'image/webp'
-			}
+				webp: 'image/webp',
+			},
 		},
 	},
-	'@mapbox/rehype-prism'
+	'@mapbox/rehype-prism',
 ];

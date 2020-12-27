@@ -8,18 +8,17 @@ import * as css from './Made.m.css';
 const factory = create({ block });
 
 export default factory(function Made({ middleware: { block } }) {
+	const page: any = block(compile)({ page: 'made', path: 'index.md' });
 
-    const page: any = block(compile)({ page: 'made', path: 'index.md' });
-
-    if (page) {
-        return (
-            <div classes={[css.root]}>
-                <head>
-                    <title>{page.meta.title}</title>
-                    <meta name="description" content={page.meta.description} />
-                </head>
-                {page.content}
-            </div>
-        )
-    }
+	if (page) {
+		return (
+			<div classes={[css.root]}>
+				<head>
+					<title>{page.meta.title}</title>
+					<meta name="description" content={page.meta.description} />
+				</head>
+				{page.content}
+			</div>
+		);
+	}
 });

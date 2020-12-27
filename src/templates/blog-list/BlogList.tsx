@@ -11,18 +11,20 @@ import { meta } from '../../site-config';
 const factory = create({ block });
 
 export default factory(({ middleware: { block } }) => {
-    const blogs = block(compileBlogIndex)({}) || [];
-    // TODO: Add Search
-    // TODO: Add Tag List
-    return (
+	const blogs = block(compileBlogIndex)({}) || [];
+	// TODO: Add Search
+	// TODO: Add Tag List
+	return (
 		<virtual>
 			<head>
-                <title>{meta.title}</title>
+				<title>{meta.title}</title>
 				<meta name="description" content={meta.description} />
 			</head>
-            <div classes={[css.root]}>
-                {blogs.map((blog) => <Card key={blog.file} path={blog.file} {...blog.meta} />)}
-            </div>
-        </virtual>
-    );
+			<div classes={[css.root]}>
+				{blogs.map((blog) => (
+					<Card key={blog.file} path={blog.file} {...blog.meta} />
+				))}
+			</div>
+		</virtual>
+	);
 });
