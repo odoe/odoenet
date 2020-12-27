@@ -11,7 +11,8 @@
 		"test:unit": "dojo build --mode unit && dojo test --unit --config local",
 		"test:functional": "dojo build --mode functional && dojo test --functional --config local",
 		"test:all": "dojo build --mode unit && dojo build --mode functional && dojo test --all --config local",
-		"noop": "echo noop"
+		"noop": "echo noop",
+		"lint": "eslint 'src/**/*.{js,ts,tsx}' --quiet --fix"
 	},
 	"dependencies": {
 		"@dojo/framework": "7.0.5",
@@ -28,14 +29,23 @@
 		"@types/imagemin": "7.0.0",
 		"@types/imagemin-webp": "5.1.1",
 		"@types/node": "14.14.14",
+		"@typescript-eslint/eslint-plugin": "^4.11.0",
+		"@typescript-eslint/parser": "^4.11.0",
 		"canonical-path": "1.0.0",
+		"eslint": "^7.16.0",
+		"eslint-config-prettier": "^7.1.0",
+		"eslint-plugin-prettier": "^3.3.0",
 		"feed": "4.2.1",
 		"fs-extra": "9.0.1",
 		"hast-to-hyperscript": "9.0.1",
 		"imagemin": "7.0.1",
+		"imagemin-giflossy": "^5.1.10",
+		"imagemin-mozjpeg": "^9.0.0",
+		"imagemin-pngquant": "^9.0.1",
 		"imagemin-webp": "6.0.0",
 		"jsdom": "^16.4.0",
 		"markdownlint": "^0.22.0",
+		"prettier": "^2.2.1",
 		"rehype-picture": "3.0.0",
 		"rehype-raw": "^5.0.0",
 		"remark-external-links": "8.0.0",
@@ -47,6 +57,19 @@
 		"remark-slug": "6.0.0",
 		"typescript": "3.7.3",
 		"unified": "9.2.0"
+	},
+	"eslintConfig": {
+		"parser": "@typescript-eslint/parser",
+		"plugins": [
+			"@typescript-eslint"
+		],
+		"extends": [
+			"eslint:recommended",
+			"plugin:@typescript-eslint/eslint-recommended",
+			"plugin:@typescript-eslint/recommended",
+			"prettier/@typescript-eslint",
+			"plugin:prettier/recommended"
+		]
 	},
 	"prettier": {
 		"singleQuote": true,
