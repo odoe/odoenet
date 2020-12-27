@@ -14,5 +14,15 @@ export default [
 		id: 'blog',
 		path: 'blog/{path}',
 		outlet: 'main'
-	}
+	},
+	{
+		id: 'made',
+		path: 'made',
+		outlet: 'main'
+	},
+	{
+		id: 'uses',
+		path: 'uses',
+		outlet: 'main'
+	},
 ];

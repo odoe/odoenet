@@ -1,0 +1,10 @@
+.root {
+    height: 300px;
+    width: 500px;
+}
+
+@media only screen and (max-width: 480px) {
+	.root {
+		width: 100%;
+	}
+}

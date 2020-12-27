@@ -20,6 +20,16 @@ export default factory(({ properties }) => {
           blog
         </Link>
       </div>
+      <div classes={[css.title]}>
+        <Link to="/made" isOutlet={false} classes={[css.link]}>
+          made
+        </Link>
+      </div>
+      <div classes={[css.title]}>
+        <Link to="/uses" isOutlet={false} classes={[css.link]}>
+          uses
+        </Link>
+      </div>
     </header>
   );
 });

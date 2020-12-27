@@ -4,21 +4,21 @@ import HomeTemplate from '../../templates/home/Home';
 
 import Embed from '../../widgets/embed/Embed';
 
+import * as css from './Home.m.css';
+
 const factory = create();
 
 export default factory(function Home() {
     return (
-        <section>
-            <div>
-                <Embed
-                    url="https://player.twitch.tv"
-                    options={{
-                        channel: 'odoenet',
-                        parent: has('production') ? 'odoenet.odoe.vercel.app' : 'localhost',
-                        muted: 'true'
-                    }}
-                />
-            </div>
+        <section classes={[ css.root ]}>
+            <Embed
+                url="https://player.twitch.tv"
+                options={{
+                    channel: 'odoenet',
+                    parent: has('production') ? 'odoenet.odoe.vercel.app' : 'localhost',
+                    muted: 'true'
+                }}
+            />
             <HomeTemplate />
         </section>
     );

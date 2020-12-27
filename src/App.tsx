@@ -4,6 +4,8 @@ import Outlet from '@dojo/framework/routing/Outlet';
 import Blog from './pages/blog/Blog';
 import Home from './pages/home/Home';
 import BlogList from './templates/blog-list/BlogList';
+import Made from './pages/made/Made';
+import Uses from './pages/uses/Uses';
 
 import Layout from './layouts/Layout';
 
@@ -25,7 +27,9 @@ export default factory(({ properties }) => {
 				{{
 					list: <BlogList />,
 					blog: ({ params: { path } }) => <Blog path={path} />,
-					home: <Home />
+					home: <Home />,
+					made: <Made />,
+					uses: <Uses />
 				}}
 			</Outlet>
 		</Layout>

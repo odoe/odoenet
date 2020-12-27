@@ -1,14 +1,13 @@
 .root {
 	display: grid;
 	grid-template-columns: minmax(1.2rem, 1fr) minmax(auto, 57ch) minmax(1.2rem, 1fr);
-	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 120px;
 	padding: 0;
 	overflow: hidden;
+	margin-top: 1rem;
 }
 
 .section {
 	grid-column: 2;
-	/* padding: 0 6rem; */
 }
 
 @media only screen and (max-width: 900px) {
@@ -31,6 +30,6 @@
 
 	.section {
 		grid-column: 1 / 6;
-		padding: 0;
+		padding: 0 2rem;
 	}
 }

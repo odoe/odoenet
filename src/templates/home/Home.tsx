@@ -1,7 +1,7 @@
 import { create, tsx } from '@dojo/framework/core/vdom';
 import block from '@dojo/framework/core/middleware/block';
 
-import compile from './home.block';
+import compile from '../../blocks/compile.block';
 
 import * as css from './Home.m.css';
 

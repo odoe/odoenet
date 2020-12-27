@@ -2,6 +2,8 @@ import { create, tsx } from '@dojo/framework/core/vdom';
 
 import { toURLParams } from '../../utils/urlParams';
 
+import * as css from './Embed.m.css';
+
 interface EmbedProperties {
     url: string;
     options: { [k: string]: string }
@@ -15,9 +17,8 @@ export default factory(function Embed({ properties }) {
 
     return (
         <iframe
+            classes={[ css.root ]}
             src={`${url}/?${params}`}
-            height="300"
-            width="450"
             frameborder="0"
             scrolling="no"
             allowfullscreen="true">

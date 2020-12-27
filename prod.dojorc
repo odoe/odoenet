@@ -2,7 +2,9 @@
   "extends": "./.dojorc",
   "build-app": {
     "bundles": {
-      "blog": ["src/pages/blog/Blog"]
+      "blog": ["src/pages/blog/Blog"],
+      "uses": ["src/pages/uses/Uses"],
+      "made": ["src/pages/made/Made"]
     },
     "features": {
       "production": true
