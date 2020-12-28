@@ -1,5 +1,5 @@
 import { create, tsx } from '@dojo/framework/core/vdom';
-import UsesTemplate from '../../templates/uses/Uses';
+import PageTemplate from '../../templates/page/Page';
 
 import * as css from './Uses.m.css';
 
@@ -8,7 +8,7 @@ const factory = create();
 export default factory(function Home() {
 	return (
 		<div classes={[css.root]}>
-			<UsesTemplate />
+			<PageTemplate page="uses" showCoverImage={true} />
 		</div>
 	);
 });

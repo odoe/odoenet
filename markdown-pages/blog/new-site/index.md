@@ -21,7 +21,7 @@ I just couldn't do it anymore. I also got hung up in all the analytics of settin
 
 So how is this new site built? I learned a lot building [learn-dojo](https://learn-dojo.com/), which is going to benefit from a lot of the work I've done on this site. As you could probably guess, that site, and this one are built with [dojo](https://dojo.io/). I had considered [Gatsby](https://www.gatsbyjs.com/), or [11ty](https://www.11ty.dev/). Of the two, I really liked 11ty, but I wanted to really dig in and have a bit more control over some stuff. Plus, I really like working with Dojo, and in particular its [Build-time rendering](https://dojo.io/learn/building/buildtime-rendering), which is the Dojo way of static site generation.
 
-The most work went into cleaning up the markdown files. There are wordpress plugins for exporting a site to markdown and downloading the images. They work fine, but over the years, I've had code syntax plugins break, and had to change from one to another, so there was quite a mix of ways that code blocks were written. This caused build errors I couldn't track down right and was a major headache. I was able to use [markdownlint](https://github.com/markdownlint/markdownlint) to help me track down major issues, after I flipped a couple of tables.
+The most work went into cleaning up the markdown files. There are wordpress plugins for exporting a site to markdown and downloading the images. They work fine, but over the years, I've had code syntax plugins break, and had to change from one to another, so there was quite a mix of ways that code blocks were written. This caused build errors I couldn't track down right away and was a major headache. I was able to use [markdownlint](https://github.com/markdownlint/markdownlint) to help me fix major issues, after I flipped a couple of tables.
 
 > If you happen to find an error in a blog post, please make an issue [here](https://github.com/odoe/odoenet/issues), maybe even a PR!
 
@@ -33,7 +33,7 @@ What is really great with Dojo, is the ability to use [blocks](https://learn-doj
 
 ## Workflow
 
-The workflow building and deploying this site is now pretty seemless for me.
+The workflow building and deploying this site is now pretty seamless for me.
 
 1. Publish to [github repo](https://github.com/odoe/odoenet)
 2. Deploy to [vercel](https://vercel.com) from github
@@ -48,7 +48,3 @@ I have to give a shout out to [hosting trends](http://hostingtrends.com/), which
 The upcoming content will still include plenty of geodev and [ArcGIS JSAPI](https://developers.arcgis.com/javascript/), but I'll be including some more web dev and TypeScript content as well. So stay tuned for more. It's so easy to post now!
 
 If you want to keep up to date, you can subscribe to the [rss](https://odoe.net/atom.xml). You could even sign up for the newsletter below. Emails should start going out again once I make some mailchimp updates.
-
-
-
-
