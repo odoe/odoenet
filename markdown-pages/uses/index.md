@@ -1,5 +1,6 @@
 ---
 title: "Uses"
+description: "These are things that I use"
 published: true
 author: Rene Rubalcava
 date: "2020-12-27"

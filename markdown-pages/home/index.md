@@ -1,5 +1,6 @@
 ---
 title: "Home"
+description: "Welcome to odoenet, dev, geo, and more!"
 published: true
 author: Rene Rubalcava
 date: "2020-12-27"
@@ -18,3 +19,4 @@ You can find me in a number of places!
 * [twitter](https://twitter.com/odoenet)
 * [youtube](https://www.youtube.com/c/ReneRubalcava)
 * [linkedin](https://www.linkedin.com/in/renerubalcava/)
+* [learn-dojo](https://learn-dojo.com/)

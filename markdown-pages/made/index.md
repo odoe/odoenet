@@ -1,5 +1,6 @@
 ---
 title: "Made"
+description: "These are things I have made"
 published: true
 author: Rene Rubalcava
 date: "2020-12-27"
