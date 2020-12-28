@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"scripts": {
 		"dev": "dojo build",
-		"build": "dojo build --mode dist --dojorc prod.dojorc || exit 0",
+		"build": "dojo build --mode dist --dojorc prod.dojorc && exit 0",
 		"build:debug": "node --trace-warnings node_modules/@dojo/cli/bin/dojo.js build --mode dist --dojorc prod.dojorc",
 		"build:dev": "dojo build -m=dev -s -w",
 		"test": "dojo test",
