@@ -3,7 +3,7 @@ title: "TypeScript Typings for JavaScript"
 published: true
 author: Rene Rubalcava
 date: "2017-02-01"
-tags: geodev
+tags: geodev, typescript
 coverImage: "tsforjs.jpg"
 ---
 

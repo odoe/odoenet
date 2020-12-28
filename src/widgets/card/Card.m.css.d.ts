@@ -5,3 +5,5 @@ export const image: string;
 export const content: string;
 export const banner: string;
 export const date: string;
+export const tags: string;
+export const tag: string;

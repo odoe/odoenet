@@ -3,7 +3,7 @@ title: "Dojo Bootstrap with ArcGIS JavaScript API"
 published: true
 author: Rene Rubalcava
 date: "2014-12-01"
-tags: geodev
+tags: geodev, dojo
 coverImage: "dojo-bootstrap-logo.png"
 ---
 

@@ -3,7 +3,7 @@ title: "Getting your Dojo on"
 published: true
 author: Rene Rubalcava
 date: "2015-01-26"
-tags: geodev
+tags: geodev, dojo
 coverImage: "dojo_toolkit.jpg"
 ---
 

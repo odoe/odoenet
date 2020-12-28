@@ -3,7 +3,7 @@ title: "ArcGIS JS API with TypeScript and Babel"
 published: true
 author: Rene Rubalcava
 date: "2019-08-29"
-tags: geodev
+tags: geodev, typescript
 coverImage: "arcgis-ts-babel.jpg"
 ---
 

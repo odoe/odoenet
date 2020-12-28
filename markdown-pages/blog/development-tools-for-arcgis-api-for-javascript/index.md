@@ -3,7 +3,7 @@ title: "Development Tools for ArcGIS API for JavaScript"
 published: true
 author: Rene Rubalcava
 date: "2015-09-07"
-tags: geodev
+tags: geodev, dojo
 coverImage: "esrijs-app-tools.png"
 ---
 

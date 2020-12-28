@@ -3,7 +3,7 @@ title: "New ArcGIS CLI Template Apps"
 published: true
 author: Rene Rubalcava
 date: "2020-01-10"
-tags: geodev
+tags: geodev, typescript
 coverImage: "jsapi-cli-update.jpg"
 ---
 

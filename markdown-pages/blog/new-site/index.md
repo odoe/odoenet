@@ -3,7 +3,7 @@ title: "New Site, Who Dis?"
 published: true
 author: Rene Rubalcava
 date: 2020-12-29T12:00:00.000Z
-tags: geodev, dojo
+tags: geodev, dojo, typescript
 coverImage: "image.jpg"
 ---
 

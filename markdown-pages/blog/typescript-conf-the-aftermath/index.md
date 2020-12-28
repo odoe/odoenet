@@ -3,7 +3,7 @@ title: "TypeScript Conf - The Aftermath"
 published: true
 author: Rene Rubalcava
 date: "2018-03-19"
-tags: geodev
+tags: geodev, typescript
 coverImage: "tsconf.png"
 ---
 

@@ -3,7 +3,7 @@ title: "Yet another application ArcGIS JSAPI starter kit"
 published: true
 author: Rene Rubalcava
 date: "2017-08-10"
-tags: geodev
+tags: geodev, typescript
 coverImage: "odoenet-starer-app.jpg"
 ---
 

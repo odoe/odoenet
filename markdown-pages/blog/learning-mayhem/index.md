@@ -3,7 +3,7 @@ title: "Learning Mayhem"
 published: true
 author: Rene Rubalcava
 date: "2015-04-20"
-tags: geodev
+tags: geodev, dojo, typescript
 coverImage: "maybe-mayhem.png"
 ---
 

@@ -3,7 +3,7 @@ title: "TypeScript in Visual Studio Code"
 published: true
 author: Rene Rubalcava
 date: "2016-10-25"
-tags: geodev
+tags: geodev, typescript
 coverImage: "esrijs-ts-code.jpg"
 ---
 
