@@ -19,7 +19,6 @@ export default factory(({ children, properties }) => {
 				<meta name="theme-color" content="#009dff" />
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<link rel="icon" href="/assets/favicon.ico" />
-				<link rel="stylesheet" type="text/css" href="./assets/prism.css" />
 				<link rel="preconnect" href="https://www.google-analytics.com" />
 				<link rel="preconnect" href="https://fonts.gstatic.com" />
 				<link

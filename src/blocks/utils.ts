@@ -28,15 +28,6 @@ export const toVNodes = (content: string) => {
 
 	// markdown plugins
 	remarkPlugins.forEach(async (plugin: any) => {
-		// let result: any;
-		// if (typeof plugin === 'string') {
-		// 	result = await import(plugin);
-		// 	pipeline = pipeline.use(result);
-		// }
-		// else {
-		// 	result = await import(plugin.resolve);
-		// 	pipeline = pipeline.use(result, plugin.options)
-		// }
 		pipeline =
 			typeof plugin === 'string'
 				? pipeline.use(require(plugin))
@@ -55,8 +46,16 @@ export const toVNodes = (content: string) => {
 	});
 
 	const nodes = pipeline.parse(content);
-	const result = pipeline.runSync(nodes);
-	return toH((tag: string, props: any, children: any[]) => v(tag, { ...props, key: counter++ }, children), result);
+	const node = pipeline.runSync(nodes);
+	// add a root div with class name
+	const rootDiv = {
+		type: 'element',
+		tagName: 'div',
+		properties: { classes: 'md-content' },
+		children: node.children
+	};
+	node.children = [rootDiv];
+	return toH((tag: string, props: any, children: any[]) => v(tag, { ...props, key: counter++ }, children), node);
 };
 
 // Gets yaml metadata from markdown
