@@ -1,10 +1,13 @@
 import { create, tsx } from '@dojo/framework/core/vdom';
+import Avatar from '@dojo/widgets/avatar';
 import has from '@dojo/framework/core/has';
 import HomeTemplate from '../../templates/home/Home';
 
 import Embed from '../../widgets/embed/Embed';
 
 import * as css from './Home.m.css';
+
+import avatar from './avatar.jpg';
 
 const factory = create();
 
@@ -19,6 +22,7 @@ export default factory(function Home() {
 					muted: 'true',
 				}}
 			/>
+			<Avatar size="large" variant="circle" src={avatar} alt="odoenet" />
 			<HomeTemplate />
 		</section>
 	);

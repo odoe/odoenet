@@ -1,5 +1,7 @@
 import { tsx, create } from '@dojo/framework/core/vdom';
 import Outlet from '@dojo/framework/routing/Outlet';
+import theme from '@dojo/framework/core/middleware/theme';
+import dojo from '@dojo/widgets/theme/dojo';
 
 import Blog from './pages/blog/Blog';
 import Home from './pages/home/Home';
@@ -11,9 +13,12 @@ import Layout from './layouts/Layout';
 
 import { AppProperties } from './interfaces';
 
-const factory = create().properties<AppProperties>();
+const factory = create({ theme }).properties<AppProperties>();
 
-export default factory(({ properties }) => {
+export default factory(({ properties, middleware: { theme } }) => {
+	if (!theme.get()) {
+		theme.set(dojo);
+	}
 	const { siteMeta } = properties();
 	return (
 		<Layout {...siteMeta}>

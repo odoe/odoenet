@@ -13,6 +13,15 @@
 	top: 0;
 }
 
+.avatar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	justify-self: center;
+	flex-direction: row;
+	padding: 0;
+}
+
 .title {
 	font-size: 20px;
 	margin: 0;

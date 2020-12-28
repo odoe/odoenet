@@ -9,7 +9,7 @@ export default factory(() => (
 		<div classes={[css.email]}>
 			<form
 				classes={[css.form]}
-				action="https://odoe.us9.list-manage.com/subscribe/post?u=711bff655927baa32886103d5&amp;id=6d978f8bcf"
+				action="https://odoe.us9.list-manage.com/subscribe/post?u=711bff655927baa32886103d5&amp;id=14ec67dc30"
 				method="post"
 				id="mc-embedded-subscribe-form"
 				name="mc-embedded-subscribe-form"
