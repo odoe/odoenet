@@ -3,7 +3,7 @@ title: "Template markdown file"
 description: "Provide a description here"
 published: false
 author: Rene Rubalcava
-date: "2020-12-27"
+date: 2020-12-30T12:00:00.000Z
 coverImage: "image.jpg"
 tags: odoe
 ---
