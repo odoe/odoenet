@@ -4,9 +4,9 @@
 	"license": "BSD-3-Clause",
 	"scripts": {
 		"dev": "dojo build",
-		"build:dojo": "dojo build --mode dist --dojorc prod.dojorc || exit 0",
+		"build:dojo": "dojo build --mode dist --dojorc prod.dojorc",
 		"build": "npm run build:dojo && exit 0",
-		"build:debug": "node --trace-warnings node_modules/@dojo/cli/bin/dojo.js build --mode dist --dojorc prod.dojorc || exit 0",
+		"build:debug": "node --trace-warnings node_modules/@dojo/cli/bin/dojo.js build --mode dist --dojorc prod.dojorc",
 		"build:dev": "dojo build -m=dev -s -w",
 		"test": "dojo test",
 		"test:unit": "dojo build --mode unit && dojo test --unit --config local",
@@ -23,7 +23,7 @@
 	},
 	"devDependencies": {
 		"@dojo/cli": "7.0.0",
-		"@dojo/cli-build-app": "7.0.4",
+		"@dojo/cli-build-app": "8.0.0-alpha.3",
 		"@dojo/cli-test-intern": "7.0.0",
 		"@mapbox/rehype-prism": "0.5.0",
 		"@types/fs-extra": "9.0.5",
