@@ -1,6 +1,11 @@
 {
   "extends": "./.dojorc",
   "build-app": {
+		"build-time-render": {
+      "cache": {
+        "enabled": true
+      }
+		},
     "bundles": {
       "blog": ["src/pages/blog/Blog"],
       "uses": ["src/pages/uses/Uses"],
