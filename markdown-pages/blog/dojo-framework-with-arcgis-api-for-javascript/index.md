@@ -3,7 +3,7 @@ title: "Dojo Framework with ArcGIS API for JavaScript"
 published: true
 author: Rene Rubalcava
 date: "2019-03-20"
-tags: geodev
+tags: geodev, dojo, typescript
 coverImage: "dojo-esri-loader.png"
 ---
 

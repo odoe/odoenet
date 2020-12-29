@@ -3,7 +3,7 @@ title: "Mapping with Web Components"
 published: true
 author: Rene Rubalcava
 date: "2019-04-19"
-tags: geodev
+tags: geodev, dojo, typescript
 coverImage: "arcgis-webmap.jpg"
 ---
 

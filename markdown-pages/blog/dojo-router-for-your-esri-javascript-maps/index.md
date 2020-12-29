@@ -3,7 +3,7 @@ title: "dojo router for your Esri JavaScript Maps"
 published: true
 author: Rene Rubalcava
 date: "2014-11-24"
-tags: geodev
+tags: geodev, dojo
 coverImage: "logo1.png"
 ---
 

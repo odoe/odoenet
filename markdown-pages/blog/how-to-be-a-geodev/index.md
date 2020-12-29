@@ -3,7 +3,7 @@ title: "How to be a geodev"
 published: true
 author: Rene Rubalcava
 date: "2017-05-04"
-tags: geodev
+tags: geodev, typescript
 coverImage: "geodevpost-1.png"
 ---
 

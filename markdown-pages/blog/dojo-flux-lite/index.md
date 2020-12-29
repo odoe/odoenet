@@ -3,7 +3,7 @@ title: "Dojo Flux (lite)"
 published: true
 author: Rene Rubalcava
 date: "2015-04-06"
-tags: geodev
+tags: geodev, dojo
 coverImage: "dojo_flux.png"
 ---
 

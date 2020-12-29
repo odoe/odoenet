@@ -3,7 +3,7 @@ title: "ArcGIS JSAPI Accessor and Widgets!"
 published: true
 author: Rene Rubalcava
 date: "2016-12-23"
-tags: geodev
+tags: geodev, typescript
 coverImage: "accessor-widgets.jpg"
 ---
 

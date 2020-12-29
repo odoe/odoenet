@@ -3,7 +3,7 @@ title: "Using TypeScript with EsriJS 4"
 published: true
 author: Rene Rubalcava
 date: "2016-05-16"
-tags: geodev
+tags: geodev, typescript
 coverImage: "esrijs-ts-1.png"
 ---
 

@@ -3,7 +3,7 @@ title: "Dojo 2 and Web Components"
 published: true
 author: Rene Rubalcava
 date: "2017-09-28"
-tags: geodev
+tags: geodev, dojo, typescript
 coverImage: "dojo2-comps.jpg"
 ---
 

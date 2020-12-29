@@ -3,7 +3,7 @@ title: "Quick tip: dojo/aspect to dig in"
 published: true
 author: Rene Rubalcava
 date: "2016-01-25"
-tags: geodev
+tags: geodev, dojo
 coverImage: "dojo-aspect.png"
 ---
 

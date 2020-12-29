@@ -3,7 +3,7 @@ title: "A look at Dojo 2"
 published: true
 author: Rene Rubalcava
 date: "2017-04-05"
-tags: geodev
+tags: geodev, dojo, typescript
 coverImage: "lookatdojo2.png"
 ---
 

@@ -3,7 +3,7 @@ title: "TypeScript, Elm and ArcGIS API for JavaScript"
 published: true
 author: Rene Rubalcava
 date: "2015-12-07"
-tags: geodev
+tags: geodev, typescript
 coverImage: "ts-elm-esrijs4.png"
 ---
 

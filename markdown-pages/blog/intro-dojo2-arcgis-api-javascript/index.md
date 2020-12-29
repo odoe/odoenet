@@ -3,7 +3,7 @@ title: "Intro to Dojo2 with ArcGIS API for JavaScript"
 published: true
 author: Rene Rubalcava
 date: "2016-10-11"
-tags: geodev
+tags: geodev, dojo, typescript
 coverImage: "esrijs-dojo2.jpg"
 ---
 

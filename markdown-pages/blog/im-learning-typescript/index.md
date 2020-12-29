@@ -3,7 +3,7 @@ title: "I'm learning TypeScript"
 published: true
 author: Rene Rubalcava
 date: "2015-08-17"
-tags: geodev
+tags: geodev, typescript
 coverImage: "esrijs-ts.png"
 ---
 

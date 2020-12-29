@@ -3,7 +3,7 @@ title: "Trying to learn TypeScript"
 published: true
 author: Rene Rubalcava
 date: "2015-05-04"
-tags: geodev
+tags: geodev, typescript
 coverImage: "esri-ts.png"
 ---
 

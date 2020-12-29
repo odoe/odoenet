@@ -3,7 +3,7 @@ title: "Build apps with the @arcgis/cli"
 published: true
 author: Rene Rubalcava
 date: "2018-06-28"
-tags: geodev
+tags: geodev, typescript
 coverImage: "jsapi-cli.jpg"
 ---
 
