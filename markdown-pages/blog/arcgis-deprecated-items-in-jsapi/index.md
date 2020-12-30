@@ -10,9 +10,9 @@ tags: geodev
 
 ## What are deprecated items
 
-When you build an app on the [ArcGIS Online Platform](https://www.esri.com/en-us/arcgis/products/arcgis-online/overview), you don't only get to use data _you_ publish, but you have access to data shared publicly by others. There's a wealth of awesome curated data in the [Living Atlas](https://livingatlas.arcgis.com/), and it's exciting to have access to everything at your fingertips. However, sometimes, data becomes [deprecated](https://enterprise.arcgis.com/en/portal/latest/use/item-details.htm#ESRI_SECTION3_5B0AA740695F424792447B4D1B600B27) for various reasons, either new data is published as a new item, or whatever. Whatever the reason, when the item is marked as deprecated, when you are using it in an application, it may not always be apparent. If you're lucky, they added `deprecated` to the title. Sometimes, they don't.
+When you build an app on the [ArcGIS Online Platform](https://www.esri.com/en-us/arcgis/products/arcgis-online/overview), you not only get to use data that _you_ publish, but also data _others_ publish. There's a wealth of awesome curated data in the [Living Atlas](https://livingatlas.arcgis.com/), and it's exciting to have access to everything at your fingertips. However, sometimes, data becomes [deprecated](https://enterprise.arcgis.com/en/portal/latest/use/item-details.htm#ESRI_SECTION3_5B0AA740695F424792447B4D1B600B27) for various reasons, either new data is published as a new item, or some other reason unbeknownst to me. Whatever the reason, when the item is marked as deprecated, and you are using it in an application, it would be cool to figure that out. If you're lucky, they added `deprecated` to the title. Sometimes, they don't.
 
-## You can do anything
+## Do what you need to do
 
 First thing you need to know is that when an item has been deprecated, it's added as a tag to the item. That means you can check the [`tags`](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#tags) property of the portal item. Any webmap or layer that was created from a portal item will have a [`.portalItem`](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html) property. That means you can check the tags to see if it's been deprecated.
 
