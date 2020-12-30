@@ -27,6 +27,7 @@ tags: odoe
 * My main machine runs on a [Ryzen 3900x](https://amzn.to/3o1eGP5).
 * Runs on an [Asus X570 TUF](https://amzn.to/38OzmDN) with [32GB Corsair LPX](https://amzn.to/2L60TIq)... could use a RAM upgrade.
 * Video Card is an [MSI 20270 Super](https://amzn.to/3nZh4Wx)... I'll find an AMD 6x or Nvidea 3x series eventually.
+* Rig is housed a [Fractal Design Meshify C](https://amzn.to/2KMTnTc).
 * Use a [LG 27GL850](https://amzn.to/2L60XYG) for gaming and a 34" Acer Ultrawide similar to [this](https://amzn.to/3pDUbbT) for writing code and video editing.
 * Everything sits on this [FEZIBO Standing Desk](https://amzn.to/37PceFH), that I do stand at sometimes.
 
