@@ -24,15 +24,15 @@ tags: odoe
 * For the times I need to tweak some audio files, I use [audacity](https://www.audacityteam.org/).
 
 ## Hardware
-* My main machine runs on a [Ryzen 3900x](https://www.amazon.com/dp/B07SXMZLP9/ref=as_sl_pc_qf_sp_asin_til?tag=odoenet-20&linkCode=w00&linkId=78be3480d84e8d666e867f357dff3da9&creativeASIN=B07SXMZLP9).
-* Runs on an [Asus X570 TUF](https://www.amazon.com/gp/product/B07SXF8GY3/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=odoenet-20&creative=9325&linkCode=as2&creativeASIN=B07SXF8GY3&linkId=95831fd3f5b2d550bf1efa04f6f1c0da) with [32GB Corsair LPX](https://www.amazon.com/gp/product/B016ORTNI2/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=odoenet-20&creative=9325&linkCode=as2&creativeASIN=B016ORTNI2&linkId=dd5231f4cfcfd0a17486a6d192024ded)... could use a RAM upgrade.
-* Video Card is an [MSI 20270 Super](https://www.amazon.com/gp/product/B0856BVRFL/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=odoenet-20&creative=9325&linkCode=as2&creativeASIN=B0856BVRFL&linkId=8f8351a6f4b47665173b51c9cbe86798)... I'll find an AMD 6x or Nvidea 3x series eventually.
-* Use a [LG 27GL850](https://www.amazon.com/gp/product/B07TD94TQF/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=odoenet-20&creative=9325&linkCode=as2&creativeASIN=B07TD94TQF&linkId=dd64b748977493116d71ce364401263a) for gaming and a 34" Acer Ultrawide similar to [this](https://www.amazon.com/gp/product/B07ZL57G3Z/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=odoenet-20&creative=9325&linkCode=as2&creativeASIN=B07ZL57G3Z&linkId=85761d9100ad86313fd2c0d9126a65f9) for writing code and video editing.
+* My main machine runs on a [Ryzen 3900x](https://amzn.to/3o1eGP5).
+* Runs on an [Asus X570 TUF](https://amzn.to/38OzmDN) with [32GB Corsair LPX](https://amzn.to/2L60TIq)... could use a RAM upgrade.
+* Video Card is an [MSI 20270 Super](https://amzn.to/3nZh4Wx)... I'll find an AMD 6x or Nvidea 3x series eventually.
+* Use a [LG 27GL850](https://amzn.to/2L60XYG) for gaming and a 34" Acer Ultrawide similar to [this](https://amzn.to/3pDUbbT) for writing code and video editing.
 * Everything sits on this [FEZIBO Standing Desk](https://amzn.to/37PceFH), that I do stand at sometimes.
 
 ## Recording Gear
-* I use a [Blue Yeti](https://www.amazon.com/gp/product/B00N1YPXW2/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=odoenet-20&creative=9325&linkCode=as2&creativeASIN=B00N1YPXW2&linkId=5b83490c7b49cb956c558786366efa51) mic.
+* I use a [Blue Yeti](https://amzn.to/34WzO1s) mic.
 * Mic sits on a [Heil PL-2T boom](https://amzn.to/37QFegn).
-* A [Logitech C920](https://www.amazon.com/gp/product/B085TFF7M1/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=odoenet-20&creative=9325&linkCode=as2&creativeASIN=B085TFF7M1&linkId=476509bc566c5f5d96815cc30f1cecc8) as the webcam.
+* A [Logitech C920](https://amzn.to/2L96f5G) as the webcam.
 * Webcam even sits on a basic [webcam boom](https://amzn.to/2M2cxVi).
 * I use these [Akai 50X](https://amzn.to/3mQsYkp) headphones while editing.
