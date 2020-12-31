@@ -21,7 +21,7 @@ function doCoolStuff(params: Params, options: OptionsMap) {
 In the case above, I might have a strictly typed `Params`, but the options could vary, so I want to keep them pretty flexible. I use `any` a lot as a placeholder and try to get away from it when I can. A cool option for this is to type a [hashMap](https://adrianmejia.com/data-structures-time-complexity-for-beginners-arrays-hashmaps-linked-lists-stacks-queues-tutorial/#HashMaps).
 
 ```ts
-// simplest HashMap, assume it can take all string values
+// simple HashMap, assume it can take all string or boolean values
 interface OptionsMap { [key: string]: string | boolean }
 
 const options: OptionsMap = {
@@ -35,7 +35,7 @@ Looking at this code, we can type out the options so the values can be either a 
 
 ## Type Happy
 
-You can even be more explicit and type the values to something more concrete.
+You can even be more explicit and type the _values_ to something more concrete.
 
 ```ts
 interface User {
@@ -58,7 +58,7 @@ userMap['bob'] = {
 }
 ```
 
-Here, we've typed our `HashMap` to a generic `T` and only accept values of `T`. This is pretty useful when working with response data or possibly some cache implementation you might build.
+Here, we've typed our `HashMap` to only accept values of `T`. This is pretty useful when working with response data or possibly some cache implementation you might build.
 
 ## You can do more
 
