@@ -25,11 +25,11 @@ const imageminGiflossy = require('imagemin-giflossy');
     //         // do nothing
     //     }
     // }
-    await imagemin([`./assets/blog/arcgis-deprecated-items-in-jsapi/images/*.jpg`], {
-        destination: `./assets/blog/arcgis-deprecated-items-in-jsapi/images/`,
+    await imagemin([`./assets/blog/ts-hashmaps/images/*.{jpg,png}`], {
+        destination: `./assets/blog/ts-hashmaps/images/`,
         plugins: [
             // imageminMozjpeg({quality: 50}),
-            // imageminPngquant({quality: [0.3, 0.5]}),
+            imageminPngquant({quality: [0.3, 0.5]}),
             // imageminGiflossy({lossy: 80}),
             imageminWebp()
         ]
