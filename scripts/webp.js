@@ -25,10 +25,10 @@ const imageminGiflossy = require('imagemin-giflossy');
     //         // do nothing
     //     }
     // }
-    await imagemin([`./assets/blog/ts-hashmaps/images/*.{jpg,png}`], {
-        destination: `./assets/blog/ts-hashmaps/images/`,
+    await imagemin([`./assets/blog/esm-for-arcgis-js-api/images/*.{jpg,png}`], {
+        destination: `./assets/blog/esm-for-arcgis-js-api/images/`,
         plugins: [
-            // imageminMozjpeg({quality: 50}),
+            imageminMozjpeg({quality: 50}),
             imageminPngquant({quality: [0.3, 0.5]}),
             // imageminGiflossy({lossy: 80}),
             imageminWebp()
