@@ -17,8 +17,9 @@ export interface BlogEntry {
 	date: Date;
 }
 
-// In order to not spam people's RSS feed when this goes live, we skip items before May 2019
-const skipItemsBefore = new Date(2019, 4, 1).getTime();
+// In order to not spam people's RSS feed when this goes live, we skip items before May 2020
+const skipItemsBefore = new Date(2020, 4, 1).getTime();
+const date = new Date();
 
 export function createBlogFeed(files: any[]) {
 	const feed = new Feed({
@@ -27,7 +28,7 @@ export function createBlogFeed(files: any[]) {
 		id: 'https://odoe.net',
 		link: 'https://odoe.net',
 		favicon: 'https://odoe.net/favicon.ico',
-		copyright: 'All rights reserved 2020, odoenet',
+		copyright: `All rights reserved ${date.getFullYear()}, odoenet`,
 		feedLinks: {
 			atom: 'https://odoe.net/atom',
 		},

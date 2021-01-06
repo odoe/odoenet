@@ -19,6 +19,7 @@ export default factory(function Embed({ properties }) {
 		<iframe
 			classes={[css.root]}
 			src={`${url}/?${params}`}
+			width="100%"
 			frameborder="0"
 			scrolling="no"
 			allowfullscreen="true"
