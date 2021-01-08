@@ -22,7 +22,7 @@ When I started, it was at version `0.6` I think. At the time, I read this book f
 
 When `1.0` came out, things got crazy!
 
-## AMD
+## Loader
 
 How to load JavaScript files in the browser was one of things that wasn't really standard at this time. [AMD](https://github.com/amdjs/amdjs-api/wiki/AMD) proved to be incredibly powerful. You could load as many files as you want, or _lazy load_ them during runtime!
 
@@ -36,7 +36,47 @@ define(['require', 'tools/tool1'], function(require, tool1) {
 });
 ```
 
-This was powerful stuff. Hell, lots of tools today still pretty much output stuff like this all the time, they just create caches to speed things up.
+This was powerful stuff. Hell, lots of tools today still pretty much output stuff like this all the time.
+
+Dojo had feature detection with `dojo/has`, so you can write code that could support multiple browser implementations, or have code for debug, development, and production.
+
+```js
+if(has("debug-mode")){
+  logger.log(someStatus)
+}
+
+// something like this
+if (has('android-device')) {
+    // code here works on android
+} else if (has('ios')) {
+    // this hack works here
+}
+```
+
+This leads me into another way to do this, with is via loader plugins!
+
+Loader plugins allowed you to do something like this when the module loads.
+
+```js
+define(['dojo/has!device-support?./deviceExtensions'], function(deviceExtensions) {});
+```
+
+This means at runtime, the `dojo/has` loader plugin will do some feature detection and load modules that meet that requirement. This even works for loading text files!
+
+```js
+define(['dojo/text!./templates/Component.html'], function(templateFile) {});
+```
+
+This was amazing at the time. You don't even know.
+
+If this looks familiar to you and you don't know why, it might be because this is how webpack loaders work under the hood. In early versions of webpack, you could do something like this in your applications.
+
+```js
+const textFile = require('text-loader!./template.html');
+```
+
+I don't know the inner workings of webpack, but I still see similar output in the terminal when I do builds, or break something, which happens a lot.
+
 
 ## Dijit
 
