@@ -38,7 +38,7 @@ define(['require', 'tools/tool1'], function(require, tool1) {
 
 This was powerful stuff. Hell, lots of tools today still pretty much output stuff like this all the time.
 
-Dojo had feature detection with `dojo/has`, so you can write code that could support multiple browser implementations, or have code for debug, development, and production.
+Dojo had feature detection with `dojo/has`, so you could support multiple browser implementations, or have code for debug, development, and production.
 
 ```js
 if(has("debug-mode")){
@@ -53,7 +53,7 @@ if (has('android-device')) {
 }
 ```
 
-This leads me into another way to do this, with is via loader plugins!
+This leads me into another way to do this... via loader plugins!
 
 Loader plugins allowed you to do something like this when the module loads.
 
@@ -67,15 +67,17 @@ This means at runtime, the `dojo/has` loader plugin will do some feature detecti
 define(['dojo/text!./templates/Component.html'], function(templateFile) {});
 ```
 
-This was amazing at the time. You don't even know.
+This was amazing at the time. _You don't even know._
 
 If this looks familiar to you and you don't know why, it might be because this is how webpack loaders work under the hood. In early versions of webpack, you could do something like this in your applications.
 
 ```js
+// or similar, I forget exactly
+// but close enough
 const textFile = require('text-loader!./template.html');
 ```
 
-I don't know the inner workings of webpack, but I still see similar output in the terminal when I do builds, or break something, which happens a lot.
+I don't know the inner workings of webpack, but I still see similar output in the terminal when I do builds, or break something, _which happens a lot_.
 
 
 ## Dijit
