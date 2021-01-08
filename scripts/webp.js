@@ -25,8 +25,8 @@ const imageminGiflossy = require('imagemin-giflossy');
     //         // do nothing
     //     }
     // }
-    await imagemin([`./assets/blog/esm-for-arcgis-js-api/images/*.{jpg,png}`], {
-        destination: `./assets/blog/esm-for-arcgis-js-api/images/`,
+    await imagemin([`./assets/blog/remembering-dojo-toolkit/images/*.{jpg,png}`], {
+        destination: `./assets/blog/remembering-dojo-toolkit/images/`,
         plugins: [
             imageminMozjpeg({quality: 50}),
             imageminPngquant({quality: [0.3, 0.5]}),
