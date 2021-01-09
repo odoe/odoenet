@@ -1,5 +1,5 @@
 ---
-title: "Dojo Toolikt was Awesome"
+title: "Dojo Toolkit was Awesome"
 description: "Dojo Toolkit was way ahead of its time, and it was amazing"
 published: true
 author: Rene Rubalcava
