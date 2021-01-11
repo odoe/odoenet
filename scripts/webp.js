@@ -25,8 +25,8 @@ const imageminGiflossy = require('imagemin-giflossy');
     //         // do nothing
     //     }
     // }
-    await imagemin([`./assets/blog/remembering-dojo-toolkit/images/*.{jpg,png}`], {
-        destination: `./assets/blog/remembering-dojo-toolkit/images/`,
+    await imagemin([`./assets/blog/create-react-app/images/*.{jpg,png}`], {
+        destination: `./assets/blog/create-react-app/images/`,
         plugins: [
             imageminMozjpeg({quality: 50}),
             imageminPngquant({quality: [0.3, 0.5]}),
