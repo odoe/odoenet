@@ -33,7 +33,7 @@ It took me a while, but I think I got it.
 
 Assume I had a suite of apps all using the [ArcGIS JSAPI](https://developers.arcgis.com/javascript/). It's a fairly large library that would make a great candidate for module federation.
 
-I would had an `api` project that exposes some utility functions to work with maps.
+I have an `api` project that exposes some utility functions to work with maps.
 
 ```js
 // api/src/index.js
