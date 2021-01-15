@@ -25,12 +25,12 @@ const imageminGiflossy = require('imagemin-giflossy');
     //         // do nothing
     //     }
     // }
-    await imagemin([`./assets/blog/jsapi-sketch-query/images/*.{jpg,png}`], {
-        destination: `./assets/blog/jsapi-sketch-query/images/`,
+    await imagemin([`./assets/blog/webpack-module-federation/images/*.{jpg,png,gif}`], {
+        destination: `./assets/blog/webpack-module-federation/images/`,
         plugins: [
             imageminMozjpeg({quality: 50}),
             imageminPngquant({quality: [0.3, 0.5]}),
-            // imageminGiflossy({lossy: 80}),
+            imageminGiflossy({lossy: 80}),
             imageminWebp()
         ]
     });
