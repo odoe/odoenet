@@ -70,6 +70,9 @@ export const getMetaData = (content: string) => {
 
 // helpers
 export const coverImageHelper = (meta: any, filePath: string) => {
+	if (!meta.url) {
+		meta.url = `https://odoe.net/blog/${filePath}`;
+	}
 	if (!meta.coverImage) {
 		meta.coverImage = `/assets/logo.png`;
 	} else {

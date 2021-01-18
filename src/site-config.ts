@@ -4,6 +4,7 @@ export const meta: SiteMeta = {
 	title: 'odoenet',
 	author: 'Rene Rubalcava',
 	description: 'The odoe network',
+	social: '@odoenet',
 	footerLinks: [
 		{
 			href: 'https://odoe.net/atom.xml',
