@@ -14,6 +14,9 @@ export default async function compile({ page, path }: { page: string; path: stri
 		return null;
 	}
 	const meta = getMetaData(file);
+	if (!meta.url && page !== 'home') {
+		meta.url = `https://odoe.net/${page}`;
+	}
 	if (!meta.coverImage) {
 		meta.coverImage = `/assets/logo.png`;
 	} else {

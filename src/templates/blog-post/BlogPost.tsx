@@ -9,6 +9,8 @@ import Article from '../../widgets/article/Article';
 
 import { dateFormatter } from '../../utils/formatter';
 
+import { meta } from '../../site-config';
+
 import * as css from './BlogPost.m.css';
 
 export interface PostProperties {
@@ -31,8 +33,22 @@ export default factory(({ middleware: { block }, properties }) => {
 		return (
 			<section classes={[css.root]}>
 				<head>
-					<title>{post.meta.title}</title>
+					<meta name="title" content={post.meta.title} />
 					<meta name="description" content={post.meta.description} />
+
+					<meta property="og:type" content="website" />
+					<meta property="og:url" content={post.meta.url} />
+					<meta property="og:title" content={post.meta.title} />
+					<meta property="og:description" content={post.meta.description} />
+					<meta property="og:image" content={post.meta.coverImage} />
+
+					<meta property="twitter:card" content="summary_large_image" />
+					<meta property="twitter:url" content={post.meta.url} />
+					<meta property="twitter:title" content={post.meta.title} />
+					<meta property="twitter:description" content={post.meta.description} />
+					<meta property="twitter:creator" content={meta.social} />
+					<meta property="twitter:image" content={post.meta.coverImage} />
+					<title>{post.meta.title}</title>
 				</head>
 				{post.meta.coverImage ? (
 					<picture>
