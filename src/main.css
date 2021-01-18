@@ -52,6 +52,16 @@ pre[class*=language-] {
 	display: block;
 }
 
+/* line-code, no pre */
+
+:not(pre) > code {
+	background: #2b2b2b;
+	color: #abe338;
+	border-radius: 0.5em;
+	padding: 0.25em;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+}
+
 /**
  * a11y-dark theme for JavaScript, CSS, and HTML
  * Based on the okaidia theme: https://github.com/PrismJS/prism/blob/gh-pages/themes/prism-okaidia.css

@@ -25,8 +25,8 @@ const imageminGiflossy = require('imagemin-giflossy');
     //         // do nothing
     //     }
     // }
-    await imagemin([`./assets/blog/webpack-module-federation/images/*.{jpg,png,gif}`], {
-        destination: `./assets/blog/webpack-module-federation/images/`,
+    await imagemin([`./assets/blog/jsapi-node/images/*.{jpg,png,gif}`], {
+        destination: `./assets/blog/jsapi-node/images/`,
         plugins: [
             imageminMozjpeg({quality: 50}),
             imageminPngquant({quality: [0.3, 0.5]}),
