@@ -7,31 +7,31 @@ const imageminPngquant = require('imagemin-pngquant');
 const imageminGiflossy = require('imagemin-giflossy');
 
 (async () => {
-    // const files = await fs.promises.readdir('./assets/blog');
-    // for (let file of files) {
-    //     console.log(file)
-    //     try {
-    //         await imagemin([`./assets/blog/${file}/images/*.{jpg,png,gif}`], {
-    //             destination: `./assets/blog/${file}/images/`,
-    //             plugins: [
-    //                 // imageminMozjpeg({quality: 50}),
-    //                 // imageminPngquant({quality: [0.3, 0.5]}),
-    //                 // imageminGiflossy({lossy: 60}),
-    //                 imageminWebp()
-    //             ]
-    //         });
-    //         console.log('Images converted successfully');
-    //     } catch(err) {
-    //         // do nothing
-    //     }
-    // }
-    await imagemin([`./assets/blog/jsapi-node/images/*.{jpg,png,gif}`], {
-        destination: `./assets/blog/jsapi-node/images/`,
-        plugins: [
-            imageminMozjpeg({quality: 50}),
-            imageminPngquant({quality: [0.3, 0.5]}),
-            imageminGiflossy({lossy: 80}),
-            imageminWebp()
-        ]
-    });
+	// const files = await fs.promises.readdir('./assets/blog');
+	// for (let file of files) {
+	//     console.log(file)
+	//     try {
+	//         await imagemin([`./assets/blog/${file}/images/*.{jpg,png,gif}`], {
+	//             destination: `./assets/blog/${file}/images/`,
+	//             plugins: [
+	//                 // imageminMozjpeg({quality: 50}),
+	//                 // imageminPngquant({quality: [0.3, 0.5]}),
+	//                 // imageminGiflossy({lossy: 60}),
+	//                 imageminWebp()
+	//             ]
+	//         });
+	//         console.log('Images converted successfully');
+	//     } catch(err) {
+	//         // do nothing
+	//     }
+	// }
+	await imagemin([`./assets/blog/typescript-babel/images/*.{jpg,png,gif}`], {
+		destination: `./assets/blog/typescript-babel/images/`,
+		plugins: [
+			imageminMozjpeg({ quality: 50 }),
+			imageminPngquant({ quality: [0.3, 0.5] }),
+			imageminGiflossy({ lossy: 80 }),
+			imageminWebp(),
+		],
+	});
 })();
