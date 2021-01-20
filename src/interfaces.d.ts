@@ -10,6 +10,7 @@ export interface SiteMeta {
 	author: string;
 	social: string;
 	footerLinks: FooterLink[];
+	rootUrl: string;
 }
 export interface AppProperties {
 	siteMeta: SiteMeta;

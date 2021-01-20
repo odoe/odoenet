@@ -24,7 +24,7 @@ export default factory(({ middleware: { block }, properties }) => {
 	if (!path.includes('.md')) {
 		path = `${path}/index.md`;
 	}
-	const post: any = block(compile)({
+	const post = block(compile)({
 		path,
 	});
 
@@ -47,7 +47,7 @@ export default factory(({ middleware: { block }, properties }) => {
 					<meta property="twitter:title" content={post.meta.title} />
 					<meta property="twitter:description" content={post.meta.description} />
 					<meta property="twitter:creator" content={meta.social} />
-					<meta property="twitter:image" content={post.meta.coverImage} />
+					<meta property="twitter:image" content={`${meta.rootUrl}${post.meta.coverImage}`} />
 					<title>{post.meta.title}</title>
 				</head>
 				{post.meta.coverImage ? (

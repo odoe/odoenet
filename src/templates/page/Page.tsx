@@ -6,16 +6,16 @@ import compile from '../../blocks/compile.block';
 import * as css from './Page.m.css';
 
 interface PageProperties {
-    page: string;
-    path?: string;
-    showCoverImage?: boolean;
+	page: string;
+	path?: string;
+	showCoverImage?: boolean;
 }
 
 const factory = create({ block }).properties<PageProperties>();
 
 export default factory(function Page({ middleware: { block }, properties }) {
-    const { page, path = 'index.md', showCoverImage } = properties();
-	const data: any = block(compile)({ page, path });
+	const { page, path = 'index.md', showCoverImage } = properties();
+	const data = block(compile)({ page, path });
 
 	if (data) {
 		return (
