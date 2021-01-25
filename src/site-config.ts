@@ -35,6 +35,7 @@ export const meta: SiteMeta = {
 
 // remark plugins with options
 export const remarkPlugins = [
+	'remark-gfm',
 	'remark-slug',
 	{
 		resolve: 'remark-external-links',

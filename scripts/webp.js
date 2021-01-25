@@ -25,8 +25,8 @@ const imageminGiflossy = require('imagemin-giflossy');
 	//         // do nothing
 	//     }
 	// }
-	await imagemin([`./assets/blog/typescript-babel/images/*.{jpg,png,gif}`], {
-		destination: `./assets/blog/typescript-babel/images/`,
+	await imagemin([`./assets/blog/layer-effects/images/*.{jpg,png,gif}`], {
+		destination: `./assets/blog/layer-effects/images/`,
 		plugins: [
 			imageminMozjpeg({ quality: 50 }),
 			imageminPngquant({ quality: [0.3, 0.5] }),

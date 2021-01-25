@@ -52,6 +52,7 @@
 		"rehype-raw": "^5.0.0",
 		"remark-external-links": "8.0.0",
 		"remark-frontmatter": "3.0.0",
+		"remark-gfm": "^1.0.0",
 		"remark-iframes": "4.0.4",
 		"remark-parse": "9.0.0",
 		"remark-parse-yaml": "0.0.3",
