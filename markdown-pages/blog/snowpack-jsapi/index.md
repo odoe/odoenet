@@ -51,7 +51,7 @@ module.exports = {
     }
 };
 ```
-That's some pretty minima configuration for an application. Basically, we're telling Snowpack that our assets folder is static, so please do not try to bundle any code in there. _Do not touch_. I also set up the `src` folder as the root for my application.
+That's some minimal configuration for an application. Basically, we're telling Snowpack that our assets folder is static, so please do not try to bundle any code in there. _Do not touch_. I also set up the `src` folder as the root for my application.
 
 At this point, I need to do _one more thing_. I need to set some [`browser`](https://docs.npmjs.com/cli/v6/configuring-npm/package-json#browser) config in my `package.json`.
 
