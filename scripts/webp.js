@@ -25,8 +25,8 @@ const imageminGiflossy = require('imagemin-giflossy');
 	//         // do nothing
 	//     }
 	// }
-	await imagemin([`./assets/blog/layer-effects/images/*.{jpg,png,gif}`], {
-		destination: `./assets/blog/layer-effects/images/`,
+	await imagemin([`./assets/blog/snowpack-jsapi/images/*.{jpg,png,gif}`], {
+		destination: `./assets/blog/snowpack-jsapi/images/`,
 		plugins: [
 			imageminMozjpeg({ quality: 50 }),
 			imageminPngquant({ quality: [0.3, 0.5] }),

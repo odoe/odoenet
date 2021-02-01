@@ -20,11 +20,14 @@ const factory = create().properties<CardProperties>();
 export default factory(({ properties }) => {
 	const { title, date, description, path, coverImage, tags = '' } = properties();
 	const key = `post-${title.replace(' ', '-')}`;
-	const taglist = tags.split(',').map(a => a.trim());
-	const tagitems = taglist.sort().map(a => ({
-		tag: a,
-		img: tagImage(a)
-	})).filter(a => Boolean(a.img));
+	const taglist = tags.split(',').map((a) => a.trim());
+	const tagitems = taglist
+		.sort()
+		.map((a) => ({
+			tag: a,
+			img: tagImage(a),
+		}))
+		.filter((a) => Boolean(a.img));
 	return (
 		<section classes={[css.root]} key={key}>
 			<div classes={[css.column]}>
@@ -52,11 +55,9 @@ export default factory(({ properties }) => {
 						</span>
 					</div>
 					<div classes={[css.tags]}>
-							{
-								tagitems.map(a => (
-									<img classes={[css.tag]} src={a.img} alt={a.tag} title={a.tag} />
-								))
-							}
+						{tagitems.map((a) => (
+							<img classes={[css.tag]} src={a.img} alt={a.tag} title={a.tag} />
+						))}
 					</div>
 				</Link>
 			</div>
@@ -67,11 +68,11 @@ export default factory(({ properties }) => {
 function tagImage(type: string) {
 	if (type === 'geodev') {
 		return './assets/images/logos/globe-icon.png';
-	}
-	else if (type === 'typescript') {
+	} else if (type === 'typescript') {
 		return './assets/images/logos/ts-logo.png';
-	}
-	else if (type === 'dojo') {
+	} else if (type === 'javascript') {
+		return './assets/images/logos/js-logo.png';
+	} else if (type === 'dojo') {
 		return './assets/images/logos/dojo-logo.png';
 	}
 }
