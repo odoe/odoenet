@@ -5,7 +5,7 @@ import { Feed } from 'feed';
 import { join } from 'path';
 import { outputFileSync } from 'fs-extra';
 
-const outputDirectory = join(__dirname, '../../output/dist');
+const outputDirectory = join(__dirname, '../../assets');
 
 export interface BlogEntry {
 	title: string;
