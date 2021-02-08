@@ -4,7 +4,7 @@ description: "Using the ESM CDN for the ArcGIS API for JavaScript"
 published: true
 author: Rene Rubalcava
 date: 2021-02-08T10:00:00.000Z
-coverImage: "cover.jpg"
+coverImage: "cover.png"
 tags: geodev, javascript
 ---
 
@@ -12,7 +12,7 @@ The latest version of the [ArcGIS API for JavaScript](https://developers.arcgis.
 
 Another option in using the API is via the [ESM CDN](https://developers.arcgis.com/javascript/latest/install-and-set-up/#es-modules-via-cdn).
 
-> Before I dive in, let's be very clear. This should only be used for prototyping purposes. Test out some ideas, demo them, then take those ideas and build a production app in webpack or something. Please. Lisen to me.
+> Before I dive in, let's be very clear. This should only be used for prototyping purposes. Test out some ideas, demo them, then take those ideas and build a production app in webpack or something. Please. Listen to me.
 
 Ok, so [ES Modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) can be used across [all the browsers that count](https://caniuse.com/es6-module). You can use them by add a script tag with a type of module.
 
@@ -51,4 +51,6 @@ Notice that you import the `.js` files using ESM natively. And you can load them
 
 This is a great way to test stuff out. Now, why would you not want to use this for production? Because this sample app loads over 400 JavaScript files. It's unbuilt, unoptimized code. When built as a production application, it's only a handful of files. But it's a great way to get familiar with the API! You can check out a demo of this project [here](https://glitch.com/edit/#!/gregarious-proud-marshmallow).
 
+You can check out a video with more detail below!
 
+<iframe width="100%" height="350" src="https://www.youtube.com/embed/1cIG5MMUFs0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

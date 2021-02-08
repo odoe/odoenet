@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://odoe.net</id>
+    <title>odoenet</title>
+    <updated>2021-02-08T04:25:03.199Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <author>
+        <name>Rene Rubalcava</name>
+    </author>
+    <link rel="alternate" href="https://odoe.net"/>
+    <link rel="self" href="https://odoe.net/atom"/>
+    <subtitle>odoe network</subtitle>
+    <icon>https://odoe.net/favicon.ico</icon>
+    <rights>All rights reserved 2021, odoenet</rights>
+    <entry>
+        <title type="html"><![CDATA[Identify Deprecated Items with ArcGIS JSAPI]]></title>
+        <id>https://odoe.net/blog/arcgis-deprecated-items-in-jsapi</id>
+        <link href="https://odoe.net/blog/arcgis-deprecated-items-in-jsapi"/>
+        <updated>2020-12-30T12:00:00.000Z</updated>
+        <summary type="html"><![CDATA[You might want to let users of your applications know if a layer in the application has been deprecated. I'll show you how.]]></summary>
+        <author>
+            <name>Rene Rubalcava</name>
+        </author>
+        <published>2020-12-30T12:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ArcGIS ESM with create-react-app]]></title>
+        <id>https://odoe.net/blog/create-react-app</id>
+        <link href="https://odoe.net/blog/create-react-app"/>
+        <updated>2021-01-11T10:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The ArcGIS ESM build is perfect for integrating with create-react-app]]></summary>
+        <author>
+            <name>Rene Rubalcava</name>
+        </author>
+        <published>2021-01-11T10:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ArcGIS JSAPI ESM CDN]]></title>
+        <id>https://odoe.net/blog/esm-cdn</id>
+        <link href="https://odoe.net/blog/esm-cdn"/>
+        <updated>2021-02-08T10:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Using the ESM CDN for the ArcGIS API for JavaScript]]></summary>
+        <author>
+            <name>Rene Rubalcava</name>
+        </author>
+        <published>2021-02-08T10:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Using ES Modules with the ArcGIS JSAPI]]></title>
+        <id>https://odoe.net/blog/esm-for-arcgis-js-api</id>
+        <link href="https://odoe.net/blog/esm-for-arcgis-js-api"/>
+        <updated>2021-01-05T12:00:00.000Z</updated>
+        <summary type="html"><![CDATA[ES Modules allow you to quickly add the ArcGIS JS API to your modern JavaScript apps]]></summary>
+        <author>
+            <name>Rene Rubalcava</name>
+        </author>
+        <published>2021-01-05T12:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Using Node with ArcGIS JSAPI]]></title>
+        <id>https://odoe.net/blog/jsapi-node</id>
+        <link href="https://odoe.net/blog/jsapi-node"/>
+        <updated>2021-01-18T10:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Node works with some part of the ArcGIS JSAPI, not everything, but the useful parts do!]]></summary>
+        <author>
+            <name>Rene Rubalcava</name>
+        </author>
+        <published>2021-01-18T10:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Sketch and Query]]></title>
+        <id>https://odoe.net/blog/jsapi-sketch-query</id>
+        <link href="https://odoe.net/blog/jsapi-sketch-query"/>
+        <updated>2021-01-13T10:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Check out how you can use the ArcGIS JSAPI Sketch Widget to help you perform queries in your apps!]]></summary>
+        <author>
+            <name>Rene Rubalcava</name>
+        </author>
+        <published>2021-01-13T10:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Layer Effects in ArcGIS]]></title>
+        <id>https://odoe.net/blog/layer-effects</id>
+        <link href="https://odoe.net/blog/layer-effects"/>
+        <updated>2021-01-25T10:00:00.000Z</updated>
+        <summary type="html"><![CDATA[You can do some amazing visualizations in ArcGIS JSAPI with Layer Effects]]></summary>
+        <author>
+            <name>Rene Rubalcava</name>
+        </author>
+        <published>2021-01-25T10:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[New Site, Who Dis?]]></title>
+        <id>https://odoe.net/blog/new-site</id>
+        <link href="https://odoe.net/blog/new-site"/>
+        <updated>2020-12-29T12:00:00.000Z</updated>
+        <author>
+            <name>Rene Rubalcava</name>
+        </author>
+        <published>2020-12-29T12:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Dojo Toolkit was Awesome]]></title>
+        <id>https://odoe.net/blog/remembering-dojo-toolkit</id>
+        <link href="https://odoe.net/blog/remembering-dojo-toolkit"/>
+        <updated>2021-01-08T12:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Dojo Toolkit was way ahead of its time, and it was amazing]]></summary>
+        <author>
+            <name>Rene Rubalcava</name>
+        </author>
+        <published>2021-01-08T12:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Snowpack with the ArcGIS JSAPI]]></title>
+        <id>https://odoe.net/blog/snowpack-jsapi</id>
+        <link href="https://odoe.net/blog/snowpack-jsapi"/>
+        <updated>2021-02-01T10:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Snowpack is a great tool for building apps, especially the ArcGIS JSAPI]]></summary>
+        <author>
+            <name>Rene Rubalcava</name>
+        </author>
+        <published>2021-02-01T10:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Type Your HashMaps with TypeScript]]></title>
+        <id>https://odoe.net/blog/ts-hashmaps</id>
+        <link href="https://odoe.net/blog/ts-hashmaps"/>
+        <updated>2020-12-31T12:00:00.000Z</updated>
+        <summary type="html"><![CDATA[It's tempting to just use any when working with HashMaps in TypeScript, but we can do better]]></summary>
+        <author>
+            <name>Rene Rubalcava</name>
+        </author>
+        <published>2020-12-31T12:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Compile TypeScript with Babel]]></title>
+        <id>https://odoe.net/blog/typescript-babel</id>
+        <link href="https://odoe.net/blog/typescript-babel"/>
+        <updated>2021-01-20T10:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Do you like Babel? Do you like TypeScript? Have I got news for you!]]></summary>
+        <author>
+            <name>Rene Rubalcava</name>
+        </author>
+        <published>2021-01-20T10:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Module Federation in webpack]]></title>
+        <id>https://odoe.net/blog/webpack-module-federation</id>
+        <link href="https://odoe.net/blog/webpack-module-federation"/>
+        <updated>2021-01-15T10:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Module federation is a way you can implement code sharing in your apps]]></summary>
+        <author>
+            <name>Rene Rubalcava</name>
+        </author>
+        <published>2021-01-15T10:00:00.000Z</published>
+    </entry>
+</feed>
