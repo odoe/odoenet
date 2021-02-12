@@ -40,7 +40,7 @@ export default factory(({ middleware: { block }, properties }) => {
 					<meta property="og:url" content={post.meta.url} />
 					<meta property="og:title" content={post.meta.title} />
 					<meta property="og:description" content={post.meta.description} />
-					<meta property="og:image" content={post.meta.coverImage} />
+					<meta property="og:image" content={`${meta.rootUrl}${post.meta.coverImage}`} />
 
 					<meta property="twitter:card" content="summary_large_image" />
 					<meta property="twitter:url" content={post.meta.url} />
@@ -48,12 +48,22 @@ export default factory(({ middleware: { block }, properties }) => {
 					<meta property="twitter:description" content={post.meta.description} />
 					<meta property="twitter:creator" content={meta.social} />
 					<meta property="twitter:image" content={`${meta.rootUrl}${post.meta.coverImage}`} />
+
+					<link
+						rel="alternate"
+						type="application/rss+xml"
+						title="odoe.net"
+						href="https://odoe.net/atom.xml"
+					></link>
 					<title>{post.meta.title}</title>
 				</head>
 				{post.meta.coverImage ? (
 					<picture>
-						<source type="image/webp" srcset={post.meta.coverImage.replace(/\.(jpg|png)/, '.webp')} />
-						<source type="image/jpeg" srcset={post.meta.coverImage} />
+						<source
+							type="image/webp"
+							srcset={`${meta.rootUrl}${post.meta.coverImage.replace(/\.(jpg|png)/, '.webp')}`}
+						/>
+						<source type="image/jpeg" srcset={`${meta.rootUrl}${post.meta.coverImage}`} />
 						<img
 							src={post.meta.coverImage}
 							key={`cover-image-${post.meta.title}`}
