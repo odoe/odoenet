@@ -54,6 +54,9 @@ export default factory(({ properties }) => {
 				{`Last build: ${buildTime}`}
 			</span>
 			<br />
+			<a href="https://donate.cipherdogs.net/?address=49FdUbruv6F5otJqapanaJcoLLoosDyoL5gs7XavTATmZGAKb6j2neUNbQ1o1SuXtpZisd4GZ8scRDvwbbMHzPtKSMyH8rz">
+				<img height="100" width="100" src="https://donate.cipherdogs.net//img/monero.png" />
+			</a>
 		</footer>
 	);
 });
