@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://odoe.net</id>
     <title>odoenet</title>
-    <updated>2021-02-08T04:25:03.199Z</updated>
+    <updated>2021-02-12T17:14:20.791Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Rene Rubalcava</name>
@@ -12,6 +12,17 @@
     <subtitle>odoe network</subtitle>
     <icon>https://odoe.net/favicon.ico</icon>
     <rights>All rights reserved 2021, odoenet</rights>
+    <entry>
+        <title type="html"><![CDATA[ArcGIS API Keys for JSAPI]]></title>
+        <id>https://odoe.net/blog/api-keys</id>
+        <link href="https://odoe.net/blog/api-keys"/>
+        <updated>2021-02-12T10:00:00.000Z</updated>
+        <summary type="html"><![CDATA[How to use API keys in your ArcGIS JSAPI apps]]></summary>
+        <author>
+            <name>Rene Rubalcava</name>
+        </author>
+        <published>2021-02-12T10:00:00.000Z</published>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Identify Deprecated Items with ArcGIS JSAPI]]></title>
         <id>https://odoe.net/blog/arcgis-deprecated-items-in-jsapi</id>

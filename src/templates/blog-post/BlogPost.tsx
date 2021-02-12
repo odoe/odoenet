@@ -40,7 +40,7 @@ export default factory(({ middleware: { block }, properties }) => {
 					<meta property="og:url" content={post.meta.url} />
 					<meta property="og:title" content={post.meta.title} />
 					<meta property="og:description" content={post.meta.description} />
-					<meta property="og:image" content={post.meta.coverImage} />
+					<meta property="og:image" content={`${meta.rootUrl}${post.meta.coverImage}`} />
 
 					<meta property="twitter:card" content="summary_large_image" />
 					<meta property="twitter:url" content={post.meta.url} />

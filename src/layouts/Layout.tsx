@@ -25,6 +25,12 @@ export default factory(({ children, properties }) => {
 					href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap"
 					rel="stylesheet"
 				/>
+				<link
+					rel="alternate"
+					type="application/rss+xml"
+					title="odoe.net"
+					href="https://odoe.net/atom.xml"
+				></link>
 			</head>
 			<Header title={title} />
 			<div classes={[css.root]}>
