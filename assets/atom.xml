@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://odoe.net</id>
     <title>odoenet</title>
-    <updated>2021-02-12T20:04:00.505Z</updated>
+    <updated>2021-02-17T20:58:52.090Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Rene Rubalcava</name>
@@ -66,6 +66,17 @@
             <name>Rene Rubalcava</name>
         </author>
         <published>2021-01-05T12:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Clustering in ArcGIS JSAPI]]></title>
+        <id>https://odoe.net/blog/jsapi-clustering</id>
+        <link href="https://odoe.net/blog/jsapi-clustering"/>
+        <updated>2021-02-17T10:00:00.000Z</updated>
+        <summary type="html"><![CDATA[You can control how you want to cluster and how query your clusters in your apps!]]></summary>
+        <author>
+            <name>Rene Rubalcava</name>
+        </author>
+        <published>2021-02-17T10:00:00.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[Using Node with ArcGIS JSAPI]]></title>
