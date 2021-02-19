@@ -25,8 +25,8 @@ const imageminGiflossy = require('imagemin-giflossy');
 	//         // do nothing
 	//     }
 	// }
-	await imagemin([`./assets/blog/jsapi-clustering/images/*.{jpg,png,gif}`], {
-		destination: `./assets/blog/jsapi-clustering/images/`,
+	await imagemin([`./assets/blog/fun-with-search/images/*.{jpg,png,gif}`], {
+		destination: `./assets/blog/fun-with-search/images/`,
 		plugins: [
 			imageminMozjpeg({ quality: 50 }),
 			imageminPngquant({ quality: [0.3, 0.5] }),

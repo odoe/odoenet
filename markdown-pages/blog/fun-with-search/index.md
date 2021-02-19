@@ -52,3 +52,19 @@ const search = new Search({
 ```
 
 Now, the Search widget can search the FeatureLayer using the Email and URL fields. This is really useful to add quick search capabilities for layers into your application. Like I said, the Search widget is chock full of goodness! You can even provide [custom sources](https://developers.arcgis.com/javascript/latest/sample-code/widgets-search-customsource/) for your widget, so you're not limited to geocoders and layers. But that's a topic for another time!
+
+## Overrides
+
+Another trick you can do is override the behavior for how the widget will zoom to a search result. You can do this via [goToOverride](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#goToOverride). This allows you to change the easing function, duration, maybe buffer the point, or whatever other crazy ideas you might have. Maybe you want to disable it altogether!
+
+```js
+const searchWidget = new Search({
+    view,
+    // no more zoom
+    goToOverride: () => null
+});
+```
+
+You can view more details in this video!
+
+<iframe width="100%" height="350" src="https://www.youtube.com/embed/f8cNv77nJTQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
