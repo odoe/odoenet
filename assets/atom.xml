@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://odoe.net</id>
     <title>odoenet</title>
-    <updated>2021-02-19T19:57:55.762Z</updated>
+    <updated>2021-02-22T19:34:31.950Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Rene Rubalcava</name>
@@ -175,6 +175,17 @@
             <name>Rene Rubalcava</name>
         </author>
         <published>2021-01-20T10:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Who watches the WatchUtils]]></title>
+        <id>https://odoe.net/blog/watchutils</id>
+        <link href="https://odoe.net/blog/watchutils"/>
+        <updated>2021-02-22T10:00:00.000Z</updated>
+        <summary type="html"><![CDATA[WatchUtils are a key feature of working with ArcGIS JSAPI]]></summary>
+        <author>
+            <name>Rene Rubalcava</name>
+        </author>
+        <published>2021-02-22T10:00:00.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[Module Federation in webpack]]></title>
