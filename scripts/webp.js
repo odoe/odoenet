@@ -25,8 +25,8 @@ const imageminGiflossy = require('imagemin-giflossy');
 	//         // do nothing
 	//     }
 	// }
-	await imagemin([`./assets/blog/fun-with-search/images/*.{jpg,png,gif}`], {
-		destination: `./assets/blog/fun-with-search/images/`,
+	await imagemin([`./assets/blog/watchutils/images/*.{jpg,png,gif}`], {
+		destination: `./assets/blog/watchutils/images/`,
 		plugins: [
 			imageminMozjpeg({ quality: 50 }),
 			imageminPngquant({ quality: [0.3, 0.5] }),
