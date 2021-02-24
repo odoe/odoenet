@@ -25,8 +25,8 @@ const imageminGiflossy = require('imagemin-giflossy');
 	//         // do nothing
 	//     }
 	// }
-	await imagemin([`./assets/blog/watchutils/images/*.{jpg,png,gif}`], {
-		destination: `./assets/blog/watchutils/images/`,
+	await imagemin([`./assets/blog/abortsignal/images/*.{jpg,png,gif}`], {
+		destination: `./assets/blog/abortsignal/images/`,
 		plugins: [
 			imageminMozjpeg({ quality: 50 }),
 			imageminPngquant({ quality: [0.3, 0.5] }),

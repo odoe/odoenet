@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://odoe.net</id>
     <title>odoenet</title>
-    <updated>2021-02-22T19:34:31.950Z</updated>
+    <updated>2021-02-24T16:51:39.438Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Rene Rubalcava</name>
@@ -12,6 +12,17 @@
     <subtitle>odoe network</subtitle>
     <icon>https://odoe.net/favicon.ico</icon>
     <rights>All rights reserved 2021, odoenet</rights>
+    <entry>
+        <title type="html"><![CDATA[Stop what you're doing]]></title>
+        <id>https://odoe.net/blog/abortsignal</id>
+        <link href="https://odoe.net/blog/abortsignal"/>
+        <updated>2021-02-24T10:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Use AbortSignal to cancel requests in the ArcGIS JSAPI]]></summary>
+        <author>
+            <name>Rene Rubalcava</name>
+        </author>
+        <published>2021-02-24T10:00:00.000Z</published>
+    </entry>
     <entry>
         <title type="html"><![CDATA[ArcGIS API Keys for JSAPI]]></title>
         <id>https://odoe.net/blog/api-keys</id>
