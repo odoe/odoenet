@@ -36,11 +36,11 @@ asyncMethod(signal);
 controller.abort();
 ```
 
-This is a simplistic example, but gives you an idea about how you could do it.
+This is a really simplistic example, but gives you an idea about how it could be used.
 
 ## Supported in the ArcGIS JSAPI
 
-If you look at the documentation for the `request` in the ArcGIS JSAPI, you'll see that it has an option to pass a [signal](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions). This means you can cancel any requests you make. This signal can be passed in the options to any of the query methods in the API, like [`queryFeatures`](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#queryFeatures). That signal will get passed down to the request and if you abort the signal before the request is done, it will essentially cancel the request via a rejected Promise.
+If you look at the documentation for the `request` in the ArcGIS JSAPI, you'll see that it has an option to pass a [signal](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions). This means you can cancel any requests you make. This signal can be passed in the options to any of the query methods in the API, like [`queryFeatures`](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#queryFeatures). That signal will get passed down to the request and if you abort the signal before the request is done, it will essentially cancel the request via a rejected Promise. The native [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) API also takes a signal that will reject if the signal is aborted.
 
 ```js
 const controller = new AbortController();
