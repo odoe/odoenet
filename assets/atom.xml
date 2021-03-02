@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://odoe.net</id>
     <title>odoenet</title>
-    <updated>2021-02-24T16:51:39.438Z</updated>
+    <updated>2021-03-02T00:22:27.764Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Rene Rubalcava</name>
@@ -186,6 +186,17 @@
             <name>Rene Rubalcava</name>
         </author>
         <published>2021-01-20T10:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Vite with ArcGIS]]></title>
+        <id>https://odoe.net/blog/vite-jsapi</id>
+        <link href="https://odoe.net/blog/vite-jsapi"/>
+        <updated>2021-03-02T10:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Using Vite with the ArcGIS JSAPI]]></summary>
+        <author>
+            <name>Rene Rubalcava</name>
+        </author>
+        <published>2021-03-02T10:00:00.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[Who watches the WatchUtils]]></title>
