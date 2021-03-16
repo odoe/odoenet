@@ -25,8 +25,8 @@ const imageminGiflossy = require('imagemin-giflossy');
 	//         // do nothing
 	//     }
 	// }
-	await imagemin([`./assets/blog/vite-jsapi/images/*.{jpg,png,gif}`], {
-		destination: `./assets/blog/vite-jsapi/images/`,
+	await imagemin([`./assets/blog/highlight-features/images/*.{jpg,png,gif}`], {
+		destination: `./assets/blog/highlight-features/images/`,
 		plugins: [
 			imageminMozjpeg({ quality: 50 }),
 			imageminPngquant({ quality: [0.3, 0.5] }),

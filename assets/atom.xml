@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://odoe.net</id>
     <title>odoenet</title>
-    <updated>2021-03-02T00:22:27.764Z</updated>
+    <updated>2021-03-16T17:14:14.448Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Rene Rubalcava</name>
@@ -88,6 +88,17 @@
             <name>Rene Rubalcava</name>
         </author>
         <published>2021-02-19T10:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Highlighting Features]]></title>
+        <id>https://odoe.net/blog/highlight-features</id>
+        <link href="https://odoe.net/blog/highlight-features"/>
+        <updated>2021-03-16T10:00:00.000Z</updated>
+        <summary type="html"><![CDATA[How to use the highlight to create interactive apps]]></summary>
+        <author>
+            <name>Rene Rubalcava</name>
+        </author>
+        <published>2021-03-16T10:00:00.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[Clustering in ArcGIS JSAPI]]></title>
