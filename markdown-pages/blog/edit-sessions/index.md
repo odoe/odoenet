@@ -8,15 +8,15 @@ coverImage: "cover.jpg"
 tags: geodev, javascript
 ---
 
-## Faced with a challenge
+## Show me the edits
 
-The ArcGIS API for JavaScript comes with an [Editor widget](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html) you can use out of the box. It works with any layer that supports editing. This makes building an application that supports editing pretty easy. What you need to understand with the Editor widget is that it applies the edits immediately.
+The ArcGIS API for JavaScript comes with an [Editor widget](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html) you can use out of the box. It works with any layer that supports editing. This makes building an application that supports editing pretty easy. When using the Editor widget, edits are applied immediately. This is by design, and works pretty well.
 
-One thing you might want to try is create an edit session. This means you do a few edits in the client first before you push them all at once to your layer. The Editor widget doesn't do this and there is no built-in mechanism on the API for this. There's a good reason for this. _It's complicated_.
+One thing you might be tasked to do is create an edit session. This means you do a few edits in the client first before you push them all at once to your layer. The Editor widget doesn't do this and there is no built-in mechanism in the API for this. There's a good reason for that. _It's complicated_.
 
-## Don't do this
+## Use at your own risk
 
-Requirements can vary at times, so the ArcGIS JSAPI is flexible enough to meet those needs.You can use the [applyEdits](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html) of the layer to build out your own editing workflow. The idea here is to perform your initial edits on a clientside layer. Once you've completed the clientside edits, you can then push them to the source layer. There's a few problems that could arise from this.
+Project requirements can vary at times, so the ArcGIS JSAPI is flexible enough to meet those needs. You can use the [applyEdits](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html) of the layer to build out your own editing workflow. The idea here is to perform your initial edits on a clientside layer. Once you've completed the clientside edits, you can then push them to the source layer. There's a few problems that could arise from this.
 
 * How do you handle conflicts when multiple editors are editing the same data?
 * What do you do if you want to undo edits in a session?
