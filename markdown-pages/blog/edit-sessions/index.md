@@ -74,7 +74,7 @@ const editor = new Editor({
 
 That's a really useful feature of the Editor widget, it is highly configurable. That's amazing right!
 
-Now what I want to do is populate the clientside static copy of my layer.
+Now what I want to do is populate the clientside copy of my layer.
 
 ```js
 whenFalse(layerView, "updating", async () => {
