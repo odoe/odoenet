@@ -25,8 +25,8 @@ const imageminGiflossy = require('imagemin-giflossy');
 	//         // do nothing
 	//     }
 	// }
-	await imagemin([`./assets/blog/highlight-features/images/*.{jpg,png,gif}`], {
-		destination: `./assets/blog/highlight-features/images/`,
+	await imagemin([`./assets/blog/edit-sessions/images/*.{jpg,png,gif}`], {
+		destination: `./assets/blog/edit-sessions/images/`,
 		plugins: [
 			imageminMozjpeg({ quality: 50 }),
 			imageminPngquant({ quality: [0.3, 0.5] }),

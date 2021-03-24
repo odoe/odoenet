@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://odoe.net</id>
     <title>odoenet</title>
-    <updated>2021-03-16T17:14:14.448Z</updated>
+    <updated>2021-03-24T17:04:28.625Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Rene Rubalcava</name>
@@ -55,6 +55,17 @@
             <name>Rene Rubalcava</name>
         </author>
         <published>2021-01-11T10:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[DIY Edit Sessions]]></title>
+        <id>https://odoe.net/blog/edit-sessions</id>
+        <link href="https://odoe.net/blog/edit-sessions"/>
+        <updated>2021-03-24T10:00:00.000Z</updated>
+        <summary type="html"><![CDATA[I don't recommend you do this, but you could. If you had to. But maybe don't.]]></summary>
+        <author>
+            <name>Rene Rubalcava</name>
+        </author>
+        <published>2021-03-24T10:00:00.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[ArcGIS JSAPI ESM CDN]]></title>
