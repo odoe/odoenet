@@ -25,8 +25,11 @@ const imageminGiflossy = require('imagemin-giflossy');
 	//         // do nothing
 	//     }
 	// }
-	await imagemin([`./assets/blog/edit-sessions/images/*.{jpg,png,gif}`], {
-		destination: `./assets/blog/edit-sessions/images/`,
+
+	const blog = `cimbology`;
+
+	await imagemin([`./assets/blog/${blog}/images/*.{jpg,png,gif}`], {
+		destination: `./assets/blog/${blog}/images/`,
 		plugins: [
 			imageminMozjpeg({ quality: 50 }),
 			imageminPngquant({ quality: [0.3, 0.5] }),
