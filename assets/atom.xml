@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://odoe.net</id>
     <title>odoenet</title>
-    <updated>2021-03-24T17:04:28.625Z</updated>
+    <updated>2021-04-01T17:36:47.019Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Rene Rubalcava</name>
@@ -44,6 +44,17 @@
             <name>Rene Rubalcava</name>
         </author>
         <published>2020-12-30T12:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[CIMbology]]></title>
+        <id>https://odoe.net/blog/cimbology</id>
+        <link href="https://odoe.net/blog/cimbology"/>
+        <updated>2021-04-01T10:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Using the CIM Builder for ArcGIS JSAPI]]></summary>
+        <author>
+            <name>Rene Rubalcava</name>
+        </author>
+        <published>2021-04-01T10:00:00.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[ArcGIS ESM with create-react-app]]></title>
