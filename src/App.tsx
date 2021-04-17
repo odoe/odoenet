@@ -8,6 +8,7 @@ import Home from './pages/home/Home';
 import BlogList from './templates/blog-list/BlogList';
 import Made from './pages/made/Made';
 import Uses from './pages/uses/Uses';
+import Tips from './pages/tips/Tips';
 
 import Layout from './layouts/Layout';
 
@@ -35,6 +36,7 @@ export default factory(({ properties, middleware: { theme } }) => {
 					home: <Home />,
 					made: <Made />,
 					uses: <Uses />,
+					tips: <Tips />
 				}}
 			</Outlet>
 		</Layout>

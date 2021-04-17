@@ -28,8 +28,17 @@ const imageminGiflossy = require('imagemin-giflossy');
 
 	const blog = `feature-table-clone`;
 
-	await imagemin([`./assets/blog/${blog}/images/*.{jpg,png,gif}`], {
-		destination: `./assets/blog/${blog}/images/`,
+	// await imagemin([`./assets/blog/${blog}/images/*.{jpg,png,gif}`], {
+	// 	destination: `./assets/blog/${blog}/images/`,
+	// 	plugins: [
+	// 		imageminMozjpeg({ quality: 50 }),
+	// 		imageminPngquant({ quality: [0.3, 0.5] }),
+	// 		imageminGiflossy({ lossy: 80 }),
+	// 		imageminWebp(),
+	// 	],
+	// });
+	await imagemin([`./assets/tips/images/*.{jpg,png,gif}`], {
+		destination: `./assets/tips/images/`,
 		plugins: [
 			imageminMozjpeg({ quality: 50 }),
 			imageminPngquant({ quality: [0.3, 0.5] }),

@@ -25,4 +25,9 @@ export default [
 		path: 'uses',
 		outlet: 'main',
 	},
+	{
+		id: 'tips',
+		path: 'tips',
+		outlet: 'main',
+	},
 ];

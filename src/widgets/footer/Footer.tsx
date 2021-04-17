@@ -1,4 +1,5 @@
 import { tsx, create } from '@dojo/framework/core/vdom';
+import Link from '@dojo/framework/routing/Link';
 
 import * as css from './Footer.m.css';
 
@@ -54,9 +55,9 @@ export default factory(({ properties }) => {
 				{`Last build: ${buildTime}`}
 			</span>
 			<br />
-			<a href="https://donate.cipherdogs.net/?address=49FdUbruv6F5otJqapanaJcoLLoosDyoL5gs7XavTATmZGAKb6j2neUNbQ1o1SuXtpZisd4GZ8scRDvwbbMHzPtKSMyH8rz">
-				<img height="100" width="100" src="https://donate.cipherdogs.net//img/monero.png" />
-			</a>
+			<Link to="/tips" isOutlet={false}>
+				<img height="100" width="100" src="/assets/images/logos/cardano-sm.png" />
+			</Link>
 		</footer>
 	);
 });
