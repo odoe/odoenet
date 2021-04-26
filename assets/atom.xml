@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://odoe.net</id>
     <title>odoenet</title>
-    <updated>2021-04-18T19:13:31.772Z</updated>
+    <updated>2021-04-26T22:28:05.554Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Rene Rubalcava</name>
@@ -165,6 +165,17 @@
             <name>Rene Rubalcava</name>
         </author>
         <published>2021-01-13T10:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Label Features]]></title>
+        <id>https://odoe.net/blog/label-features</id>
+        <link href="https://odoe.net/blog/label-features"/>
+        <updated>2021-04-26T10:00:00.000Z</updated>
+        <summary type="html"><![CDATA[How to add custom measurement labels to features]]></summary>
+        <author>
+            <name>Rene Rubalcava</name>
+        </author>
+        <published>2021-04-26T10:00:00.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[Layer Effects in ArcGIS]]></title>
