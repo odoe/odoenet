@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://odoe.net</id>
     <title>odoenet</title>
-    <updated>2021-04-26T22:28:05.554Z</updated>
+    <updated>2021-05-03T16:22:12.009Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Rene Rubalcava</name>
@@ -132,6 +132,17 @@
             <name>Rene Rubalcava</name>
         </author>
         <published>2021-03-16T10:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Intro to Blockchain with ArcGIS JSAPI]]></title>
+        <id>https://odoe.net/blog/intro-blockchain</id>
+        <link href="https://odoe.net/blog/intro-blockchain"/>
+        <updated>2021-05-03T10:00:00.000Z</updated>
+        <summary type="html"><![CDATA[An intro to working with blockchain in your ArcGIS JSAPI apps]]></summary>
+        <author>
+            <name>Rene Rubalcava</name>
+        </author>
+        <published>2021-05-03T10:00:00.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[Clustering in ArcGIS JSAPI]]></title>
