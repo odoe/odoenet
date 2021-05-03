@@ -20,7 +20,7 @@ With the core tools out of the way, I can move on to trying to write a contact.
 
 ## Smart'ish Contract
 
-I like to prototype writing contracts using [remixe.ethereum](https://remix.ethereum.org/). It will let me compile and deploy your contract to a test blockchain so I can test out ideas and make sure the contract works as expected before I start writing my application. In this case, I'm going to write a basic contract that can be used to hold an asset, in my case, a location or pair of coordinates. I'll be using [Solidity](https://soliditylang.org/) to write the smart contract. You don't have to use Solidity, smart contracts can be written in a number of languages from JavaScript and C#, to Haskell. Solidity is just kind of a standard way to write smart contracts, and I think it's fairly easy to work with. Granted, I am a complete Solidity noob, so what do I know.
+I like to prototype writing contracts using [remixe.ethereum](https://remix.ethereum.org/). It will let me compile and deploy my contract to a test blockchain so I can test out ideas and make sure the contract works as expected before I start writing my application. In this case, I'm going to write a basic contract that can be used to hold an asset, in my case, a location or pair of coordinates. I'll be using [Solidity](https://soliditylang.org/) to write the smart contract. You don't have to use Solidity, smart contracts can be written in a number of languages from JavaScript and C#, to Haskell. Solidity is just kind of a standard way to write smart contracts, and I think it's fairly easy to work with. Granted, I am a complete Solidity noob, so what do I know.
 
 Let's look at a very basic smart contract to hold a latitude and longitude.
 
