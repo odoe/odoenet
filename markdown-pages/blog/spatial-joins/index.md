@@ -64,7 +64,7 @@ This is the bulk of it right there. I can then take those results and use them t
 
 ## Summary
 
-This is one of those basic GIS tasks that ust about any GIS tech or analyst would be asked to do, and as I pointed out, should be used cautiously in the browser. If you are using the ArcGIS MapViewer, I think you can use the [Summarize Within](https://doc.arcgis.com/en/arcgis-online/analyze/summarize-within.htm) tool to accomplish this. You could also pre-process this in desktop and publish, or use a Python script. _Pre-process_ will always be faster than dynamic, I don't care how many workers you throw at it.
+This is one of those basic GIS tasks that just about any GIS tech or analyst would be asked to do, and as I pointed out, should be used cautiously in the browser. If you are using the ArcGIS MapViewer, I think you can use the [Summarize Within](https://doc.arcgis.com/en/arcgis-online/analyze/summarize-within.htm) tool to accomplish this. You could also pre-process this in desktop and publish, or use a Python script. _Pre-process_ will always be faster than dynamic, I don't care how many workers you throw at it.
 
 Here is an demo application in action you can check out.
 
