@@ -8,7 +8,7 @@ coverImage: "cover.jpg"
 tags: geodev, javascript
 ---
 
-The landscape of GIS consists of a variety of spatial analysis tasks you might be asked to perform. I'll be honest with you, yes, there is a lot you can do in the browser, as JavaScript is pure magic and can do anything, however, some things are probably best left to the desktop or specific server side scripts... like spatial joins. But I'm not here to talk about Python, like I said, JavaScript can do _anything_.
+The landscape of GIS consists of a variety of spatial analysis tasks you might be asked to perform. I'll be honest with you, yes, there is a lot you can do in the browser, _as JavaScript is pure magic and can do anything_, however, some things are probably best left to the desktop or specific server side scripts... like spatial joins. But I'm not here to talk about Python, like I said, JavaScript can do _anything_.
 
 ## The task
 
@@ -22,7 +22,7 @@ If I have 10 cities, and 100 points, that's 1,000 iterations in total, and only 
 
 ## The code
 
-In a previous [blog post](https://odoe.net/blog/feature-table-clone), I wrote about how you can create a copy of a FeatureLayer, at least the schema. I'm going to use the same technique here to create a new a layer that will container a count attribute for the number of facilities in each city.To simplify this a bit, I'm only concerned about the cities and facilities visible on the map, so I can use the LayerView.
+In a previous [blog post](https://odoe.net/blog/feature-table-clone), I wrote about how you can create a copy of a FeatureLayer, at least the schema. I'm going to use the same technique here to create a new a layer that will contain a count attribute for the number of facilities in each city. To simplify this a bit, I'm only concerned about the cities and facilities visible on the map, so I can use the LayerView.
 
 ```js
 // need the geometries
