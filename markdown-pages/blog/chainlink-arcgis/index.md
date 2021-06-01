@@ -8,11 +8,11 @@ coverImage: "cover.jpg"
 tags: geodev, javascript, blockchain
 ---
 
-In a previous post, I talked about how you can create a [dapp app](https://odoe.net/blog/intro-blockchain) for use with the ArcGIS JSAPI. In that case were deploying a smart contract to track edits in a feature service. That barely scratches the surface of what you can do with smart contracts. A limitation of working with smart contracts is they can't access external data. They operate in isolation of the blockchain network that they're deployed. To work around that, we can use an [oracle](https://en.wikipedia.org/wiki/Blockchain_oracle).
+In a previous post, I talked about how you can create a [dapp app](https://odoe.net/blog/intro-blockchain) for use with the ArcGIS JSAPI. In that case we were deploying a smart contract to track edits in a feature service. That barely scratches the surface of what you can do with smart contracts. A limitation of working with smart contracts is they can't access external data. They operate in isolation of the blockchain network that they're deployed. To work around that, we can use an [oracle](https://en.wikipedia.org/wiki/Blockchain_oracle).
 
 Probably the most popular oracle is [Chainlink](https://chain.link/). Chainlink provides a decentralized network that allows us to write hybrid smart contracts. The smart contracts can ask the oracle to request external data and then provide the results back to the contract. This could be used to do just about anything, pull in price data, validate user information, check the weather, access external sensors, you name it, you can do it!
 
-I won't go over the details of setting up a local Chainlink node, The [docs](https://docs.chain.link/docs/running-a-chainlink-node/) cover the steps in great detail.I would also recommend the following videos on getting set up.
+I won't go over the details of setting up a local Chainlink node, The [docs](https://docs.chain.link/docs/running-a-chainlink-node/) cover the steps in great detail. I would also recommend the following videos on getting set up.
 
 * [Setup a Chainlink Node on the GCP](https://youtu.be/t9Uknfw27IU)
 * [Building and Using External Adapters](https://youtu.be/65NhO5xxSZc)
@@ -79,7 +79,7 @@ export const createRequest = async(input, callback) => {
 }
 ```
 
-A cool feature here is the `Validator` allows me to use alternate names for the parameters, such as using `lat`, `y`, `latitude`, interchangeably. I could probably just send the point with the request and check if I had any results, but I wanted to show how you can do some work inside your API.
+A cool feature here is the `Validator` allows me to use alternate names for the parameters, such as using `lat`, `y`, `latitude`, interchangeably. I could probably just send the point with the request and check if I had any results, but I wanted to show how you can do some work inside the API.
 
 With my custom API set up, I can add it as [an external adapter using a bridge](https://docs.chain.link/docs/node-operators/) to my Chainlink node. With the bridge in place, I can add a new job that will use my bridged service, and expose it to other users of my node.
 
