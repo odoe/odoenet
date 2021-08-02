@@ -6,7 +6,7 @@ const CONTENT_PATH = join(__dirname, '../../markdown-pages');
 
 export default async function compile({ page, path }: { page: string; path: string }) {
 	const contentPath = join(CONTENT_PATH, page, path);
-	let file: any;
+	let file: string;
 	try {
 		file = await getLocalFile(contentPath);
 	} catch (error) {
