@@ -90,7 +90,7 @@ But what if I use something simple like [ViteJS](https://vitejs.dev/). I'm a big
 |deployed|6.2mb|6.9mb|
 |runtime|707kb|713kb|
 
-As you can see, there is not a drastic difference in sizes here. For the amount of work and tweaking needed for using webpack, I'm sure it's entirely worth it over using ViteJS. However, there are other advantages to using webpack if you are using other plugins for styling or something else. ViteJs does have a [plugin](https://vitejs.dev/plugins/) system using rollup, so you might be able to find what you need there. Again, this is just my opinion, you do what you got to do.
+As you can see, there is not a drastic difference in sizes here. For the amount of work and tweaking needed for using webpack, I'm not sure it's entirely worth it over using ViteJS. However, there are other advantages to using webpack if you are using other plugins for styling or something else. ViteJs does have a [plugin](https://vitejs.dev/plugins/) system using rollup, so you might be able to find what you need there. Again, this is just my opinion, you do what you got to do.
 
 ## Summary
 
