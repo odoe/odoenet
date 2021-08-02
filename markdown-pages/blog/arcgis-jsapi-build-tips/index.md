@@ -16,7 +16,7 @@ There are a few things to consider when making a local build of the API. You hav
 
 Runtime size is the amount of JavaScript loaded when the application is in use. This is probably the most important number to look at when building an application. I've discussed this before, but loading a map, visualizations, maybe a couple of widgets, you can get the API load size to about 1.2mb to 1.5mb. Considering what you get, this is pretty good. You can get under 600kb for a simple map and no additional widgets.
 
-Deployed size is how large are the built files on disk. This can vary a bit, but you can get a deployed build size of between 6mb to 7mb. Why such a discrepancy between the runtime size and the deployed size? Dynamic imports. The API is designed to dynamically import modules based on their need. So throughout the API, there will be some code similar to this.
+Deployed size is how large the built files are on disk. This can vary a bit, but you can get a deployed build size of between 6mb to 7mb. Why such a discrepancy between the runtime size and the deployed size? _Dynamic imports_. The API is designed to dynamically import modules based on their need. So throughout the API, there will be some code similar to this.
 
 ```js
 if (layer.type === "feature") {
@@ -30,7 +30,7 @@ So there will be bundles in your deployed code that will probably never be loade
 
 Up until this recent release, you would only want to use the [`@arcgis/webpack-plugin`](https://github.com/Esri/arcgis-webpack-plugin) if you want to copy the assets locally. This would add about 25mb to your deployed build size. This includes the workers, styles, images, and localization files. If you did not want to copy them locally and just let them load from the CDN, you didn't need this plugin with webpack at all.
 
-In the latest release, this has been updated to make it a little more useful for local builds. You can not specify that you do not want the plugin to copy assets, but maybe you are not using 3d capabilities. The plugin will use the [null-loader](https://webpack.js.org/loaders/null-loader/) on some 3d modules. Also, if you _know_ your application will not use certain layers, you can specify them via the `userDefinedExcludes` property. This will help minimize the deployed build size for you.
+In the latest release, this has been updated to make it a little more useful for local builds. You can now specify that you do not want the plugin to copy assets, but maybe you are not using 3d capabilities. The plugin will use the [null-loader](https://webpack.js.org/loaders/null-loader/) on some 3d modules. Also, if you _know_ your application will not use certain layers, you can specify them via the `userDefinedExcludes` property. This will help minimize the deployed build size for you.
 
 ```js
 // webpack.config.js
@@ -83,7 +83,7 @@ Using these build tips and tweaks, the sample application shown [here](https://g
 
 You may notice, all these tips use webpack. You might be able to implement something similar to `null-loader` with rollup, but I haven't found out how yet. This also requires you to be able to extend the webpack config if you use a cli build tool. Angular and Vue cli make this a little easier to do, but create-react-app will require another package to do something similar.
 
-But what if I use something simple like [ViteJS](https://vitejs.dev/). I'm a big fan of ViteJS, and like it quite a bit. The benefit here is you can run it without a single config file. Here are the stats of using ViteJS versus webpack for a custom build.
+But what if I use something simple like [ViteJS](https://vitejs.dev/)? I'm a big fan of ViteJS, and like it quite a bit. The benefit here is you can run it without a single config file. Here are the stats of using ViteJS versus webpack for a custom build.
 
 | | webpack | vite |
 --- | --- | ---
