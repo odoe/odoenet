@@ -16,7 +16,7 @@ I've talked about using VueJS before, [here](https://odoe.net/blog/using-vuejs-a
 
 Getting started with VueJS is simple enough using [vue-cli](https://cli.vuejs.org/). Once you do that, you can install the following packages.
 
-```
+```bash
 npm i @arcgis/core @esri/calcite-components copy-webpack-plugin sass sass-loader resolve-url-loader
 ```
 
