@@ -332,4 +332,12 @@ Ok, let's break this down. Any additional webpack plugins you want to use can be
   },
 ```
 
-I like the fluent API here, but took me a while to find the right order to do everything. The resolve-url-loader API has changed a bit since I last used it, so took me a while to figure out the renames/redirects for looking for files. But once I got this down, it was smooth sailing... well, as smooth as working on something like this could be.
+I like the fluent API here, but took me a while to find the right order to do everything. The resolve-url-loader API has changed a bit since I last used it, so took me a while to figure out the renames/redirects for looking for files. But once I got this down, it was smooth sailing... well, as smooth as working on something like this could be. This isn't the fault of VueJS, more of just trying to optimize for a sass build. These cli tools are great for simplicity sake, until you need to do just a bit more. But I'll hand it to vue-cli, they make extensibility pretty easy.
+
+## Summary
+
+I have to admit, this was a very specific combination of tooling I was asked about. It took a little elbow grease for me to figure it all out, but hopefully, if you find yourself working with these tools, this will help you out.
+
+I put a repo of this project together [here](https://github.com/odoe/vue-jsapi-calcite). You can watch a video on the subject below.
+
+<iframe width="100%" height="350" src="https://www.youtube.com/embed/os1BvdRo6Hk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
