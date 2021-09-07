@@ -10,7 +10,7 @@ tags: javascript
 
 ## Rambling
 
-There used to be a time when I would write our JavaScript in multiple files They might look something like this.
+There used to be a time when I would write JavaScript in multiple files They might look something like this.
 
 ```js
 // start.js
@@ -38,13 +38,21 @@ Vite is like a breath of fresh air. It handles ES modules natively, meaning that
 
 <blockquote class="twitter-tweet"><p lang="pl" dir="ltr">my vitejs config <a href="https://t.co/q034T2ssvM">pic.twitter.com/q034T2ssvM</a></p>&mdash; Rene (Hecho En East Los) Rubalcava (@odoenet) <a href="https://twitter.com/odoenet/status/1428017428441681926?ref_src=twsrc%5Etfw">August 18, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Under the hood, Vite uses [esbuild](http://esbuild.github.io/). For CSS, it can handle [PostCSS](https://postcss.org/) if you add a config for it, or [css-modules](https://github.com/css-modules/css-modules) if you add `module.css` files. It will also make liberal use of the [`import.meta`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import.meta) global to add some sugar methods like [glob imports](https://vitejs.dev/guide/features.html#glob-import). You can switch the build to use [terser](https://terser.org/) and get a slightly smaller build, but it is a little slower. In my regular usage, I don't notice a huge difference, so I leave esbuild as default.
+Under the hood, Vite uses [esbuild](http://esbuild.github.io/). For CSS, it can handle [PostCSS](https://postcss.org/) if you add a config for it, or [css-modules](https://github.com/css-modules/css-modules) if you add `.module.css` files. It will also make liberal use of the [`import.meta`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import.meta) to add some sugar methods like [glob imports](https://vitejs.dev/guide/features.html#glob-import). You can switch the build to use [terser](https://terser.org/) and get a slightly smaller build, but it is a little slower. In my regular usage, I don't notice a huge difference, so I leave esbuild as default.
 
 It handles `JSON` and `wasm` imports for you. Even [workers](https://vitejs.dev/guide/features.html#web-workers) can be loaded via `import WorkIt from './workit?worker'`. Just when you thought you could escape loader plugins, they drag you back in! 
 
 _But I have some complex workflows, I use `ejs` templates, I need sprite sheet generation_... I hear you. The great thing about Vite is that it uses [rollup](https://www.rollupjs.org/). It also has a suite of [vite plugins](https://github.com/vitejs/awesome-vite#plugins) available. You could even use some rollup plugins if you need them. Just add them to your [`vite.config.js`](https://vitejs.dev/config/).
 
 Most projects I don't even need a config. It's insane.
+
+How to use it?
+
+```bash
+npm init vite@latest my-vite-app
+```
+
+When you run that command, you'll be asked if you want a vanilla project or if you want react/preact/vue and even TypeScript. It's really that simple and makes me smile.
 
 Geez, I feel like this should be a longer blog post. But it really is that simple. Now, I wouldn't try converting your large webpack application to Vite. Don't get me wrong, webpack has a ton of plugins, loaders, community, and history. This is just another option, and one I think is great for new projects! In testing, I can get a smaller build with webpack, not much smaller, but smaller. So if squeezing every last kb out of your build is your goal, maybe webpack is your thing. You do you, and build awesome apps!
 
