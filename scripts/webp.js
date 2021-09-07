@@ -26,7 +26,7 @@ const imageminGiflossy = require('imagemin-giflossy');
 	//     }
 	// }
 
-	const blog = `vue-jsapi-calcite`;
+	const blog = `intro-vite-js`;
 
 	await imagemin([`./assets/blog/${blog}/images/*.{jpg,png,gif}`], {
 		destination: `./assets/blog/${blog}/images/`,
