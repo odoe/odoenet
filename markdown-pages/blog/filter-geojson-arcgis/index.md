@@ -5,7 +5,7 @@ published: true
 author: Rene Rubalcava
 date: 2021-11-26T12:00:00.000Z
 coverImage: "filter-geojson-arcgis.jpg"
-tags: odoe
+tags: geodev, javascript
 ---
 
 ## Filter GeoJSON in your ArcGIS Apps
