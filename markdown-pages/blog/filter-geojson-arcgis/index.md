@@ -1,7 +1,7 @@
 ---
 title: "Filter GeoJSON in your ArcGIS Apps"
 description: "Use a request interceptor to filter your GeoJSON data"
-published: false
+published: true
 author: Rene Rubalcava
 date: 2021-11-26T12:00:00.000Z
 coverImage: "filter-geojson-arcgis.jpg"
