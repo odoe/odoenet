@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://odoe.net</id>
     <title>odoenet</title>
-    <updated>2021-09-07T18:27:47.365Z</updated>
+    <updated>2021-11-27T03:02:40.993Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Rene Rubalcava</name>
@@ -143,6 +143,17 @@
             <name>Rene Rubalcava</name>
         </author>
         <published>2021-04-13T10:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Filter GeoJSON in your ArcGIS Apps]]></title>
+        <id>https://odoe.net/blog/filter-geojson-arcgis</id>
+        <link href="https://odoe.net/blog/filter-geojson-arcgis"/>
+        <updated>2021-11-26T12:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Use a request interceptor to filter your GeoJSON data]]></summary>
+        <author>
+            <name>Rene Rubalcava</name>
+        </author>
+        <published>2021-11-26T12:00:00.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[Fun with Search]]></title>
