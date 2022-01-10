@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 /* eslint @typescript-eslint/no-var-requires: "off" */
 
 import { resolve } from 'path';
@@ -52,9 +54,9 @@ export const toVNodes = (content: string) => {
 		type: 'element',
 		tagName: 'div',
 		properties: { classes: 'md-content' },
-		children: node.children
+		children: (node as any).children
 	};
-	node.children = [rootDiv];
+	(node as any).children = [rootDiv];
 	return toH((tag: string, props: any, children: any[]) => v(tag, { ...props, key: counter++ }, children), node);
 };
 

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://odoe.net</id>
     <title>odoenet</title>
-    <updated>2021-11-27T03:02:40.993Z</updated>
+    <updated>2022-01-10T17:25:45.606Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Rene Rubalcava</name>
@@ -11,7 +11,7 @@
     <link rel="self" href="https://odoe.net/atom"/>
     <subtitle>odoe network</subtitle>
     <icon>https://odoe.net/favicon.ico</icon>
-    <rights>All rights reserved 2021, odoenet</rights>
+    <rights>All rights reserved 2022, odoenet</rights>
     <entry>
         <title type="html"><![CDATA[Stop what you're doing]]></title>
         <id>https://odoe.net/blog/abortsignal</id>
@@ -77,6 +77,17 @@
             <name>Rene Rubalcava</name>
         </author>
         <published>2021-04-01T10:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Create Popup Template]]></title>
+        <id>https://odoe.net/blog/create-popup-template</id>
+        <link href="https://odoe.net/blog/create-popup-template"/>
+        <updated>2022-01-10T12:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Quickly create popup templates for your layers in the ArcGIS JSAPI]]></summary>
+        <author>
+            <name>Rene Rubalcava</name>
+        </author>
+        <published>2022-01-10T12:00:00.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[ArcGIS ESM with create-react-app]]></title>
