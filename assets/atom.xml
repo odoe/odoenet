@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://odoe.net</id>
     <title>odoenet</title>
-    <updated>2022-01-10T19:39:29.436Z</updated>
+    <updated>2022-01-27T21:00:10.387Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Rene Rubalcava</name>
@@ -285,6 +285,17 @@
             <name>Rene Rubalcava</name>
         </author>
         <published>2021-01-08T12:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Smart Mapping tools]]></title>
+        <id>https://odoe.net/blog/smartmapping-tools</id>
+        <link href="https://odoe.net/blog/smartmapping-tools"/>
+        <updated>2022-01-28T10:00:00.000Z</updated>
+        <summary type="html"><![CDATA[How to use Smart Mapping tools in your ArcGIS API for JavaScript apps!]]></summary>
+        <author>
+            <name>Rene Rubalcava</name>
+        </author>
+        <published>2022-01-28T10:00:00.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[Snowpack with the ArcGIS JSAPI]]></title>
