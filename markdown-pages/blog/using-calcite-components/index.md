@@ -1,7 +1,7 @@
 ---
 title: "Using Calcite Components"
 description: "How to use Calcite Components in your ArcGIS API for JavaScript apps!"
-published: false
+published: true
 author: Rene Rubalcava
 date: 2022-02-12T10:00:00.000Z
 coverImage: "cover.jpg"
