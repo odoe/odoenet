@@ -8,13 +8,13 @@ coverImage: "cover.jpg"
 tags: geodev, javascript
 ---
 
-## Unit Tests
+### Unit Tests
 
 I'm a firm believer that shippable code should have some sort of testing component. That could be sanity tests, usability tests, and of course unit tests. I can sense the collective shrug of the readers now. I'm not the best at being consistent in this regard. One of the rules of [Extreme Programming](http://www.extremeprogramming.org/rules/testfirst.html), is to test driven development. I think it's a good practice to try it, maybe even start a project like that, you might be surprised. The reality of it is though, that sometimes, you need to get stuff done, tests fall to the wayside and you fall out of habit. That's ok, but if you are shipping code, you should at minimum add tests after you write code. Please.
 
 There has been a long list of testing frameworks for JavaScript over the years, but one of the most popular today is probably [Jest](https://jestjs.io/). I'll preface this at saying Jest isn't perfect, but no testing framework is. I do however like how Jest can handle mocking. All testing frameworks face the same issue today, working with a mix of CommonJS, and modern ES Modules. This is an issue beyond this post in the node space anyway, but you should know, it requires a little finesse on your part when setting up Jest.
 
-## Setup
+### Setup
 
 First step is to set up your project with Jest to work with ES Modules.
 
@@ -57,14 +57,14 @@ global.ResizeObserver = jest.fn().mockImplementation(() => ({
 
 Since we're on the subject of mocks, let's dive in a little more here.
 
-## Writing Tests
+### Writing Tests
 
 Considering that [`@arcgis/core`](https://www.npmjs.com/package/@arcgis/core) is a pure ESM library, you have a couple of [options](https://jestjs.io/docs/mock-functions) to get it working with Jest. The first is using a `__mocks__` folder in your application. Honestly, this could get a little tedious, because you need to create a file and mock class/method for each module you use from the JSAPI. I tend to avoid this method if I can. But the other way is using `jest.mock('path/module/name')` to mock a module.
 
 First thing I like to do when I'm working on something is write out some steps.
 
-1. Write an `initialize` method to create the map and view
-2. Add function to zoom to a location
+* Write an `initialize` method to create the map and view
+* Add function to zoom to a location
 
 So I might start writing my test like this.
 
@@ -78,11 +78,9 @@ jest.mock('@arcgis/core/Map')
 jest.mock('@arcgis/core/views/MapView')
 
 describe('data/map', () => {
-    it('will initialize the map and view', async () => {
-    })
+    it('will initialize the map and view', async () => {})
 
-    it('will zoom to a location', async () => {
-    })
+    it('will zoom to a location', async () => {})
 })
 ```
 
@@ -95,11 +93,9 @@ import MapView from '@arcgis/core/views/MapView'
 
 const app: any = {}
 
-export async function initialize(container: HTMLDivElement) {
-}
+export async function initialize(container: HTMLDivElement) {}
 
-export function zoomToLocation(point: {type: string, x: number, y: number}) {
-}
+export function zoomToLocation(point: {type: string, x: number, y: number}) {}
 ```
 
 This is the basics of something I know I need. So I can continue with tests.
@@ -170,7 +166,7 @@ describe('data/map', () => {
             type: 'point',
             x: 65,
             y: 65
-        }
+        }```
         map.zoomToLocation(point)
         expect(mock_goTo).toHaveBeenCalledWith({
             target: point
@@ -195,7 +191,7 @@ export function zoomToLocation(point: {type: string, x: number, y: number}) {
 
 Awesome! Now my test will pass. Normally, you follow the pattern of red, green, refactor. I didn't really demonstrate the refactor part too much here, but my code was fairly simple to begin with. You could typically get your tests passing via the simplest steps possible, then refactor to refine your code while keeping the tests passing along the way.
 
-## Summary
+### Summary
 
 You don't need to test every little detail of your application and every single line of code. Tests are your guide, and your insurance policy against your future self from breaking stuff. I've broken lots of things, many of which could have been caught with better tests. So make sure you test the write stuff. It might not be glamorous work, but it's valuable, and a skill I think all devs should work on.
 
