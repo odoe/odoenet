@@ -16,6 +16,10 @@
 		"noop": "echo noop",
 		"lint": "eslint 'src/**/*.{js,ts,tsx}' --quiet --fix"
 	},
+	"engines": {
+		"node": "14.15.4",
+		"npm": "6.14.10"
+	},
 	"dependencies": {
 		"@dojo/framework": "8.0.0",
 		"@dojo/widgets": "8.0.0",
