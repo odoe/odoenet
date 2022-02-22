@@ -95,8 +95,7 @@ describe('data/map', () => {
         expect(MapView).toHaveBeenCalledTimes(1)
     })
 
-    it('will zoom to a location', async () => {
-    })
+    it('will zoom to a location', async () => {})
 })
 ```
 
@@ -150,7 +149,7 @@ describe('data/map', () => {
             type: 'point',
             x: 65,
             y: 65
-        }```
+        }
         map.zoomToLocation(point)
         expect(mock_goTo).toHaveBeenCalledWith({
             target: point
@@ -177,7 +176,7 @@ Awesome! Now my test will pass. Normally, you follow the pattern of red, green, 
 
 ### Summary
 
-You don't need to test every little detail of your application and every single line of code. Tests are your guide, and your insurance policy against your future self from breaking stuff. I've broken lots of things, many of which could have been caught with better tests. So make sure you test the write stuff. It might not be glamorous work, but it's valuable, and a skill I think all devs should work on.
+You don't need to test every little detail of your application and every single line of code. Tests are your guide, and your insurance policy against your future self from breaking stuff. I've broken lots of things, many of which could have been caught with better tests. So make sure you test the right stuff. It might not be glamorous work, but it's valuable, and a skill I think all developers should work on.
 
 For more info, you can check out the video below!
 
