@@ -1,7 +1,7 @@
 ---
 title: "Unit Testing with JSAPI"
 description: "A quick look at how to write unit tests with the ArcGIS API for JavaScript"
-published: false
+published: true
 author: Rene Rubalcava
 date: 2022-02-22T10:00:00.000Z
 coverImage: "cover.jpg"
