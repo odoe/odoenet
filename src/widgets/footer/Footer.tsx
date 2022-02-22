@@ -28,10 +28,10 @@ function createLinks(links: FooterLink[]) {
 			{logo ? (
 				asImage({ logo, text })
 			) : (
-				<virtual>
+				<div>
 					<br />
 					{text}
-				</virtual>
+				</div>
 			)}
 		</a>
 	));

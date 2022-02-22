@@ -22,7 +22,7 @@ export default factory(function Home() {
 					muted: 'true',
 				}}
 			/>
-			<Avatar size="large" variant="circle" src={avatar} alt="odoenet" />
+			<Avatar size="large" variant="default" src={avatar} alt="odoenet" />
 			<PageTemplate page="home" />
 		</section>
 	);

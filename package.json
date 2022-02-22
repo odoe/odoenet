@@ -16,15 +16,19 @@
 		"noop": "echo noop",
 		"lint": "eslint 'src/**/*.{js,ts,tsx}' --quiet --fix"
 	},
+	"engines": {
+		"node": "14.15.4",
+		"npm": "6.14.10"
+	},
 	"dependencies": {
-		"@dojo/framework": "7.0.5",
-		"@dojo/widgets": "7.0.5",
+		"@dojo/framework": "8.0.0",
+		"@dojo/widgets": "8.0.0",
 		"regenerator-runtime": "0.13.7",
 		"tslib": "1.10.0"
 	},
 	"devDependencies": {
-		"@dojo/cli": "7.0.0",
-		"@dojo/cli-build-app": "8.0.0-alpha.3",
+		"@dojo/cli": "8.0.0",
+		"@dojo/cli-build-app": "8.0.0",
 		"@dojo/cli-test-intern": "7.0.0",
 		"@mapbox/rehype-prism": "0.5.0",
 		"@types/fs-extra": "9.0.5",

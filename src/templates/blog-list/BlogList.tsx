@@ -15,7 +15,7 @@ export default factory(({ middleware: { block } }) => {
 	// TODO: Add Search
 	// TODO: Add Tag List
 	return (
-		<virtual>
+		<div>
 			<head>
 				<title>{meta.title}</title>
 				<meta name="description" content={meta.description} />
@@ -25,6 +25,6 @@ export default factory(({ middleware: { block } }) => {
 					<Card key={blog.file} path={blog.file} {...blog.meta} />
 				))}
 			</div>
-		</virtual>
+		</div>
 	);
 });

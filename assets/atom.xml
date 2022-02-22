@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://odoe.net</id>
     <title>odoenet</title>
-    <updated>2022-02-12T20:43:35.993Z</updated>
+    <updated>2022-02-22T20:52:43.122Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Rene Rubalcava</name>
@@ -340,6 +340,17 @@
             <name>Rene Rubalcava</name>
         </author>
         <published>2021-01-20T10:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Unit Testing with JSAPI]]></title>
+        <id>https://odoe.net/blog/unit-testing-with-jsapi</id>
+        <link href="https://odoe.net/blog/unit-testing-with-jsapi"/>
+        <updated>2022-02-22T10:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A quick look at how to write unit tests with the ArcGIS API for JavaScript]]></summary>
+        <author>
+            <name>Rene Rubalcava</name>
+        </author>
+        <published>2022-02-22T10:00:00.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[Using Calcite Components]]></title>
