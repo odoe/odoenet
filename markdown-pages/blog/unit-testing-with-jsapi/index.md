@@ -27,22 +27,6 @@ First step is to set up your project with Jest to work with ES Modules.
 
 This is going to let your local node installation know to treat `.js` files as ESM. If not, you'd have to use the `.mjs` extension for stuff, and I just don't feel like it. Jest has [experimental ESM support](https://jestjs.io/docs/ecmascript-modules), but I've always had something go wrong or fail for some other reason. Then I found [this gist](https://gist.github.com/rstacruz/511f43265de4939f6ca729a3df7b001c) someone posted. This cleared up a lot of issues for me, so big props to [Rico Sta. Cruz](https://github.com/rstacruz) for this one.
 
-```js
-// jesgt.config.js
-export default {
-  preset: 'ts-jest',
-  testEnvironment: 'jsdom',
-  transform: {
-    '^.*\\.(tsx?|js)$': 'ts-jest', // let ts-jest load external JS
-  },
-  testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$',
-  transformIgnorePatterns: ['/(?!(@arcgis|@esri|@stencil|@popperjs)/)'],
-  moduleFileExtensions: ['json', 'js', 'jsx', 'ts', 'tsx'],
-  extensionsToTreatAsEsm: ['.ts', '.tsx'],
-  setupFiles: ['./jest.setup.js'],
-};
-```
-
 In the Jest configuration, I'm letting `ts-jest` process the `.js` files into Jest for me. This gets passed the ESM/CommonJS issues that typically show up. Recently, I have also had to add a Jest setup file to handle some global mocking.
 
 ```js

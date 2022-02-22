@@ -1,6 +1,6 @@
 ---
 title: "Swiz and the ESRI API, we meet again."
-published: true
+published: false
 author: Rene Rubalcava
 date: "2009-10-24"
 tags: geodev
