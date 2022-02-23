@@ -93,7 +93,7 @@ You had a couple of options when using Dijits. You could instantiate the class, 
 </div>
 ```
 
-This was web components before web components were a thing. If memory serves me right, I think this declarative pattern was even possible before the data attributes standard was done, it was `dojo-type`, and then became `dojo-dojo-type`. Seriously, Dojo was pushing the boundaries of web development.
+This was web components before web components were a thing. If memory serves me right, I think this declarative pattern was even possible before the data attributes standard was done, it was `dojo-type`, and then became `data-dojo-type`. Seriously, Dojo was pushing the boundaries of web development.
 
 Not specifically in Dijit, but [dgrid](https://dgrid.io/) was a grid component built with Dojo and Dijit. I still compare dgrid to other grid components I come across, and many are really good, but man, dgrid can do some amazing stuff with nested rows, components in grids, and customization. _Ah, nostalgia_.
 
