@@ -9,7 +9,8 @@
     "bundles": {
       "blog": ["src/pages/blog/Blog"],
       "uses": ["src/pages/uses/Uses"],
-      "made": ["src/pages/made/Made"]
+      "made": ["src/pages/made/Made"],
+      "podcast": ["src/pages/podcast/Podcast"]
     },
     "features": {
       "production": true

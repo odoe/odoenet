@@ -19,6 +19,11 @@ export default factory(({ properties }) => {
 				</Link>
 			</div>
 			<div classes={[css.title]}>
+				<Link to="/podcast" isOutlet={false} classes={[css.link]}>
+					podcast
+				</Link>
+			</div>
+			<div classes={[css.title]}>
 				<Link to="/made" isOutlet={false} classes={[css.link]}>
 					made
 				</Link>

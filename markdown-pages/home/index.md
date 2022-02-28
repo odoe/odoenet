@@ -11,6 +11,7 @@ Hi! I'm Rene Rubalcava and this is odoenet!
 
 You can find me in a number of places!
 
+* [podcast](https://theboundingbox.podbean.com/)
 * [github](https://github.com/odoe)
 * [twitter](https://twitter.com/odoenet)
 * [twitch](https://www.twitch.tv/odoenet)

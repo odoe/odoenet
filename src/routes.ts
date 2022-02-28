@@ -30,4 +30,9 @@ export default [
 		path: 'tips',
 		outlet: 'main',
 	},
+	{
+		id: 'podcast',
+		path: 'podcast',
+		outlet: 'main',
+	},
 ];
