@@ -1,6 +1,8 @@
 import { create, tsx } from '@dojo/framework/core/vdom';
 import block from '@dojo/framework/core/middleware/block';
 
+import { meta } from '../../site-config';
+
 import compile from '../../blocks/compile.block';
 
 import * as css from './Page.m.css';
@@ -21,8 +23,23 @@ export default factory(function Page({ middleware: { block }, properties }) {
 		return (
 			<div classes={[css.root]}>
 				<head>
-					<title>{data.meta.title}</title>
+					<meta name="title" content={data.meta.title} />
 					<meta name="description" content={data.meta.description} />
+
+					<meta property="og:type" content="website" />
+					<meta property="og:url" content={data.meta.url} />
+					<meta property="og:title" content={data.meta.title} />
+					<meta property="og:description" content={data.meta.description} />
+					{data.meta.coverImage ? <meta property="og:image" content={`${meta.rootUrl}${data.meta.coverImage}`} /> : null}
+					
+
+					<meta property="twitter:card" content="summary_large_image" />
+					<meta property="twitter:url" content={data.meta.url} />
+					<meta property="twitter:title" content={data.meta.title} />
+					<meta property="twitter:description" content={data.meta.description} />
+					<meta property="twitter:creator" content={meta.social} />
+					{data.meta.coverImage ? <meta property="twitter:image" content={`${meta.rootUrl}${data.meta.coverImage}`} /> : null}
+					<title>{data.meta.title}</title>
 				</head>
 				{showCoverImage && data.meta.coverImage ? (
 					<picture>
