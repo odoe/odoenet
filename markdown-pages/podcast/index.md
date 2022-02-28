@@ -1,6 +1,6 @@
 ---
 title: "The Bounding Box"
-description: "These are things I have made"
+description: "Geo Development, Web Development, and everything in between"
 published: true
 author: Rene Rubalcava
 date: "2022-02-27"
