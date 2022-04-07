@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://odoe.net</id>
     <title>odoenet</title>
-    <updated>2022-02-28T03:44:27.002Z</updated>
+    <updated>2022-04-07T22:08:52.301Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Rene Rubalcava</name>
@@ -274,6 +274,17 @@
             <name>Rene Rubalcava</name>
         </author>
         <published>2020-12-29T12:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Popups with React Portals]]></title>
+        <id>https://odoe.net/blog/popup-react-portals</id>
+        <link href="https://odoe.net/blog/popup-react-portals"/>
+        <updated>2022-04-06T10:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A look at how you can use React Portals in your ArcGIS JSAPI Popups]]></summary>
+        <author>
+            <name>Rene Rubalcava</name>
+        </author>
+        <published>2022-04-06T10:00:00.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[Dojo Toolkit was Awesome]]></title>
