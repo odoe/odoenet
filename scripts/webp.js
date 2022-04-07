@@ -26,7 +26,7 @@ const imageminGiflossy = require('imagemin-giflossy');
 	//     }
 	// }
 
-	const blog = `unit-testing-jsapi`;
+	const blog = `popup-react-portals`;
 
 	await imagemin([`./assets/blog/${blog}/images/*.{jpg,png,gif}`], {
 		destination: `./assets/blog/${blog}/images/`,
