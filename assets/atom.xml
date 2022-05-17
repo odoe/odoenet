@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://odoe.net</id>
     <title>odoenet</title>
-    <updated>2022-04-07T22:08:52.301Z</updated>
+    <updated>2022-05-16T22:37:29.563Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Rene Rubalcava</name>
@@ -318,6 +318,17 @@
             <name>Rene Rubalcava</name>
         </author>
         <published>2021-02-01T10:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[SolidJS with the ArcGIS JSAPI]]></title>
+        <id>https://odoe.net/blog/solidjs-jsapi</id>
+        <link href="https://odoe.net/blog/solidjs-jsapi"/>
+        <updated>2022-05-17T10:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Intro to using SolidJS to build apps with the ArcGIS API for JavaScript]]></summary>
+        <author>
+            <name>Rene Rubalcava</name>
+        </author>
+        <published>2022-05-17T10:00:00.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[Spatial Joins]]></title>
