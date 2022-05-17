@@ -10,7 +10,7 @@ tags: javascript, geodev
 
 ## Embrace Reactivity
 
-[SolidJS](https://www.solidjs.com/) is a very interesting UI library. On the surface, it feels familiar if you have used libraries like React or Vue. However, instead of maintaining a virtual DOM under the hood, it just updates the DOM elements as needed, so there is no diffing. It comes with a suite of reactive helpers, lifecycle functions, and utilities. This won't be a deep dive into SolidJS, but a quick intro how you can get started using it to build your [ArcGIS API for JavaScript](https://developers.arcgis.com/javascript/latest/) applications.
+[SolidJS](https://www.solidjs.com/) is an interesting UI library. On the surface, it feels pretty familiar if you've used libraries like React or Vue. However, instead of maintaining a virtual DOM under the hood, it just updates the DOM elements as needed, so there is no diffing. It comes with a suite of reactive helpers, lifecycle functions, and utilities. This won't be a deep dive into SolidJS, but a quick intro how you can get started using it to build your [ArcGIS API for JavaScript](https://developers.arcgis.com/javascript/latest/) applications.
 
 > You can find the code for this post on [github](https://github.com/odoe/jsapi-solidjs-simple)
 
