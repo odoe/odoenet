@@ -12,7 +12,7 @@ export default async function (options: any) {
 		files = await readdir(CONTENT_PATH);
 	} catch (error) {
 		// do nothing
-		console.log('error loading file', error.message);
+		console.log('error loading file', (error as any).message);
 		files = [];
 	}
 	const blogs: any[] = [];
@@ -30,7 +30,7 @@ export default async function (options: any) {
 				});
 			}
 		} catch (error) {
-			console.log('compile-blog-index', error.message);
+			console.log('compile-blog-index', (error as any).message);
 		}
 	}
 

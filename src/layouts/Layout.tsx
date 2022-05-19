@@ -29,7 +29,7 @@ export default factory(({ children, properties }) => {
 					rel="alternate"
 					type="application/rss+xml"
 					title="odoe.net"
-					href="https://odoe.net/atom.xml"
+					href="https://odoe.net/assets/atom.xml"
 				></link>
 			</head>
 			<Header title={title} />

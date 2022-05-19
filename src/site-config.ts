@@ -8,7 +8,7 @@ export const meta: SiteMeta = {
 	rootUrl: 'https://odoe.net',
 	footerLinks: [
 		{
-			href: 'https://odoe.net/atom.xml',
+			href: 'https://odoe.net/assets/atom.xml',
 			text: 'rss feed',
 			logo: '/assets/images/logos/rss-logo-32px.png',
 		},

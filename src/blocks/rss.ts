@@ -28,9 +28,9 @@ export function createBlogFeed(files: any[]) {
 		id: 'https://odoe.net',
 		link: 'https://odoe.net',
 		favicon: 'https://odoe.net/favicon.ico',
-		copyright: `All rights reserved ${date.getFullYear()}, odoenet`,
+		copyright: `All rights reserved ${date.getFullYear()}, odoenet LLC`,
 		feedLinks: {
-			atom: 'https://odoe.net/atom',
+			atom: 'https://odoe.net/assets/atom',
 		},
 		author: {
 			name: 'Rene Rubalcava',

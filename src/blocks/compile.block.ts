@@ -10,7 +10,7 @@ export default async function compile({ page, path }: { page: string; path: stri
 	try {
 		file = await getLocalFile(contentPath);
 	} catch (error) {
-		console.log('error: compile post - ', error.message);
+		console.log('error: compile post - ', (error as any).message);
 		return null;
 	}
 	const meta = getMetaData(file);
