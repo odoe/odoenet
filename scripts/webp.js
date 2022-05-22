@@ -26,7 +26,7 @@ const imageminGiflossy = require('imagemin-giflossy');
 	//     }
 	// }
 
-	const blog = `solidjs-jsapi`;
+	const blog = `intro-reactiveutils`;
 
 	await imagemin([`./assets/blog/${blog}/images/*.{jpg,png,gif}`], {
 		destination: `./assets/blog/${blog}/images/`,
