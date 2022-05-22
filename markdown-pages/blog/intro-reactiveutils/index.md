@@ -24,9 +24,9 @@ Let's take a quick look at [reactiveUtils](https://developers.arcgis.com/javascr
 * `once()` - Like `watch`, but only fires one time as a Promise
 * `watch()` - Most versatile of the methods, used for watching property changes
 * `when()` - Similar to `watch`, but executes the callback when the expression returns _truthy_
-* `whenOnce()` - Executes the `when()` only once as a Promise
+* `whenOnce()` - Executes the `when` expression only once as a Promise
 
-This is an old example of how you might do some deep property watching compared to you can use reactiveUtils.
+This is an older example of how you might do some deep property watching compared to how you can use reactiveUtils.
 
 ```js
 // old watchUtils
