@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://odoe.net</id>
     <title>odoenet</title>
-    <updated>2022-05-19T02:41:03.077Z</updated>
+    <updated>2022-05-22T21:14:05.057Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Rene Rubalcava</name>
@@ -198,6 +198,17 @@
             <name>Rene Rubalcava</name>
         </author>
         <published>2021-05-03T10:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Intro to reactiveUtils]]></title>
+        <id>https://odoe.net/blog/intro-reactiveutils</id>
+        <link href="https://odoe.net/blog/intro-reactiveutils"/>
+        <updated>2022-05-23T10:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Intro to reactiveUtils in the ArcGIS API for JavaScript]]></summary>
+        <author>
+            <name>Rene Rubalcava</name>
+        </author>
+        <published>2022-05-23T10:00:00.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[Intro to ViteJS]]></title>
