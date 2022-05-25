@@ -50,15 +50,7 @@ when(
 );
 ```
 
-You can also watch for multiple properties to update.
-
-```js
-watch(
-    () => [view.scale]
-);
-```
-
-You can also watch for multiple properties to change. Maybe you are interested in checking when the `zoom` or `scale` of the map changes, but not when you pan the map. This requires that track the previous the zoom value to compare.
+You can also watch for multiple properties to change. Maybe you are interested in checking when the `zoom` or `scale` of the map changes, but not when you pan the map. This requires that track the previous zoom value to compare.
 
 ```js
 let prevZoom;
@@ -110,7 +102,7 @@ on(
 );
 ```
 
-This could be useful if you want to handle multiple events the same way on an component or element.
+This could be useful if you want to handle multiple events the same way on a component or element.
 
 ## Summary
 
