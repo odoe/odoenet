@@ -1,7 +1,7 @@
 ---
 title: "ArcGIS Popups CustomContent"
 description: "Using CustomContent with the ArcGIS API for JavaScript"
-published: false
+published: true
 author: Rene Rubalcava
 date: 2022-06-01T10:00:00.000Z
 coverImage: "cover.jpg"
@@ -126,7 +126,7 @@ new CustomContent({
 
 The key here is using the `creator` method as an async function so that some data can be fetched from the weather API. We can pluck the latitude and longitude off the graphic geometry. Once we get the initial results from the weather API for this location, that result will provide various URLs for more detailed weather information such as the _forecast_ URL. We can send another request to the forecast URL and get a more detailed five day forecast for day and night weather information. It will even provide an icon that coincides with the weather conditions. We can use this information to construct a list of HTML elements to display in the Popup. You should get a Popup that looks similar to this!
 
-[![Weather Popup](images/weather-popup.png)]
+![Weather Popup](images/weather-popup.png)
 
 ## Summary
 
