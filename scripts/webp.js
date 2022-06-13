@@ -26,7 +26,7 @@ const imageminGiflossy = require('imagemin-giflossy');
 	//     }
 	// }
 
-	const blog = `custom-popup-content`;
+	const blog = `routelayer-speech-api`;
 
 	await imagemin([`./assets/blog/${blog}/images/*.{jpg,png,gif}`], {
 		destination: `./assets/blog/${blog}/images/`,

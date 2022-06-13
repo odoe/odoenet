@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://odoe.net</id>
     <title>odoenet</title>
-    <updated>2022-06-01T01:23:21.347Z</updated>
+    <updated>2022-06-13T00:24:47.005Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Rene Rubalcava</name>
@@ -318,6 +318,17 @@
             <name>Rene Rubalcava</name>
         </author>
         <published>2021-01-08T12:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Web Speech API with ArcGIS RouteLayer]]></title>
+        <id>https://odoe.net/blog/routelayer-speech-api</id>
+        <link href="https://odoe.net/blog/routelayer-speech-api"/>
+        <updated>2022-06-13T10:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A fun look at using the Web Speech API with the ArcGIS API for JavaScript RouteLayer]]></summary>
+        <author>
+            <name>Rene Rubalcava</name>
+        </author>
+        <published>2022-06-13T10:00:00.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[Smart Mapping tools]]></title>
