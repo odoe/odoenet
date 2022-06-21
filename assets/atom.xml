@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://odoe.net</id>
     <title>odoenet</title>
-    <updated>2022-06-13T00:24:47.005Z</updated>
+    <updated>2022-06-21T00:29:19.723Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Rene Rubalcava</name>
@@ -417,6 +417,17 @@
             <name>Rene Rubalcava</name>
         </author>
         <published>2022-02-12T10:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[View Padding in ArcGIS JSAPI]]></title>
+        <id>https://odoe.net/blog/view-padding</id>
+        <link href="https://odoe.net/blog/view-padding"/>
+        <updated>2022-06-21T10:00:00.000Z</updated>
+        <summary type="html"><![CDATA[How to use View Padding in the ArcGIS API for JavaScript to layout your app]]></summary>
+        <author>
+            <name>Rene Rubalcava</name>
+        </author>
+        <published>2022-06-21T10:00:00.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[Vite with ArcGIS]]></title>
