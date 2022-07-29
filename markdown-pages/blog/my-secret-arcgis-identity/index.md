@@ -18,10 +18,10 @@ There will probably come a time when you are tasked to include private data in A
 
 When working with the ArcGIS API for JavaScript, you're going to want to use the [IdentityManager](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html). The IdentityManager is going to handle all your OAuth needs. It will even kick in by default, if your application hits a service that requires authentication and you have not set it up. The drawback here is that the credentials won't get saved for next time if you don't do the set up. So let's walk through the basics of what you probably want to do in your application.
 
-1. [Set up authentication.](#1-setting-up-oauth)
-2. [Check if user is signed in.](#2-check-if-the-user-is-signed-in)
-3. [Provide a way to sign in.](#3-let-a-user-sign-in)
-4. [Provide a way to sign out.](#4-sign-out)
+1. [Set up authentication.](blog/my-secret-arcgis-identity#1-setting-up-oauth)
+2. [Check if user is signed in.](blog/my-secret-arcgis-identity#2-check-if-the-user-is-signed-in)
+3. [Provide a way to sign in.](blog/my-secret-arcgis-identity#3-let-a-user-sign-in)
+4. [Provide a way to sign out.](blog/my-secret-arcgis-identity#4-sign-out)
 
 I've done this enough times that I have a [module](https://github.com/odoe/jsapi-identity/blob/main/oauth.js) I use frequently.
 
