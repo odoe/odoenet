@@ -18,14 +18,14 @@ There will probably come a time when you are tasked to include private data in A
 
 When working with the ArcGIS API for JavaScript, you're going to want to use the [IdentityManager](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html). The IdentityManager is going to handle all your OAuth needs. It will even kick in by default, if your application hits a service that requires authentication and you have not set it up. The drawback here is that the credentials won't get saved for next time if you don't do the set up. So let's walk through the basics of what you probably want to do in your application.
 
-1. [Set up authentication.](#step1)
-2. [Check if user is signed in.](#step2)
-3. [Provide a way to sign in.](#step3)
-4. [Provide a way to sign out.](#step4)
+1. [Set up authentication.](#1-setting-up-oauth)
+2. [Check if user is signed in.](#2-check-if-the-user-is-signed-in)
+3. [Provide a way to sign in.](#3-let-a-user-sign-in)
+4. [Provide a way to sign out.](#4-sign-out)
 
 I've done this enough times that I have a [module](https://github.com/odoe/jsapi-identity/blob/main/oauth.js) I use frequently.
 
-## <a name="step1"></a>1. Setting up OAuth
+## 1. Setting up OAuth
 
 Before we dive in to the various steps, let's quickly talk about setting up your OAuth. First thing you will want to do is [register your application](https://developers.arcgis.com/documentation/mapping-apis-and-services/security/tutorials/register-your-application/) in your account. This will provide your with the client ID you will need to register it with the IdentityManager. This can be done with the OAuthInfo module, via the [appId](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-OAuthInfo.html#appId) property.
 
@@ -37,7 +37,7 @@ export const initialize = (appId) => {
 };
 ```
 
-## <a name="step2"></a>2. Check if the user is signed in
+## 2. Check if the user is signed in
 
 Just our luck, the IdentityManager provides a method we can use to [check the sign in status](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#checkSignInStatus). This method will check if we signed in to the designated portal url and return the credentials if we are.
 
@@ -54,7 +54,7 @@ export const checkCurrentStatus = async (oauthInfo) => {
 };
 ```
 
-## <a name="step3"></a>3. Let a user sign in
+## 3. Let a user sign in
 
 Now that we have a way to check if the user is signed in, we can use it as part of our workflow to allow a user to sign in. When the user signs in, we can do our due diligence and check if they have any existing credentials. If they don't, we can kick off the workflow to fetch those credentials and this will load the OAuth sign process.
 
@@ -90,7 +90,7 @@ When you registered your application in step one, you would have set up a redire
 
 When you use the [`IdentityManager.getCredential`](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#getCredential) method, this will either open a popup with the ArcGIS Oauth login or direct the current page to the OAuth login, depending on how you set up your [OAuthInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-OAuthInfo.html). If you are have the `popup` set to `true` in OAuthInfo, you will need this [oauth-callback](https://github.com/Esri/jsapi-resources/tree/master/oauth) page hosted with your application.
 
-## <a name="step4"></a>4. Sign out
+## 4. Sign out
 
 With a way to sign in, now we need a way to sign out. Lucky for us, the IdentityManager simplifies this step with the [destroyCredentials](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#destroyCredentials) method.
 
