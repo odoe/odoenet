@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://odoe.net</id>
     <title>odoenet</title>
-    <updated>2022-07-18T02:48:21.092Z</updated>
+    <updated>2022-07-29T17:05:38.658Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Rene Rubalcava</name>
@@ -297,6 +297,17 @@
             <name>Rene Rubalcava</name>
         </author>
         <published>2021-01-25T10:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[My Secret ArcGIS Identity]]></title>
+        <id>https://odoe.net/blog/my-secret-arcgis-identity</id>
+        <link href="https://odoe.net/blog/my-secret-arcgis-identity"/>
+        <updated>2022-07-29T10:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A look at how you can leverage Identity in ArcGIS API for JavaScript apps]]></summary>
+        <author>
+            <name>Rene Rubalcava</name>
+        </author>
+        <published>2022-07-29T10:00:00.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[New Site, Who Dis?]]></title>
