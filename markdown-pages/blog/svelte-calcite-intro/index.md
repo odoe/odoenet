@@ -62,7 +62,7 @@ We can then start updating our `App.svelte` component, following the mapping tut
 
 This provides the basic shell for the app, but we still need to hook this up to some other pieces to display a map.
 
-```jsx
+```js
 <script>
   // calcite components
   import "@esri/calcite-components/dist/components/calcite-shell";
@@ -216,7 +216,7 @@ The next step in the tutorial is to set up the action bar and panels where the w
 
 Ok, we added a lot now. We have some more components and an [action bar](https://developers.arcgis.com/calcite-design-system/components/action-bar/) that let's us add buttons and toggle the visibility of some widgets. We are using the same `bind:this` syntax we used earlier. Since we added more components, we need to import some more modules, plus we can start initializing our widgets.
 
-```jsx
+```js
 <script>
   // calcite components
   import "@esri/calcite-components/dist/components/calcite-shell";
