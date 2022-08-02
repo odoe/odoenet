@@ -87,6 +87,6 @@ This particular component has no side-effects, so there's not much else to do wi
 
 Solid is a fun library! I really like the idea that everything is just functions and components that return DOM elements. There are a lot of utility methods available in Solid to help with reactivity and simplify how you handle side-effects and properties. I highly recommend you review the guides and documentation, they did a great job here!
 
-You can watch this vide for more information!
+You can watch this video for more information!
 
 <iframe width="100%" height="350" src="https://www.youtube.com/embed/Bwjm4asSAMo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

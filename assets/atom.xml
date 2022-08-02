@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://odoe.net</id>
     <title>odoenet</title>
-    <updated>2022-07-29T17:05:38.658Z</updated>
+    <updated>2022-08-02T17:08:52.526Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Rene Rubalcava</name>
@@ -395,6 +395,17 @@
             <name>Rene Rubalcava</name>
         </author>
         <published>2021-05-24T10:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Intro to Calcite with Svelte]]></title>
+        <id>https://odoe.net/blog/svelte-calcite-intro</id>
+        <link href="https://odoe.net/blog/svelte-calcite-intro"/>
+        <updated>2022-08-02T10:00:00.000Z</updated>
+        <summary type="html"><![CDATA[How to use Svelte to build apps with Calcite Components]]></summary>
+        <author>
+            <name>Rene Rubalcava</name>
+        </author>
+        <published>2022-08-02T10:00:00.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[Type Your HashMaps with TypeScript]]></title>
