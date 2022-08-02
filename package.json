@@ -8,7 +8,7 @@
 		"build": "npm run build:dojo && exit 0",
 		"build:debug": "node --trace-warnings node_modules/@dojo/cli/bin/dojo.js build --mode dist --dojorc prod.dojorc",
 		"build:dev": "dojo build -m=dev -s -w",
-		"cache:clean": "dojo build --evict-cache-paths blog/my-secret-arcgis-identity",
+		"cache:clean": "dojo build --evict-cache-paths blog",
 		"test": "dojo test",
 		"test:unit": "dojo build --mode unit && dojo test --unit --config local",
 		"test:functional": "dojo build --mode functional && dojo test --functional --config local",
