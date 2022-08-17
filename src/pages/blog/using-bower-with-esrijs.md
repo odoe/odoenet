@@ -28,4 +28,4 @@ The Bower package has not been run through any build system, just minified. This
 
 For details, watch this video that covers all the steps using both Dojo and RequireJS.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/OFZnXACy97Y" frameborder="0" allowfullscreen></iframe>
+<lite-youtube videoid="OFZnXACy97Y"></lite-youtube>

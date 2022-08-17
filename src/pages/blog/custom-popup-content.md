@@ -135,5 +135,5 @@ At the end of the day, you can pretty much use whatever you want inside CustomCo
 
 You can see more details in the video below!
 
-<iframe width="100%" height="350" src="https://www.youtube.com/embed/I2XMRxoWcZA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<lite-youtube videoid="I2XMRxoWcZA"></lite-youtube>
 

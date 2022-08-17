@@ -90,4 +90,4 @@ Solid is a fun library! I really like the idea that everything is just functions
 
 You can watch this video for more information!
 
-<iframe width="100%" height="350" src="https://www.youtube.com/embed/Bwjm4asSAMo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<lite-youtube videoid="Bwjm4asSAMo"></lite-youtube>

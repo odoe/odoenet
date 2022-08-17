@@ -20,4 +20,4 @@ In this video, I take a quick look at the new site and some info on the current 
 
 I'm excited for what Dojo 2 brings to the table in application design. I'm excited that it's all in TypeScript and that it includes some neat toys like typed CSS and theming. I look forward to a solid 1.0 release!
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/UmOg7scsREI" frameborder="0" allowfullscreen></iframe>
+<lite-youtube videoid="UmOg7scsREI"></lite-youtube>

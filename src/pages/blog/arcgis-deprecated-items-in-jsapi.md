@@ -71,6 +71,6 @@ You can view a demo of how this works below.
 
 And what do you know, I made a video about this too!
 
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/HF_5gpcPoa8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<lite-youtube videoid="HF_5gpcPoa8"></lite-youtube>
 
 Enjoy!

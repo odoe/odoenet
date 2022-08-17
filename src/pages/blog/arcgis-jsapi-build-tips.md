@@ -97,4 +97,4 @@ As you can see, there is not a drastic difference in sizes here. For the amount 
 
 I put a repo together [here](https://github.com/odoe/arcgis-js-build-experiments) of these two build scenarios if you want to try it out yourself. At the end of the day, if you really need to squeeze out every last kb from your deployed and runtime size, you can use webpack to get there. If you want simplicity, I think ViteJS is a great choice. It all depends on your circumstances. You can also watch me walk though this in the video below.
 
-<iframe width="100%" height="350" src="https://www.youtube.com/embed/VmzjaGfBRyo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<lite-youtube videoid="VmzjaGfBRyo"></lite-youtube>

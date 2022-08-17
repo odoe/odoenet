@@ -14,9 +14,9 @@ The recent videos have covered an array of topics!
 
 I've had some interests about working with Popups in the ArcGIS API for JavaScript, so you can check out these videos!
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/RTxwD7_reA0" frameborder="0" allowfullscreen></iframe>
+<lite-youtube videoid="RTxwD7_reA0"></lite-youtube>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/OG1WiN8Q2No" frameborder="0" allowfullscreen></iframe>
+<lite-youtube videoid="OG1WiN8Q2No"></lite-youtube>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/u-H2bS7fmSM" frameborder="0" allowfullscreen></iframe>
 
@@ -28,21 +28,21 @@ In the ArcGIS API 4 for JavaScript, there is a whole new UI/widget experience fo
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/i-qzX5smJMY" frameborder="0" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/vLxr5Lalx4M" frameborder="0" allowfullscreen></iframe>
+<lite-youtube videoid="vLxr5Lalx4M"></lite-youtube>
 
 ## Hax
 
 I even cover some more core concepts of building apps with the ArcGIS API 4 for JavaScript, along side some experimental hax stuff as well!
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Rx9VgTyQCso" frameborder="0" allowfullscreen></iframe>
+<lite-youtube videoid="Rx9VgTyQCso"></lite-youtube>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zCtj5Hs2G-E" frameborder="0" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4ViGfGvWKok" frameborder="0" allowfullscreen></iframe>
+<lite-youtube videoid="4ViGfGvWKok"></lite-youtube>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/crfDFM6BswA" frameborder="0" allowfullscreen></iframe>
+<lite-youtube videoid="crfDFM6BswA"></lite-youtube>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/69ijDR1H_WA" frameborder="0" allowfullscreen></iframe>
+<lite-youtube videoid="69ijDR1H_WA"></lite-youtube>
 
 * * *
 

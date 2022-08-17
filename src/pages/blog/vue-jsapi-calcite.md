@@ -341,4 +341,4 @@ I have to admit, this was a very specific combination of tooling I was asked abo
 
 I put a repo of this project together [here](https://github.com/odoe/vue-jsapi-calcite). You can watch a video on the subject below.
 
-<iframe width="100%" height="350" src="https://www.youtube.com/embed/os1BvdRo6Hk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<lite-youtube videoid="os1BvdRo6Hk"></lite-youtube>

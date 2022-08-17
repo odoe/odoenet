@@ -68,4 +68,4 @@ const searchWidget = new Search({
 
 You can view more details in this video!
 
-<iframe width="100%" height="350" src="https://www.youtube.com/embed/f8cNv77nJTQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<lite-youtube videoid="f8cNv77nJTQ"></lite-youtube>

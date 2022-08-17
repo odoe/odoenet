@@ -21,4 +21,4 @@ I'll give you some hints...
 
 Now go watch the video to learn more!
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/fUz1IGh0sb8" frameborder="0" allowfullscreen></iframe>
+<lite-youtube videoid="fUz1IGh0sb8"></lite-youtube>

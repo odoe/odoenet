@@ -182,4 +182,4 @@ At this point, I can build the app and everything works. Now you can try adding 
 
 You can watch a video where I walk through these steps below!
 
-<iframe width="100%" height="350" src="https://www.youtube.com/embed/c9iAWw9oqK4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<lite-youtube videoid="c9iAWw9oqK4"></lite-youtube>

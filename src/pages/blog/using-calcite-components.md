@@ -152,4 +152,4 @@ This is just a quick intro on using Calcite Components to enhance your own appli
 
 You can watch a video on this topic below!
 
-<iframe width="100%" height="500" src="https://www.youtube.com/embed/8m5ofOYtbZU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<lite-youtube videoid="8m5ofOYtbZU"></lite-youtube>

@@ -63,4 +63,4 @@ Vite is another option, and one I think is great for new projects! In testing, I
 
 You can check out more info in this video below!
 
-<iframe width="100%" height="350" src="https://www.youtube.com/embed/sV1Tcie2SR8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<lite-youtube videoid="sV1Tcie2SR8"></lite-youtube>

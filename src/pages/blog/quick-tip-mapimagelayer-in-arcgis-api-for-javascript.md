@@ -14,4 +14,4 @@ The MapImageLayer API has been greatly simplified to work with [Sublayers](https
 
 In this video we take a quick look at the MapImageLayer and how to work with a service with a large amount of layers and add a popup to one of your choosing.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/cbnioiX1088" frameborder="0" allowfullscreen></iframe>
+<lite-youtube videoid="cbnioiX1088"></lite-youtube>

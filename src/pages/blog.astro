@@ -56,69 +56,50 @@ const posts = (await Astro.glob("./blog/*.{md,mdx}")).sort(
 			<content>
 				<ul>
 					{
-						posts.map(
-							(post) =>
-								console.log(post.url) || (
-									<li>
-										<a href={post.url}>
-											<picture>
-												<source
-													type="image/webp"
-													srcset={`/assets${
-														post.url
-													}/images/${
-														post.frontmatter
-															.coverImage ||
-														post.frontmatter
-															.heroImage
-													}`?.replace(
-														/\.(jpg|png)/,
-														".webp"
-													)}
-												/>
-												<source
-													type="image/jpeg"
-													srcset={
-														post.frontmatter
-															.coverImage ||
-														post.frontmatter
-															.heroImage
-													}
-												/>
-												<img
-													alt={
-														post.frontmatter
-															.description
-													}
-													loading="lazy"
-													class="image"
-													src={`/assets${
-														post.url
-													}/images/${
-														post.frontmatter
-															.coverImage ||
-														post.frontmatter
-															.heroImage
-													}`}
-												/>
-											</picture>
+						posts.map((post) => (
+							<li>
+								<a href={post.url}>
+									<picture>
+										<source
+											type="image/webp"
+											srcset={`/assets${
+												post.url
+											}/images/${
+												post.frontmatter.coverImage ||
+												post.frontmatter.heroImage
+											}`?.replace(/\.(jpg|png)/, ".webp")}
+										/>
+										<source
+											type="image/jpeg"
+											srcset={
+												post.frontmatter.coverImage ||
+												post.frontmatter.heroImage
+											}
+										/>
+										<img
+											alt={post.frontmatter.description}
+											loading="lazy"
+											class="image"
+											src={`/assets${post.url}/images/${
+												post.frontmatter.coverImage ||
+												post.frontmatter.heroImage
+											}`}
+										/>
+									</picture>
 
-											{post.frontmatter.title}
-										</a>
-										<time
-											datetime={post.frontmatter.pubDate}
-										>
-											{new Date(
-												post.frontmatter.pubDate
-											).toLocaleDateString("en-us", {
-												year: "numeric",
-												month: "short",
-												day: "numeric",
-											})}
-										</time>
-									</li>
-								)
-						)
+									{post.frontmatter.title}
+								</a>
+								<time datetime={post.frontmatter.pubDate}>
+									{new Date(
+										post.frontmatter.pubDate
+									).toLocaleDateString("en-us", {
+										year: "numeric",
+										month: "short",
+										day: "numeric",
+									})}
+								</time>
+							</li>
+						))
 					}
 				</ul>
 			</content>

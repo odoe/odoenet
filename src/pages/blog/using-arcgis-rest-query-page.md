@@ -18,7 +18,7 @@ Remember, all the ArcGIS APIs and SDKs are based on the REST APIs, so the more f
 
 The REST API query pages have been part of ArcGIS Services for as long as I can remember, and they have always proven to be a great resource in my own development.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/LsYgtjkm69Y" frameborder="0" allowfullscreen></iframe>
+<lite-youtube videoid="LsYgtjkm69Y"></lite-youtube>
 
 If you think it warrants having a clearer guide on all the options and parameters, let me know and I can put something together!
 

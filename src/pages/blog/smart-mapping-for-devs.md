@@ -22,7 +22,7 @@ This sample demonstrates how the render changes with the basemap.
 
 ## What Does This Mean For You?
 
-What this means is you can greatly simplify the workflow of displaying large amounts of data in a meaningful way. This isn't going to do you much good with just a few points on your map, but maybe you want to display information related to the costs of street maintenance for you city over the past 10-20 years or the growth of [Airbnb](https://www.airbnb.com/) rentals across the county and average costs. These Smart Mapping tools could prove really useful in those cases. Personally, I'm thinking there could be some nice hackful uses to [FeatureLayerStatistics](https://developers.arcgis.com/javascript/jsapi/featurelayerstatistics-amd.html) that I haven't explore yet, but that's just me.
+What this means is you can greatly simplify the workflow of displaying large amounts of data in a meaningful way. This isn't going to do you much good with just a few points on your map, but maybe you want to display information related to the costs of street maintenance for you city over the past 10-20 years or the growth of [Airbnb](https://www.airbnb.com/) rentals across the county and average costs. These Smart Mapping tools could prove really useful in those cases. Personally, I'm thinking there could be some nice uses to [FeatureLayerStatistics](https://developers.arcgis.com/javascript/jsapi/featurelayerstatistics-amd.html) that I haven't explore yet, but that's just me.
 
 For more info, you can check out the official blog posts ([part 1](http://blogs.esri.com/esri/arcgis/2015/03/02/introducing-smart-mapping/) & [part 2](http://blogs.esri.com/esri/arcgis/2015/03/17/smart-mapping-part-2-making-better-size-and-color-maps/)) at Esri.
 

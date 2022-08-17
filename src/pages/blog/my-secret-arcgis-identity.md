@@ -110,4 +110,4 @@ Working with Identity in any application can seem a little daunting at first, bu
 
 You can see more in the video below!
 
-<iframe width="100%" height="350" src="https://www.youtube.com/embed/t2XUubHgSp0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<lite-youtube videoid="t2XUubHgSp0"></lite-youtube>

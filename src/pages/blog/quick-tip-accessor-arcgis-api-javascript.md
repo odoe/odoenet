@@ -14,4 +14,4 @@ I've talked about [them before](https://odoe.net/blog/fun-with-accessors-in-arcg
 
 Today, I just want to quickly look at how they can be used as a datastore for an application I [discussed before](https://odoe.net/blog/diy-redux-using-esrijs-4/). I just wanted to spend a little more time on the subject, as I think Accessor is a fantastic addition to an developers toolbox using the ArcGIS API for JavaScript.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3KXr8XY4ALg" frameborder="0" allowfullscreen></iframe>
+<lite-youtube videoid="3KXr8XY4ALg"></lite-youtube>

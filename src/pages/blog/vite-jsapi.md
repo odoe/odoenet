@@ -77,4 +77,4 @@ Look, I told you, it's all ESM and at this point, the ArcGIS API for JavaScript 
 
 Give it a shot if you don't believe me. Here is a video where cover these steps in more detail.
 
-<iframe width="100%" height="350" src="https://www.youtube.com/embed/RF_q0tuMyic" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<lite-youtube videoid="RF_q0tuMyic"></lite-youtube>

@@ -16,6 +16,6 @@ What I really like about VueJS is that it is a very simple to use JavaScript fra
 
 In this quick demo, I show how you can create a custom element to display detailed information about the [Camera](https://developers.arcgis.com/javascript/latest/api-reference/esri-Camera.html) of a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html) in the ArcGIS API for JavaScript.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/zbxIGMoscU4" frameborder="0" allowfullscreen></iframe>
+<lite-youtube videoid="zbxIGMoscU4"></lite-youtube>
 
 Enjoy and if you have any questions, let me know!

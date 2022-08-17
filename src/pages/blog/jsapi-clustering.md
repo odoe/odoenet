@@ -49,4 +49,4 @@ Now you can display the convexHull of the clustered features, use them for some 
 
 For more details, check out the video below!
 
-<iframe width="100%" height="350" src="https://www.youtube.com/embed/WZ1TQan6YrY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<lite-youtube videoid="WZ1TQan6YrY"></lite-youtube>

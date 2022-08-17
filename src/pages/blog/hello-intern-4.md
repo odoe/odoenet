@@ -16,6 +16,6 @@ It simplifies some of the configuration for running tests and makes it much easi
 
 Check out the video below!
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/B8wcNYGi4vg" frameborder="0" allowfullscreen></iframe>
+<lite-youtube videoid="B8wcNYGi4vg"></lite-youtube>
 
 PS - Sorry I haven't been posting lately, I am knee deep in preparing for the [Esri European DevSummit](http://www.esri.com/events/devsummit-europe) next week and I simply have not had time to breathe, much less write any posts or make any videos! I look forward to seeing you all there!

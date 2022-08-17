@@ -70,4 +70,4 @@ Working with client-side data is a powerful feature of the ArcGIS API for JavaSc
 
 You can see more details in the video below!
 
-<iframe width="100%" height="500" src="https://www.youtube.com/embed/UAwX2c0yu2I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<lite-youtube videoid="UAwX2c0yu2I"></lite-youtube>

@@ -79,4 +79,4 @@ And there you go! That's a basic, yet effective workflow to help you automate th
 
 You can see more in the video below!
 
-<iframe width="100%" height="350" src="https://www.youtube.com/embed/8_3hBoOI4Jg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<lite-youtube videoid="8_3hBoOI4Jg"></lite-youtube>

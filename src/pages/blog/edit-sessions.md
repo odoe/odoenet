@@ -121,4 +121,4 @@ I've worked on some pretty complicated projects back in the day when it comes to
 
 You can see more details in this video below!
 
-<iframe width="100%" height="350" src="https://www.youtube.com/embed/C7B7DSHnRVc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<lite-youtube videoid="C7B7DSHnRVc"></lite-youtube>

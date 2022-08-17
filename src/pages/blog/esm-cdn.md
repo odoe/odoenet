@@ -54,4 +54,4 @@ This is a great way to test stuff out. Now, why would you not want to use this f
 
 You can check out a video with more detail below!
 
-<iframe width="100%" height="350" src="https://www.youtube.com/embed/1cIG5MMUFs0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<lite-youtube videoid="1cIG5MMUFs0"></lite-youtube>

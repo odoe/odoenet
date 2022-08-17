@@ -35,4 +35,4 @@ That's all there is to it. Simple, and incredible useful!
 
 You can check out this video below for more information!
 
-<iframe width="100%" height="350" src="https://www.youtube.com/embed/Z2S9wwAJ7CI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<lite-youtube videoid="Z2S9wwAJ7CI"></lite-youtube>

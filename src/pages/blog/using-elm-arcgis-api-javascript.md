@@ -39,4 +39,4 @@ That's a lot, I know. I try to explain most of it in the video.
 
 Thanks for watching!
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/773PkqI5QzA" frameborder="0" allowfullscreen></iframe>
+<lite-youtube videoid="773PkqI5QzA"></lite-youtube>

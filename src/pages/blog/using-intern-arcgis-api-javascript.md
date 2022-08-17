@@ -18,4 +18,4 @@ We'll also talk a little bit about code coverage and how it can be a handy tool 
 
 So please enjoy this video!
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Lbu02Py3q68" frameborder="0" allowfullscreen></iframe>
+<lite-youtube videoid="Lbu02Py3q68"></lite-youtube>

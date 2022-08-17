@@ -16,6 +16,6 @@ Normally this is the type of information you can get from having a [geometric ne
 
 This short video covers some of what the problem is in trying to find points from the intersection of lines as well as couple of solutions you may be able to use.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/q1T1thsML2g" frameborder="0" allowfullscreen></iframe>
+<lite-youtube videoid="q1T1thsML2g"></lite-youtube>
 
 Hope you find this helpful! Enjoy!

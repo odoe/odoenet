@@ -153,4 +153,4 @@ Adjusting view padding can be very handy in cases where you want to add a header
 
 You can see a walkthrough of this application in the video below!
 
-<iframe width="100%" height="350" src="https://www.youtube.com/embed/T50ACDSklcM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<lite-youtube videoid="T50ACDSklcM"></lite-youtube>

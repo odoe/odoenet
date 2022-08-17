@@ -22,11 +22,11 @@ If I want to cover a topic I think will be a bit more in-depth, I'll break it up
 
 So far this week, I have put up the following videos!
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/HZMZhBEOH_g" frameborder="0" allowfullscreen></iframe>
+<lite-youtube videoid="HZMZhBEOH_g"></lite-youtube>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/WKlaCLXNOTY" frameborder="0" allowfullscreen></iframe>
+<lite-youtube videoid="WKlaCLXNOTY"></lite-youtube>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Hf73bELkP4s" frameborder="0" allowfullscreen></iframe>
+<lite-youtube videoid="Hf73bELkP4s"></lite-youtube>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xJai_5-liBA" frameborder="0" allowfullscreen></iframe>
 

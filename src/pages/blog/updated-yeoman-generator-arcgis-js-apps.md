@@ -14,7 +14,7 @@ I really wanted to add support for version 4.0 of the ArcGIS JS API and was able
 
 View the video below to get a quick rundown of the updated generator and application!
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6W3ow22pank" frameborder="0" allowfullscreen></iframe>
+<lite-youtube videoid="6W3ow22pank"></lite-youtube>
 
 You can view a demo of output application [here](https://github.com/odoe/gen4) and a live demo of the optimized application [here](https://odoe.net/apps/js4start/).
 

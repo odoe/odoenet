@@ -111,4 +111,4 @@ This was just a quick intro to reactiveUtils in the ArcGIS API for JavaScript. T
 
 You can see more details in the video below!
 
-<iframe width="100%" height="350" src="https://www.youtube.com/embed/8tHdwpCEXKg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<lite-youtube videoid="8tHdwpCEXKg"></lite-youtube>

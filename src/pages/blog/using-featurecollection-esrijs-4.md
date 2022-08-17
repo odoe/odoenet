@@ -12,6 +12,6 @@ When working with FeatureLayers, sometimes you don't want to work directly with 
 
 This is simple enough to do using the [source](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#source) property of a FeatureLayer to update the graphics. You can even update the source during runtime to update your data as needed.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/HnBrAvsUUww" frameborder="0" allowfullscreen></iframe>
+<lite-youtube videoid="HnBrAvsUUww"></lite-youtube>
 
 [gist](https://gist.github.com/odoe/a07b766354bf786f7ec17bc28f5860a3.js)

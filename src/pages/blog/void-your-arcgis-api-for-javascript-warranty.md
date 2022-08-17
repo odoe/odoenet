@@ -18,7 +18,7 @@ In this video, I'll show you how you can gut the ArcGIS API for JavaScript innar
 
 The best part is, WebMaps are just part of the platform, so you can load your WebMap in 3x and a 3D view in 4x and the world will be a happy place!
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/m6B2cMIuFIM" frameborder="0" allowfullscreen></iframe>
+<lite-youtube videoid="m6B2cMIuFIM"></lite-youtube>
 
 As your friend, I need to advise you that _yes_, this works. It actually works better than you might expect. I've just never been a fan of loading two versions of any library side-by-side.
 

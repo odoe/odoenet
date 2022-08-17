@@ -18,4 +18,4 @@ I just wanted to put together a video to show how you might use the workers to o
 
 It's a fairly simple idea, but I think it demonstrates the basics of using the workers in the API. I'm sure you can find a creative use of the worker framework in your own application development!
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/MOsB9CF4XXU" frameborder="0" allowfullscreen></iframe>
+<lite-youtube videoid="MOsB9CF4XXU"></lite-youtube>

@@ -99,4 +99,4 @@ As you can see, this is a fairly simple rollup config. It's going to create the 
 
 Web workers are amazing tools in your toolbox as a web developer. It doesn't mean you always need them, but it's nice to know you have the option, just in case. I don't use them in apps very often, unless I come across a use case like the spatial join that can just wreck a user experience by blocking the main thread. You can find the source code for this demo [on github](https://github.com/Esri/jsapi-resources/tree/master/esm-samples/jsapi-custom-workers) and you can watch me build this app in the video below!
 
-<iframe width="100%" height="500" src="https://www.youtube.com/embed/EaAM_QaeERE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<lite-youtube videoid="EaAM_QaeERE"></lite-youtube>

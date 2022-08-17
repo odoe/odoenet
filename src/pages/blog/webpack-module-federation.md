@@ -156,4 +156,4 @@ That's the gist of it. I don't want to say it's simple, but now that I've wrappe
 
 Check out this video where I get into the weeds of putting this project together.
 
-<iframe width="100%" height="350" src="https://www.youtube.com/embed/Gh4qOvjzyAw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<lite-youtube videoid="Gh4qOvjzyAw"></lite-youtube>

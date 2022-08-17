@@ -63,7 +63,7 @@ We can then start updating our `App.svelte` component, following the mapping tut
 
 This provides the basic shell for the app, but we still need to hook this up to some other pieces to display a map.
 
-```js
+```html
 <script>
   // calcite components
   import "@esri/calcite-components/dist/components/calcite-shell";
@@ -217,7 +217,7 @@ The next step in the tutorial is to set up the action bar and panels where the w
 
 Ok, we added a lot now. We have some more components and an [action bar](https://developers.arcgis.com/calcite-design-system/components/action-bar/) that let's us add buttons and toggle the visibility of some widgets. We are using the same `bind:this` syntax we used earlier. Since we added more components, we need to import some more modules, plus we can start initializing our widgets.
 
-```js
+```html
 <script>
   // calcite components
   import "@esri/calcite-components/dist/components/calcite-shell";
@@ -302,23 +302,23 @@ At this point, our application is nearly complete. Except we have no way to togg
 let activeWidget;
 
 const handleActionBarClick = ({ target }) => {
-if (target.tagName !== "CALCITE-ACTION") {
-    return;
-}
+  if (target.tagName !== "CALCITE-ACTION") {
+      return;
+  }
 
-if (activeWidget) {
-    document.querySelector(`[data-action-id=${activeWidget}]`).active = false;
-    document.querySelector(`[data-panel-id=${activeWidget}]`).hidden = true;
-}
+  if (activeWidget) {
+      document.querySelector(`[data-action-id=${activeWidget}]`).active = false;
+      document.querySelector(`[data-panel-id=${activeWidget}]`).hidden = true;
+  }
 
-const nextWidget = target.dataset.actionId;
-if (nextWidget !== activeWidget) {
-    document.querySelector(`[data-action-id=${nextWidget}]`).active = true;
-    document.querySelector(`[data-panel-id=${nextWidget}]`).hidden = false;
-    activeWidget = nextWidget;
-} else {
-    activeWidget = null;
-}
+  const nextWidget = target.dataset.actionId;
+  if (nextWidget !== activeWidget) {
+      document.querySelector(`[data-action-id=${nextWidget}]`).active = true;
+      document.querySelector(`[data-panel-id=${nextWidget}]`).hidden = false;
+      activeWidget = nextWidget;
+  } else {
+      activeWidget = null;
+  }
 };
 ```
 
@@ -340,4 +340,4 @@ I'm not a Svelte power-user, but it is quickly growing on me. Any framework that
 
 You can watch this video for more information!
 
-<iframe width="100%" height="350" src="https://www.youtube.com/embed/lDj8TVxfrCg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<lite-youtube videoid="lDj8TVxfrCg"></lite-youtube>

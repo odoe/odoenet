@@ -25,4 +25,4 @@ picture to the symbol. It's great, because when you are ready, you can copy the 
 
 You can see a quick video where I stumble my way through the CIM builder below.
 
-<iframe width="100%" height="350" src="https://www.youtube.com/embed/2cJCDPZ08Jc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<lite-youtube videoid="2cJCDPZ08Jc"></lite-youtube>

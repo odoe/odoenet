@@ -98,4 +98,4 @@ Here is a live demo.
 
 If you want to see me walk through this in more detail, check out the video below!
 
-<iframe width="100%" height="350" src="https://www.youtube.com/embed/8eUMNAZ79gg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<lite-youtube videoid="8eUMNAZ79gg"></lite-youtube>

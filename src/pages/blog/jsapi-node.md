@@ -97,4 +97,4 @@ And there you go! You have successfully used the ArcGIS JSAPI in Node. If you wa
 
 You can also check out this video below!
 
-<iframe width="100%" height="350" src="https://www.youtube.com/embed/f3kfswbNf9Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<lite-youtube videoid="f3kfswbNf9Y"></lite-youtube>

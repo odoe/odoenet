@@ -117,4 +117,4 @@ For a while there, I was flipping tables trying to get Snowpack to work with the
 
 You can find a [dmeo repo here](https://github.com/odoe/snowpack-jsapi), and check out the video below for more details!
 
-<iframe width="100%" height="350" src="https://www.youtube.com/embed/fEkJDV2KXDA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<lite-youtube videoid="fEkJDV2KXDA"></lite-youtube>

@@ -76,4 +76,4 @@ Here is an demo application in action you can check out.
 
 And if you are so inclined, you can watch a video where I show you this magnificent tip step by step!
 
-<iframe width="100%" height="350" src="https://www.youtube.com/embed/FWM35IfvjVs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<lite-youtube videoid="FWM35IfvjVs"></lite-youtube>

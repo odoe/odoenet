@@ -57,4 +57,4 @@ Be sure to also check out my video below on using the plugin!
 
 Happy hacking!
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gTFZgLYegDY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<lite-youtube videoid="gTFZgLYegDY"></lite-youtube>

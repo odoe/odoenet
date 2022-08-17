@@ -14,7 +14,7 @@ The ability to explore your data based on temporal information is incredibly use
 
 In the video below I do a quick review of some of the new Smart Mapping capabilities and go over some of the configuration settings for each one.
 
-<iframe width="420" height="315" src="https://www.youtube.com/embed/kkuBfEBkknc" frameborder="0" allowfullscreen></iframe>
+<lite-youtube videoid="kkuBfEBkknc"></lite-youtube>
 
 You can visualize by continuous timeline with color or age, or you can visualize the data by age, so you can focus on how old events are and even focus in on time periods of your data.
 

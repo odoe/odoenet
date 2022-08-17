@@ -24,4 +24,4 @@ Get more familiar with the 4.0 API and be ready to build applications to meet yo
 
 The first draft of the new [Introduction to ArcGIS API for JavaScript 4.0](https://leanpub.com/arcgis-js-api-4) will be released soon and it covers all these new features and more in depth. Stay tuned and sign up to this blogs mailing list to stay updated.
 
-<iframe width="420" height="315" src="https://www.youtube.com/embed/CgrLCTBAbBs" frameborder="0" allowfullscreen></iframe>
+<lite-youtube videoid="CgrLCTBAbBs"></lite-youtube>

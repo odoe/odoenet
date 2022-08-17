@@ -183,4 +183,4 @@ You don't need to test every little detail of your application and every single 
 
 For more info, you can check out the video below!
 
-<iframe width="100%" height="350" src="https://www.youtube.com/embed/mFESI6VHkfI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<lite-youtube videoid="mFESI6VHkfI"></lite-youtube>

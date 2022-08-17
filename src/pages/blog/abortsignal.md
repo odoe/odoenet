@@ -58,4 +58,4 @@ There could be various reasons you, as a developer might use this. Maybe there i
 
 Check out this video below for more details.
 
-<iframe width="100%" height="350" src="https://www.youtube.com/embed/WUwzGIzwZ38" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<lite-youtube videoid="WUwzGIzwZ38"></lite-youtube>

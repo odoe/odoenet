@@ -65,4 +65,4 @@ Here, we've typed our `HashMap` to only accept values of `T`. This is pretty use
 
 This typed HashMap is a great way to start a building block of types in your application. You might even move on to incorporatinbg [Utility Types](https://www.typescriptlang.org/docs/handbook/utility-types.html). You can mix and match these to do some amazing things with TypeScript. I just wanted to cover a really simple way you can get started to move beyond typing your _still-in-progress_ types as `any`.
 
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/ufi5WhF9Frk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<lite-youtube videoid="ufi5WhF9Frk"></lite-youtube>

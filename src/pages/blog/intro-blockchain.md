@@ -193,4 +193,4 @@ I have some other ideas for stuff I want to try with smart contracts and using t
 
 If you want to learn more about this Dapp in detail, check out my vide below.
 
-<iframe width="100%" height="350" src="https://www.youtube.com/embed/0oQNvZvG43M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<lite-youtube videoid="0oQNvZvG43M"></lite-youtube>
