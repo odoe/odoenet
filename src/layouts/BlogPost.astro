@@ -1,0 +1,100 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Signup from "../components/Signup.astro";
+
+export interface Props {
+	content: {
+		title: string;
+		description: string;
+		pubDate?: string;
+		updatedDate?: string;
+		heroImage?: string;
+		coverImage?: string;
+		url?: string;
+	};
+}
+
+const {
+	content: {
+		title,
+		description,
+		pubDate,
+		updatedDate,
+		heroImage,
+		coverImage,
+		url,
+	},
+} = Astro.props as Props;
+
+const postImage = coverImage || heroImage;
+const imageUrl = `/assets${url}/images/${postImage}`;
+---
+
+<html>
+	<head>
+		<BaseHead title={title} description={description} />
+		<style>
+			.title {
+				font-size: 2em;
+				margin: 0.25em 0 0;
+			}
+
+			hr {
+				border-top: 1px solid #ddd;
+				margin: 1rem 0;
+			}
+		</style>
+	</head>
+
+	<body>
+		<Header />
+		<main>
+			<article>
+				{
+					postImage && (
+						<picture>
+							<source
+								type="image/webp"
+								srcset={imageUrl.replace(
+									/\.(jpg|png)/,
+									".webp"
+								)}
+							/>
+							<source type="image/jpeg" srcset={imageUrl} />
+							<img
+								src={imageUrl}
+								alt={description}
+								loading="lazy"
+							/>
+						</picture>
+					)
+				}
+				<h1 class="title">{title}</h1>
+				{
+					pubDate && (
+						<time datetime={pubDate}>
+							{new Date(pubDate).toLocaleDateString("en-us", {
+								year: "numeric",
+								month: "short",
+								day: "numeric",
+							})}
+						</time>
+					)
+				}
+				{
+					updatedDate && (
+						<div>
+							Last updated on <time>{updatedDate}</time>
+						</div>
+					)
+				}
+				<hr />
+				<slot />
+			</article>
+		</main>
+		<Signup />
+		<Footer />
+	</body>
+</html>

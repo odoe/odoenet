@@ -1,0 +1,76 @@
+---
+import HeaderLink from "./HeaderLink.astro";
+import { SITE_TITLE } from "../config";
+---
+
+<header class="root">
+	<div class="title">
+		<HeaderLink class="link" href="/">{SITE_TITLE}</HeaderLink>
+	</div>
+	<div class="title">
+		<HeaderLink class="link" href="/blog">blog</HeaderLink>
+	</div>
+</header>
+
+<!-- <header>
+	<h2>
+		{SITE_TITLE}
+	</h2>
+	<nav>
+		<HeaderLink href="/">odoenet</HeaderLink>
+		<HeaderLink href="/blog">blog</HeaderLink>
+		<HeaderLink href="/about">About</HeaderLink>
+		<HeaderLink href="https://twitter.com/astrodotbuild" target="_blank">Twitter</HeaderLink>
+		<HeaderLink href="https://github.com/withastro/astro" target="_blank">GitHub</HeaderLink>
+	</nav>
+</header> -->
+<style>
+	.root {
+		flex: 1;
+		overflow: hidden;
+		color: #edf5e1;
+		background-color: #05386b;
+		padding: 1rem;
+		display: flex;
+		justify-content: space-between;
+		grid-column: 1 / 5;
+		justify-self: center;
+		position: sticky;
+		top: 0;
+	}
+
+	.title {
+		font-size: 20px;
+		margin: 0;
+		font-weight: 400;
+	}
+
+	.link:hover {
+		color: #fff;
+		background-color: #379683;
+	}
+
+	.link {
+		min-width: 140px;
+		text-align: center;
+		text-decoration: none;
+		padding: 18px;
+		color: #edf5e1;
+		box-sizing: border-box;
+	}
+
+	@media only screen and (max-width: 480px) {
+		.title {
+			font-size: 14px;
+			margin: 0;
+			font-weight: 400;
+		}
+
+		.link {
+			padding-top: 18px;
+			padding-bottom: 18px;
+			padding-left: 9px;
+			padding-right: 9px;
+		}
+	}
+</style>

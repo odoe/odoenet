@@ -1,0 +1,129 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Signup from "../components/Signup.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
+
+// Use Astro.glob() to fetch all posts, and then sort them by date.
+const posts = (await Astro.glob("./blog/*.{md,mdx}")).sort(
+	(a, b) =>
+		new Date(b.frontmatter.pubDate).valueOf() -
+		new Date(a.frontmatter.pubDate).valueOf()
+);
+---
+
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			ul {
+				list-style-type: none;
+				padding: unset;
+			}
+			ul li {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				padding: 5px;
+			}
+			ul li a {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			ul li time {
+				flex: 0 0;
+				font-style: italic;
+				color: #888;
+			}
+			ul li a:visited {
+				color: #8e32dc;
+			}
+
+			.image {
+				max-width: 420px;
+				object-fit: contain;
+				display: block;
+				margin: 0 auto;
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<content>
+				<ul>
+					{
+						posts.map(
+							(post) =>
+								console.log(post.url) || (
+									<li>
+										<a href={post.url}>
+											<picture>
+												<source
+													type="image/webp"
+													srcset={`/assets${
+														post.url
+													}/images/${
+														post.frontmatter
+															.coverImage ||
+														post.frontmatter
+															.heroImage
+													}`?.replace(
+														/\.(jpg|png)/,
+														".webp"
+													)}
+												/>
+												<source
+													type="image/jpeg"
+													srcset={
+														post.frontmatter
+															.coverImage ||
+														post.frontmatter
+															.heroImage
+													}
+												/>
+												<img
+													alt={
+														post.frontmatter
+															.description
+													}
+													loading="lazy"
+													class="image"
+													src={`/assets${
+														post.url
+													}/images/${
+														post.frontmatter
+															.coverImage ||
+														post.frontmatter
+															.heroImage
+													}`}
+												/>
+											</picture>
+
+											{post.frontmatter.title}
+										</a>
+										<time
+											datetime={post.frontmatter.pubDate}
+										>
+											{new Date(
+												post.frontmatter.pubDate
+											).toLocaleDateString("en-us", {
+												year: "numeric",
+												month: "short",
+												day: "numeric",
+											})}
+										</time>
+									</li>
+								)
+						)
+					}
+				</ul>
+			</content>
+			<Footer />
+			<Signup />
+		</main>
+	</body>
+</html>
