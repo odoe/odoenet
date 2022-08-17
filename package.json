@@ -1,7 +1,11 @@
 {
   "name": "odoenet",
-  "version": "0.0.1",
+  "version": "2.0.0-beta",
+  "license": "BSD-3-Clause",
   "private": true,
+  "engines": {
+    "node": ">=16"
+  },
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
