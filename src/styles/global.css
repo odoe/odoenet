@@ -6,15 +6,25 @@
 
 /* @import "./typography.css"; */
 
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import "./variables.css";
+
 body {
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	/* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+	font-family: 'Merriweather', sans-serif;
 	margin: auto;
 	text-align: left;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	line-height: 1.5;
-	color: hsla(291, 0%, 18%, 0.95);
-	background-color: hsl(0,0%,94.9%);
+	color: var(--body-color);
+	background-color: var(--background-color-main);
+}
+header{
+	font-family: Verdana, sans-serif;
+	font-weight: 400;
+	text-rendering: optimizeLegibility;
+	line-height: 1.1;
 }
 main {
 	margin: auto;
@@ -29,11 +39,9 @@ h5,
 h6,
 strong,
 b {
-	color: #222;
+	color: var(--b-color);
 }
-a {
-	color: #3273dc;
-}
+
 nav a {
 	margin-right: 10px;
 }
@@ -56,7 +64,6 @@ img {
 code {
 	font-size: 14px;
 	padding: 2px 5px;
-	background-color: #f2f2f2;
 }
 pre {
 	padding: 1rem;
@@ -64,13 +71,33 @@ pre {
 pre > code {
 	all: unset;
 }
+
+/* line-code, no pre */
+:not(pre) > code {
+	background: #2b2b2b;
+	color: #abe338;
+	border-radius: 0.5em;
+	padding: 0.25em;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+}
+
 blockquote {
-	border: 1px solid #999;
-	color: #222;
+	border: 1px solid var(--border-color);
+	color: var(--b-color);
 	padding: 2px 0px 2px 20px;
 	margin: 0px;
 	font-style: italic;
 }
+
+/* anchors */
+a {
+    color: var(--a-color);
+    text-decoration: none;
+  }
+  a:hover,
+  a:active {
+    color: var(--a-color-hover);
+  }
 
 /* blog stuff */
 article p img {

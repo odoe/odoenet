@@ -6,6 +6,13 @@
     --background-color-header-alt: #379683;
     --background-text-color: #edf5e1;
     --link-color: #003866;
+    --body-color: hsla(291, 0%, 18%, 0.95);
+    --b-color: #222;
+    --border-color: #999;
+  
+    /* anchors */
+    --a-color: #07e;
+    --a-color-hover: #e32;
     /* Cards */
     --card-bg-color: rgba(255, 255, 255, 0.6);
     --card-title-color: #05386B;
