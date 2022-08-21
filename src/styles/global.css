@@ -89,6 +89,20 @@ blockquote {
 	font-style: italic;
 }
 
+.avatar {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.avatar__image img {
+	border-radius: 50%;
+}
+
+.main-content {
+	line-height: 2;
+}
+
 /* anchors */
 a {
     color: var(--a-color);
