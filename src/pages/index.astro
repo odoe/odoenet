@@ -12,14 +12,18 @@ import { Picture } from "@astrojs/image/components";
 <!DOCTYPE html>
 <html lang="en-us">
 	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<BaseHead
+			title={SITE_TITLE}
+			description={SITE_DESCRIPTION}
+			image={bannerImage}
+		/>
 	</head>
 	<body>
 		<Header title={SITE_TITLE} />
 		<main>
 			<Picture
 				src={bannerImage}
-				aspectRatio={"7:1"}
+				aspectRatio={"10:1"}
 				widths={[200, 400, 1000]}
 				sizes="(max-width: 2048px) 100vw"
 				formats={["avif", "jpeg", "png", "webp"]}

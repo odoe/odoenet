@@ -11,7 +11,10 @@ export interface Props {
 
 const { title, description, image = "/placeholder-social.jpg" } = Astro.props;
 
-const imageUrl = `/assets${Astro.url.pathname}/images/cover.jpg`;
+const imageUrl = `/assets${Astro.url.pathname.replace(
+	"//",
+	"/"
+)}/images/cover.jpg`;
 ---
 
 <!-- Global Metadata -->

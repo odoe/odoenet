@@ -29,12 +29,12 @@ const {
 } = Astro.props as Props;
 
 const postImage = coverImage || heroImage;
-const imageUrl = `/assets${url}/images/${postImage}`;
+const imageUrl = `/assets${url}/images/${postImage}`.replaceAll("//", "/");
 ---
 
 <html>
 	<head>
-		<BaseHead title={title} description={description} />
+		<BaseHead title={title} description={description} image={imageUrl} />
 		<style>
 			.title {
 				font-size: 2em;
