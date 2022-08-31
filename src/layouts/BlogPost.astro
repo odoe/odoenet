@@ -10,31 +10,21 @@ export interface Props {
 		description: string;
 		pubDate?: string;
 		updatedDate?: string;
-		heroImage?: string;
 		coverImage?: string;
 		url?: string;
 	};
 }
 
 const {
-	content: {
-		title,
-		description,
-		pubDate,
-		updatedDate,
-		heroImage,
-		coverImage,
-		url,
-	},
+	content: { title, description, pubDate, updatedDate, coverImage, url },
 } = Astro.props as Props;
 
-const postImage = coverImage || heroImage;
-const imageUrl = `/assets${url}/images/${postImage}`.replaceAll("//", "/");
+const imageUrl = `/assets${url}/images/${coverImage}`.replaceAll("//", "/");
 ---
 
 <html>
 	<head>
-		<BaseHead title={title} description={description} image={imageUrl} />
+		<BaseHead title={title} description={description} image={coverImage} />
 		<style>
 			.title {
 				font-size: 2em;
@@ -60,7 +50,7 @@ const imageUrl = `/assets${url}/images/${postImage}`.replaceAll("//", "/");
 		<main>
 			<article>
 				{
-					postImage && (
+					coverImage && (
 						<picture>
 							<source
 								type="image/webp"
