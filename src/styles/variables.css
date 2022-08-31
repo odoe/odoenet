@@ -5,13 +5,14 @@
     --background-color-header: #05386B;
     --background-color-header-alt: #379683;
     --background-text-color: #edf5e1;
-    --link-color: #003866;
+    --link-color-old: #003866;
+    --link-color: #05386B;
     --body-color: hsla(291, 0%, 18%, 0.95);
     --b-color: #222;
     --border-color: #999;
   
     /* anchors */
-    --a-color: #07e;
+    --a-color: #05386B;
     --a-color-hover: #e32;
     /* Cards */
     --card-bg-color: rgba(255, 255, 255, 0.6);

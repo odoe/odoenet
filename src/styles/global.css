@@ -4,14 +4,20 @@
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
 
-/* @import "./typography.css"; */
-
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 @import "./variables.css";
 
 body {
 	/* font-family: Verdana, Geneva, Tahoma, sans-serif; */
 	font-family: 'Merriweather', sans-serif;
+	/* src: url("./assets/fonts/Merriweather-Black.ttf");
+	src: url("./assets/fonts/Merriweather-BlackItalic.ttf");
+	src: url("./assets/fonts/Merriweather-Bold.ttf");
+	src: url("./assets/fonts/Merriweather-BoldItalic.ttf");
+	src: url("./assets/fonts/Merriweather-Italic.ttf");
+	src: url("./assets/fonts/Merriweather-Light.ttf");
+	src: url("./assets/fonts/Merriweather-LightItalic.ttf");
+	src: url("./assets/fonts/Merriweather-Regular.ttf"); */
 	margin: auto;
 	text-align: left;
 	word-wrap: break-word;
@@ -40,6 +46,14 @@ h6,
 strong,
 b {
 	color: var(--b-color);
+}
+
+main a {
+	color: var(--link-color);
+}
+
+main a:visited {
+	color: var(--link-color);
 }
 
 nav a {
@@ -95,7 +109,7 @@ blockquote {
 	width: 100%;
 }
 
-.avatar__image img {
+.avatar__image {
 	border-radius: 50%;
 }
 

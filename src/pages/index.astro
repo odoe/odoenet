@@ -4,8 +4,6 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import Signup from "../components/Signup.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
-import avatarImage from "../assets/avatar.jpg";
-import { Picture } from "@astrojs/image/components";
 ---
 
 <!DOCTYPE html>
@@ -71,14 +69,12 @@ import { Picture } from "@astrojs/image/components";
 				</g>
 			</svg>
 			<div class="avatar">
-				<Picture
-					class="avatar__image"
-					src={avatarImage}
-					aspectRatio={"4:4"}
-					widths={[20, 40, 60]}
-					sizes="(max-width: 200px) 60px"
-					formats={["avif", "jpeg", "png", "webp"]}
+				<img
+					width="60px"
+					height="60px"
+					src="/assets/images/avatar.jpg"
 					alt="Rene Rubalcava"
+					class="avatar__image"
 				/>
 			</div>
 			<div class="main-content">
