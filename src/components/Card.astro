@@ -52,6 +52,12 @@ const coverImage = post.frontmatter.coverImage
         background: var(--card-bg-color);
         align-items: center;
         filter: drop-shadow(1px 1px 5px var(--b-color));
+        max-width: 65ch;
+        transition: box-shadow 0.3s;
+    }
+
+    .root:hover {
+        box-shadow: 0 0 11px rgba(33, 33, 33, 0.9);
     }
 
     .image {
@@ -89,9 +95,10 @@ const coverImage = post.frontmatter.coverImage
     @media only screen and (max-width: 480px) {
         .root {
             justify-content: center;
+            width: 90%;
         }
         .image {
-            max-height: 100px;
+            width: 100%;
         }
         .banner {
             font-size: 90%;

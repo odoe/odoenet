@@ -2,7 +2,6 @@
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import Signup from "../components/Signup.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 ---
 
@@ -11,8 +10,36 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<style>
-			.logo-container {
-				width: 100%;
+			.img-page {
+				width: 65ch;
+				transition: box-shadow 0.3s;
+			}
+
+			.img-container {
+				position: relative;
+				display: inline-block;
+				line-height: 1;
+			}
+
+			.img-page:hover {
+				box-shadow: 0 0 11px rgba(33, 33, 33, 0.9);
+			}
+
+			.img-container a {
+				position: absolute;
+				z-index: 2;
+				left: 12px;
+				bottom: 12px;
+				text-align: start;
+				width: 60%;
+				color: #fff;
+				font-size: 1.5rem;
+				font-weight: 900;
+			}
+
+			.img-container a:visited {
+				color: #fff;
+				font-size: 1.5rem;
 			}
 		</style>
 	</head>
@@ -68,87 +95,121 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 					class="avatar__image"
 				/>
 			</div>
-			<div class="main-content">
-				<p>Hi! I'm Rene Rubalcava and this is odoenet!</p>
-				<p>You can find me in a number of places!</p>
-				<ul>
-					<li>
-						<a
-							href="https://theboundingbox.podbean.com/"
-							target="_blank"
-							rel="nofollow"
-							>podcast
-						</a>
-					</li>
-					<li>
-						<a
-							href="https://github.com/odoe"
-							target="_blank"
-							rel="nofollow"
-							>github
-						</a>
-					</li>
-					<li>
-						<a
-							href="https://twitter.com/odoenet"
-							target="_blank"
-							rel="nofollow"
-							>twitter
-						</a>
-					</li>
-					<li>
-						<a
-							href="https://www.twitch.tv/odoenet"
-							target="_blank"
-							rel="nofollow"
-							>twitch
-						</a>
-					</li>
-					<li>
-						<a
-							href="https://www.youtube.com/c/ReneRubalcava"
-							target="_blank"
-							rel="nofollow"
-							>youtube
-						</a>
-					</li>
-					<li>
-						<a
-							href="https://www.linkedin.com/in/renerubalcava/"
-							target="_blank"
-							rel="nofollow"
-							>linkedin
-						</a>
-					</li>
-					<li>
-						<a
-							href="https://learn-dojo.com/"
-							target="_blank"
-							rel="nofollow"
-							>learn-dojo
-						</a>
-					</li>
-				</ul>
-				<p>
-					If you happen to notice problems, typos, or needed edits,
-					please make an issue <a
-						href="https://github.com/odoe/odoenet/issues"
-						target="_blank"
-						rel="nofollow"
-						>here
-					</a>.
-				</p>
-				<p>
-					If you are so inclined, you can donate <a
-						href="https://donate.cipherdogs.net/?address=49FdUbruv6F5otJqapanaJcoLLoosDyoL5gs7XavTATmZGAKb6j2neUNbQ1o1SuXtpZisd4GZ8scRDvwbbMHzPtKSMyH8rz"
-						target="_blank"
-						rel="nofollow"
-						>Monero here
-					</a>.
-				</p>
+			<div class="img-container">
+				<img
+					class="img-page"
+					loading="lazy"
+					src="/assets/images/blog.jpg"
+					alt="Blog"
+				/>
+				<a href="/blog">/blog</a>
+			</div>
+			<div class="img-container">
+				<img
+					class="img-page"
+					loading="lazy"
+					src="/assets/images/podcast-site.jpg"
+					alt="Podcast"
+				/>
+				<a href="/podcast">/podcast</a>
+			</div>
+			<div class="img-container">
+				<img
+					class="img-page"
+					loading="lazy"
+					src="/assets/images/made-site.jpg"
+					alt="Made"
+				/>
+				<a href="/made">/made</a>
+			</div>
+			<div class="img-container">
+				<img
+					class="img-page"
+					loading="lazy"
+					src="/assets/images/uses-site.jpg"
+					alt="Uses"
+				/>
+				<a href="/uses">/uses</a>
+			</div>
+			<div class="social">
+				<a
+					href="https://github.com/odoe"
+					target="_blank"
+					rel="nofollow"
+				>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="60px"
+						height="60px"
+						aria-label="GitHub"
+						role="img"
+						viewBox="0 0 512 512"
+					>
+						<rect width="512" height="512" rx="15%" fill="#1B1817"
+						></rect>
+						<path
+							fill="#fff"
+							d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"
+						></path>
+					</svg>
+				</a>
+				<a
+					href="https://twitter.com/odoenet"
+					target="_blank"
+					rel="nofollow"
+				>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="60px"
+						height="60px"
+						viewBox="0 0 455 455"
+					>
+						<path
+							d="M0 0v455h455V0H0zm352.751 163.259c.123 2.773.186 5.561.186 8.36 0 85.403-65.002 183.876-183.873 183.876-36.496 0-70.466-10.697-99.065-29.037 5.056.601 10.199.907 15.417.907 30.278 0 58.143-10.331 80.262-27.668-28.28-.519-52.148-19.204-60.373-44.88a64.403 64.403 0 0012.161 1.163c5.894 0 11.604-.794 17.027-2.268-29.563-5.939-51.841-32.057-51.841-63.368 0-.273 0-.544.006-.814a64.366 64.366 0 0029.271 8.084c-17.342-11.589-28.748-31.371-28.748-53.79 0-11.845 3.187-22.945 8.751-32.492 31.873 39.101 79.493 64.828 133.203 67.526a64.831 64.831 0 01-1.677-14.729c0-35.688 28.938-64.623 64.626-64.623 18.589 0 35.385 7.847 47.173 20.406a129.352 129.352 0 0041.038-15.681c-4.824 15.092-15.071 27.754-28.415 35.754 13.074-1.563 25.528-5.038 37.118-10.178-8.662 12.959-19.618 24.342-32.247 33.452z"
+							fill-rule="evenodd"
+							clip-rule="evenodd"></path>
+					</svg>
+				</a>
+
+				<a
+					href="https://www.youtube.com/c/ReneRubalcava"
+					target="_blank"
+					rel="nofollow"
+				>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="60px"
+						height="60px"
+						viewBox="0 0 242.667 242.667"
+					>
+						<path
+							d="M106.955 94.325l39.161 27.008-39.161 27.008V94.325zM242.667 0v242.667H0V0h242.667zM190.25 101.494c0-16.378-13.277-29.655-29.655-29.655H82.072c-16.378 0-29.655 13.277-29.655 29.655v39.679c0 16.378 13.277 29.655 29.655 29.655h78.523c16.378 0 29.655-13.277 29.655-29.655v-39.679z"
+						></path>
+					</svg>
+				</a>
+				<a
+					href="https://www.linkedin.com/in/renerubalcava/"
+					target="_blank"
+					rel="nofollow"
+				>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="60px"
+						height="60px"
+						viewBox="0 0 455 455"
+					>
+						<g fill-rule="evenodd" clip-rule="evenodd">
+							<path
+								d="M246.4 204.35v-.665c-.136.223-.324.446-.442.665h.442z"
+							></path>
+							<path
+								d="M0 0v455h455V0H0zm141.522 378.002H74.016V174.906h67.506v203.096zm-33.753-230.816h-.446C84.678 147.186 70 131.585 70 112.085c0-19.928 15.107-35.087 38.211-35.087 23.109 0 37.31 15.159 37.752 35.087 0 19.5-14.643 35.101-38.194 35.101zM385 378.002h-67.524V269.345c0-27.291-9.756-45.92-34.195-45.92-18.664 0-29.755 12.543-34.641 24.693-1.776 4.34-2.24 10.373-2.24 16.459v113.426h-67.537s.905-184.043 0-203.096H246.4v28.779c8.973-13.807 24.986-33.547 60.856-33.547 44.437 0 77.744 29.02 77.744 91.398v116.465z"
+							></path>
+						</g>
+					</svg>
+				</a>
 			</div>
 		</main>
-		<Signup />
 		<Footer />
 	</body>
 </html>
