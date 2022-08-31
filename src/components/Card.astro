@@ -49,22 +49,12 @@ const coverImage = post.frontmatter.coverImage
     .root {
         display: flex;
         flex-direction: column;
-        padding: 1rem;
-        margin: 1rem;
         background: var(--card-bg-color);
         align-items: center;
-    }
-
-    .link {
-        color: var(--link-color);
-    }
-
-    .link:visited {
-        color: var(--link-color);
+        filter: drop-shadow(1px 1px 5px var(--b-color));
     }
 
     .image {
-        /* max-height: 175px; */
         max-width: 420px;
         object-fit: contain;
         display: block;

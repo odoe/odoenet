@@ -80,6 +80,7 @@ code {
 	padding: 2px 5px;
 }
 pre {
+	line-height: 1.5;
 	padding: 1rem;
 }
 pre > code {
@@ -122,8 +123,8 @@ a {
     color: var(--a-color);
     text-decoration: none;
   }
-  a:hover,
-  a:active {
+a:hover,
+a:active {
     color: var(--a-color-hover);
   }
 

@@ -13,8 +13,8 @@
   
     /* anchors */
     --a-color: #05386B;
-    --a-color-hover: #e32;
+    --a-color-hover: #911d7b;
     /* Cards */
-    --card-bg-color: rgba(255, 255, 255, 0.6);
+    --card-bg-color: rgb(235, 235, 235);
     --card-title-color: #05386B;
   }
