@@ -9,39 +9,6 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 <html lang="en-us">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-		<style>
-			.img-page {
-				width: 65ch;
-				transition: box-shadow 0.3s;
-			}
-
-			.img-container {
-				position: relative;
-				display: inline-block;
-				line-height: 1;
-			}
-
-			.img-page:hover {
-				box-shadow: 0 0 11px rgba(33, 33, 33, 0.9);
-			}
-
-			.img-container a {
-				position: absolute;
-				z-index: 2;
-				left: 12px;
-				bottom: 12px;
-				text-align: start;
-				width: 60%;
-				color: #fff;
-				font-size: 1.5rem;
-				font-weight: 900;
-			}
-
-			.img-container a:visited {
-				color: #fff;
-				font-size: 1.5rem;
-			}
-		</style>
 	</head>
 
 	<body>
@@ -96,44 +63,89 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 				/>
 			</div>
 			<div class="img-container">
-				<img
-					class="img-page"
-					loading="lazy"
-					src="/assets/images/blog.jpg"
-					alt="Blog"
-				/>
+				<picture>
+					<source
+						type="image/webp"
+						srcset="/assets/images/blog.webp"
+					/>
+					<source
+						type="image/jpeg"
+						srcset="/assets/images/blog.jpg"
+					/>
+					<img
+						class="img-page"
+						width="668px"
+						height="204px"
+						src="/assets/images/blog.jpg"
+						alt="Blog"
+					/>
+				</picture>
 				<a href="/blog">/blog</a>
 			</div>
 			<div class="img-container">
-				<img
-					class="img-page"
-					loading="lazy"
-					src="/assets/images/podcast-site.jpg"
-					alt="Podcast"
-				/>
+				<picture>
+					<source
+						type="image/webp"
+						srcset="/assets/images/podcast-site.webp"
+					/>
+					<source
+						type="image/jpeg"
+						srcset="/assets/images/podcast-site.jpg"
+					/>
+					<img
+						class="img-page"
+						width="668px"
+						height="204px"
+						src="/assets/images/podcast-site.jpg"
+						alt="Podcast"
+					/>
+				</picture>
 				<a href="/podcast">/podcast</a>
 			</div>
 			<div class="img-container">
-				<img
-					class="img-page"
-					loading="lazy"
-					src="/assets/images/made-site.jpg"
-					alt="Made"
-				/>
+				<picture>
+					<source
+						type="image/webp"
+						srcset="/assets/images/made-site.webp"
+					/>
+					<source
+						type="image/jpeg"
+						srcset="/assets/images/made-site.jpg"
+					/>
+					<img
+						class="img-page"
+						width="668px"
+						height="204px"
+						src="/assets/images/made-site.jpg"
+						alt="Made"
+					/>
+				</picture>
 				<a href="/made">/made</a>
 			</div>
 			<div class="img-container">
-				<img
-					class="img-page"
-					loading="lazy"
-					src="/assets/images/uses-site.jpg"
-					alt="Uses"
-				/>
+				<picture>
+					<source
+						type="image/webp"
+						srcset="/assets/images/uses-site.webp"
+					/>
+					<source
+						type="image/jpeg"
+						srcset="/assets/images/uses-site.jpg"
+					/>
+					<img
+						class="img-page"
+						width="668px"
+						height="204px"
+						src="/assets/images/uses-site.jpg"
+						alt="Uses"
+					/>
+				</picture>
 				<a href="/uses">/uses</a>
 			</div>
 			<div class="social">
 				<a
 					href="https://github.com/odoe"
+					aria-label="Github"
 					target="_blank"
 					rel="nofollow"
 				>
@@ -155,11 +167,13 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 				</a>
 				<a
 					href="https://twitter.com/odoenet"
+					aria-label="twitter"
 					target="_blank"
 					rel="nofollow"
 				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
+						aria-label="Twitter"
 						width="60px"
 						height="60px"
 						viewBox="0 0 455 455"
@@ -173,11 +187,13 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 
 				<a
 					href="https://www.youtube.com/c/ReneRubalcava"
+					aria-label="Youtube"
 					target="_blank"
 					rel="nofollow"
 				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
+						aria-label="Youtube"
 						width="60px"
 						height="60px"
 						viewBox="0 0 242.667 242.667"
@@ -189,11 +205,13 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 				</a>
 				<a
 					href="https://www.linkedin.com/in/renerubalcava/"
+					aria-label="Linkedin"
 					target="_blank"
 					rel="nofollow"
 				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
+						aria-label="Linkedin"
 						width="60px"
 						height="60px"
 						viewBox="0 0 455 455"
