@@ -21,6 +21,9 @@
     "astro": "^1.0.5"
   },
   "dependencies": {
-    "lite-youtube-embed": "^0.2.0"
+    "lite-youtube-embed": "^0.2.0",
+    "rehype-autolink-headings": "^6.1.1",
+    "rehype-external-links": "^2.0.1",
+    "rehype-slug": "^5.0.1"
   }
 }

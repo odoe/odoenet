@@ -14,7 +14,7 @@ tags: odoe
 * My current Linux flavor is [Pop!_os](https://pop.system76.com/). I really only use Windows for playing games.
 * Yes, I use [Visual Studio Code](https://code.visualstudio.com/) as well, but mainly for screencasts.
 * I use [kitty](https://sw.kovidgoyal.net/kitty/) for my terminal, _meeeeow_.
-* To kind of keep track of things I read, or notes, I use [notion](https://www.notion.so/).
+* To keep track of things I read, notes, bookmarks, I use [notion](https://www.notion.so/).
 * I use [Living Spec](https://www.livingspec.com/) to manage tasks, plan out blog posts, podcasts, and projects.
 
 ### Streaming/Recording
