@@ -4,12 +4,11 @@
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
 
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 @import "./variables.css";
 
 body {
-	/* font-family: Verdana, Geneva, Tahoma, sans-serif; */
-	font-family: 'Merriweather', Verdana, Geneva, Tahoma, sans-serif;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	/* font-family: Georgia,serif; */
 	margin: auto;
 	text-align: left;
 	word-wrap: break-word;
@@ -186,9 +185,16 @@ article p img {
 	margin: 0 auto;
 }
 
+article a {
+	font-weight: 600;
+}
+
 @media only screen and (max-width: 480px) {
 	main {
 		gap: 2px;
+	}
+	article {
+		padding: 18px;
 	}
 	.img-page {
 		width: 65ch;

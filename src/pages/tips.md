@@ -1,5 +1,5 @@
 ---
-layout: "../layouts/BlogPost.astro"
+layout: "../layouts/Page.astro"
 title: "Tips"
 description: "I take tips"
 published: true
@@ -13,7 +13,7 @@ tags: odoe
 
 You can scan the QR code or copy my [Cardano](https://cardano.org/) $ADA address.
 
-![ADA Tips](assets/tips/images/ada.png)
+![ADA Tips](/assets/tips/images/ada.png)
 
 addr1qxzaexhem3zc3pszru0n8fuwe2jepzfpg3zgh35j0au79h\
 4khr46ttwax64m6vjm6qf48l6a7ypmappk7an224qtp88svqeazf

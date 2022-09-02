@@ -1,5 +1,5 @@
 ---
-layout: "../layouts/Podcast.astro"
+layout: "../layouts/Page.astro"
 title: "The Bounding Box"
 description: "Geo Development, Web Development, and everything in between"
 published: true
