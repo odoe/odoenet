@@ -9,8 +9,6 @@ tags: odoe
 coverImage: "the-bounding-box.jpg"
 ---
 
-## Welcome to The Bounding Box
-
 <img src="/assets/images/the-bounding-box.jpg" width="50%">
 
 A podcast that discusses geo development, web development, and everything in between.
