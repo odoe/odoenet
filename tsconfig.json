@@ -1,40 +1,19 @@
 {
-	"compilerOptions": {
-		"baseUrl": ".",
-		"paths": {
-			"*": [
-				"types/*"
-			]
-		},
-		"declaration": false,
-		"experimentalDecorators": true,
-		"jsx": "react",
-		"jsxFactory": "tsx",
-		"lib": [
-			"dom",
-			"es5",
-			"es2015.promise",
-			"es2015.iterable",
-			"es2015.symbol",
-			"es2015.symbol.wellknown"
-		],
-		"module": "umd",
-		"moduleResolution": "node",
-		"esModuleInterop": true,
-		"noUnusedLocals": true,
-		"outDir": "_build/",
-		"removeComments": false,
-		"importHelpers": true,
-		"downlevelIteration": true,
-		"sourceMap": true,
-		"strict": true,
-		"target": "es5",
-		"allowJs": true
-	},
-	"include": [
-		"./src/**/*.ts",
-		"./tests/**/*.ts",
-		"./src/**/*.tsx",
-		"./tests/**/*.tsx"
-	]
+  "compilerOptions": {
+    // Enable top-level await, and other modern ESM features.
+    "target": "ESNext",
+    "module": "ESNext",
+    // Enable node-style module resolution, for things like npm package imports.
+    "moduleResolution": "node",
+    // Enable JSON imports.
+    "resolveJsonModule": true,
+    // Enable stricter transpilation for better output.
+    "isolatedModules": true,
+    // Astro will directly run your TypeScript code, no transpilation needed.
+    "noEmit": true,
+    // Enable strict type checking.
+    "strict": true,
+    // Error when a value import is only used as a type.
+    "importsNotUsedAsValues": "error"
+  }
 }

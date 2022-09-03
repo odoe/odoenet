@@ -1,0 +1,20 @@
+:root {
+    --grid-base: 8px;
+    --background-color-main: hsl(0,0%,94.9%);
+    --background-color-main-alt: #5cdb95;
+    --background-color-header: #05386B;
+    --background-color-header-alt: #379683;
+    --background-text-color: #edf5e1;
+    --link-color-old: #003866;
+    --link-color: #05386B;
+    --body-color: hsla(291, 0%, 18%, 0.95);
+    --b-color: #222;
+    --border-color: #999;
+  
+    /* anchors */
+    --a-color: #05386B;
+    --a-color-hover: #911d7b;
+    /* Cards */
+    --card-bg-color: rgb(235, 235, 235);
+    --card-title-color: #05386B;
+  }

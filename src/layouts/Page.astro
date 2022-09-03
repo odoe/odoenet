@@ -1,0 +1,60 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Signup from "../components/Signup.astro";
+
+export interface Props {
+  content: {
+    title: string;
+    description: string;
+    pubDate?: string;
+    updatedDate?: string;
+    coverImage?: string;
+    url?: string;
+  };
+}
+
+const {
+  content: { title, description, coverImage, url },
+} = Astro.props as Props;
+---
+
+<html>
+  <head>
+    <BaseHead title={title} description={description} image={coverImage} />
+    <style>
+      .title {
+        font-size: 2em;
+        margin: 0.25em 0 0;
+      }
+
+      hr {
+        border-top: 1px solid #ddd;
+        margin: 1rem 0;
+      }
+
+      article {
+        display: flex;
+        flex-direction: column;
+      }
+
+      article > img {
+        margin: auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <Header />
+    <main>
+      <article>
+        <h1 class="title">{title}</h1>
+        <hr />
+        <slot />
+      </article>
+    </main>
+    <Signup />
+    <Footer />
+  </body>
+</html>

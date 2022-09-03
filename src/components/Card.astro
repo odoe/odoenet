@@ -1,0 +1,125 @@
+---
+export interface Props {
+    post: Record<string, any>;
+}
+
+const { post } = Astro.props as Props;
+
+const coverImage = post.frontmatter.coverImage
+    ? `/assets${post.url}/images/${post.frontmatter.coverImage}`
+    : `/../../assets/images/odoenet.jpg`;
+---
+
+<section class="root">
+    <a href={post.url} aria-label={post.frontmatter.description}>
+        <div class="content">
+            <picture>
+                <source
+                    type="image/webp"
+                    srcset={coverImage.replace(/\.(jpg|png)/, ".webp")}
+                />
+                <source type="image/jpeg" srcset={coverImage} />
+                <img
+                    alt={post.frontmatter.description}
+                    loading="lazy"
+                    class="image"
+                    src={coverImage}
+                />
+            </picture>
+
+            <span class="banner">{post.frontmatter.title}</span>
+        </div>
+    </a>
+    <small>
+        <time datetime={post.frontmatter.pubDate}>
+            {
+                new Date(post.frontmatter.pubDate).toLocaleDateString("en-us", {
+                    year: "numeric",
+                    month: "short",
+                    day: "numeric",
+                })
+            }
+        </time>
+    </small>
+</section>
+
+<style>
+    @import "../styles/variables.css";
+
+    .root {
+        display: flex;
+        flex-direction: column;
+        background: var(--card-bg-color);
+        align-items: center;
+        filter: drop-shadow(1px 1px 5px var(--b-color));
+        max-width: 65ch;
+        transition: box-shadow 0.3s;
+    }
+
+    .root:hover {
+        box-shadow: 0 0 11px rgba(33, 33, 33, 0.9);
+    }
+
+    .image {
+        max-width: 420px;
+        object-fit: contain;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner {
+        color: var(--card-title-color);
+    }
+
+    .date {
+        opacity: 0.75;
+    }
+
+    .tags {
+        height: 24px;
+    }
+
+    .tag {
+        border-radius: 50%;
+        height: 24px;
+        width: 24px;
+        margin-right: 1rem;
+    }
+
+    @media only screen and (max-width: 480px) {
+        .root {
+            justify-content: center;
+            width: 90%;
+        }
+        .image {
+            width: 100%;
+        }
+        .banner {
+            font-size: 90%;
+        }
+    }
+    a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    time {
+        flex: 0 0;
+        color: #888;
+    }
+    a:visited {
+        color: #8e32dc;
+    }
+    .image {
+        max-width: 420px;
+        object-fit: contain;
+        display: block;
+        margin: 0 auto;
+    }
+</style>
