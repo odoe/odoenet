@@ -4,11 +4,17 @@ title: "Made"
 description: "These are things I have made"
 published: true
 author: Rene Rubalcava
-updatedDate: "August 28 2022"
+updatedDate: "June 30 2023"
 tags: odoe
 ---
 
 These are some things I've made over the years. You may have bought them. _Thank you_.
+
+## Merchandise
+
+[The Bounding Box Store](https://the-bounding-box.printify.me)
+
+![Merchandise](https://images-api.printify.com/mockup/6498a0fb94a6147bcb0e4508/12124/92570/unisex-heavy-cotton-tee_1687921190870.jpg?camera_label=front&s=400)
 
 ## Books
 
