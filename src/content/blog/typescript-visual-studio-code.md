@@ -1,0 +1,29 @@
+---
+
+title: TypeScript in Visual Studio Code
+published: true
+author: Rene Rubalcava
+pubDate: 2016-10-25
+tags: geodev, typescript
+heroImage: '../../assets/blog/typescript-visual-studio-code/images/esrijs-ts-code.jpg'
+description: I was recently asked about setting up a TypeScript project in
+  Visual Studio Code. This was specifically in reference to using the ArcGIS API
+  3 for JavaScript.
+---
+
+I was recently asked about setting up a
+[TypeScript](https://www.typescriptlang.org/) project in
+[Visual Studio Code](https://code.visualstudio.com/). This was specifically in
+reference to using the
+[ArcGIS API 3 for JavaScript](https://developers.arcgis.com/javascript/3/).
+
+I decided to make this video to help users get up and running with Visual Studio
+Code using TypeScript for their ArcGIS API for JavaScript applications.
+
+This video doesn't need to be specific to the ArcGIS API for JavaScript, it can
+also be useful for using TypeScript in any project with Visual Studio Code.
+
+You can find the source for the sample application
+[here](https://github.com/odoe/esrijs-ts-demo).
+
+<lite-youtube videoid="oCgmLaXKSdc"></lite-youtube>
