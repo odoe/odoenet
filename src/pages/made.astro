@@ -1,0 +1,77 @@
+---
+import { Image } from "astro:assets";
+import Layout from "../layouts/Page.astro";
+import MadeHeroImage from "../assets/images/made-site.jpg";
+import Jsapi4BookImage from "../assets/made/images/apress-book-cover.png";
+import GisWebDevBookImage from "../assets/made/images/arcgiswebdev_lg.png";
+---
+
+<Layout
+  title="Things I Made"
+  description="These are some things I've made over the years. You may have bought them. Thank you."
+  pubDate={new Date("June 30 2023")}
+  heroImage={MadeHeroImage}
+>
+  <h3>Merchandise</h3>
+  <a
+    href="https://the-bounding-box.printify.me"
+    target="_blank"
+    rel="nofollow noopener"
+  >
+    The Bounding Box Store
+  </a>
+  <p>
+    Check out The Bounding Box merchandise store for t-shirts, mugs, and more!
+  </p>
+  <div class="image-container">
+    <Image
+      src="https://images-api.printify.com/mockup/6498a0fb94a6147bcb0e4508/12124/92570/unisex-heavy-cotton-tee_1687921190870.jpg?camera_label=front&s=400"
+      alt="Merchandise"
+      width={400}
+      height={400}
+      loading="lazy"
+    />
+  </div>
+
+  <hr />
+
+  <h3>Books</h3>
+  <div class="image-container">
+    <a href="https://amzn.to/2BUq6vK" target="_blank" rel="noopener">
+      <Image
+        src={Jsapi4BookImage}
+        alt="Introduction to ArcGIS API 4 for JavaScript"
+        width={400}
+        height={400}
+        loading="lazy"
+      />
+    </a>
+  </div>
+  <div class="image-container">
+    <a
+      href="https://www.manning.com/books/arcgis-web-development?a_aid=rrubalcava"
+      target="_blank"
+      rel="noopener"
+    >
+      <Image
+        src={GisWebDevBookImage}
+        alt="ArcGIS Web Development"
+        width={400}
+        height={400}
+        loading="lazy"
+      />
+    </a>
+  </div>
+</Layout>
+
+<style>
+  .image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+  }
+  .image-container img {
+    border-radius: 12px;
+    box-shadow: var(--box-shadow);
+  }
+</style>

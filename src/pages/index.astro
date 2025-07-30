@@ -1,22 +1,21 @@
 ---
+import { Image } from "astro:assets";
+import localAvatarImage from "../assets/images/avatar.jpg";
+import localBlogImage from "../assets/images/blog.jpg";
+import localPodcastImage from "../assets/images/podcast-site.jpg";
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 ---
 
-<!DOCTYPE html>
-<html lang="en-us">
+<!doctype html>
+<html lang="en">
   <head>
-    <BaseHead
-      title={SITE_TITLE}
-      description={SITE_DESCRIPTION}
-      image={"../images/odoenet.jpg"}
-    />
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   </head>
-
   <body>
-    <Header title={SITE_TITLE} />
+    <Header />
     <main>
       <div class="logo-container">
         <svg
@@ -57,165 +56,76 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
           </g>
         </svg>
       </div>
-      <div class="avatar">
-        <img
-          width="60px"
-          height="60px"
-          src="/assets/images/avatar.jpg"
-          alt="Rene Rubalcava"
-          class="avatar__image"
+      <div class="avatar-container">
+        <Image
+          src={localAvatarImage}
+          class="avatar-circle"
+          alt="odoenet"
+          width="50"
+          height="50"
         />
       </div>
-      <div class="img-container">
-        <picture>
-          <source type="image/webp" srcset="/assets/images/blog.webp" />
-          <source type="image/jpeg" srcset="/assets/images/blog.jpg" />
-          <img
-            class="img-page"
-            width="668px"
-            height="204px"
-            src="/assets/images/blog.jpg"
-            alt="Blog"
-          />
-        </picture>
-        <a href="/blog">/blog</a>
-      </div>
-      <div class="img-container">
-        <picture>
-          <source type="image/webp" srcset="/assets/images/podcast-site.webp" />
-          <source type="image/jpeg" srcset="/assets/images/podcast-site.jpg" />
-          <img
-            class="img-page"
-            width="668px"
-            height="204px"
-            src="/assets/images/podcast-site.jpg"
+      <div class="link-container">
+        <div class="img-container">
+          <Image src={localBlogImage} alt="Blog" width="668" height="204" />
+          <a href="/blog">/blog</a>
+        </div>
+        <div class="img-container">
+          <Image
+            src={localPodcastImage}
             alt="Podcast"
+            width="668"
+            height="204"
           />
-        </picture>
-        <a href="/podcast">/podcast</a>
-      </div>
-      <div class="img-container">
-        <picture>
-          <source type="image/webp" srcset="/assets/images/made-site.webp" />
-          <source type="image/jpeg" srcset="/assets/images/made-site.jpg" />
-          <img
-            class="img-page"
-            width="668px"
-            height="204px"
-            src="/assets/images/made-site.jpg"
-            alt="Made"
-          />
-        </picture>
-        <a href="/made">/made</a>
-      </div>
-      <div class="img-container">
-        <picture>
-          <source type="image/webp" srcset="/assets/images/uses-site.webp" />
-          <source type="image/jpeg" srcset="/assets/images/uses-site.jpg" />
-          <img
-            class="img-page"
-            width="668px"
-            height="204px"
-            src="/assets/images/uses-site.jpg"
-            alt="Uses"
-          />
-        </picture>
-        <a href="/uses">/uses</a>
-      </div>
-      <div class="social">
-        <a
-          href="https://github.com/odoe"
-          aria-label="Github"
-          target="_blank"
-          rel="nofollow"
-        >
-          <svg
-            width="60px"
-            height="60px"
-            aria-label="GitHub"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-            ><path
-              d="M12 0a12 12 0 1 0 0 24 12 12 0 0 0 0-24zm3.163 21.783h-.093a.513.513 0 0 1-.382-.14.513.513 0 0 1-.14-.372v-1.406c.006-.467.01-.94.01-1.416a3.693 3.693 0 0 0-.151-1.028 1.832 1.832 0 0 0-.542-.875 8.014 8.014 0 0 0 2.038-.471 4.051 4.051 0 0 0 1.466-.964c.407-.427.71-.943.885-1.506a6.77 6.77 0 0 0 .3-2.13 4.138 4.138 0 0 0-.26-1.476 3.892 3.892 0 0 0-.795-1.284 2.81 2.81 0 0 0 .162-.582c.033-.2.05-.402.05-.604 0-.26-.03-.52-.09-.773a5.309 5.309 0 0 0-.221-.763.293.293 0 0 0-.111-.02h-.11c-.23.002-.456.04-.674.111a5.34 5.34 0 0 0-.703.26 6.503 6.503 0 0 0-.661.343c-.215.127-.405.249-.573.362a9.578 9.578 0 0 0-5.143 0 13.507 13.507 0 0 0-.572-.362 6.022 6.022 0 0 0-.672-.342 4.516 4.516 0 0 0-.705-.261 2.203 2.203 0 0 0-.662-.111h-.11a.29.29 0 0 0-.11.02 5.844 5.844 0 0 0-.23.763c-.054.254-.08.513-.081.773 0 .202.017.404.051.604.033.199.086.394.16.582A3.888 3.888 0 0 0 5.702 10a4.142 4.142 0 0 0-.263 1.476 6.871 6.871 0 0 0 .292 2.12c.181.563.483 1.08.884 1.516.415.422.915.75 1.466.964.653.25 1.337.41 2.033.476a1.828 1.828 0 0 0-.452.633 2.99 2.99 0 0 0-.2.744 2.754 2.754 0 0 1-1.175.27 1.788 1.788 0 0 1-1.065-.3 2.904 2.904 0 0 1-.752-.824 3.1 3.1 0 0 0-.292-.382 2.693 2.693 0 0 0-.372-.343 1.841 1.841 0 0 0-.432-.24 1.2 1.2 0 0 0-.481-.101c-.04.001-.08.005-.12.01a.649.649 0 0 0-.162.02.408.408 0 0 0-.13.06.116.116 0 0 0-.06.1.33.33 0 0 0 .14.242c.093.074.17.131.232.171l.03.021c.133.103.261.214.382.333.112.098.213.209.3.33.09.119.168.246.231.381.073.134.15.288.231.463.188.474.522.875.954 1.145.453.243.961.364 1.476.351.174 0 .349-.01.522-.03.172-.028.343-.057.515-.091v1.743a.5.5 0 0 1-.533.521h-.062a10.286 10.286 0 1 1 6.324 0v.005z"
-            ></path>
-          </svg>
-        </a>
-        <a
-          href="https://twitter.com/odoenet"
-          aria-label="twitter"
-          target="_blank"
-          rel="nofollow"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            aria-label="Twitter"
-            width="60px"
-            height="60px"
-            viewBox="0 0 310 310"
-            ><path
-              d="M302.973 57.388a117.512 117.512 0 01-14.993 5.463 66.276 66.276 0 0013.494-23.73 5 5 0 00-7.313-5.824 117.994 117.994 0 01-34.878 13.783c-12.381-12.098-29.197-18.983-46.581-18.983-36.695 0-66.549 29.853-66.549 66.547 0 2.89.183 5.764.545 8.598C101.163 99.244 58.83 76.863 29.76 41.204a5.001 5.001 0 00-8.196.642c-5.896 10.117-9.013 21.688-9.013 33.461 0 16.035 5.725 31.249 15.838 43.137a56.37 56.37 0 01-8.907-3.977 5 5 0 00-7.427 4.257c-.007.295-.007.59-.007.889 0 23.935 12.882 45.484 32.577 57.229a57.372 57.372 0 01-5.063-.735 4.998 4.998 0 00-5.699 6.437c7.29 22.76 26.059 39.501 48.749 44.605-18.819 11.787-40.34 17.961-62.932 17.961a120.4 120.4 0 01-14.095-.826 5 5 0 00-3.286 9.174c29.023 18.609 62.582 28.445 97.047 28.445 67.754 0 110.139-31.95 133.764-58.753 29.46-33.421 46.356-77.658 46.356-121.367 0-1.826-.028-3.67-.084-5.508 11.623-8.757 21.63-19.355 29.773-31.536a5 5 0 00-6.182-7.351z"
-            ></path>
-          </svg>
-        </a>
-
-        <a
-          href="https://www.youtube.com/c/ReneRubalcava"
-          aria-label="Youtube"
-          target="_blank"
-          rel="nofollow"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            aria-label="Youtube"
-            width="60px"
-            height="60px"
-            viewBox="0 0 310 310"
-            ><path
-              d="M297.917 64.645c-11.19-13.302-31.85-18.728-71.306-18.728H83.386c-40.359 0-61.369 5.776-72.517 19.938C0 79.663 0 100.008 0 128.166v53.669c0 54.551 12.896 82.248 83.386 82.248h143.226c34.216 0 53.176-4.788 65.442-16.527C304.633 235.518 310 215.863 310 181.835v-53.669c0-29.695-.841-50.16-12.083-63.521zm-98.896 97.765l-65.038 33.991a9.997 9.997 0 01-14.632-8.863v-67.764a10 10 0 0114.609-8.874l65.038 33.772a10 10 0 01.023 17.738z"
-            ></path>
-          </svg>
-        </a>
-        <a
-          href="https://www.twitch.tv/odoenet"
-          aria-label="Twitch"
-          target="_blank"
-          rel="nofollow"
-        >
-          <svg
-            width="60px"
-            height="60px"
-            viewBox="0 0 32 32"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M2.787 0l-2.089 5.568v22.255h7.652v4.177h4.177l4.167-4.177h6.26l8.349-8.344v-19.479zM5.568 2.781h22.953v15.301l-4.871 4.871h-7.651l-4.172 4.172v-4.172h-6.26zM13.219 16.697h2.781v-8.348h-2.781zM20.864 16.697h2.781v-8.348h-2.781z"
-            ></path>
-          </svg>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/renerubalcava/"
-          aria-label="Linkedin"
-          target="_blank"
-          rel="nofollow"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            aria-label="Linkedin"
-            width="60px"
-            height="60px"
-            viewBox="0 0 455 455"
-          >
-            <g fill-rule="evenodd" clip-rule="evenodd">
-              <path d="M246.4 204.35v-.665c-.136.223-.324.446-.442.665h.442z"
-              ></path>
-              <path
-                d="M0 0v455h455V0H0zm141.522 378.002H74.016V174.906h67.506v203.096zm-33.753-230.816h-.446C84.678 147.186 70 131.585 70 112.085c0-19.928 15.107-35.087 38.211-35.087 23.109 0 37.31 15.159 37.752 35.087 0 19.5-14.643 35.101-38.194 35.101zM385 378.002h-67.524V269.345c0-27.291-9.756-45.92-34.195-45.92-18.664 0-29.755 12.543-34.641 24.693-1.776 4.34-2.24 10.373-2.24 16.459v113.426h-67.537s.905-184.043 0-203.096H246.4v28.779c8.973-13.807 24.986-33.547 60.856-33.547 44.437 0 77.744 29.02 77.744 91.398v116.465z"
-              ></path>
-            </g>
-          </svg>
-        </a>
+          <a href="/podcast">/podcast</a>
+        </div>
       </div>
     </main>
     <Footer />
   </body>
 </html>
+<style>
+  .link-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    margin-top: 2em;
+  }
+  .avatar-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1em;
+  }
+  .avatar-circle {
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .img-container {
+    position: relative;
+    display: inline-block;
+    line-height: 1;
+  }
+
+  .img-page:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, 0.9);
+  }
+
+  .img-container a {
+    position: absolute;
+    z-index: 2;
+    left: 12px;
+    bottom: 12px;
+    text-align: start;
+    width: 60%;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+
+  .img-container a:visited {
+    color: #fff;
+    font-size: 1.5rem;
+  }
+</style>
