@@ -8,4 +8,9 @@ export default defineConfig({
   outDir: "./output/dist",
   site: "https://odoe.net",
   integrations: [mdx(), sitemap()],
+  markdown: {
+    shikiConfig: {
+      theme: "catppuccin-mocha",
+    },
+  },
 });
